@@ -1,0 +1,41 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../../utils/various/hsla-converter.scss";
+
+
+// BLUE COLOR SCHEME
+
+// BASE
+
+/// Color Schemes - Link RGB Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$linkColor: 22,159,216; // value example from the BLUE color scheme
+/// Color Schemes -  Link Color HEX Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$linkColorHEX: unquote("#169fd8"); // value example from the BLUE color scheme
+/// Color Schemes - Accent RGB Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$accentColor: 22,159,216; // value example from the BLUE color scheme
+/// Color Schemes - Accent HEX Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$accentColorHEX: unquote("#169fd8"); // value example from the BLUE color scheme
+/// Color Schemes - Button Text RGB Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$buttonColor: 36,123,163; // value example from the BLUE color scheme
+/// Color Schemes - Button Text HEX Color
+/// @access public
+/// @type Variable
+/// @group color-schemes
+$buttonColorHEX: unquote("#247ba3"); // value example from the BLUE color scheme

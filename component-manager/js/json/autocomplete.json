@@ -1,0 +1,12 @@
+[
+    {"value":"Hamburg", "title":"Hamburg title", "url":"#", "text":"Lorem ipsum dolor sit amet, consectetur ..."},
+    {"value":"New York", "title":"New York", "url":"#", "text":"Ut enim ad minim veniam, quis nostrud ..."},
+    {"value":"Moscow", "title":"Moscow", "url":"#", "text":"Duis aute irure dolor in reprehenderit ..."},
+    {"value":"Amsterdam", "title":"Amsterdam", "url":"#", "text":"Excepteur sint occaecat cupidatat non ..."},
+    {"value":"Berlin", "title":"Berlin", "url":"#", "text":"Lorem ipsum dolor sit amet, consectetur ..."},
+    {"value":"Paris", "title":"Paris", "url":"#", "text":"Ut enim ad minim veniam, quis nostrud ..."},
+    {"value":"Madrid", "title":"Madrid", "url":"#", "text":"Duis aute irure dolor in reprehenderit ..."},
+    {"value":"San Francisco", "title":"San Francisco", "url":"#", "text":"Excepteur sint occaecat cupidatat non ..."},
+    {"value":"Las Vegas", "title":"Las Vegas", "url":"#", "text":"Lorem ipsum dolor sit amet, consectetur ..."},
+    {"value":"Tokyo", "title":"Tokyo", "url":"#", "text":"Ut enim ad minim veniam, quis nostrud ..."}
+]

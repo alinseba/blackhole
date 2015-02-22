@@ -1,0 +1,1021 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../base/core.scss";
+@import "../config/config.scss";
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*
+   =========================================================================
+*/
+
+@include media-query(800, min) {
+
+    /* General */
+    
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, min) {
+
+    /* General */
+
+
+    /* Components */
+    /* UI */
+    .input-wrapper input[type="file"] {
+        display: none;
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, min, 1280, max) {
+
+    /* General */
+
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, max) { // Change to fit your needs
+
+    /* General */
+    html#{$documentID} body#{$frameworkClass} {
+        .fixed, .fixed-bottom {
+            @include opacity(1);
+        }
+        .input-wrapper {
+            &.multiple {
+                .button, button {
+                    width: 25%;
+                    overflow: hidden;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    .icon {
+                        float: none;
+                    }
+                }
+                .input, input[type="text"], .input:focus, input[type="text"]:focus {
+                    width: 75%;
+                }
+            }
+        }
+        .container .col {
+            width: 49% !important;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+        .feedback .client .avatar, .feedback-right .client .avatar {
+            width: 100%;
+            max-width: 80px;
+        }
+    }
+
+    /* Components */
+    /* Timeline */
+    html#{$documentID} body#{$frameworkClass} .timeline {
+        .list .item {
+            float: none;
+            min-height: 10em;
+            min-width: inherit;
+            padding-bottom: 1em;
+            padding-right: 0;
+            .datetime {
+                top: 0;
+                left: -8.5em;
+                min-width: 80px;
+                text-align: right;
+            }
+            .title {
+                display: block;
+            }
+            span.dot {
+                left: -0.3em;
+                top: 0;
+            }
+            img.dot {
+                max-width: inherit;
+                top: 0;
+                left: -1.75em;
+            }
+            .content {
+                display: inline-block;
+                min-width: 670px;
+                width: 100%;
+                left: 4em;
+                top: -1.5em;
+                position: relative;
+            }
+        }
+        .bar {
+            margin: 0 8.5em;
+            max-height: inherit;
+            max-width: 1em;
+            padding: 3em 0;
+            width: auto;
+        }
+        &.vertical {
+            margin: 0;
+            .list .item {
+                .datetime {
+                    min-width: 180px;
+                    left: -15.72em
+                }
+                .content {
+                    top: -4em;
+                    min-width: 480px;
+                }
+            }
+            .bar {
+                margin: 0 auto;
+            }
+        }
+    }
+    /* UI */
+    .input-wrapper input[type="file"] {
+        display: none;
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(640, min, 800, max) { // Change to fit your needs
+
+    /* General */
+    html#{$documentID} body#{$frameworkClass} {
+        @include transition(none);
+        * {
+            @include transition(none);
+        }
+        .with-tag .tag {
+            right: 0;
+        }
+        .container .col {
+            float: none;
+            width: 100% !important;
+            margin-right: 0;
+        }
+        .input-wrapper {
+            &.multiple {
+                .button, button {
+                    width: 25%;
+                    .icon {
+                        float: none;
+                    }
+                }
+                .input, input[type="text"], .input:focus, input[type="text"]:focus {
+                    width: 75%;
+                }
+            }
+        }
+        .controls.left {
+            left: auto;
+        }
+        .menu.vertical.docked > .item, .menu-list.vertical.docked > .item {
+            width: 100%;
+            > .link .title {
+                text-indent: 0;
+            }
+            > .link .icon {
+                display: block;
+            }
+        }
+        .scrollup {
+            bottom: 3.5em;
+            right: 0;
+        }
+    }
+
+    /* Components */
+    /* Typography */
+    html#{$documentID} body#{$frameworkClass} .drop-caps:first-letter {
+        line-height: 1;
+        padding-top: 0;
+    }
+
+    /* Menus */ 
+    html#{$documentID} body#{$frameworkClass} .menu {
+        &.vertical {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+    html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .submenu {
+        width: 100%;
+        position: relative;
+        > .item {
+            > .link {
+                max-width: 100%;
+            }
+        }
+        ul {
+            display: block;
+            li {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        &.vertical {
+            .item.slide {
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    /* Tables */
+    /* Classic Tables */
+    html#{$documentID} body#{$frameworkClass} table {
+        display: block;
+        width: 100%;
+        caption {
+            display: block;
+        }
+        thead {
+            display: block;
+            float: left;
+            tr {
+                display: block;
+            }
+            th {
+                min-width: 160px;
+                width: auto !important;
+            }
+        }
+        tbody {
+            display: block;
+            width: auto;
+            max-width: inherit;
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: left;
+            tr {
+                display: inline-block;
+                margin-left: -4px;
+            }
+        }
+        tfoot {
+            display: none;
+        }
+        th, td {
+            display: block;
+            border-bottom: none;
+            span.right {
+                float: none;
+                margin-left: 1.5em;
+            }
+            &:last-child {
+                border-bottom: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+            }
+        }
+        td.gutter, td.code {
+            display: inline-block;
+        }
+        &.uk-datepicker-table {
+            display: table;
+            thead {
+                float: none;
+                display: table-header-group;
+            }
+            tbody {
+                display: table-row-group;
+            }
+            tr {
+                display: table-row;
+                margin: 0;
+                td, th {
+                    display: table-cell;
+                    min-width: inherit;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    /* List Tables */
+    html#{$documentID} body#{$frameworkClass} .table {
+        .cols {
+            .list {
+            float: none;
+            display: table-row;
+                .item {
+                    display: table-cell;
+                    &.footer {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Pricing Tables */
+    /* Classic Table */
+    html#{$documentID} body#{$frameworkClass} .pricing-table {
+        thead th .title {
+            font-size: 85%;
+        }
+        thead th:last-child .title {
+            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        }
+        tbody td .icon {
+            margin-top: 0;
+        }
+        td {
+            padding-top: 1.4166em;
+            padding-bottom: 1.4166em;
+        }
+    }
+
+    /* List Table */
+    html#{$documentID} body#{$frameworkClass} .table.pricing {
+        width: 100%;
+        .list {
+            float: none;
+            width: 100%;
+            margin-bottom: 1em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.featured {
+                margin: 0 0 1em;
+                border: none;
+            }
+            &.features .item {
+                width: 100% !important;
+            }
+            + div {
+                display: block;
+            }
+        }
+        &.featured-outside {
+            .list {
+                display: block;
+                @include opacity(1);
+                + div {
+                    display: block;
+                    .list {
+                        float: none;
+                        width: 100%;
+                        margin-bottom: 1em;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &.featured {
+                            border: none;
+                        }
+                    }
+                }
+                &:hover {
+                    margin: 0 0 1em 0;
+                    padding: 0;
+                    font-size: 100%;
+                    background-color: transparent;
+                }
+            }
+            .list.features {
+                margin-bottom: 1em;
+                float: none;
+            }
+        }
+    }
+
+    /* Comments */
+    html#{$documentID} body#{$frameworkClass} .comments {
+        > .list > .item {
+            &.replied {
+                .reply {
+                    .replier {
+                        margin-left: 1em;
+                        + .reply {
+                            margin-left: 1em;
+                        }
+                        .icon {
+                            left: 0;
+                            top: -1em;
+                        }
+                    }
+                }
+            }
+            aside {
+                &.commenter {
+                    padding-right: 1em;
+                    float: left;
+                    width: 33.3333% !important;
+                }
+                &.comment-block {
+                    float: left;
+                    width: 66.6666% !important;
+                }
+            }
+        }
+    }
+    /* Timeline */
+    html#{$documentID} body#{$frameworkClass} .timeline {
+        .list .item {
+            float: none;
+            min-height: 10em;
+            min-width: inherit;
+            padding-bottom: 1em;
+            padding-right: 0;
+            .datetime {
+                top: 0;
+                left: -8.5em;
+                min-width: 80px;
+                text-align: right;
+            }
+            .title {
+                display: block;
+            }
+            span.dot {
+                left: -0.3em;
+                top: 0;
+            }
+            img.dot {
+                max-width: inherit;
+                top: 0;
+                left: -1.75em;
+            }
+            .content {
+                display: inline-block;
+                min-width: 420px;
+                width: 100%;
+                left: 4em;
+                top: -1.5em;
+                position: relative;
+            }
+        }
+        .bar {
+            margin: 0 8.5em;
+            max-height: inherit;
+            max-width: 1em;
+            padding: 3em 0;
+            width: auto;
+        }
+        &.vertical {
+            margin: 0;
+            .list .item {
+                .datetime {
+                    min-width: 180px;
+                    left: -15.72em
+                }
+                .content {
+                    top: -4em;
+                    min-width: 210px;
+                }
+            }
+            .bar {
+                margin: 0 auto;
+            }
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(640, max) { // Change to fit your needs
+
+    /* General */
+    html#{$documentID} body#{$frameworkClass} {
+        @include transition(none);
+        * {
+            @include transition(none);
+        }
+        .with-tag .tag {
+            right: 0;
+        }
+        .container .col {
+            float: none;
+            width: 100% !important;
+            margin-right: 0;
+        }
+        .input-wrapper {
+            &.multiple {
+                .button, button {
+                    width: 25%;
+                    .icon {
+                        float: none;
+                    }
+                }
+                .input, input[type="text"], .input:focus, input[type="text"]:focus {
+                    width: 75%;
+                }
+            }
+        }
+        .controls.left {
+            left: auto;
+        }
+        .menu.vertical.docked > .item, .menu-list.vertical.docked > .item {
+            width: 100%;
+            > .link .title {
+                text-indent: 0;
+            }
+            > .link .icon {
+                display: block;
+            }
+        }
+        .scrollup {
+            bottom: 3.5em;
+            right: 0;
+        }
+        .uikit-component .uk-sortable {
+            > * {
+                width: 49%;
+                float: left;
+                margin-right: 2%;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    /* Components */
+    /* Typography */
+    html#{$documentID} body#{$frameworkClass} .drop-caps:first-letter {
+        line-height: 1;
+        padding-top: 0;
+    }
+
+    /* Buttons and Controls */
+    html#{$documentID} body#{$frameworkClass} .uikit-dropdown {
+        max-width: 100%;
+        .button {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    html#{$documentID} body#{$frameworkClass} .uikit-component.uk-button-group {
+        > a, > .button {
+            width: 75%;
+            float: left;
+        }
+        .uikit-dropdown {
+            width: 25%;
+            float: left !important;
+            .uikit-trigger {
+                float: left;
+                width: 100%;
+                margin-bottom: 0;
+                padding-bottom: 0.5em;
+                padding-top: 0.5em;
+                text-align: center;
+                .icon {
+                    float: none;
+                    margin: 0;
+                }
+            }
+            .uk-dropdown {
+                min-width: 400%;
+            }
+        }
+    }
+
+    html#{$documentID} body#{$frameworkClass} {
+        .show-all, .show-more {
+            > .trigger {
+                width: 100%;
+            }
+        }
+    }
+
+    /* Menus */ 
+    html#{$documentID} body#{$frameworkClass} .menu {
+        &.vertical {
+            width: 100%;
+            padding-right: 0;
+        }
+    }
+
+    /* Inputs */
+    html#{$documentID} body#{$frameworkClass} {
+        input[type='text'], input[type='number'], textarea, .input.text, select, .select, .input-wrapper.with-icon, .input-wrapper.date-picker, .input-wrapper.with-icon .input, .input-wrapper.with-icon input[type='text'], .input-wrapper.date-picker .input, .input-wrapper.date-picker input[type='text'] {
+            width: 100%;
+        }
+    }
+    html#{$documentID} body#{$frameworkClass} .date-picker-wrapper .item {
+        float: none;
+        margin-right: 0;
+    }
+    html#{$documentID} body#{$frameworkClass} .input-wrapper {
+        .input {
+            width: auto;
+        }
+    }
+
+    /* Boxes and Containers */
+    html#{$documentID} body#{$frameworkClass} .flyer {
+        width: 100%;
+    }
+
+    /* Tables */
+    /* Classic Tables */
+    html#{$documentID} body#{$frameworkClass} table {
+        display: block;
+        width: 100%;
+        caption {
+            display: block;
+        }
+        thead {
+            display: block;
+            float: left;
+            tr {
+                display: block;
+            }
+            th {
+                min-width: 160px;
+                width: auto !important;
+            }
+        }
+        tbody {
+            display: block;
+            width: auto;
+            max-width: inherit;
+            overflow-x: auto;
+            white-space: nowrap;
+            text-align: left;
+            tr {
+                display: inline-block;
+                margin-left: -4px;
+            }
+        }
+        tfoot {
+            display: none;
+        }
+        th, td {
+            display: block;
+            border-bottom: none;
+            span.right {
+                float: none;
+                margin-left: 1.5em;
+            }
+            &:last-child {
+                border-bottom: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+            }
+        }
+        td.gutter, td.code {
+            display: inline-block;
+        }
+        &.uk-datepicker-table {
+            display: table;
+            thead {
+                float: none;
+                display: table-header-group;
+            }
+            tbody {
+                display: table-row-group;
+            }
+            tr {
+                display: table-row;
+                margin: 0;
+                td, th {
+                    display: table-cell;
+                    min-width: inherit;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    /* List Tables */
+    html#{$documentID} body#{$frameworkClass} .table {
+        .cols {
+            .list {
+            float: none;
+            display: table-row;
+                .item {
+                    display: table-cell;
+                    &.footer {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Timeline */
+    html#{$documentID} body#{$frameworkClass} .timeline {
+        .list .item {
+            float: none;
+            min-height: 10em;
+            min-width: inherit;
+            padding-bottom: 1em;
+            padding-right: 0;
+            .datetime {
+                top: 0;
+                left: -8.5em;
+                min-width: 80px;
+                text-align: right;
+            }
+            .title {
+                display: block;
+            }
+            span.dot {
+                left: -0.3em;
+                top: 0;
+            }
+            img.dot {
+                max-width: inherit;
+                top: 0;
+                left: -1.75em;
+            }
+            .content {
+                display: inline-block;
+                min-width: 320px;
+                width: 100%;
+                left: 4em;
+                top: -1.5em;
+                position: relative;
+            }
+        }
+        .bar {
+            margin: 0 8.5em;
+            max-height: inherit;
+            max-width: 1em;
+            padding: 3em 0;
+            width: auto;
+        }
+        &.vertical {
+            margin: 0;
+            .list .item {
+                .datetime {
+                    min-width: 180px;
+                    left: -15.72em
+                }
+                .content {
+                    top: -4em;
+                    min-width: 210px;
+                }
+            }
+            .bar {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    /* Menus */
+    html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .submenu {
+        width: 100%;
+        position: relative;
+        > .item {
+            > .link {
+                max-width: 100%;
+            }
+        }
+        ul {
+            display: block;
+            li {
+                max-width: 100%;
+                width: 100%;
+            }
+        }
+        &.vertical {
+            .item.slide {
+                ul {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    /* Pricing Tables */
+    /* Classic Table */
+    html#{$documentID} body#{$frameworkClass} .pricing-table {
+        thead th .title {
+            font-size: 85%;
+        }
+        thead th:last-child .title {
+            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        }
+        tbody td .icon {
+            margin-top: 0;
+        }
+        td {
+            padding-top: 1.4166em;
+            padding-bottom: 1.4166em;
+        }
+    }
+
+    /* List Table */
+    html#{$documentID} body#{$frameworkClass} .table.pricing {
+        width: 100%;
+        .list {
+            float: none;
+            width: 100%;
+            margin-bottom: 1em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            &.featured {
+                margin: 0 0 1em;
+                border: none;
+            }
+            &.features .item {
+                width: 100% !important;
+            }
+            + div {
+                display: block;
+            }
+        }
+        &.featured-outside {
+            .list {
+                display: block;
+                @include opacity(1);
+                + div {
+                    display: block;
+                    .list {
+                        float: none;
+                        width: 100%;
+                        margin-bottom: 1em;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                        &.featured {
+                            border: none;
+                        }
+                    }
+                }
+                &:hover {
+                    margin: 0 0 1em 0;
+                    padding: 0;
+                    font-size: 100%;
+                    background-color: transparent;
+                }
+            }
+            .list.features {
+                margin-bottom: 1em;
+                float: none;
+            }
+        }
+    }
+
+    /* Comments */
+    html#{$documentID} body#{$frameworkClass} .comments {
+        > .list > .item {
+            &.replied {
+                .reply {
+                    .replier {
+                        margin-left: 1em;
+                        + .reply {
+                            margin-left: 1em;
+                        }
+                        .icon {
+                            left: 0;
+                            top: -1em;
+                        }
+                    }
+                }
+            }
+            aside {
+                &.commenter {
+                    padding-right: 1em;
+                    float: left;
+                    width: 33.3333% !important;
+                }
+                &.comment-block {
+                    float: left;
+                    width: 66.6666% !important;
+                }
+            }
+        }
+    }
+
+    /* Various */
+    html#{$documentID} body#{$frameworkClass} .horizontal-terms {
+        dt, dd {
+            float: none !important;
+            clear: none;
+            margin: 0;
+        }
+        dd {
+            margin-right: 0 !important;
+        }
+        dt {
+            margin-top: 1em;
+        }
+    }
+
+    // UIKit
+    html#{$documentID} body#{$frameworkClass} .uk-autocomplete, html#{$documentID} body#{$frameworkClass} .uk-search {
+        width: 100%;
+    }
+    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-search {
+        .uk-search-field {
+            width: 100% !important;
+        }
+    }
+    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-htmleditor {
+        .uk-htmleditor-toolbar {
+            width: 100%;
+        }
+        .uk-htmleditor-navbar-flip {
+            width: 100%;
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(639, max) { // Change to fit your needs
+
+    /* General */
+
+
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(480, max) { // Change to fit your needs
+
+    /* General */
+    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-sortable {
+        > * {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+    html#{$documentID} body#{$frameworkClass} .tooltips {
+        > a {
+            width: 100% !important;
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query("", "", "", "", print) {
+    // Your printing styles   
+}
+
+/*
+   =========================================================================
+*/

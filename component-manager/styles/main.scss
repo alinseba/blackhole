@@ -1,0 +1,259 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../../styles/base/core.scss";
+@import "../../styles/config/config.scss";
+
+
+/* Clearfixes */
+.framework, #main-header, #main-menu,  #main-content > .list > .item, #main-header aside > .list > .item, #main-menu .item .link, #main-section, .wrapper, .visible-element, #main-footer .wrapper {
+    @extend %clearfix;
+    &:before, &:after {
+        @extend %clearfix-ba;
+    }
+    &:after {
+        @extend %clearfix-a;
+    }
+}
+
+/* Component Manager Styles */
+html#{$documentID} .framework {
+	background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+	#main-header {
+		background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+		z-index: 999;
+		#main-menu {
+			a {
+				color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+				padding: 1.5em;
+				&:hover, &:active {
+					color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+				}
+			}
+			.item {
+				&.active {
+					a, a:hover, a:active {
+						color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+						background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.9);
+					}
+				}
+			}
+		}
+	}
+    #main-section {
+        min-height: 480px;
+        margin-top: 0;
+        #main-content {
+            min-height: 70em;
+            background-color: transparent;
+            @include box-shadow(none);
+            h1 {
+                margin-bottom: 1em;
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+            > h1 {
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                text-transform: uppercase;
+            }
+            h2 {
+                margin-bottom: 1em;
+            }
+            > .box {
+                background-color: transparent;
+                @include box-shadow(none);
+            }
+            .with-background {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            }
+            > .list.main > .item {
+                padding: 1em;
+                margin-bottom: 1em;
+                border-bottom: 0.0833em dashed rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+                background-color: transparent;
+                .visible-element {
+                    h1, h2, h4 {
+                        margin-bottom: 0;
+                    }
+                }
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                > .ui-tabs > .ui-tabs-panel {
+                    background-color: transparent;
+                    border: none;
+                    padding-left: 0;
+                    padding-right: 0;
+                    padding-bottom: 0;
+                    @include box-shadow(none);
+                }
+            }
+            > .list .item > aside, .list .item .tab-content > aside {
+                margin: 0;
+                position: relative;
+            }
+            > .list .item > aside.element, > .list .item .tab-content > aside.element {
+                padding-right: 1em;
+            }
+            > .list .item > aside.element > .trigger, > .list .item .tab-content > aside.element > .trigger {
+                z-index: 99;
+                margin-left: 1em;
+                margin-bottom: 1em;
+            }
+            > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
+                max-width: 75%;
+                clear: both;
+                &.controls, &.controls-horizontal {
+                    right: 15em;
+                }
+            }
+            > .list .tab-content > aside.element > .trigger + * {
+            }
+            > .list .reveal {
+                .js-functionality {
+                    visibility: hidden;
+                }
+                &:hover, &:focus {
+                    .js-functionality {
+                        visibility: visible;
+                    }
+                }
+            }
+            > .list.controls {
+                display: block;
+                position: relative;
+                top: auto;
+                right: auto;
+                > .item {
+                    text-align: left;
+                }
+            }
+            .list .tab-content {
+            	display: none;
+            	&.uk-active {
+            		display: block;
+            	}
+            }
+            .tab-control .options {
+            	.item {
+            		float: left;
+            		a {
+            			display: block;
+            		}
+            		&.uk-active {
+            			a, a:hover, a:active {
+            				color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            				background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            			}
+            		}
+            	}
+            }
+            .tab-control > .list {
+                padding: 1em 0;
+                &.options {
+                    padding: 0;
+                }
+            }
+            .code-block {
+            	margin: 0;
+                code {
+                }
+            }
+            .message-warning, .message-info {
+                .icon:before {
+                    content: "";
+                }
+            }
+            .controls.left {
+                position: relative;
+                left: 50%;
+                margin-top: -2.75em;
+            }
+            .article {
+                padding: 1em;
+                > .title {
+                    margin-bottom: 0.5em;
+                    a {
+                        padding: 0;
+                    }
+                }
+                .tags {
+                    margin: 1em 0;
+                    .item {
+                        float: left;
+                        display: block;
+                        margin-right: 0.5em;
+                        margin-bottom: 0.5em;
+                    }
+                    .item:last-child {
+                        margin-right: 0;
+                    }
+                    .item .tag {
+                        display: block;
+                        font-weight: $thickFontWeight;
+                        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                        &:hover, &:active {
+                            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                            background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                        }
+                        .icon {
+                            margin-top: 0.5em;
+                        }
+                    }
+                }
+                > .details {
+                    display: block;
+                    margin: 0.5em 0 2.5em;
+                }
+                .read {
+                    display: inline-block;
+                    margin-top: 1.5em;
+                }
+            }
+            .scale-double, .translate-left {
+                position: relative;
+                left: 7em;
+            }
+            .translate-left {
+                left: 50%;
+            }
+            .js-functionality {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($errorBack, 1), nth($errorBack, 2), nth($errorBack, 3));
+                margin: 0.5em 0;
+                padding: 0.5em 0.75em;
+                position: relative;
+                font-size: 85%;
+                float: left;
+                z-index: 996;
+            }
+        }
+    }
+    #main-footer {
+    	color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    	background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    	.copyright {
+    		display: block;
+    		padding: 0.5em 0;
+    		float: left;
+    	}
+    	.social {
+    		float: right;
+    		padding: 0.25em 0;
+    		.item {
+    			margin-bottom: 0;
+    			a {
+    				min-width: 42px;
+    			}
+    		}
+    		.item:last-child {
+    			margin-right: 0;
+    		}
+    	}
+    }
+}
+
+// Others
+@include generate-cols(4, 2%); // Change it by your needs
+@include generate-cols(5, 2%); // Change it by your needs
+@include generate-grid(100%, 5, 2%);

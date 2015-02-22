@@ -1,0 +1,2219 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html id="myDocument" class="no-js my-document">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Component Manager - Controls</title>
+        <meta name="author" content="Alin Seba">
+        <meta name="description" content="Blackhole - minimalistic but powerful and flexible SASS framework">
+        <meta name="keywords" content="reusable components, modularity, sass framework, semantic code">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'><!-- BODY FONT -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!-- HEADINGS FONT -->
+
+        <!-- === MAIN STYLES === -->
+        <link rel="stylesheet" href="../styles/base/normalize.min.css"><!-- CSS RESETER -->
+        <link rel="stylesheet" href="../styles/base/boilerplate.css"><!-- BOILERPLATE -->
+        <!-- <link rel="stylesheet" href="../styles/base/minified/boilerplate.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="../styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="../styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/main.css"><!-- MAIN STYLES -->
+        <!-- <link rel="stylesheet" href="styles/minified/main.min.css"> --><!-- minified version -->
+
+        <!-- === PLUGINS STYLES === -->
+        <link rel="stylesheet" href="styles/vendor/highlight/monokai_sublime.css">
+
+        <!-- === VENDOR SCRIPTS === -->
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- === PLUGIN SCRIPTS === -->
+        <script src="js/uikit/uikit.min.js"></script>
+        <script src="js/uikit/addons/notify.min.js"></script>
+        <script src="js/uikit/addons/sortable.min.js"></script>
+        <script src="js/uikit/addons/nestable.min.js"></script>
+        <script src="js/plugins/highlight/highlight.pack.js"></script>
+
+    </head>
+    <body id="myFramework" class="my-framework no-text-shadow">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="framework" class="framework"><!-- FRAMEWORK STARTS HERE -->
+
+            <header id="main-header" class="section-free fixed-element"><!-- MAIN HEADER STARTS HERE -->
+                <!-- YOUR MAIN HEADER MARKUP -->
+                <nav id="main-menu">
+                    <ul class="menu components">
+                        <li class="item typography-components">
+                            <a title="Typography Section" class="link" href="typography.html">Typography</a>
+                        </li>
+                        <li class="item buttons-components">
+                            <a title="Buttons Section" class="link" href="ui-buttons.html">Buttons</a>
+                        </li>
+                        <li class="item inputs-components">
+                            <a title="Inputs Section" class="link" href="ui-inputs.html">Inputs</a>
+                        </li>
+                        <li class="item controls-components active">
+                            <a title="Controls Section" class="link" href="ui-controls.html">Controls</a>
+                        </li>
+                        <li class="item navigation-components">
+                            <a title="Navigation Section" class="link" href="navigation.html">Navigation</a>
+                        </li>
+                        <li class="item notifications-components">
+                            <a title="Notifications Section" class="link" href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="item boxes-components">
+                            <a title="Boxes Section" class="link" href="boxes.html">Boxes</a>
+                        </li>
+                        <li class="item tables-components">
+                            <a title="Tables Section" class="link" href="tables.html">Tables</a>
+                        </li>
+                        <li class="item icons-components">
+                            <a title="Icons Section" class="link" href="icons.html">Icons</a>
+                        </li>
+                        <li class="item media-components">
+                            <a title="Media Section" class="link" href="media.html">Media</a>
+                        </li>
+                        <li class="item components-components">
+                            <a title="Components Section" class="link" href="components.html">Components</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header><!-- MAIN HEADER ENDS HERE -->
+
+            <section id="main-section" class="section-vertical"><!-- MAIN SECTION STARTS HERE -->
+                <div id="main-content" class="section-free"><!-- MAIN CONTENT STARTS HERE -->
+                    <!-- YOUR MAIN SECTION MARKUP -->
+                    <ul id="controls" class="list main controls">
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-3'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-3-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-3-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-3" class="list">
+                                    <li id="ui-controls-3-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name"><span class="red">UIKit</span> Switcher</h4>
+                                            <div class="uikit-component">
+                                                <ul class="list uk-tab" data-uk-tab="{connect:'#uikit-switcher'}">
+                                                    <li class="item">
+                                                        <a href="#" title="Tab 1">Tab 1</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="#" title="Tab 2">Tab 2</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="#" title="Tab 3">Tab 3</a>
+                                                    </li>
+                                                </ul>
+                                                <ul id="uikit-switcher" class="list uk-switcher uk-margin">
+                                                    <li class="item">
+                                                        <p class="content">Content of Tab 1</p>
+                                                    </li>
+                                                    <li class="item">
+                                                        <p class="content">Content of Tab 2</p>
+                                                    </li>
+                                                    <li class="item">
+                                                        <p class="content">Content of Tab 3</p>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul class="list uk-tab" data-uk-tab="{connect:'#uikit-switcher'}"&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 1"&gt;Tab 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 2"&gt;Tab 2&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 3"&gt;Tab 3&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul id="uikit-switcher" class="list uk-switcher uk-margin"&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 1&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 2&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 3&lt;/p&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-3-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="uikit-component">
+                                                <ul class="list uk-tab" data-uk-tab="{connect:'#uikit-switcher-example'}">
+                                                    <li class="item">
+                                                        <a href="#" title="Account Profile">Profile</a>
+                                                    </li>
+                                                    <li class="item">
+                                                        <a href="#" title="Account Settings">Settings</a>
+                                                    </li>
+                                                </ul>
+                                                <ul id="uikit-switcher-example" class="list uk-switcher uk-margin">
+                                                    <li class="item">
+                                                        <form class="form-validate" action="your-script" method="POST">
+                                                            <fieldset>
+                                                                <div class="group">
+                                                                    <label for="name">Name</label>
+                                                                    <input type="text" class="input text" name="name" placeholder="name" id="name2" required />
+                                                                </div>
+                                                                <div class="group">
+                                                                    <label for="surname">Surname</label>
+                                                                    <input type="text" class="input text" name="surname" placeholder="surname" id="surname2" />
+                                                                </div>
+                                                                <div class="group input-wrapper multiple">
+                                                                    <label>Profile Photo</label>
+                                                                    <input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" />
+                                                                    <label for="file-input" class="button file">Profile Photo <span class="icon right"></span></label><input type="file" class="input" name="file" id="file-input2" />
+                                                                </div>
+                                                            </fieldset>
+                                                            <button type="submit" class="input button">save changes</button>
+                                                        </form>
+                                                    </li>
+                                                    <li class="item">
+                                                        <form class="form-validate" action="your-script" method="POST">
+                                                            <fieldset>
+                                                                <label for="username">Username</label>
+                                                                <input type="text" class="input text" name="username" placeholder="username" id="username2" required />
+                                                                <label for="password">Password</label>
+                                                                <input type="password" class="input text" name="password" id="password3" required />
+                                                                <label for="password2">Reenter Password</label>
+                                                                <input type="password" class="input text" name="password2" id="password4" required />
+                                                                <label for="email">Email</label>
+                                                                <input type="email" class="input text" name="email" placeholder="email address" id="email2" required />
+                                                            </fieldset>
+                                                            <button type="submit" class="input button">save changes</button>
+                                                        </form>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul class="list uk-tab" data-uk-tab="{connect:'#uikit-switcher-example'}"&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Account Profile"&gt;Profile&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Account Settings"&gt;Settings&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul id="uikit-switcher-example" class="list uk-switcher uk-margin"&gt;
+        &lt;li class="item"&gt;
+            &lt;form class="form-validate" action="your-script" method="POST"&gt;
+                &lt;fieldset&gt;
+                    &lt;div class="group"&gt;
+                        &lt;label for="name"&gt;Name&lt;/label&gt;
+                        &lt;input type="text" class="input text" name="name" placeholder="name" id="name2" required /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="group"&gt;
+                        &lt;label for="surname"&gt;Surname&lt;/label&gt;
+                        &lt;input type="text" class="input text" name="surname" placeholder="surname" id="surname2" /&gt;
+                    &lt;/div&gt;
+                    &lt;div class="group input-wrapper multiple"&gt;
+                        &lt;label&gt;Profile Photo&lt;/label&gt;
+                        &lt;input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" /&gt;
+                        &lt;label for="file-input" class="button file"&gt;Profile Photo &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type="file" class="input" name="file" id="file-input2" /&gt;
+                    &lt;/div&gt;
+                &lt;/fieldset&gt;
+                &lt;button type="submit" class="input button"&gt;save changes&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;form class="form-validate" action="your-script" method="POST"&gt;
+                &lt;fieldset&gt;
+                    &lt;label for="username"&gt;Username&lt;/label&gt;
+                    &lt;input type="text" class="input text" name="username" placeholder="username" id="username2" required /&gt;
+                    &lt;label for="password"&gt;Password&lt;/label&gt;
+                    &lt;input type="password" class="input text" name="password" id="password3" required /&gt;
+                    &lt;label for="password2"&gt;Reenter Password&lt;/label&gt;
+                    &lt;input type="password" class="input text" name="password2" id="password4" required /&gt;
+                    &lt;label for="email"&gt;Email&lt;/label&gt;
+                    &lt;input type="email" class="input text" name="email" placeholder="email address" id="email2" required /&gt;
+                &lt;/fieldset&gt;
+                &lt;button type="submit" class="input button"&gt;save changes&lt;/button&gt;
+            &lt;/form&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Bottom Switcher</h4>
+                                <div class="uikit-component">
+                                    <ul id="uikit-bottom-switcher" class="list uk-switcher uk-margin">
+                                        <li class="item">
+                                            <p class="content">Content of Tab 1</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="content">Content of Tab 2</p>
+                                        </li>
+                                        <li class="item">
+                                            <p class="content">Content of Tab 3</p>
+                                        </li>
+                                    </ul>
+                                    <ul class="list uk-tab uk-tab-bottom" data-uk-tab="{connect:'#uikit-bottom-switcher'}">
+                                        <li class="item">
+                                            <a href="#" title="Tab 1">Tab 1</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" title="Tab 2">Tab 2</a>
+                                        </li>
+                                        <li class="item">
+                                            <a href="#" title="Tab 3">Tab 3</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul id="uikit-bottom-switcher" class="list uk-switcher uk-margin"&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 1&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 2&lt;/p&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;p class="content"&gt;Content of Tab 3&lt;/p&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="list uk-tab uk-tab-bottom" data-uk-tab="{connect:'#uikit-bottom-switcher'}"&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 1"&gt;Tab 1&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 2"&gt;Tab 2&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;a href="#" title="Tab 3"&gt;Tab 3&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Vertical Left Switcher</h4>
+                                <div class="uikit-component">
+                                    <aside class="switcher-tabs left">
+                                        <ul class="list uk-tab uk-tab-left" data-uk-tab="{connect:'#uikit-vertical-switcher'}">
+                                            <li class="item">
+                                                <a href="#" title="Tab 1">Tab 1</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#" title="Tab 2">Tab 2</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#" title="Tab 3">Tab 3</a>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                    <aside class="switcher-content left">
+                                        <ul id="uikit-vertical-switcher" class="list uk-switcher uk-margin">
+                                            <li class="item">
+                                                <p class="content">Content of Tab 1</p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="content">Content of Tab 2</p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="content">Content of Tab 3</p>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;aside class="switcher-tabs left"&gt;
+        &lt;ul class="list uk-tab uk-tab-left" data-uk-tab="{connect:'#uikit-vertical-switcher'}"&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 1"&gt;Tab 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 2"&gt;Tab 2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 3"&gt;Tab 3&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+    &lt;aside class="switcher-content left"&gt;
+        &lt;ul id="uikit-vertical-switcher" class="list uk-switcher uk-margin"&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 1&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 2&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 3&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Vertical Right Switcher</h4>
+                                <div class="uikit-component">
+                                    <aside class="switcher-tabs right">
+                                        <ul class="list uk-tab uk-tab-right" data-uk-tab="{connect:'#uikit-right-vertical-switcher'}">
+                                            <li class="item">
+                                                <a href="#" title="Tab 1">Tab 1</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#" title="Tab 2">Tab 2</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#" title="Tab 3">Tab 3</a>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                    <aside class="switcher-content left">
+                                        <ul id="uikit-right-vertical-switcher" class="list uk-switcher uk-margin">
+                                            <li class="item">
+                                                <p class="content">Content of Tab 1</p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="content">Content of Tab 2</p>
+                                            </li>
+                                            <li class="item">
+                                                <p class="content">Content of Tab 3</p>
+                                            </li>
+                                        </ul>
+                                    </aside>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;aside class="switcher-tabs right"&gt;
+        &lt;ul class="list uk-tab uk-tab-right" data-uk-tab="{connect:'#uikit-right-vertical-switcher'}"&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 1"&gt;Tab 1&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 2"&gt;Tab 2&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;a href="#" title="Tab 3"&gt;Tab 3&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+    &lt;aside class="switcher-content left"&gt;
+        &lt;ul id="uikit-right-vertical-switcher" class="list uk-switcher uk-margin"&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 1&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 2&lt;/p&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;p class="content"&gt;Content of Tab 3&lt;/p&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/aside&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-13'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-13-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-13-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-13" class="list">
+                                    <li id="ui-controls-13-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name"><span class="red">UIKit </span> Progress Bar</h4>
+                                            <div class="uikit-component">
+                                                <div class="uk-progress">
+                                                    <div class="uk-progress-bar" style="width: 50%;">50%</div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uk-progress"&gt;
+        &lt;div class="uk-progress-bar" style="width: 50%;"&gt;50%&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-13-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="uikit-component">
+                                                <ul class="list skills">
+                                                    <li class="item jquery">
+                                                        <span class="skill">jQuery</span>
+                                                        <div class="uk-progress">
+                                                            <div class="uk-progress-bar" style="width: 80%;">80%</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item angular-js">
+                                                        <span class="skill">AngularJS</span>
+                                                        <div class="uk-progress">
+                                                            <div class="uk-progress-bar" style="width: 30%;">30%</div>
+                                                        </div>
+                                                    </li>
+                                                    <li class="item ember-js">
+                                                        <span class="skill">EmberJS</span>
+                                                        <div class="uk-progress">
+                                                            <div class="uk-progress-bar" style="width: 60%;">60%</div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul class="list skills"&gt;
+        &lt;li class="item jquery"&gt;
+            &lt;span class="skill"&gt;jQuery&lt;/span&gt;
+            &lt;div class="uk-progress"&gt;
+                &lt;div class="uk-progress-bar" style="width: 80%;"&gt;80%&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item angular-js"&gt;
+            &lt;span class="skill"&gt;AngularJS&lt;/span&gt;
+            &lt;div class="uk-progress"&gt;
+                &lt;div class="uk-progress-bar" style="width: 30%;"&gt;30%&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item ember-js"&gt;
+            &lt;span class="skill"&gt;EmberJS&lt;/span&gt;
+            &lt;div class="uk-progress"&gt;
+                &lt;div class="uk-progress-bar" style="width: 60%;"&gt;60%&lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit </span> Progress Bar with States</h4>
+                                <div class="uikit-component">
+                                    <div class="uk-progress uk-progress-success">
+                                        <div class="uk-progress-bar" style="width: 100%;">100% (Complete)</div>
+                                    </div>
+                                    <div class="uk-progress uk-progress-warning">
+                                        <div class="uk-progress-bar" style="width: 75%;">75% (In Progress)</div>
+                                    </div>
+                                    <div class="uk-progress uk-progress-danger">
+                                        <div class="uk-progress-bar" style="width: 27%;">27% (Interrupted)</div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uk-progress uk-progress-success"&gt;
+        &lt;div class="uk-progress-bar" style="width: 100%;"&gt;100% (Complete)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uk-progress uk-progress-warning"&gt;
+        &lt;div class="uk-progress-bar" style="width: 75%;"&gt;75% (In Progress)&lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class="uk-progress uk-progress-danger"&gt;
+        &lt;div class="uk-progress-bar" style="width: 27%;"&gt;27% (Interrupted)&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit </span> Striped Progress Bar</h4>
+                                <div class="uikit-component">
+                                    <div class="uk-progress uk-progress-striped">
+                                        <div class="uk-progress-bar" style="width: 75%;">75%</div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uk-progress uk-progress-striped"&gt;
+        &lt;div class="uk-progress-bar" style="width: 75%;"&gt;75%&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit </span> Animated Striped Progress Bar with State</h4>
+                                <div class="uikit-component">
+                                    <div class="uk-progress uk-progress-striped uk-progress-warning uk-active">
+                                        <div class="uk-progress-bar" style="width: 75%;">75%</div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uk-progress uk-progress-striped uk-progress-warning uk-active"&gt;
+        &lt;div class="uk-progress-bar" style="width: 75%;"&gt;75%&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-18'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-18-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-18-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-18" class="list">
+                                    <li id="ui-controls-18-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name"><span class="red">UIKit</span> Dropdown</h4>
+                                            <div class="uikit-component">
+                                                <div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                    <a href="#" class="button uikit-trigger" title="Dropdown Trigger">Dropdown Trigger <span class="icon right"></span></a>
+                                                    <div class="uk-dropdown">
+                                                        <ul class="menu">
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}"&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Trigger"&gt;Dropdown Trigger &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-18-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="uikit-component">
+                                                <div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}">
+                                                    <a href="#" class="button uikit-trigger" title="Account"><span class="icon-default main left"></span><span class="title">Account</span><span class="icon right"></span></a>
+                                                    <div class="uk-dropdown">
+                                                        <ul class="menu">
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Change Profile">Profile</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Change Preferences">Preferences</a>
+                                                            </li>
+                                                            <li class="item">
+                                                                <a href="#" class="link" title="Change Settings">Settings</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}"&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Account"&gt;&lt;span class="icon-default main left"&gt;&lt;/span&gt;&lt;span class="title"&gt;Account&lt;/span&gt;&lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Change Profile"&gt;Profile&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Change Preferences"&gt;Preferences&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Change Settings"&gt;Settings&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Dropdown on Hover</h4>
+                                <div class="uikit-component">
+                                    <div class="uikit-dropdown" data-uk-dropdown>
+                                        <a href="#" class="button uikit-trigger" title="Dropdown Trigger">Dropdown Trigger <span class="icon right"></span></a>
+                                        <div class="uk-dropdown">
+                                            <ul class="menu">
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Trigger"&gt;Dropdown Trigger &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Dropdown with Arrow Trigger</h4>
+                                <div class="uikit-component uk-button-group">
+                                    <a href="#" class="button" title="Dropdown Button"><span class="name">Dropdown Arrow Trigger</span></a>
+                                    <div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}">
+                                        <a href="#" class="button uikit-trigger" title="Dropdown Arrow Trigger"><span class="icon right"></span></a>
+                                        <div class="uk-dropdown ">
+                                            <ul class="menu">
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component uk-button-group"&gt;
+    &lt;a href="#" class="button" title="Dropdown Button"&gt;&lt;span class="name"&gt;Dropdown Arrow Trigger&lt;/span&gt;&lt;/a&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown="{mode:'click'}"&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Arrow Trigger"&gt;&lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown "&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Dropdown with Delay</h4>
+                                <div class="uikit-component">
+                                    <div class="uikit-dropdown" data-uk-dropdown="{delay: 1000}">
+                                        <a href="#" class="button uikit-trigger" title="Dropdown Trigger">Dropdown Trigger <span class="icon right"></span></a>
+                                        <div class="uk-dropdown">
+                                            <ul class="menu">
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown="{delay: 1000}"&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Trigger"&gt;Dropdown Trigger &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Up Dropdown</h4>
+                                <div class="uikit-component">
+                                    <div class="uikit-dropdown dropdown-up" data-uk-dropdown>
+                                        <a href="#" class="button uikit-trigger" title="Dropdown Trigger">Dropdown Trigger <span class="icon right"></span></a>
+                                        <div class="uk-dropdown uk-dropdown-up">
+                                            <ul class="menu">
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown dropdown-up" data-uk-dropdown&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Trigger"&gt;Dropdown Trigger &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown uk-dropdown-up"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Justified Dropdown</h4>
+                                <div id="uikit-dropdown" class="uikit-component">
+                                    <div class="uikit-dropdown" data-uk-dropdown="{justify:'#uikit-dropdown'}">
+                                        <a href="#" class="button uikit-trigger" title="Dropdown Trigger">Dropdown Trigger <span class="icon right"></span></a>
+                                        <div class="uk-dropdown">
+                                            <ul class="menu">
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 1">Dropdown Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 2">Dropdown Item 2</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 3">Dropdown Item 3</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 4">Dropdown Item 4</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="#" class="link" title="Dropdown Item 5">Dropdown Item 5</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uikit-dropdown" data-uk-dropdown="{justify:'#uikit-dropdown'}"&gt;
+        &lt;a href="#" class="button uikit-trigger" title="Dropdown Trigger"&gt;Dropdown Trigger &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;div class="uk-dropdown"&gt;
+            &lt;ul class="menu"&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 1"&gt;Dropdown Item 1&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 2"&gt;Dropdown Item 2&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 3"&gt;Dropdown Item 3&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 4"&gt;Dropdown Item 4&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    &lt;a href="#" class="link" title="Dropdown Item 5"&gt;Dropdown Item 5&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="js-functionality">this component uses the <strong>dateTime</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                <span class="time"></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="time"&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="js-functionality">this component uses the <strong>dateTime</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                <span class="date"></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="date"&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="js-functionality">this component uses the <strong>dateTime</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                <span class="datetime">
+                                    <span class="date"></span><span>&nbsp;&ndash;&nbsp;</span><span class="time"></span>
+                                </span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="datetime"&gt;
+    &lt;span class="date"&gt;&lt;/span&gt;&lt;span&gt;&nbsp;&ndash;&nbsp;&lt;/span&gt;&lt;span class="time"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-43'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-43-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-43-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-43" class="list">
+                                    <li id="ui-controls-43-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="js-functionality">this component uses the <strong>showContent</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                            <h4 class="element-name">Show / Hide Part of Element</h4>
+                                            <div class="show-all">
+                                                <ul class="content list">
+                                                    <li class="item first">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item last">
+                                                        list item
+                                                    </li>
+                                                </ul>
+                                                <a class="button trigger" href="#" title="Show the Hidden Content">show content</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="show-all"&gt;
+    &lt;ul class="content list"&gt;
+        &lt;li class="item first"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item last"&gt;
+            list item
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a class="button trigger" href="#" title="Show the Hidden Content"&gt;show content&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-43-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4>Show the Entire Article Excerpt</h4>
+                                            <div class="show-all">
+                                                <div class="article featured">
+                                                    <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                    <span class="details">
+                                                        <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                    </span>
+                                                    <div class="excerpt">
+                                                        <p><img class="left" src="assets/img/base/sample-thumb.jpg" width="272" height="180" alt="Image Alt" />Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus.</p>
+                                                    </div>
+                                                    <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                </div>
+                                                <a class="button trigger" href="#" title="Show the Entire Article Excerpt">show full excerpt</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;h4&gt;Show the Entire Article Excerpt&lt;/h4&gt;
+    &lt;div class="show-all"&gt;
+        &lt;div class="article featured"&gt;
+            &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+            &lt;span class="details"&gt;
+                &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+            &lt;/span&gt;
+            &lt;div class="excerpt"&gt;
+                &lt;p&gt;&lt;img class="left" src="img/base/sample-thumb.jpg" width="272" height="180" alt="Image Alt" /&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/div&gt;
+        &lt;a class="button trigger" href="#" title="Show the Entire Article Excerpt"&gt;show full excerpt&lt;/a&gt;
+    &lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-44'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-44-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-44-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-44" class="list">
+                                    <li id="ui-controls-44-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="js-functionality">this component uses the <strong>showContent</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                            <h4 class="element-name">Show / Hide More Elements</h4>
+                                            <div class="show-more">
+                                                <ul class="content list">
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item">
+                                                        list item
+                                                    </li>
+                                                    <li class="item hidden">
+                                                        <ul class="list">
+                                                            <li class="item">
+                                                                hidden list item
+                                                            </li>
+                                                            <li class="item">
+                                                                hidden list item
+                                                            </li>
+                                                            <li class="item">
+                                                                hidden list item
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <a class="button trigger" href="#" title="Show the Hidden Content">show content</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="show-more"&gt;
+    &lt;ul class="content list"&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            list item
+        &lt;/li&gt;
+        &lt;li class="item hidden"&gt;
+            &lt;ul class="list"&gt;
+                &lt;li class="item"&gt;
+                    hidden list item
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    hidden list item
+                &lt;/li&gt;
+                &lt;li class="item"&gt;
+                    hidden list item
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a class="button trigger" href="#" title="Show the Hidden Content"&gt;show content&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-44-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4>Show More Articles</h4>
+                                            <div class="articles-section show-more">
+                                                <h2>Articles</h2>
+                                                <ul class="list">
+                                                    <li class="item article">
+                                                        <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                        <span class="details">
+                                                            <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                        </span>
+                                                        <div class="excerpt">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                        </div>
+                                                        <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                    </li>
+                                                    <li class="item article">
+                                                        <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                        <span class="details">
+                                                            <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                        </span>
+                                                        <div class="excerpt">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                        </div>
+                                                        <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                    </li>
+                                                    <li class="item article">
+                                                        <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                        <span class="details">
+                                                            <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                        </span>
+                                                        <div class="excerpt">
+                                                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                        </div>
+                                                        <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                    </li>
+                                                    <li class="item hidden">
+                                                        <ul class="list">
+                                                            <li class="item article">
+                                                                <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                                <span class="details">
+                                                                    <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                                </span>
+                                                                <div class="excerpt">
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                                </div>
+                                                                <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                            </li>
+                                                            <li class="item article">
+                                                                <h3 class="title"><a href="#" title="Lorem ipsum dolor sit amet">Lorem ipsum dolor sit amet</a></h3>
+                                                                <span class="details">
+                                                                    <small class="posted">posted on <span class="date"></span> in <a href="#" class="link category">Web Design</a></small>
+                                                                </span>
+                                                                <div class="excerpt">
+                                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.</p>
+                                                                </div>
+                                                                <a href="#" class="read" title="Read the full article">read the entire article <span class="icon"></span></a>
+                                                            </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                                <a class="button trigger" href="#" title="Show all Articles">Show all Articles</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;h4&gt;Show More Articles&lt;/h4&gt;
+&lt;div class="articles-section show-more"&gt;
+    &lt;h2&gt;Articles&lt;/h2&gt;
+    &lt;ul class="list"&gt;
+        &lt;li class="item article"&gt;
+            &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+            &lt;span class="details"&gt;
+                &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+            &lt;/span&gt;
+            &lt;div class="excerpt"&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item article"&gt;
+            &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+            &lt;span class="details"&gt;
+                &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+            &lt;/span&gt;
+            &lt;div class="excerpt"&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item article"&gt;
+            &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+            &lt;span class="details"&gt;
+                &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+            &lt;/span&gt;
+            &lt;div class="excerpt"&gt;
+                &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class="item hidden"&gt;
+            &lt;ul class="list"&gt;
+                &lt;li class="item article"&gt;
+                    &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+                    &lt;span class="details"&gt;
+                        &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+                    &lt;/span&gt;
+                    &lt;div class="excerpt"&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li class="item article"&gt;
+                    &lt;h3 class="title"&gt;&lt;a href="#" title="Lorem ipsum dolor sit amet"&gt;Lorem ipsum dolor sit amet&lt;/a&gt;&lt;/h3&gt;
+                    &lt;span class="details"&gt;
+                        &lt;small class="posted"&gt;posted on &lt;span class="date"&gt;&lt;/span&gt; in &lt;a href="#" class="link category"&gt;Web Design&lt;/a&gt;&lt;/small&gt;
+                    &lt;/span&gt;
+                    &lt;div class="excerpt"&gt;
+                        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse auctor interdum rutrum. Aliquam dictum sollicitudin lectus a ornare. Quisque faucibus ipsum sapien, sit amet pharetra est suscipit at. Fusce sit amet pretium est, vel tincidunt risus. Donec vulputate nunc non arcu vehicula pretium. Mauris sollicitudin porta nisl.&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;a href="#" class="read" title="Read the full article"&gt;read the entire article &lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                &lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;a class="button trigger" href="#" title="Show all Articles"&gt;Show all Articles&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-45'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-45-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-45-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-45" class="list">
+                                    <li id="ui-controls-45-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name">Vertical Element Controls</h4>
+                                            <ul class="controls">
+                                                <li class="item minimize">
+                                                    <a class="link" href="#" title="Minimize"><span class="icon"></span></a>
+                                                </li>
+                                                <li class="item options">
+                                                    <a class="link" href="#" title="Options"><span class="icon"></span></a>
+                                                </li>
+                                                <li class="item close">
+                                                    <a class="link" href="#" title="Close"><span class="icon"></span></a>
+                                                </li>
+                                            </ul>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;ul class="controls"&gt;
+    &lt;li class="item minimize"&gt;
+        &lt;a class="link" href="#" title="Minimize"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item options"&gt;
+        &lt;a class="link" href="#" title="Options"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item close"&gt;
+        &lt;a class="link" href="#" title="Close"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-45-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="comments">
+                                                <ul class="list">
+                                                    <li class="item">
+                                                        <section class="comment">
+                                                            <aside class="left commenter">
+                                                                <img class="avatar" src="assets/img/samples/avatar-1.jpg" width="240" height="240" alt="Avatar" />
+                                                                <span class="name">Jane Doe</span>
+                                                            </aside>
+                                                            <aside class="left comment-block">
+                                                                <ul class="controls">
+                                                                    <li class="item reply">
+                                                                        <a href="#" class="link" title="Reply this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                    <li class="item like">
+                                                                        <a href="#" class="link" title="Like this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                    <li class="item report">
+                                                                        <a href="#" class="link" title="Report this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, turpis ultrices vestibulum mollis, metus dui tincidunt tellus, eu ultricies diam libero vitae mi.</p>
+                                                            </aside>
+                                                        </section>
+                                                    </li>
+                                                    <li class="item">
+                                                        <section class="comment">
+                                                            <aside class="left commenter">
+                                                                <img class="avatar" src="assets/img/samples/avatar-1.jpg" width="240" height="240" alt="Avatar" />
+                                                                <span class="name">Jane Doe</span>
+                                                            </aside>
+                                                            <aside class="left comment-block">
+                                                                <ul class="controls">
+                                                                    <li class="item reply">
+                                                                        <a href="#" class="link" title="Reply this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                    <li class="item like">
+                                                                        <a href="#" class="link" title="Like this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                    <li class="item report">
+                                                                        <a href="#" class="link" title="Report this comment"><span class="icon"></span></a>
+                                                                    </li>
+                                                                </ul>
+                                                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, turpis ultrices vestibulum mollis, metus dui tincidunt tellus, eu ultricies diam libero vitae mi.</p>
+                                                            </aside>
+                                                        </section>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="comments"&gt;
+    &lt;ul class="list"&gt;
+        &lt;li class="item"&gt;
+            &lt;section class="comment"&gt;
+                &lt;aside class="left commenter"&gt;
+                    &lt;img class="avatar" src="img/samples/avatar-1.jpg" width="240" height="240" alt="Avatar" /&gt;
+                    &lt;span class="name"&gt;Jane Doe&lt;/span&gt;
+                &lt;/aside&gt;
+                &lt;aside class="left comment-block"&gt;
+                    &lt;ul class="controls"&gt;
+                        &lt;li class="item reply"&gt;
+                            &lt;a href="#" class="link" title="Reply this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="item like"&gt;
+                            &lt;a href="#" class="link" title="Like this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="item report"&gt;
+                            &lt;a href="#" class="link" title="Report this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, turpis ultrices vestibulum mollis, metus dui tincidunt tellus, eu ultricies diam libero vitae mi.&lt;/p&gt;
+                &lt;/aside&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;section class="comment"&gt;
+                &lt;aside class="left commenter"&gt;
+                    &lt;img class="avatar" src="img/samples/avatar-1.jpg" width="240" height="240" alt="Avatar" /&gt;
+                    &lt;span class="name"&gt;Jane Doe&lt;/span&gt;
+                &lt;/aside&gt;
+                &lt;aside class="left comment-block"&gt;
+                    &lt;ul class="controls"&gt;
+                        &lt;li class="item reply"&gt;
+                            &lt;a href="#" class="link" title="Reply this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="item like"&gt;
+                            &lt;a href="#" class="link" title="Like this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                        &lt;li class="item report"&gt;
+                            &lt;a href="#" class="link" title="Report this comment"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+                        &lt;/li&gt;
+                    &lt;/ul&gt;
+                    &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam commodo, turpis ultrices vestibulum mollis, metus dui tincidunt tellus, eu ultricies diam libero vitae mi.&lt;/p&gt;
+                &lt;/aside&gt;
+            &lt;/section&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-46'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-46-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-46-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-46" class="list">
+                                    <li id="ui-controls-46-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name">Horizontal Element Controls</h4>
+                                            <ul class="controls-horizontal">
+                                                <li class="item minimize">
+                                                    <a class="link" href="#" title="Minimize"><span class="icon"></span></a>
+                                                </li>
+                                                <li class="item options">
+                                                    <a class="link" href="#" title="Options"><span class="icon"></span></a>
+                                                </li>
+                                                <li class="item close">
+                                                    <a class="link" href="#" title="Close"><span class="icon"></span></a>
+                                                </li>
+                                            </ul>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;ul class="controls-horizontal"&gt;
+    &lt;li class="item minimize"&gt;
+        &lt;a class="link" href="#" title="Minimize"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item options"&gt;
+        &lt;a class="link" href="#" title="Options"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item close"&gt;
+        &lt;a class="link" href="#" title="Close"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-46-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="box closable slide active">
+                                                <header>
+                                                    Profile Settings
+                                                    <ul class="controls-horizontal">
+                                                        <li class="item">
+                                                            <a class="link trigger" href="#" title="Minimize"><span class="icon"></span></a>
+                                                        </li>
+                                                        <li class="item options">
+                                                            <a class="link" href="#" title="Options"><span class="icon"></span></a>
+                                                        </li>
+                                                        <li class="item close">
+                                                            <a class="link" href="#" title="Close"><span class="icon"></span></a>
+                                                        </li>
+                                                    </ul>
+                                                </header>
+                                                <div class="content">
+                                                    <form class="form-validate" action="your-script" method="POST">
+                                                        <fieldset>
+                                                            <div class="group">
+                                                                <label for="name">Name</label>
+                                                                <input type="text" class="input text" name="name" placeholder="name" id="name3" required />
+                                                            </div>
+                                                            <div class="group">
+                                                                <label for="surname">Surname</label>
+                                                                <input type="text" class="input text" name="surname" placeholder="surname" id="surname3" />
+                                                            </div>
+                                                            <div class="group input-wrapper multiple">
+                                                                <label>Profile Photo</label>
+                                                                <input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" />
+                                                                <label for="file-input" class="button file">Profile Photo <span class="icon right"></span></label><input type="file" class="input" name="file" id="file-input3" />
+                                                            </div>
+                                                        </fieldset>
+                                                        <button type="submit" class="input button">save changes</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="box closable slide"&gt;
+    &lt;header&gt;
+        Profile Settings
+        &lt;ul class="controls-horizontal"&gt;
+            &lt;li class="item"&gt;
+                &lt;a class="link trigger" href="#" title="Minimize"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item options"&gt;
+                &lt;a class="link" href="#" title="Options"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class="item close"&gt;
+                &lt;a class="link" href="#" title="Close"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/header&gt;
+    &lt;div class="content"&gt;
+        &lt;form class="form-validate" action="your-script" method="POST"&gt;
+            &lt;fieldset&gt;
+                &lt;div class="group"&gt;
+                    &lt;label for="name"&gt;Name&lt;/label&gt;
+                    &lt;input type="text" class="input text" name="name" placeholder="name" id="name3" required /&gt;
+                &lt;/div&gt;
+                &lt;div class="group"&gt;
+                    &lt;label for="surname"&gt;Surname&lt;/label&gt;
+                    &lt;input type="text" class="input text" name="surname" placeholder="surname" id="surname3" /&gt;
+                &lt;/div&gt;
+                &lt;div class="group input-wrapper multiple"&gt;
+                    &lt;label&gt;Profile Photo&lt;/label&gt;
+                    &lt;input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" /&gt;
+                    &lt;label for="file-input" class="button file"&gt;Profile Photo &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type="file" class="input" name="file" id="file-input3" /&gt;
+                &lt;/div&gt;
+            &lt;/fieldset&gt;
+            &lt;button type="submit" class="input button"&gt;save changes&lt;/button&gt;
+        &lt;/form&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">Left-Positionated Element Controls</h4>
+                                <ul class="controls left">
+                                    <li class="item minimize">
+                                        <a class="link" href="#" title="Minimize"><span class="icon"></span></a>
+                                    </li>
+                                    <li class="item options">
+                                        <a class="link" href="#" title="Options"><span class="icon"></span></a>
+                                    </li>
+                                    <li class="item close">
+                                        <a class="link" href="#" title="Close"><span class="icon"></span></a>
+                                    </li>
+                                </ul>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;ul class="controls left"&gt;
+    &lt;li class="item minimize"&gt;
+        &lt;a class="link" href="#" title="Minimize"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item options"&gt;
+        &lt;a class="link" href="#" title="Options"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="item close"&gt;
+        &lt;a class="link" href="#" title="Close"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#ui-controls-49'}">
+                                    <li class="item">
+                                        <a href="#ui-controls-49-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#ui-controls-49-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="ui-controls-49" class="list">
+                                    <li id="ui-controls-49-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name"><span class="red">UIKit</span> Toggle</h4>
+                                            <div class="uikit-component">
+                                                <a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle'}">Toggle Content</a>
+                                                <div id="uikit-toggle" class="content">
+                                                    <p>Content in Here</p>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle'}"&gt;Toggle Content&lt;/a&gt;
+    &lt;div id="uikit-toggle" class="content"&gt;
+        &lt;p&gt;Content in Here&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="ui-controls-49-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="uikit-component">
+                                                <a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle-example'}">Toggle Description</a>
+                                                <div id="uikit-toggle-example" class="content">
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at consequat massa. Integer felis purus, euismod nec tempor sed, cursus vel ante. Sed posuere ut mauris posuere lacinia. Pellentesque id justo ut leo fringilla consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed nisi sit amet ligula ornare commodo. Sed vitae feugiat justo. Nunc eget mollis dui. Maecenas lobortis purus sed nisl vulputate, tempor consequat urna viverra. Ut id consectetur metus, eget gravida diam. </p>
+                                                </div>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle-example'}"&gt;Toggle Description&lt;/a&gt;
+    &lt;div id="uikit-toggle-example" class="content"&gt;
+        &lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus at consequat massa. Integer felis purus, euismod nec tempor sed, cursus vel ante. Sed posuere ut mauris posuere lacinia. Pellentesque id justo ut leo fringilla consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Vivamus sed nisi sit amet ligula ornare commodo. Sed vitae feugiat justo. Nunc eget mollis dui. Maecenas lobortis purus sed nisl vulputate, tempor consequat urna viverra. Ut id consectetur metus, eget gravida diam. &lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Multiple Toggle</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button trigger" data-uk-toggle="{target:'.toggle-item'}">Toggle Between Items</a>
+                                    <div class="content toggle-item">
+                                        <p>Content of Item 1</p>
+                                    </div>
+                                    <div class="content toggle-item uk-hidden">
+                                        <p>Content of Item 2</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button trigger" data-uk-toggle="{target:'.toggle-item'}"&gt;Toggle Between Items&lt;/a&gt;
+    &lt;div class="content toggle-item"&gt;
+        &lt;p&gt;Content of Item 1&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class="content toggle-item uk-hidden"&gt;
+        &lt;p&gt;Content of Item 2&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Class Toggle</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle-class', cls:'background-red'}">Toggle Class</a>
+                                    <div id="uikit-toggle-class" class="content">
+                                        <p>Content with Custom Class</p>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button trigger" data-uk-toggle="{target:'#uikit-toggle-class', cls:'background-red'}"&gt;Toggle Class&lt;/a&gt;
+    &lt;div id="uikit-toggle-class" class="content"&gt;
+        &lt;p&gt;Content with Custom Class&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Nestable Items</h4>
+                                <div class="uikit-component">
+                                    <ul class="uk-nestable" data-uk-nestable>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 1</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 3</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 4</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 5</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul class="uk-nestable" data-uk-nestable&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 1&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 2&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 3&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 4&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 5&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Nestable Items with Multiple Lists</h4>
+                                <div class="uikit-component">
+                                    <span>First List</span>
+                                    <ul class="uk-nestable" data-uk-nestable="{group: 'my-group'}">
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 1</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 3</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <span>Second List</span>
+                                    <ul class="uk-nestable" data-uk-nestable="{group: 'my-group'}">
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 4</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 5</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 6</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;span&gt;First List&lt;/span&gt;
+    &lt;ul class="uk-nestable" data-uk-nestable="{group: 'my-group'}"&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 1&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 2&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 3&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;span&gt;Second List&lt;/span&gt;
+    &lt;ul class="uk-nestable" data-uk-nestable="{group: 'my-group'}"&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 4&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 5&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 6&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Nestable with Disabled Nesting</h4>
+                                <div class="uikit-component">
+                                    <ul class="uk-nestable" data-uk-nestable="{maxDepth: 2}">
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 1</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 2</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 3</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 4</span>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="uk-nestable-item">
+                                                <span class="uk-nestable-handle"></span>
+                                                <span data-nestable-action="toggle" class="toggle-nestable"></span>
+                                                <span class="content">Item 5</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;ul class="uk-nestable" data-uk-nestable="{maxDepth: 2}"&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 1&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 2&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 3&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 4&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+        &lt;li class="item"&gt;
+            &lt;div class="uk-nestable-item"&gt;
+                &lt;span class="uk-nestable-handle"&gt;&lt;/span&gt;
+                &lt;span data-nestable-action="toggle" class="toggle-nestable"&gt;&lt;/span&gt;
+                &lt;span class="content"&gt;Item 5&lt;/span&gt;
+            &lt;/div&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Sortable</h4>
+                                <div class="uikit-component">
+                                    <div class="grid-5 uk-sortable" data-uk-sortable>
+                                        <div class="box background-red cell">
+                                            <div class="content">Col 1 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-green cell">
+                                            <div class="content">Col 2 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-blue cell">
+                                            <div class="content">Col 3 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-yellow cell">
+                                            <div class="content">Col 4 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-orange cell">
+                                            <div class="content">Col 5 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-pink cell">
+                                            <div class="content">Col 1 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-purple cell">
+                                            <div class="content">Col 2 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-brown cell">
+                                            <div class="content">Col 3 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-red cell">
+                                            <div class="content">Col 4 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-green cell">
+                                            <div class="content">Col 5 Row 2 Content</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="grid-5 uk-sortable" data-uk-sortable&gt;
+        &lt;div class="box background-red cell"&gt;
+            &lt;div class="content"&gt;Col 1 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-green cell"&gt;
+            &lt;div class="content"&gt;Col 2 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-blue cell"&gt;
+            &lt;div class="content"&gt;Col 3 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-yellow cell"&gt;
+            &lt;div class="content"&gt;Col 4 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-orange cell"&gt;
+            &lt;div class="content"&gt;Col 5 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-pink cell"&gt;
+            &lt;div class="content"&gt;Col 1 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-purple cell"&gt;
+            &lt;div class="content"&gt;Col 2 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-brown cell"&gt;
+            &lt;div class="content"&gt;Col 3 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-red cell"&gt;
+            &lt;div class="content"&gt;Col 4 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-green cell"&gt;
+            &lt;div class="content"&gt;Col 5 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Sortable - Warp Mode</h4>
+                                <div class="uikit-component">
+                                    <div class="grid-5 uk-sortable" data-uk-sortable="{warp:true}">
+                                        <div class="box background-red cell">
+                                            <div class="content">Col 1 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-green cell">
+                                            <div class="content">Col 2 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-blue cell">
+                                            <div class="content">Col 3 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-yellow cell">
+                                            <div class="content">Col 4 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-orange cell">
+                                            <div class="content">Col 5 Row 1 Content</div>
+                                        </div>
+                                        <div class="box background-pink cell">
+                                            <div class="content">Col 1 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-purple cell">
+                                            <div class="content">Col 2 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-brown cell">
+                                            <div class="content">Col 3 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-red cell">
+                                            <div class="content">Col 4 Row 2 Content</div>
+                                        </div>
+                                        <div class="box background-green cell">
+                                            <div class="content">Col 5 Row 2 Content</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="grid-5 uk-sortable" data-uk-sortable="{warp:true}"&gt;
+        &lt;div class="box background-red cell"&gt;
+            &lt;div class="content"&gt;Col 1 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-green cell"&gt;
+            &lt;div class="content"&gt;Col 2 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-blue cell"&gt;
+            &lt;div class="content"&gt;Col 3 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-yellow cell"&gt;
+            &lt;div class="content"&gt;Col 4 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-orange cell"&gt;
+            &lt;div class="content"&gt;Col 5 Row 1 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-pink cell"&gt;
+            &lt;div class="content"&gt;Col 1 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-purple cell"&gt;
+            &lt;div class="content"&gt;Col 2 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-brown cell"&gt;
+            &lt;div class="content"&gt;Col 3 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-red cell"&gt;
+            &lt;div class="content"&gt;Col 4 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class="box background-green cell"&gt;
+            &lt;div class="content"&gt;Col 5 Row 2 Content&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                    </ul>
+                </div><!-- MAIN CONTENT ENDS HERE -->
+            </section><!-- MAIN SECTION ENDS HERE -->
+
+            <footer id="main-footer" class="section-free"><!-- MAIN FOOTER STARTS HERE -->
+                <!-- YOUR MAIN FOOTER MARKUP -->
+                <div class="wrapper"><!-- MAIN FOOTER WRAPPER STARTS HERE -->
+                    <span class="copyright"><strong>Blackhole</strong> - Released under <a href="http://opensource.org/licenses/MIT" target="_blank" title="MIT License">MIT</a> license</span>
+                    <ul class="list social with-background">
+                        <li class="item twitter">
+                            <a href="https://twitter.com/blackholesass" title="Twitter" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item github">
+                            <a href="https://github.com/frameworkName" title="Github" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item pinterest">
+                            <a href="https://pinterest.com/pin/frameworkProfile" title="Pinterest" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                    </ul>
+                </div><!-- MAIN FOOTER WRAPPER ENDS HERE -->
+            </footer><!-- MAIN FOOTER ENDS HERE -->
+
+        </div><!-- FRAMEWORK ENDS HERE -->
+
+        <a id="scroll-up" href="#" class="scrollup" title="Scroll to Top" data-uk-tooltip></a><!-- SCROLL TO TOP BUTTON -->
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Calling of needed JS Functions / Plugins -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // jQuery Calls in here
+            });
+
+            // JS Calls in here
+
+            // highlight.js
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "base/core.scss";
+@import "config/config.scss";
+
+
+/* HELPERS */
+
+/* ScrollUp */
+.scrollup {
+    @include opacity(0.3);
+    position: fixed;
+    bottom: 3em;
+    right: 0.75em;
+    display: none;
+    font-size: 150%;
+    padding: 0.25em;
+    z-index: 999;
+    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    &.left {
+        right: auto;
+        left: 0.75em;
+    }
+    &:hover, &:active {
+        @include opacity(1);
+    }
+    &.bottom {
+        background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3));
+    }
+}

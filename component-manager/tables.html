@@ -1,0 +1,1105 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html id="myDocument" class="no-js my-document">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Component Manager - Tables</title>
+        <meta name="author" content="Alin Seba">
+        <meta name="description" content="Blackhole - minimalistic but powerful and flexible SASS framework">
+        <meta name="keywords" content="reusable components, modularity, sass framework, semantic code">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'><!-- BODY FONT -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!-- HEADINGS FONT -->
+
+        <!-- === MAIN STYLES === -->
+        <link rel="stylesheet" href="../styles/base/normalize.min.css"><!-- CSS RESETER -->
+        <link rel="stylesheet" href="../styles/base/boilerplate.css"><!-- BOILERPLATE -->
+        <!-- <link rel="stylesheet" href="../styles/base/minified/boilerplate.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="../styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="../styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/main.css"><!-- MAIN STYLES -->
+        <!-- <link rel="stylesheet" href="styles/minified/main.min.css"> --><!-- minified version -->
+
+        <!-- === PLUGINS STYLES === -->
+        <link rel="stylesheet" href="styles/vendor/highlight/monokai_sublime.css">
+
+        <!-- === VENDOR SCRIPTS === -->
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- === PLUGIN SCRIPTS === -->
+        <script src="js/uikit/uikit.min.js"></script>
+        <script src="js/uikit/addons/notify.min.js"></script>
+        <script src="js/plugins/highlight/highlight.pack.js"></script>
+
+    </head>
+    <body id="myFramework" class="my-framework no-text-shadow">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="framework" class="framework"><!-- FRAMEWORK STARTS HERE -->
+
+            <header id="main-header" class="section-free fixed-element"><!-- MAIN HEADER STARTS HERE -->
+                <!-- YOUR MAIN HEADER MARKUP -->
+                <nav id="main-menu">
+                    <ul class="menu components">
+                        <li class="item typography-components">
+                            <a title="Typography Section" class="link" href="typography.html">Typography</a>
+                        </li>
+                        <li class="item buttons-components">
+                            <a title="Buttons Section" class="link" href="ui-buttons.html">Buttons</a>
+                        </li>
+                        <li class="item inputs-components">
+                            <a title="Inputs Section" class="link" href="ui-inputs.html">Inputs</a>
+                        </li>
+                        <li class="item controls-components">
+                            <a title="Controls Section" class="link" href="ui-controls.html">Controls</a>
+                        </li>
+                        <li class="item navigation-components">
+                            <a title="Navigation Section" class="link" href="navigation.html">Navigation</a>
+                        </li>
+                        <li class="item notifications-components">
+                            <a title="Notifications Section" class="link" href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="item boxes-components">
+                            <a title="Boxes Section" class="link" href="boxes.html">Boxes</a>
+                        </li>
+                        <li class="item tables-components active">
+                            <a title="Tables Section" class="link" href="tables.html">Tables</a>
+                        </li>
+                        <li class="item icons-components">
+                            <a title="Icons Section" class="link" href="icons.html">Icons</a>
+                        </li>
+                        <li class="item media-components">
+                            <a title="Media Section" class="link" href="media.html">Media</a>
+                        </li>
+                        <li class="item components-components">
+                            <a title="Components Section" class="link" href="components.html">Components</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header><!-- MAIN HEADER ENDS HERE -->
+
+            <section id="main-section" class="section-vertical"><!-- MAIN SECTION STARTS HERE -->
+                <div id="main-content" class="section-free"><!-- MAIN CONTENT STARTS HERE -->
+                    <!-- YOUR MAIN SECTION MARKUP -->
+                    <ul id="tables" class="list main tables">
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#containers-tables-1'}">
+                                    <li class="item">
+                                        <a href="#containers-tables-1-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#containers-tables-1-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="containers-tables-1" class="list">
+                                    <li id="containers-tables-1-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name">Classic Table</h4>
+                                            <table class="legacy-table">
+                                                <caption>Classic Table</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Col1 Header</th>
+                                                        <th>Col2 Header</th>
+                                                        <th>Col3 Header</th>
+                                                        <th>Col4 Header</th>
+                                                        <th>Col5 Header</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>R1C1</td>
+                                                        <td>R1C2</td>
+                                                        <td>R1C3</td>
+                                                        <td>R1C4</td>
+                                                        <td>R1C5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R2C1</td>
+                                                        <td>R2C2</td>
+                                                        <td>R2C3</td>
+                                                        <td>R2C4</td>
+                                                        <td>R2C5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R3C1</td>
+                                                        <td>R3C2</td>
+                                                        <td>R3C3</td>
+                                                        <td>R3C4</td>
+                                                        <td>R3C5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R4C1</td>
+                                                        <td>R4C2</td>
+                                                        <td>R4C3</td>
+                                                        <td>R4C4</td>
+                                                        <td>R4C5</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>R5C1</td>
+                                                        <td>R5C2</td>
+                                                        <td>R5C3</td>
+                                                        <td>R5C4</td>
+                                                        <td>R5C5</td>
+                                                    </tr>
+                                                </tbody>
+                                                <tfoot>
+                                                    <tr>
+                                                        <td>Col1 Footer</td>
+                                                        <td>Col2 Footer</td>
+                                                        <td>Col3 Footer</td>
+                                                        <td>Col4 Footer</td>
+                                                        <td>Col5 Footer</td>
+                                                    </tr>
+                                                </tfoot>
+                                            </table>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;table class="legacy-table"&gt;
+    &lt;caption&gt;Classic Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Col1 Header&lt;/th&gt;
+            &lt;th&gt;Col2 Header&lt;/th&gt;
+            &lt;th&gt;Col3 Header&lt;/th&gt;
+            &lt;th&gt;Col4 Header&lt;/th&gt;
+            &lt;th&gt;Col5 Header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R1C1&lt;/td&gt;
+            &lt;td&gt;R1C2&lt;/td&gt;
+            &lt;td&gt;R1C3&lt;/td&gt;
+            &lt;td&gt;R1C4&lt;/td&gt;
+            &lt;td&gt;R1C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R2C1&lt;/td&gt;
+            &lt;td&gt;R2C2&lt;/td&gt;
+            &lt;td&gt;R2C3&lt;/td&gt;
+            &lt;td&gt;R2C4&lt;/td&gt;
+            &lt;td&gt;R2C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R3C1&lt;/td&gt;
+            &lt;td&gt;R3C2&lt;/td&gt;
+            &lt;td&gt;R3C3&lt;/td&gt;
+            &lt;td&gt;R3C4&lt;/td&gt;
+            &lt;td&gt;R3C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R4C1&lt;/td&gt;
+            &lt;td&gt;R4C2&lt;/td&gt;
+            &lt;td&gt;R4C3&lt;/td&gt;
+            &lt;td&gt;R4C4&lt;/td&gt;
+            &lt;td&gt;R4C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R5C1&lt;/td&gt;
+            &lt;td&gt;R5C2&lt;/td&gt;
+            &lt;td&gt;R5C3&lt;/td&gt;
+            &lt;td&gt;R5C4&lt;/td&gt;
+            &lt;td&gt;R5C5&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Col1 Footer&lt;/td&gt;
+            &lt;td&gt;Col2 Footer&lt;/td&gt;
+            &lt;td&gt;Col3 Footer&lt;/td&gt;
+            &lt;td&gt;Col4 Footer&lt;/td&gt;
+            &lt;td&gt;Col5 Footer&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="containers-tables-1-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <table class="legacy-table">
+                                                <caption>Employees</caption>
+                                                <thead>
+                                                    <tr>
+                                                        <th>Managers</th>
+                                                        <th>Programmers</th>
+                                                        <th>Designers</th>
+                                                        <th>Testers</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Johnny</td>
+                                                        <td>Katie</td>
+                                                        <td>Michael</td>
+                                                        <td>Bob</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Billy</td>
+                                                        <td>Jake</td>
+                                                        <td>Roland</td>
+                                                        <td>Monica</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Desmond</td>
+                                                        <td>Rosalie</td>
+                                                        <td>Stella</td>
+                                                        <td>Patricia</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Kevin</td>
+                                                        <td>Eugene</td>
+                                                        <td>Gina</td>
+                                                        <td>Elena</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;table class="legacy-table"&gt;
+    &lt;caption&gt;Employees&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Managers&lt;/th&gt;
+            &lt;th&gt;Programmers&lt;/th&gt;
+            &lt;th&gt;Designers&lt;/th&gt;
+            &lt;th&gt;Testers&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Johnny&lt;/td&gt;
+            &lt;td&gt;Katie&lt;/td&gt;
+            &lt;td&gt;Michael&lt;/td&gt;
+            &lt;td&gt;Bob&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Billy&lt;/td&gt;
+            &lt;td&gt;Jake&lt;/td&gt;
+            &lt;td&gt;Roland&lt;/td&gt;
+            &lt;td&gt;Monica&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Desmond&lt;/td&gt;
+            &lt;td&gt;Rosalie&lt;/td&gt;
+            &lt;td&gt;Stella&lt;/td&gt;
+            &lt;td&gt;Patricia&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Kevin&lt;/td&gt;
+            &lt;td&gt;Eugene&lt;/td&gt;
+            &lt;td&gt;Gina&lt;/td&gt;
+            &lt;td&gt;Elena&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">Classic Centered  Table with Stripes</h4>
+                                <table class="legacy-table center stripes">
+                                    <caption>Classic Centered Table with Stripes</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Col1 Header</th>
+                                            <th>Col2 Header</th>
+                                            <th>Col3 Header</th>
+                                            <th>Col4 Header</th>
+                                            <th>Col5 Header</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>R1C1</td>
+                                            <td>R1C2</td>
+                                            <td>R1C3</td>
+                                            <td>R1C4</td>
+                                            <td>R1C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R2C1</td>
+                                            <td>R2C2</td>
+                                            <td>R2C3</td>
+                                            <td>R2C4</td>
+                                            <td>R2C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R3C1</td>
+                                            <td>R3C2</td>
+                                            <td>R3C3</td>
+                                            <td>R3C4</td>
+                                            <td>R3C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R4C1</td>
+                                            <td>R4C2</td>
+                                            <td>R4C3</td>
+                                            <td>R4C4</td>
+                                            <td>R4C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R5C1</td>
+                                            <td>R5C2</td>
+                                            <td>R5C3</td>
+                                            <td>R5C4</td>
+                                            <td>R5C5</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Col1 Footer</td>
+                                            <td>Col2 Footer</td>
+                                            <td>Col3 Footer</td>
+                                            <td>Col4 Footer</td>
+                                            <td>Col5 Footer</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;table class="legacy-table center stripes"&gt;
+    &lt;caption&gt;Classic Centered Table with Stripes&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Col1 Header&lt;/th&gt;
+            &lt;th&gt;Col2 Header&lt;/th&gt;
+            &lt;th&gt;Col3 Header&lt;/th&gt;
+            &lt;th&gt;Col4 Header&lt;/th&gt;
+            &lt;th&gt;Col5 Header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R1C1&lt;/td&gt;
+            &lt;td&gt;R1C2&lt;/td&gt;
+            &lt;td&gt;R1C3&lt;/td&gt;
+            &lt;td&gt;R1C4&lt;/td&gt;
+            &lt;td&gt;R1C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R2C1&lt;/td&gt;
+            &lt;td&gt;R2C2&lt;/td&gt;
+            &lt;td&gt;R2C3&lt;/td&gt;
+            &lt;td&gt;R2C4&lt;/td&gt;
+            &lt;td&gt;R2C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R3C1&lt;/td&gt;
+            &lt;td&gt;R3C2&lt;/td&gt;
+            &lt;td&gt;R3C3&lt;/td&gt;
+            &lt;td&gt;R3C4&lt;/td&gt;
+            &lt;td&gt;R3C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R4C1&lt;/td&gt;
+            &lt;td&gt;R4C2&lt;/td&gt;
+            &lt;td&gt;R4C3&lt;/td&gt;
+            &lt;td&gt;R4C4&lt;/td&gt;
+            &lt;td&gt;R4C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R5C1&lt;/td&gt;
+            &lt;td&gt;R5C2&lt;/td&gt;
+            &lt;td&gt;R5C3&lt;/td&gt;
+            &lt;td&gt;R5C4&lt;/td&gt;
+            &lt;td&gt;R5C5&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Col1 Footer&lt;/td&gt;
+            &lt;td&gt;Col2 Footer&lt;/td&gt;
+            &lt;td&gt;Col3 Footer&lt;/td&gt;
+            &lt;td&gt;Col4 Footer&lt;/td&gt;
+            &lt;td&gt;Col5 Footer&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;;
+&lt;/table&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">Classic Condensed Table</h4>
+                                <table class="legacy-table condensed">
+                                    <caption>Classic Condensed Table</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Col1 Header</th>
+                                            <th>Col2 Header</th>
+                                            <th>Col3 Header</th>
+                                            <th>Col4 Header</th>
+                                            <th>Col5 Header</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>R1C1</td>
+                                            <td>R1C2</td>
+                                            <td>R1C3</td>
+                                            <td>R1C4</td>
+                                            <td>R1C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R2C1</td>
+                                            <td>R2C2</td>
+                                            <td>R2C3</td>
+                                            <td>R2C4</td>
+                                            <td>R2C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R3C1</td>
+                                            <td>R3C2</td>
+                                            <td>R3C3</td>
+                                            <td>R3C4</td>
+                                            <td>R3C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R4C1</td>
+                                            <td>R4C2</td>
+                                            <td>R4C3</td>
+                                            <td>R4C4</td>
+                                            <td>R4C5</td>
+                                        </tr>
+                                        <tr>
+                                            <td>R5C1</td>
+                                            <td>R5C2</td>
+                                            <td>R5C3</td>
+                                            <td>R5C4</td>
+                                            <td>R5C5</td>
+                                        </tr>
+                                    </tbody>
+                                    <tfoot>
+                                        <tr>
+                                            <td>Col1 Footer</td>
+                                            <td>Col2 Footer</td>
+                                            <td>Col3 Footer</td>
+                                            <td>Col4 Footer</td>
+                                            <td>Col5 Footer</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;table class="legacy-table condensed"&gt;
+    &lt;caption&gt;Classic Condensed Table&lt;/caption&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Col1 Header&lt;/th&gt;
+            &lt;th&gt;Col2 Header&lt;/th&gt;
+            &lt;th&gt;Col3 Header&lt;/th&gt;
+            &lt;th&gt;Col4 Header&lt;/th&gt;
+            &lt;th&gt;Col5 Header&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R1C1&lt;/td&gt;
+            &lt;td&gt;R1C2&lt;/td&gt;
+            &lt;td&gt;R1C3&lt;/td&gt;
+            &lt;td&gt;R1C4&lt;/td&gt;
+            &lt;td&gt;R1C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R2C1&lt;/td&gt;
+            &lt;td&gt;R2C2&lt;/td&gt;
+            &lt;td&gt;R2C3&lt;/td&gt;
+            &lt;td&gt;R2C4&lt;/td&gt;
+            &lt;td&gt;R2C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R3C1&lt;/td&gt;
+            &lt;td&gt;R3C2&lt;/td&gt;
+            &lt;td&gt;R3C3&lt;/td&gt;
+            &lt;td&gt;R3C4&lt;/td&gt;
+            &lt;td&gt;R3C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R4C1&lt;/td&gt;
+            &lt;td&gt;R4C2&lt;/td&gt;
+            &lt;td&gt;R4C3&lt;/td&gt;
+            &lt;td&gt;R4C4&lt;/td&gt;
+            &lt;td&gt;R4C5&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;R5C1&lt;/td&gt;
+            &lt;td&gt;R5C2&lt;/td&gt;
+            &lt;td&gt;R5C3&lt;/td&gt;
+            &lt;td&gt;R5C4&lt;/td&gt;
+            &lt;td&gt;R5C5&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td&gt;Col1 Footer&lt;/td&gt;
+            &lt;td&gt;Col2 Footer&lt;/td&gt;
+            &lt;td&gt;Col3 Footer&lt;/td&gt;
+            &lt;td&gt;Col4 Footer&lt;/td&gt;
+            &lt;td&gt;Col5 Footer&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#containers-tables-6'}">
+                                    <li class="item">
+                                        <a href="#containers-tables-6-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#containers-tables-6-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="containers-tables-6" class="list">
+                                    <li id="containers-tables-6-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name">List Table</h4>
+                                            <div class="table">
+                                                <header>
+                                                    <span class="title">Simple List Table</span>
+                                                </header>
+                                                <section class="cols">
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Col1 Header</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C1R1</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C1R2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C1R3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C1R4</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C1R5</span>
+                                                        </li>
+                                                        <li class="item footer">
+                                                            <span class="title">Col1 Footer</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Col2 Header</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C2R1</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C2R2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C2R3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C2R4</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C2R5</span>
+                                                        </li>
+                                                        <li class="item footer">
+                                                            <span class="title">Col2 Footer</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Col3 Header</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C3R1</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C3R2</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C3R3</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C3R4</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">C3R5</span>
+                                                        </li>
+                                                        <li class="item footer">
+                                                            <span class="title">Col3 Footer</span>
+                                                        </li>
+                                                    </ul>
+                                                </section>
+                                                <footer>
+                                                    <span class="title">Extra Table Footer</span>
+                                                </footer>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="table"&gt;
+    &lt;header&gt;
+        &lt;span class="title"&gt;Simple List Table&lt;/span&gt;
+    &lt;/header&gt;
+    &lt;section class="cols"&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col1 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col1 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col2 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col2 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col3 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col3 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;span class="title"&gt;Extra Table Footer&lt;/span&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="containers-tables-6-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="table">
+                                                <header>
+                                                    <span class="title">Employees</span>
+                                                </header>
+                                                <section class="cols">
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Managers</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Johnny</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Billy</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Desmond</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Kevin</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Programmers</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Katie</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Jake</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Rosalie</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Eugene</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Designers</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Michael</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Roland</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Stella</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Gina</span>
+                                                        </li>
+                                                    </ul>
+                                                    <ul class="list col">
+                                                        <li class="item header">
+                                                            <span class="title">Testers</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Bob</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Monica</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Patricia</span>
+                                                        </li>
+                                                        <li class="item">
+                                                            <span class="title">Elena</span>
+                                                        </li>
+                                                    </ul>
+                                                </section>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="table"&gt;
+    &lt;header&gt;
+        &lt;span class="title"&gt;Employees&lt;/span&gt;
+    &lt;/header&gt;
+    &lt;section class="cols"&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Managers&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Johnny&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Billy&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Desmond&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Kevin&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Programmers&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Katie&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Jake&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Rosalie&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Eugene&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Designers&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Michael&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Roland&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Stella&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Gina&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Testers&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Bob&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Monica&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Patricia&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;Elena&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">List Table with Stripes</h4>
+                                <div class="table">
+                                    <header>
+                                        <span class="title">Simple List Table with Stripes</span>
+                                    </header>
+                                    <section class="cols stripes">
+                                        <ul class="list col">
+                                            <li class="item header">
+                                                <span class="title">Col1 Header</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C1R1</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C1R2</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C1R3</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C1R4</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C1R5</span>
+                                            </li>
+                                            <li class="item footer">
+                                                <span class="title">Col1 Footer</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="list col">
+                                            <li class="item header">
+                                                <span class="title">Col2 Header</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C2R1</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C2R2</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C2R3</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C2R4</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C2R5</span>
+                                            </li>
+                                            <li class="item footer">
+                                                <span class="title">Col2 Footer</span>
+                                            </li>
+                                        </ul>
+                                        <ul class="list col">
+                                            <li class="item header">
+                                                <span class="title">Col3 Header</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C3R1</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C3R2</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C3R3</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C3R4</span>
+                                            </li>
+                                            <li class="item">
+                                                <span class="title">C3R5</span>
+                                            </li>
+                                            <li class="item footer">
+                                                <span class="title">Col3 Footer</span>
+                                            </li>
+                                        </ul>
+                                    </section>
+                                    <footer>
+                                        <span class="title">Extra Table Footer</span>
+                                    </footer>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="table"&gt;
+    &lt;header&gt;
+        &lt;span class="title"&gt;Simple List Table with Stripes&lt;/span&gt;
+    &lt;/header&gt;
+    &lt;section class="cols stripes"&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col1 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C1R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col1 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col2 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C2R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col2 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+        &lt;ul class="list col"&gt;
+            &lt;li class="item header"&gt;
+                &lt;span class="title"&gt;Col3 Header&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R1&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R2&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R3&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R4&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item"&gt;
+                &lt;span class="title"&gt;C3R5&lt;/span&gt;
+            &lt;/li&gt;
+            &lt;li class="item footer"&gt;
+                &lt;span class="title"&gt;Col3 Footer&lt;/span&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/section&gt;
+    &lt;footer&gt;
+        &lt;span class="title"&gt;Extra Table Footer&lt;/span&gt;
+    &lt;/footer&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                    </ul>
+                </div><!-- MAIN CONTENT ENDS HERE -->
+            </section><!-- MAIN SECTION ENDS HERE -->
+
+            <footer id="main-footer" class="section-free"><!-- MAIN FOOTER STARTS HERE -->
+                <!-- YOUR MAIN FOOTER MARKUP -->
+                <div class="wrapper"><!-- MAIN FOOTER WRAPPER STARTS HERE -->
+                    <span class="copyright"><strong>Blackhole</strong> - Released under <a href="http://opensource.org/licenses/MIT" target="_blank" title="MIT License">MIT</a> license</span>
+                    <ul class="list social with-background">
+                        <li class="item twitter">
+                            <a href="https://twitter.com/blackholesass" title="Twitter" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item github">
+                            <a href="https://github.com/frameworkName" title="Github" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item pinterest">
+                            <a href="https://pinterest.com/pin/frameworkProfile" title="Pinterest" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                    </ul>
+                </div><!-- MAIN FOOTER WRAPPER ENDS HERE -->
+            </footer><!-- MAIN FOOTER ENDS HERE -->
+
+        </div><!-- FRAMEWORK ENDS HERE -->
+
+        <a id="scroll-up" href="#" class="scrollup" title="Scroll to Top" data-uk-tooltip></a><!-- SCROLL TO TOP BUTTON -->
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Calling of needed JS Functions / Plugins -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // jQuery Calls in here
+            });
+
+            // JS Calls in here
+
+            // highlight.js
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

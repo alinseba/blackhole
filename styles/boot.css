@@ -1,0 +1,1529 @@
+/* STYLES MODULES BOOT LOADER */
+/* Features */
+@import url(vendor/font-awesome.css);
+.clearfix:before, .clearfix:after, .rtl .menu-list:before, .rtl .menu-list:after, .rtl .pagination:before, .rtl .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .rtl .menu-list:after, .rtl .pagination:after {
+  clear: both;
+}
+
+.clearfix, .rtl .menu-list, .rtl .pagination {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+/* Flickering */
+@keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-webkit-keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-moz-keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+.flickering {
+  animation: flickering 0.3s infinite alternate ease-out;
+  -moz-animation: flickering 0.3s infinite alternate ease-out;
+  -webkit-animation: flickering 0.3s infinite alternate ease-out;
+}
+
+/* Color Swap */
+@keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-webkit-keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-moz-keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+.color-swap {
+  animation: color-swap 12s infinite alternate ease-out;
+  -moz-animation: color-swap 12s infinite alternate ease-out;
+  -webkit-animation: color-swap 12s infinite alternate ease-out;
+}
+
+/* Full Rotation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.clearfix:before, .clearfix:after, .rtl .menu-list:before, .rtl .menu-list:after, .rtl .pagination:before, .rtl .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .rtl .menu-list:after, .rtl .pagination:after {
+  clear: both;
+}
+
+.clearfix, .rtl .menu-list, .rtl .pagination {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 800px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 1024px) {
+  /* General */
+  /* Components */
+  /* UI */
+  .input-wrapper input[type="file"] {
+    display: none;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 1024px) {
+  /* General */
+  html#myDocument body.my-framework .fixed, html#myDocument body.my-framework .fixed-bottom {
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button, html#myDocument body.my-framework .input-wrapper.multiple button {
+    width: 25%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button .icon, html#myDocument body.my-framework .input-wrapper.multiple button .icon {
+    float: none;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .input, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework .input-wrapper.multiple .input:focus, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"]:focus {
+    width: 75%;
+  }
+  html#myDocument body.my-framework .container .col {
+    width: 49% !important;
+  }
+  html#myDocument body.my-framework .container .col:nth-child(2n) {
+    margin-right: 0;
+  }
+  html#myDocument body.my-framework .feedback .client .avatar, html#myDocument body.my-framework .feedback-right .client .avatar {
+    width: 100%;
+    max-width: 80px;
+  }
+
+  /* Components */
+  /* Timeline */
+  html#myDocument body.my-framework .timeline .list .item {
+    float: none;
+    min-height: 10em;
+    min-width: inherit;
+    padding-bottom: 1em;
+    padding-right: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item .datetime {
+    top: 0;
+    left: -8.5em;
+    min-width: 80px;
+    text-align: right;
+  }
+  html#myDocument body.my-framework .timeline .list .item .title {
+    display: block;
+  }
+  html#myDocument body.my-framework .timeline .list .item span.dot {
+    left: -0.3em;
+    top: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item img.dot {
+    max-width: inherit;
+    top: 0;
+    left: -1.75em;
+  }
+  html#myDocument body.my-framework .timeline .list .item .content {
+    display: inline-block;
+    min-width: 670px;
+    width: 100%;
+    left: 4em;
+    top: -1.5em;
+    position: relative;
+  }
+  html#myDocument body.my-framework .timeline .bar {
+    margin: 0 8.5em;
+    max-height: inherit;
+    max-width: 1em;
+    padding: 3em 0;
+    width: auto;
+  }
+  html#myDocument body.my-framework .timeline.vertical {
+    margin: 0;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .datetime {
+    min-width: 180px;
+    left: -15.72em;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .content {
+    top: -4em;
+    min-width: 480px;
+  }
+  html#myDocument body.my-framework .timeline.vertical .bar {
+    margin: 0 auto;
+  }
+
+  /* UI */
+  .input-wrapper input[type="file"] {
+    display: none;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 640px) and (max-width: 800px) {
+  /* General */
+  html#myDocument body.my-framework {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+  }
+  html#myDocument body.my-framework * {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+  }
+  html#myDocument body.my-framework .with-tag .tag {
+    right: 0;
+  }
+  html#myDocument body.my-framework .container .col {
+    float: none;
+    width: 100% !important;
+    margin-right: 0;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button, html#myDocument body.my-framework .input-wrapper.multiple button {
+    width: 25%;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button .icon, html#myDocument body.my-framework .input-wrapper.multiple button .icon {
+    float: none;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .input, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework .input-wrapper.multiple .input:focus, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"]:focus {
+    width: 75%;
+  }
+  html#myDocument body.my-framework .controls.left {
+    left: auto;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item, html#myDocument body.my-framework .menu-list.vertical.docked > .item {
+    width: 100%;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item > .link .title, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .title {
+    text-indent: 0;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item > .link .icon, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .icon {
+    display: block;
+  }
+  html#myDocument body.my-framework .scrollup {
+    bottom: 3.5em;
+    right: 0;
+  }
+
+  /* Components */
+  /* Typography */
+  html#myDocument body.my-framework .drop-caps:first-letter {
+    line-height: 1;
+    padding-top: 0;
+  }
+
+  /* Menus */
+  html#myDocument body.my-framework .menu.vertical {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  html#myDocument body.my-framework .menu, html#myDocument body.my-framework .submenu {
+    width: 100%;
+    position: relative;
+  }
+  html#myDocument body.my-framework .menu > .item > .link, html#myDocument body.my-framework .submenu > .item > .link {
+    max-width: 100%;
+  }
+  html#myDocument body.my-framework .menu ul, html#myDocument body.my-framework .submenu ul {
+    display: block;
+  }
+  html#myDocument body.my-framework .menu ul li, html#myDocument body.my-framework .submenu ul li {
+    max-width: 100%;
+    width: 100%;
+  }
+  html#myDocument body.my-framework .menu.vertical .item.slide ul, html#myDocument body.my-framework .submenu.vertical .item.slide ul {
+    display: block;
+  }
+
+  /* Tables */
+  /* Classic Tables */
+  html#myDocument body.my-framework table {
+    display: block;
+    width: 100%;
+  }
+  html#myDocument body.my-framework table caption {
+    display: block;
+  }
+  html#myDocument body.my-framework table thead {
+    display: block;
+    float: left;
+  }
+  html#myDocument body.my-framework table thead tr {
+    display: block;
+  }
+  html#myDocument body.my-framework table thead th {
+    min-width: 160px;
+    width: auto !important;
+  }
+  html#myDocument body.my-framework table tbody {
+    display: block;
+    width: auto;
+    max-width: inherit;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+  }
+  html#myDocument body.my-framework table tbody tr {
+    display: inline-block;
+    margin-left: -4px;
+  }
+  html#myDocument body.my-framework table tfoot {
+    display: none;
+  }
+  html#myDocument body.my-framework table th, html#myDocument body.my-framework table td {
+    display: block;
+    border-bottom: none;
+  }
+  html#myDocument body.my-framework table th span.right, html#myDocument body.my-framework table td span.right {
+    float: none;
+    margin-left: 1.5em;
+  }
+  html#myDocument body.my-framework table th:last-child, html#myDocument body.my-framework table td:last-child {
+    border-bottom: 0.0833em solid hsla(0, 0%, 96%, 1);
+  }
+  html#myDocument body.my-framework table td.gutter, html#myDocument body.my-framework table td.code {
+    display: inline-block;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table {
+    display: table;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table thead {
+    float: none;
+    display: table-header-group;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tbody {
+    display: table-row-group;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tr {
+    display: table-row;
+    margin: 0;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tr td, html#myDocument body.my-framework table.uk-datepicker-table tr th {
+    display: table-cell;
+    min-width: inherit;
+    border-bottom: none;
+  }
+
+  /* List Tables */
+  html#myDocument body.my-framework .table .cols .list {
+    float: none;
+    display: table-row;
+  }
+  html#myDocument body.my-framework .table .cols .list .item {
+    display: table-cell;
+  }
+  html#myDocument body.my-framework .table .cols .list .item.footer {
+    display: none;
+  }
+
+  /* Pricing Tables */
+  /* Classic Table */
+  html#myDocument body.my-framework .pricing-table thead th .title {
+    font-size: 85%;
+  }
+  html#myDocument body.my-framework .pricing-table thead th:last-child .title {
+    border-right: 0.0833em solid hsla(0, 0%, 100%, 1) !important;
+  }
+  html#myDocument body.my-framework .pricing-table tbody td .icon {
+    margin-top: 0;
+  }
+  html#myDocument body.my-framework .pricing-table td {
+    padding-top: 1.4166em;
+    padding-bottom: 1.4166em;
+  }
+
+  /* List Table */
+  html#myDocument body.my-framework .table.pricing {
+    width: 100%;
+  }
+  html#myDocument body.my-framework .table.pricing .list {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  html#myDocument body.my-framework .table.pricing .list:last-child {
+    margin-bottom: 0;
+  }
+  html#myDocument body.my-framework .table.pricing .list.featured {
+    margin: 0 0 1em;
+    border: none;
+  }
+  html#myDocument body.my-framework .table.pricing .list.features .item {
+    width: 100% !important;
+  }
+  html#myDocument body.my-framework .table.pricing .list + div {
+    display: block;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list {
+    display: block;
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div {
+    display: block;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list:last-child {
+    margin-bottom: 0;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list.featured {
+    border: none;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list:hover {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list.features {
+    margin-bottom: 1em;
+    float: none;
+  }
+
+  /* Comments */
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier {
+    margin-left: 1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier + .reply {
+    margin-left: 1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier .icon {
+    left: 0;
+    top: -1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item aside.commenter {
+    padding-right: 1em;
+    float: left;
+    width: 33.3333% !important;
+  }
+  html#myDocument body.my-framework .comments > .list > .item aside.comment-block {
+    float: left;
+    width: 66.6666% !important;
+  }
+
+  /* Timeline */
+  html#myDocument body.my-framework .timeline .list .item {
+    float: none;
+    min-height: 10em;
+    min-width: inherit;
+    padding-bottom: 1em;
+    padding-right: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item .datetime {
+    top: 0;
+    left: -8.5em;
+    min-width: 80px;
+    text-align: right;
+  }
+  html#myDocument body.my-framework .timeline .list .item .title {
+    display: block;
+  }
+  html#myDocument body.my-framework .timeline .list .item span.dot {
+    left: -0.3em;
+    top: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item img.dot {
+    max-width: inherit;
+    top: 0;
+    left: -1.75em;
+  }
+  html#myDocument body.my-framework .timeline .list .item .content {
+    display: inline-block;
+    min-width: 420px;
+    width: 100%;
+    left: 4em;
+    top: -1.5em;
+    position: relative;
+  }
+  html#myDocument body.my-framework .timeline .bar {
+    margin: 0 8.5em;
+    max-height: inherit;
+    max-width: 1em;
+    padding: 3em 0;
+    width: auto;
+  }
+  html#myDocument body.my-framework .timeline.vertical {
+    margin: 0;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .datetime {
+    min-width: 180px;
+    left: -15.72em;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .content {
+    top: -4em;
+    min-width: 210px;
+  }
+  html#myDocument body.my-framework .timeline.vertical .bar {
+    margin: 0 auto;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 640px) {
+  /* General */
+  html#myDocument body.my-framework {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+  }
+  html#myDocument body.my-framework * {
+    transition: none;
+    -moz-transition: none;
+    -webkit-transition: none;
+  }
+  html#myDocument body.my-framework .with-tag .tag {
+    right: 0;
+  }
+  html#myDocument body.my-framework .container .col {
+    float: none;
+    width: 100% !important;
+    margin-right: 0;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button, html#myDocument body.my-framework .input-wrapper.multiple button {
+    width: 25%;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .button .icon, html#myDocument body.my-framework .input-wrapper.multiple button .icon {
+    float: none;
+  }
+  html#myDocument body.my-framework .input-wrapper.multiple .input, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework .input-wrapper.multiple .input:focus, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"]:focus {
+    width: 75%;
+  }
+  html#myDocument body.my-framework .controls.left {
+    left: auto;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item, html#myDocument body.my-framework .menu-list.vertical.docked > .item {
+    width: 100%;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item > .link .title, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .title {
+    text-indent: 0;
+  }
+  html#myDocument body.my-framework .menu.vertical.docked > .item > .link .icon, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .icon {
+    display: block;
+  }
+  html#myDocument body.my-framework .scrollup {
+    bottom: 3.5em;
+    right: 0;
+  }
+  html#myDocument body.my-framework .uikit-component .uk-sortable > * {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+  html#myDocument body.my-framework .uikit-component .uk-sortable > *:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* Components */
+  /* Typography */
+  html#myDocument body.my-framework .drop-caps:first-letter {
+    line-height: 1;
+    padding-top: 0;
+  }
+
+  /* Buttons and Controls */
+  html#myDocument body.my-framework .uikit-dropdown {
+    max-width: 100%;
+  }
+  html#myDocument body.my-framework .uikit-dropdown .button {
+    display: block;
+    width: 100%;
+  }
+
+  html#myDocument body.my-framework .uikit-component.uk-button-group > a, html#myDocument body.my-framework .uikit-component.uk-button-group > .button {
+    width: 75%;
+    float: left;
+  }
+  html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown {
+    width: 25%;
+    float: left !important;
+  }
+  html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger .icon {
+    float: none;
+    margin: 0;
+  }
+  html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown .uk-dropdown {
+    min-width: 400%;
+  }
+
+  html#myDocument body.my-framework .show-all > .trigger, html#myDocument body.my-framework .show-more > .trigger {
+    width: 100%;
+  }
+
+  /* Menus */
+  html#myDocument body.my-framework .menu.vertical {
+    width: 100%;
+    padding-right: 0;
+  }
+
+  /* Inputs */
+  html#myDocument body.my-framework input[type='text'], html#myDocument body.my-framework input[type='number'], html#myDocument body.my-framework textarea, html#myDocument body.my-framework .input.text, html#myDocument body.my-framework select, html#myDocument body.my-framework .select, html#myDocument body.my-framework .input-wrapper.with-icon, html#myDocument body.my-framework .input-wrapper.date-picker, html#myDocument body.my-framework .input-wrapper.with-icon .input, html#myDocument body.my-framework .input-wrapper.with-icon input[type='text'], html#myDocument body.my-framework .input-wrapper.date-picker .input, html#myDocument body.my-framework .input-wrapper.date-picker input[type='text'] {
+    width: 100%;
+  }
+
+  html#myDocument body.my-framework .date-picker-wrapper .item {
+    float: none;
+    margin-right: 0;
+  }
+
+  html#myDocument body.my-framework .input-wrapper .input {
+    width: auto;
+  }
+
+  /* Boxes and Containers */
+  html#myDocument body.my-framework .flyer {
+    width: 100%;
+  }
+
+  /* Tables */
+  /* Classic Tables */
+  html#myDocument body.my-framework table {
+    display: block;
+    width: 100%;
+  }
+  html#myDocument body.my-framework table caption {
+    display: block;
+  }
+  html#myDocument body.my-framework table thead {
+    display: block;
+    float: left;
+  }
+  html#myDocument body.my-framework table thead tr {
+    display: block;
+  }
+  html#myDocument body.my-framework table thead th {
+    min-width: 160px;
+    width: auto !important;
+  }
+  html#myDocument body.my-framework table tbody {
+    display: block;
+    width: auto;
+    max-width: inherit;
+    overflow-x: auto;
+    white-space: nowrap;
+    text-align: left;
+  }
+  html#myDocument body.my-framework table tbody tr {
+    display: inline-block;
+    margin-left: -4px;
+  }
+  html#myDocument body.my-framework table tfoot {
+    display: none;
+  }
+  html#myDocument body.my-framework table th, html#myDocument body.my-framework table td {
+    display: block;
+    border-bottom: none;
+  }
+  html#myDocument body.my-framework table th span.right, html#myDocument body.my-framework table td span.right {
+    float: none;
+    margin-left: 1.5em;
+  }
+  html#myDocument body.my-framework table th:last-child, html#myDocument body.my-framework table td:last-child {
+    border-bottom: 0.0833em solid hsla(0, 0%, 96%, 1);
+  }
+  html#myDocument body.my-framework table td.gutter, html#myDocument body.my-framework table td.code {
+    display: inline-block;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table {
+    display: table;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table thead {
+    float: none;
+    display: table-header-group;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tbody {
+    display: table-row-group;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tr {
+    display: table-row;
+    margin: 0;
+  }
+  html#myDocument body.my-framework table.uk-datepicker-table tr td, html#myDocument body.my-framework table.uk-datepicker-table tr th {
+    display: table-cell;
+    min-width: inherit;
+    border-bottom: none;
+  }
+
+  /* List Tables */
+  html#myDocument body.my-framework .table .cols .list {
+    float: none;
+    display: table-row;
+  }
+  html#myDocument body.my-framework .table .cols .list .item {
+    display: table-cell;
+  }
+  html#myDocument body.my-framework .table .cols .list .item.footer {
+    display: none;
+  }
+
+  /* Timeline */
+  html#myDocument body.my-framework .timeline .list .item {
+    float: none;
+    min-height: 10em;
+    min-width: inherit;
+    padding-bottom: 1em;
+    padding-right: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item .datetime {
+    top: 0;
+    left: -8.5em;
+    min-width: 80px;
+    text-align: right;
+  }
+  html#myDocument body.my-framework .timeline .list .item .title {
+    display: block;
+  }
+  html#myDocument body.my-framework .timeline .list .item span.dot {
+    left: -0.3em;
+    top: 0;
+  }
+  html#myDocument body.my-framework .timeline .list .item img.dot {
+    max-width: inherit;
+    top: 0;
+    left: -1.75em;
+  }
+  html#myDocument body.my-framework .timeline .list .item .content {
+    display: inline-block;
+    min-width: 320px;
+    width: 100%;
+    left: 4em;
+    top: -1.5em;
+    position: relative;
+  }
+  html#myDocument body.my-framework .timeline .bar {
+    margin: 0 8.5em;
+    max-height: inherit;
+    max-width: 1em;
+    padding: 3em 0;
+    width: auto;
+  }
+  html#myDocument body.my-framework .timeline.vertical {
+    margin: 0;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .datetime {
+    min-width: 180px;
+    left: -15.72em;
+  }
+  html#myDocument body.my-framework .timeline.vertical .list .item .content {
+    top: -4em;
+    min-width: 210px;
+  }
+  html#myDocument body.my-framework .timeline.vertical .bar {
+    margin: 0 auto;
+  }
+
+  /* Menus */
+  html#myDocument body.my-framework .menu, html#myDocument body.my-framework .submenu {
+    width: 100%;
+    position: relative;
+  }
+  html#myDocument body.my-framework .menu > .item > .link, html#myDocument body.my-framework .submenu > .item > .link {
+    max-width: 100%;
+  }
+  html#myDocument body.my-framework .menu ul, html#myDocument body.my-framework .submenu ul {
+    display: block;
+  }
+  html#myDocument body.my-framework .menu ul li, html#myDocument body.my-framework .submenu ul li {
+    max-width: 100%;
+    width: 100%;
+  }
+  html#myDocument body.my-framework .menu.vertical .item.slide ul, html#myDocument body.my-framework .submenu.vertical .item.slide ul {
+    display: block;
+  }
+
+  /* Pricing Tables */
+  /* Classic Table */
+  html#myDocument body.my-framework .pricing-table thead th .title {
+    font-size: 85%;
+  }
+  html#myDocument body.my-framework .pricing-table thead th:last-child .title {
+    border-right: 0.0833em solid hsla(0, 0%, 100%, 1) !important;
+  }
+  html#myDocument body.my-framework .pricing-table tbody td .icon {
+    margin-top: 0;
+  }
+  html#myDocument body.my-framework .pricing-table td {
+    padding-top: 1.4166em;
+    padding-bottom: 1.4166em;
+  }
+
+  /* List Table */
+  html#myDocument body.my-framework .table.pricing {
+    width: 100%;
+  }
+  html#myDocument body.my-framework .table.pricing .list {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  html#myDocument body.my-framework .table.pricing .list:last-child {
+    margin-bottom: 0;
+  }
+  html#myDocument body.my-framework .table.pricing .list.featured {
+    margin: 0 0 1em;
+    border: none;
+  }
+  html#myDocument body.my-framework .table.pricing .list.features .item {
+    width: 100% !important;
+  }
+  html#myDocument body.my-framework .table.pricing .list + div {
+    display: block;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list {
+    display: block;
+    opacity: 1;
+    -moz-opacity: 1;
+    -webkit-opacity: 1;
+    filter: alpha(opacity=100);
+    -ms-filter: "alpha(opacity=100)";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div {
+    display: block;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list {
+    float: none;
+    width: 100%;
+    margin-bottom: 1em;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list:last-child {
+    margin-bottom: 0;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list + div .list.featured {
+    border: none;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list:hover {
+    margin: 0 0 1em 0;
+    padding: 0;
+    font-size: 100%;
+    background-color: transparent;
+  }
+  html#myDocument body.my-framework .table.pricing.featured-outside .list.features {
+    margin-bottom: 1em;
+    float: none;
+  }
+
+  /* Comments */
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier {
+    margin-left: 1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier + .reply {
+    margin-left: 1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier .icon {
+    left: 0;
+    top: -1em;
+  }
+  html#myDocument body.my-framework .comments > .list > .item aside.commenter {
+    padding-right: 1em;
+    float: left;
+    width: 33.3333% !important;
+  }
+  html#myDocument body.my-framework .comments > .list > .item aside.comment-block {
+    float: left;
+    width: 66.6666% !important;
+  }
+
+  /* Various */
+  html#myDocument body.my-framework .horizontal-terms dt, html#myDocument body.my-framework .horizontal-terms dd {
+    float: none !important;
+    clear: none;
+    margin: 0;
+  }
+  html#myDocument body.my-framework .horizontal-terms dd {
+    margin-right: 0 !important;
+  }
+  html#myDocument body.my-framework .horizontal-terms dt {
+    margin-top: 1em;
+  }
+
+  html#myDocument body.my-framework .uk-autocomplete, html#myDocument body.my-framework .uk-search {
+    width: 100%;
+  }
+
+  html#myDocument body.my-framework .uikit-component .uk-search .uk-search-field {
+    width: 100% !important;
+  }
+
+  html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-toolbar {
+    width: 100%;
+  }
+  html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar-flip {
+    width: 100%;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 639px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 480px) {
+  /* General */
+  html#myDocument body.my-framework .uikit-component .uk-sortable > * {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  html#myDocument body.my-framework .uikit-component .uk-sortable > *:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  html#myDocument body.my-framework .tooltips > a {
+    width: 100% !important;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+.clearfix:before, .clearfix:after, .rtl .menu-list:before, .rtl .menu-list:after, .rtl .pagination:before, .rtl .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .rtl .menu-list:after, .rtl .pagination:after {
+  clear: both;
+}
+
+.clearfix, .rtl .menu-list, .rtl .pagination {
+  *zoom: 1;
+}
+
+/* ==========================================================================
+   RTL (Right-To-Left) Styles
+   ========================================================================== */
+/* Clearfixes */
+html#myDocument body.my-framework .rtl, html#myDocument body.my-framework.rtl p, html#myDocument body.my-framework.rtl .title, html#myDocument body.my-framework.rtl header {
+  /* Right-to-Left support - element to be removed when it's used */
+  direction: rtl;
+  text-align: right !important;
+}
+html#myDocument body.my-framework.rtl > * {
+  direction: rtl;
+  text-align: right;
+}
+html#myDocument body.my-framework.rtl .bootstrap-section {
+  direction: ltr;
+  text-align: left;
+}
+html#myDocument body.my-framework.rtl .right {
+  float: left;
+}
+html#myDocument body.my-framework.rtl .left {
+  float: right;
+}
+html#myDocument body.my-framework.rtl p img.left {
+  margin: 0 0 0.75em 0.75em;
+}
+html#myDocument body.my-framework.rtl p img.right {
+  margin: 0 0.75em 0.75em 0;
+}
+html#myDocument body.my-framework.rtl .with-label.left {
+  margin-left: 1.5em;
+  margin-right: 0;
+}
+html#myDocument body.my-framework.rtl .with-label.right {
+  margin-left: 0;
+  margin-right: 1.5em;
+}
+html#myDocument body.my-framework.rtl p .remark {
+  left: auto;
+  right: -2em;
+  float: right;
+}
+html#myDocument body.my-framework.rtl p .remark.right {
+  left: -2em;
+  right: auto;
+  float: left;
+}
+html#myDocument body.my-framework.rtl .list.enumerated .item, html#myDocument body.my-framework.rtl .list-enumerated .item, html#myDocument body.my-framework.rtl .enumerated .item {
+  margin-right: 0;
+  margin-left: 0.5em;
+}
+html#myDocument body.my-framework.rtl header > .icon {
+  float: left;
+}
+html#myDocument body.my-framework.rtl * .icon, html#myDocument body.my-framework.rtl * .message {
+  text-align: center !important;
+}
+html#myDocument body.my-framework.rtl * .icon.main {
+  text-align: center !important;
+}
+html#myDocument body.my-framework.rtl .icon.right {
+  margin-left: 0;
+  margin-right: 16px;
+  float: left;
+}
+html#myDocument body.my-framework.rtl .icon.left {
+  margin-left: 6px;
+  margin-right: 0;
+  float: right;
+}
+html#myDocument body.my-framework.rtl .icon.left.main {
+  margin-top: 0.25em;
+}
+html#myDocument body.my-framework.rtl .input-wrapper > .icon {
+  right: auto;
+  left: 0.62em;
+}
+html#myDocument body.my-framework.rtl .flyer .content > .icon.right {
+  float: left;
+}
+html#myDocument body.my-framework.rtl .close {
+  float: left;
+}
+html#myDocument body.my-framework.rtl * > span.title {
+  float: none;
+}
+html#myDocument body.my-framework.rtl.chrome .framework a > span.title, html#myDocument body.my-framework.rtl.webkit .framework a > span.title {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .breadcrumb .item {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .menu.breadcrumb > .item, html#myDocument body.my-framework.rtl .menu-list.breadcrumb > .item {
+  margin: 0 0 0 1em;
+  float: right;
+}
+html#myDocument body.my-framework.rtl .menu.breadcrumb > .item .icon, html#myDocument body.my-framework.rtl .menu-list.breadcrumb > .item .icon {
+  margin-left: 0;
+  margin-right: 1em;
+}
+html#myDocument body.my-framework.rtl .input-wrapper.with-icon .input {
+  padding-right: 1em;
+  padding-left: 3em;
+}
+html#myDocument body.my-framework.rtl .button-group .item {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .scrollup {
+  right: auto;
+  left: 0.75em;
+}
+html#myDocument body.my-framework.rtl label {
+  padding-right: 0;
+  padding-left: 0.5em;
+}
+html#myDocument body.my-framework.rtl form input[type="text"], html#myDocument body.my-framework.rtl form input[type="password"], html#myDocument body.my-framework.rtl form .input.text, html#myDocument body.my-framework.rtl form textarea, html#myDocument body.my-framework.rtl form select {
+  margin-right: 0;
+  margin-left: 1em;
+}
+html#myDocument body.my-framework.rtl .input-wrapper.multiple .input, html#myDocument body.my-framework.rtl .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework.rtl .input-wrapper.multiple .input:focus, html#myDocument body.my-framework.rtl .input-wrapper.multiple input[type="text"]:focus {
+  margin-left: 0;
+  float: right;
+}
+html#myDocument body.my-framework.rtl .input-wrapper input[type="text"], html#myDocument body.my-framework.rtl .input-wrapper input[type="password"], html#myDocument body.my-framework.rtl .input-wrapper .input.text {
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .overlay .icon {
+  right: auto;
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .overlay {
+  left: auto;
+  right: 0;
+}
+html#myDocument body.my-framework.rtl .drop-caps:first-letter, html#myDocument body.my-framework.rtl .drop-caps::first-letter {
+  float: none;
+  padding-right: 0;
+  padding-left: 0.125em;
+}
+html#myDocument body.my-framework.rtl .with-tag .tag {
+  right: auto;
+  left: -0.75em;
+}
+html#myDocument body.my-framework.rtl .input.radio, html#myDocument body.my-framework.rtl .input.checkbox {
+  margin-right: 0;
+  margin-left: 0.5em;
+}
+html#myDocument body.my-framework.rtl label + input.radio:last-child, html#myDocument body.my-framework.rtl label + input.checkbox:last-child {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .more-content {
+  text-align: center !important;
+}
+html#myDocument body.my-framework.rtl .controls-horizontal {
+  right: auto;
+  left: 15em;
+}
+html#myDocument body.my-framework.rtl .controls.left {
+  left: auto;
+  right: 30em;
+}
+html#myDocument body.my-framework.rtl .controls {
+  right: auto;
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .box.closable .controls-horizontal {
+  right: auto;
+  left: 0.5em;
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item aside.comment-block {
+  padding-left: 1em;
+  padding-right: 0;
+  float: left;
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item aside.commenter {
+  float: right !important;
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item aside.comment-block .controls {
+  right: auto;
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .menu-list {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .pagination {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .pagination .item {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .pagination .item:first-child, html#myDocument body.my-framework.rtl .pagination .item:last-child, html#myDocument body.my-framework.rtl .pagination .item:first-child a, html#myDocument body.my-framework.rtl .pagination .item:last-child a {
+  direction: rtl;
+}
+html#myDocument body.my-framework.rtl .ribbon-left {
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .ribbon {
+  margin-left: 0;
+  margin-right: -10px;
+}
+html#myDocument body.my-framework.rtl .pane .controls {
+  right: auto;
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .moving.right:hover {
+  margin-right: 1.5em;
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .moving.left:hover {
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .moving-right:hover {
+  margin-right: 1.5em;
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .moving-left:hover {
+  margin-right: -1.5em;
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .social .item {
+  float: right;
+  margin: 0 0 0.25em 0.25em;
+}
+html#myDocument body.my-framework.rtl .social .item:last-child {
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .timeline .list .item {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .timeline.vertical .list .item .content {
+  left: auto;
+  right: 4em;
+}
+html#myDocument body.my-framework.rtl .timeline.vertical .list .item .dot {
+  left: auto;
+  right: -0.3em;
+}
+html#myDocument body.my-framework.rtl .timeline.vertical .list .item img.dot {
+  left: auto;
+  right: -1.75em;
+}
+html#myDocument body.my-framework.rtl .timeline.vertical .list .item .datetime, html#myDocument body.my-framework.rtl .timeline.vertical .list .item .title {
+  left: auto;
+  right: -16.5em;
+}
+html#myDocument body.my-framework.rtl .timeline.vertical .list .item .title {
+  max-width: 180px;
+}
+html#myDocument body.my-framework.rtl .menu > .item, html#myDocument body.my-framework.rtl .menu-list > .item {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .menu.vertical > .item, html#myDocument body.my-framework.rtl .menu-list.vertical > .item {
+  float: none;
+}
+html#myDocument body.my-framework.rtl .menu.vertical.docked > .item > .link .icon-default, html#myDocument body.my-framework.rtl .menu-list.vertical.docked > .item > .link .icon-default {
+  margin-right: 0;
+}
+html#myDocument body.my-framework.rtl .caption {
+  left: auto;
+  right: 0;
+}
+html#myDocument body.my-framework.rtl .pricing-table thead th .title, html#myDocument body.my-framework.rtl .pricing-table tfoot td a {
+  text-align: center !important;
+}
+html#myDocument body.my-framework.rtl .table.pricing .list .item.header .title, html#myDocument body.my-framework.rtl .table.pricing .list .item .title {
+  text-align: center !important;
+}
+html#myDocument body.my-framework.rtl .table .list {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .table .col .item {
+  border-right: none;
+  border-left: 0.0833em solid hsla(0, 0%, 96%, 1);
+}
+html#myDocument body.my-framework.rtl .feedback, html#myDocument body.my-framework.rtl .feedback-right {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .feedback-roll .feedback {
+  float: none;
+}
+html#myDocument body.my-framework.rtl .comments .post-comment button {
+  right: auto;
+  left: 0;
+}
+html#myDocument body.my-framework.rtl .horizontal-terms dt {
+  float: right;
+}
+html#myDocument body.my-framework.rtl .horizontal-terms dd {
+  margin-left: 0;
+  margin-right: 3%;
+}
+html#myDocument body.my-framework.rtl .pagination {
+  float: none;
+}
+html#myDocument body.my-framework.rtl .pagination > .item.right, html#myDocument body.my-framework.rtl .pagination > li.right {
+  float: left;
+}
+html#myDocument body.my-framework.rtl .transforms > .item {
+  left: auto;
+  right: 15em;
+}
+html#myDocument body.my-framework.rtl .transforms > .item.title {
+  right: 0;
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier {
+  margin-left: 0;
+  margin-right: 4em;
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier > .icon {
+  left: auto !important;
+  right: -1em;
+  transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  filter: FlipH;
+  -ms-filter: "FlipH";
+}
+html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier + .reply {
+  margin-left: 0;
+  margin-right: 4em;
+}
+html#myDocument body.my-framework.rtl .thumbs .item {
+  padding: 0 0 1em 0.5em;
+  float: right;
+}
+html#myDocument body.my-framework.rtl .floating-nav.previous, html#myDocument body.my-framework.rtl .floating-nav.left {
+  left: auto;
+  right: 0;
+}
+html#myDocument body.my-framework.rtl .floating-nav.next, html#myDocument body.my-framework.rtl .floating-nav.right {
+  left: 0;
+  right: auto;
+}
+html#myDocument body.my-framework.rtl .floating-nav .icon.right {
+  margin-right: 0.5em;
+  margin-left: 0;
+}
+html#myDocument body.my-framework.rtl .floating-nav .icon.left {
+  margin-right: 0;
+  margin-left: 0.5em;
+}
+
+/* Layout */
+.clearfix:before, .clearfix:after, .rtl .menu-list:before, .rtl .menu-list:after, .rtl .pagination:before, .rtl .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .rtl .menu-list:after, .rtl .pagination:after {
+  clear: both;
+}
+
+.clearfix, .rtl .menu-list, .rtl .pagination {
+  *zoom: 1;
+}
+
+/* Helpers */
+.clearfix:before, .clearfix:after, .rtl .menu-list:before, .rtl .menu-list:after, .rtl .pagination:before, .rtl .pagination:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after, .rtl .menu-list:after, .rtl .pagination:after {
+  clear: both;
+}
+
+.clearfix, .rtl .menu-list, .rtl .pagination {
+  *zoom: 1;
+}
+
+/* HELPERS */
+/* ScrollUp */
+.scrollup {
+  opacity: 0.3;
+  -moz-opacity: 0.3;
+  -webkit-opacity: 0.3;
+  filter: alpha(opacity=30);
+  -ms-filter: "alpha(opacity=30)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=30)";
+  position: fixed;
+  bottom: 3em;
+  right: 0.75em;
+  display: none;
+  font-size: 150%;
+  padding: 0.25em;
+  z-index: 999;
+  background-color: hsla(0, 0%, 100%, 1);
+}
+.scrollup.left {
+  right: auto;
+  left: 0.75em;
+}
+.scrollup:hover, .scrollup:active {
+  opacity: 1;
+  -moz-opacity: 1;
+  -webkit-opacity: 1;
+  filter: alpha(opacity=100);
+  -ms-filter: "alpha(opacity=100)";
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+}
+.scrollup.bottom {
+  background-color: hsla(0, 0%, 0%, 1);
+}
+
+/* Components */
+/* Font Icons */
+
+/*# sourceMappingURL=boot.css.map */

@@ -1,0 +1,538 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../utils/various/hsla-converter.scss";
+
+
+// =========================================================================
+// CONFIGURATION
+// =========================================================================
+
+// BASE
+
+/// The ID of the Project's Document (html tag)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$documentID: '#myDocument';
+/// The Class of the Project's Document (html tag)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$documentClass: '.my-document';
+/// The ID of the Project's Framework (body tag)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$frameworkID: '#myFramework';
+/// The Class of the Project's Framework (body tag)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$frameworkClass: '.my-framework';
+/// The Base Font Size in Pixels
+/// @access public
+/// @type Variable
+/// @group project-configs
+$baseFontSize: 18px;
+/// The Font Size in Ems (to have relative font sizes across your project)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$fontSize: 1em;
+/// The Font Family used for all the Elements
+/// @access public
+/// @type Variable
+/// @group project-configs
+$fontFamily: 'Nunito', sans-serif;
+/// The Font Family used for the Headings
+/// @access public
+/// @type Variable
+/// @group project-configs
+$headersFontFamily: 'Nunito', sans-serif;
+/// The Font Setting for the text-rendering CSS property (use 'optimizeLegibility' for better visuals or 'optimizeSpeed' for higher load times)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$fontSetting: optimizeLegibility;
+/// The Default Font Weight Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$fontWeight: 200;
+/// The Thicker Font Weight Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$thickFontWeight: 700;
+/// The Headings Font Weight Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$headerFontWeight: 400;
+/// The Font Style Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$fontStyle: normal;
+/// The Text Line Height Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$lineHeight: 1.5;
+/// The Headings Line Height Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$headersLineHeight: 1.5;
+/// The Base Margin Value (used for white space value)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$baseMargin: 0;
+/// The Base Padding Value (used for the inside spacing value of elements)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$basePadding: 0;
+
+
+// COLORS
+
+// Main Colors
+/// Link RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$linkColor: 0,205,172;
+/// Link HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$linkColorHEX: unquote("#00cdac");
+/// Main RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$mainColor: 91,91,106;
+/// Main HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$mainColorHEX: unquote("#5b5b6a");
+/// Negative RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$negativeColor: 255,255,255;
+/// Negative HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$negativeColorHEX: unquote("#fff");
+/// Black RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$blackColor: 0,0,0;
+/// Black HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$blackColorHEX: unquote("#000");
+/// Accent RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$accentColor: 0,205,172;
+/// Accent HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$accentColorHEX: unquote("#00cdac");
+/// Button Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$buttonColor: 246,72,3;
+/// Button Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$buttonColorHEX: unquote("#f64803");
+/// Main Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$mainBackground: 246,246,246;
+/// Main Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$mainBackgroundHEX: unquote("#f6f6f6");
+
+// Secondary Colors
+/// Elements Background RGB Color - the background color used for UI elements such as boxes
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsBackground: 241,241,241;
+/// Elements Background HEX Color  - the background color used for UI elements such as boxes
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsBackgroundHEX: unquote("#f1f1f1");
+/// Elements Action Background RGB Color - the background color used for UI elements when they change their state (such as on hover)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsActionBackground: 246,246,246;
+/// Elements Action Background HEX Color - the background color used for UI elements when they change their state (such as on hover)
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsActionBackgroundHEX: unquote("#f6f6f6");
+/// Elements Background RGB Color 2 - the alternative background color used for UI elements in other states or situations
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsBackground2: 230,230,230;
+/// Elements Background HEX Color 2 - the alternative background color used for UI elements in other states or situations
+/// @access public
+/// @type Variable
+/// @group project-configs
+$elementsBackground2HEX: unquote("#e6e6e6");
+
+// Other Colors
+/// Tip Message Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$tipColor: 22,216,161;
+/// Tip Message Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$tipColorHEX: unquote("#16D8A1");
+/// Tip Message Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$tipBack: 22,216,161;
+/// Tip Message Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$tipBackHEX: unquote("#16D8A1");
+/// Pending / Warning State Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$pendingColor: 238,83,31;
+/// Pending / Warning State Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$pendingColorHEX: unquote("#EE531F");
+/// Pending / Warning State Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$pendingBack: 238,83,31;
+/// Pending / Warning State Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$pendingBackHEX: unquote("#EE531F");
+/// Success / Valid State Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$successColor: 0,205,172;
+/// Success / Valid State Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$successColorHEX: unquote("#00cdac");
+/// Success / Valid State Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$successBack: 0,205,172;
+/// Success / Valid State Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$successBackHEX: unquote("#00cdac");
+/// Error / Invalid State Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$errorColor: 204,42,65;
+/// Error / Invalid State Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$errorColorHEX: unquote("#CC2A41");
+/// Error / Invalid State Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$errorBack: 204,42,65;
+/// Error / Invalid State Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$errorBackHEX: unquote("#CC2A41");
+/// Info / Notification State Text RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$infoColor: 22,159,216;
+/// Info / Notification State Text HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$infoColorHEX: unquote("#169fd8");
+/// Info / Notification State Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$infoBack: 22,159,216;
+/// Info / Notification State Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$infoBackHEX: unquote("#169fd8");
+/// Neutral (Grey) Background RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$neutralBack: 230,230,230;
+/// Neutral (Grey) Background HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$neutralBackHEX: unquote("#e6e6e6");
+/// Color Scheme Complementary RGB Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$complementaryColor: 91,91,106;
+/// Color Scheme Complementary HEX Color
+/// @access public
+/// @type Variable
+/// @group project-configs
+$complementaryColorHEX: unquote("#5b5b6a");
+
+
+// CSS3 PROPERTIES - Storing Variables and Arrays for Your Elements
+
+// Default Variables - change any of values or elements to fit your needs
+// Text Shadow
+/// Default Text Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultTextShadow: 0 0.1em 0 rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.2);
+/// Default Inverted Text Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultInvertTextShadow: 0 -0.1em 0 rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.2);
+/// Custom Inverted Text Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customInvertTextShadow: 0 0.1em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.35);
+// Box Shadow
+// $defaultOutsetBoxShadow: 0 0.25em 0.0833em rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.035);
+/// Default Outset Box Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultOutsetBoxShadow: 0 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+/// Custom Outset Box Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customOutsetBoxShadow: 0.0833em 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+/// Custom Outset Box Shadow Value 2
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customOutsetBoxShadow2: 0 0.0833em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+/// Default Inset Box Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultInsetBoxShadow: inset 0 0 0.1em rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+/// Custom Inset Box Shadow Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customInsetBoxShadow: inset 0 0 0.1em rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5), inset 0.075em 0 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.25);
+/// Custom Inset Box Shadow Value 2
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customInsetBoxShadow2: inset 0 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.025);
+/// Custom Inset Box Shadow Value 3
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customInsetBoxShadow3: inset 0 0 0.5em rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.25);
+/// Custom Inset Box Shadow Value 4
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customInsetBoxShadow4: inset 0 -0.0833em 0 rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.1);
+// Border Radius
+/// Default Border Radius Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultBorderRadius: 0.25em;
+/// Custom Border Radius Value
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customBorderRadius: 0.3333em;
+/// Default Border Radius Value 2
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customBorderRadius2: 1em;
+/// Default Border Radius Value 3
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customBorderRadius3: 0 0 0.5em 0.5em;
+// Transition
+/// Default Transition Rule
+/// @access public
+/// @type Variable
+/// @group project-configs
+$defaultTransition: all 0.2s linear;
+/// Custom Transition Rule
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customTransition: margin 0.1s linear;
+/// Custom Transition Rule 2
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customTransition2: width 0.2s linear;
+/// Custom Transition Rule 3
+/// @access public
+/// @type Variable
+/// @group project-configs
+$customTransition3: background-color 0.2s linear;
+/// No Transition Rule
+/// @access public
+/// @type Variable
+/// @group project-configs
+$noTransition: none;
+
+// Default Arrays - used as collection of elements for which to apply or not the specific CSS properties - can add or remove from each array, as you please to fit your needs
+// Text Shadow
+/// Elements with the Default Text Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultTextShadowElements: ".text-shadow";
+/// Elements with the Default Inverted Text Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultInvertTextShadowElements: "";
+/// Elements with the Custom Inverted Text Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$customInvertTextShadowElements: "";
+// Box Shadow
+/// Elements with the Default Outset Box Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultOutsetBoxShadowElements: ".box-shadow", ".box", ".message", ".message-error", ".message-alert", ".message-warning", ".message-info", ".message-ok", ".message-neutral", ".comments", ".fixed", ".timeline .item .content", ".feedback .quote";
+/// Elements with the Custom Outset Box Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$customOutsetBoxShadowElements: "uikit-dropdown .menu", ".select .list", ".uk-dropdown";
+/// Elements with the Default Inset Box Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultInsetBoxShadowElements: ".button", "button";
+/// Elements with the Custom Inset Box Shadow
+/// @access public
+/// @type List
+/// @group project-configs
+$customInsetBoxShadowElements: "";
+/// Elements with the Custom Inset Box Shadow 2
+/// @access public
+/// @type List
+/// @group project-configs
+$customInsetBoxShadow2Elements: ".input.text", ".input.editable:focus", "input[type='text'], textarea";
+/// Elements with the Custom Inset Box Shadow 3
+/// @access public
+/// @type List
+/// @group project-configs
+$customInsetBoxShadow3Elements: "";
+/// Elements with the Custom Inset Box Shadow 4
+/// @access public
+/// @type List
+/// @group project-configs
+$customInsetBoxShadow4Elements: ".button", "button";
+// Border Radius
+/// Elements with the Default Border Radius
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultBorderRadiusElements: ".border-radius", ".border-radius .button", ".border-radius button", ".border-radius .quote", ".border-radius blockquote", ".border-radius .tag", ".border-radius .input.checkbox.custom + label", ".border-radius .input.text", ".border-radius input[type='text'], .border-radius textarea", ".border-radius .comments";
+/// Elements with the Custom Border Radius
+/// @access public
+/// @type List
+/// @group project-configs
+$customBorderRadiusElements: ".rounded";
+/// Elements with the Custom Border Radius 2
+/// @access public
+/// @type List
+/// @group project-configs
+$customBorderRadius2Elements: ".timeline .list .item .dot", ".round";
+/// Elements with the Custom Border Radius 3
+/// @access public
+/// @type List
+/// @group project-configs
+$customBorderRadius3Elements: ".flyer.border-radius .action";
+// Transition
+/// Elements with the Default Transition
+/// @access public
+/// @type List
+/// @group project-configs
+$defaultTransitionElements: "body", "a", ".transition", ".featured-outside .list", ".moving", ".moving-left", ".moving-right";
+/// Elements with the Custom Transition
+/// @access public
+/// @type List
+/// @group project-configs
+$customTransitionElements: ".moving", ".moving.right";
+/// Elements with the Default Transition 2
+/// @access public
+/// @type List
+/// @group project-configs
+$customTransition2Elements: ".input.expanding";
+/// Elements with the Default Transition 3
+/// @access public
+/// @type List
+/// @group project-configs
+$customTransition3Elements: ".input.text", ".input.editable:focus", "input[type='text']", "textarea";
+/// Elements with No Transitions
+/// @access public
+/// @type List
+/// @group project-configs
+$noTransitionElements: ".button", "button";

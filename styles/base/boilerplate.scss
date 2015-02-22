@@ -1,0 +1,3608 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "core.scss";
+
+
+/* ==========================================================================
+   html5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+::-moz-selection {
+    background: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    @include text-shadow(none);
+}
+
+::selection {
+    background: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    @include text-shadow(none);
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid rgbToHsla(204,204,204);
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: rgbToHsla(204,204,204);
+    color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3));
+    padding: 0.2em 0;
+}
+
+
+/* =========================================================================
+   Framework Elements
+   ========================================================================= */
+
+/*
+   =========================================================================
+*/
+
+/* Defaults */
+
+* {
+    @include box-sizing(border-box);
+}
+
+body {
+    font-family: $fontFamily;
+    font-size: $baseFontSize;
+    line-height: $lineHeight;
+    font-weight: $fontWeight;
+    margin: 0;
+    padding: 0;
+    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3)); // Providing each RGB value for the function
+    background-color: rgbToHsla(nth($mainBackground, 1), nth($mainBackground, 2), nth($mainBackground, 3));
+    @include outline(none);
+}
+
+h1, h2, h3, h4, h5, h6, strong {
+    margin: 0;
+}
+
+strong {
+    font-weight: $thickFontWeight;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headersFontFamily;
+    font-weight: 300;
+}
+
+h1 {
+    font-size: $mainHeaderSize;
+}
+
+h2 {
+    font-size: $headerL2;
+}
+
+h3 {
+    font-size: $headerL3;
+}
+
+h4 {
+    font-size: $headerL4;
+}
+
+h5 {
+    font-size: $headerL5;
+}
+
+h6 {
+    font-size: $headerL6;
+}
+
+p {
+    margin: 1em 0;
+    position: relative;
+    line-height: 1.75;
+    html#{$documentID} &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+    img {
+        margin: 0.75em;
+    }
+    img.right {
+        margin: 0 0 0.75em 0.75em;
+    }
+    img.left {
+        margin: 0 0.75em 0.75em 0;
+    }
+    .remark {
+        position: relative;
+        display: inline-block;
+        left: -2em;
+        margin: 0 1em 1em 1em;
+        padding: 1em;
+        width: auto;
+        max-width: 320px;
+        font-size: 125%;
+        float: left;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        &.right {
+            float: right;
+            left: auto;
+            right: -2em;
+        }
+        .title {
+            display: block;
+            font-size: 125%;
+            font-weight: $thickFontWeight;
+            margin-bottom: 0.25em;
+        }
+        .details {
+            display: block;
+            margin: 0.5em 0 1em;
+        }
+        img {
+            margin: 0;
+        }
+    }
+}
+
+span {
+    img {
+        margin: 0.75em;
+    }
+    img.right {
+        margin: 0 0 0.75em 0.75em;
+    }
+    img.left {
+        margin: 0 0.75em 0.75em 0;
+    }
+}
+
+pre {
+    margin: 0.5em 0;
+    font-weight: $thickFontWeight;
+    color: rgbToHsla(166,226,46);
+}
+
+small {
+    font-size: 85%;
+}
+
+dd {
+    margin-left: 0;
+    + dt {
+        margin-top: 1em;
+    }
+}
+
+dt {
+    font-weight: 400;
+}
+
+code {
+    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    border: 0.0833em solid rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    padding: 0.25em;
+}
+
+img, .img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    &.border {
+        border-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+}
+
+a {
+    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    text-decoration: none;
+    line-height: $lineHeight;
+    @include outline(none);
+    &.img {
+        display: inline-block;
+    }
+    &.content {
+        display: block;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        html#{$documentID} &:hover, html#{$documentID} &:active {
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        }
+        html#{$documentID} .invert &:hover, html#{$documentID} .invert &:active {
+            background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        }
+    }
+    &:focus {
+        @include outline(none);
+    }
+}
+
+ol, ul {
+    padding: 0;
+}
+
+audio, canvas, video {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.video-wrapper {
+    position: relative;
+}
+
+canvas {
+    width: auto;
+}
+
+svg, object, embed {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    padding: 0 1em;
+    line-height: 2;
+}
+
+footer {
+    padding: 0.5em 1em;
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+/* Forms */
+html#{$documentID} body#{$frameworkClass} form {
+    label {
+        display: block;
+        margin-top: 0.75em;
+        &.error {
+            display: inline-block;
+            margin-top: 0;
+            color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+        }
+        &:first-child {
+            margin-top: 0;
+        }
+        + span {
+            margin-left: 1em;
+        }
+        + .username, + .password, + .email {
+            margin-left: 0;
+        }
+    }
+    fieldset {
+        margin-bottom: 1em;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &.form-validate fieldset {
+        .wrapper {
+            margin-bottom: 0.5em;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            .checkbox {
+                display: inline-block;
+                margin-left: 0.5em;
+            }
+            label {
+                display: inline-block;
+                &.error {
+                    min-height: inherit;
+                    min-width: inherit;
+                    padding: 0 0.5em 0 0;
+                    cursor: default;
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    input[type="submit"], button {
+
+    }
+    input[type="text"], input[type="password"], .input.text, textarea, select {
+        margin-right: 1em;
+        @include outline(none);
+    }
+    input[type="search"] input[type="search"].input, .input.search {
+        padding-left: 3em;
+        padding-right: 3em;
+        margin-right: 0;
+        + .close {
+            margin-top: 0;
+            margin-right: 0;
+        }
+    }
+    .input-wrapper {
+        input[type="text"], input[type="password"], .input.text {
+            margin-right: 0;
+        }
+    }
+    .group {
+        margin-bottom: 0.75em;
+        label {
+            margin-top: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    a {
+        margin-top: 1em;
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+/* ELEMENTS AND COMPONENTS */
+
+/* Various Behavior */
+* > span.title {
+    float: left;
+    + * {
+        clear: none;
+    }
+}
+
+/* Lists and Menus */
+body#{$frameworkClass} .list, body#{$frameworkClass} .list-enumerated {
+    margin: 0;
+    .item {
+        list-style-type: none;
+        .link {
+            padding: 0.25em 0.5em;
+            line-height: $lineHeight;
+        }
+    }
+    &.with-bullet {
+        .item {
+            list-style-type: circle;
+            list-style-position: inside;
+        }
+    }
+    .menu & .item .link {
+        padding: 0.25em 0.5em;
+    }
+    &.cols > .item {
+        float: left;
+    }
+    &.pagination {
+        .item {
+            list-style-type: none;
+            float: left;
+            display: block;
+            .button {
+                border-left: none;
+            }
+            &:first-child .button, &.first .button {
+
+            }
+            .link {
+                padding: 0.25em 0.5em;
+            }
+            &.active {
+                .link, .button {
+                    cursor: default;
+                    background-color: transparent;
+                    border: none;
+                    @include box-shadow(none);
+                    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+                }
+                .button {
+                    padding: 0.5833em 1em;
+                }
+            }
+            &.disabled {
+                .button, .button:hover, .button:active {
+                    @include opacity(0.75);
+                    cursor: default;
+                    top: 0;
+                    margin-bottom: 0;
+                    border-bottom-width: 0.1666em;
+                    background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+                }
+                .link, .link:hover, .link:active {
+                    @include opacity(0.75);
+                    cursor: default;
+                } 
+            }
+        }
+    }
+}
+
+.list, html#{$documentID} .menu, html#{$documentID} .menu-list, html#{$documentID} .submenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    &.with-separator {
+        padding: 0.5em 0;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        .separator {
+            margin: 0.5em 0;
+        }
+    }
+    .item {
+        list-style-type: none;
+    }
+}
+
+html#{$documentID} .menu, html#{$documentID} .menu-list, html#{$documentID} .submenu {
+    &.with-separator {
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+}
+
+html#{$documentID} ol.list {
+    .item {
+        list-style-type: decimal;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} {
+    .list.enumerated, .list-enumerated, .enumerated {
+        .item {
+            display: inline;
+            margin-right: 0.5em;
+            margin-bottom: 0;
+        }
+    }
+    .list.enumerated {
+        .item {
+            display: inline-block;
+            margin-bottom: 0.5em;
+        }
+    }
+}
+
+.submenu {
+    margin: 0;
+    list-style-type: none;
+    position: relative;
+    z-index: 996;
+    .item {
+        float: none;
+    }
+}
+
+/* Horizontal Terms */
+html#{$documentID} .horizontal-terms {
+    dt {
+        float: left;
+        clear: both;
+        min-width: 120px;
+        width: 36.7%;
+        margin-top: 1em;
+    }
+    dd {
+        float: left;
+        margin-left: 3%;
+        width: 60.3%;
+        margin-top: 1em;
+    }
+    dt {
+        &:first-child {
+            margin-top: 0;
+            + dd {
+                margin-top: 0;
+            }
+        }
+    }
+}
+
+/* Pagination */
+html#{$documentID} .pagination {
+    .item, li {
+        list-style-type: none;
+        float: left;
+        display: block;
+        .button {
+            border-left: none;
+        }
+        &:first-child .button, &.first .button {
+
+        }
+        .link, a, span {
+            padding: 0.25em 0.5em;
+        }
+        .button {
+            padding: 0.5em 1em;
+        }
+        &.active {
+            .link, .button {
+                cursor: default;
+                background-color: transparent;
+                border: none;
+                @include box-shadow(none);
+                color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            }
+            .button {
+                padding: 0.5833em 1em;
+            }
+        }
+        &.disabled {
+            .button, .button:hover, .button:active {
+                @include opacity(0.75);
+                cursor: default;
+                top: 0;
+                margin-bottom: 0;
+                border-bottom-width: 0.1666em;
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+            }
+            .link, .link:hover, .link:active {
+                @include opacity(0.75);
+                cursor: default;
+            }
+        }
+    }
+}
+
+/* Horizontal Rules */
+.hr, .hr-dotted, .hr-dashed, .hr-thick, .hr-stripes {
+    display: block;
+    border-bottom: 0.0833em solid rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+    margin: 0.5em 0;
+}
+
+.hr.dotted, .hr-dotted {
+    border-bottom-style: dotted;
+}
+
+.hr.dashed, .hr-dashed {
+    border-bottom-style: dashed;
+}
+
+.hr.thick, .hr-thick {
+    border-bottom-width: 0.25em;
+}
+
+.hr.stripes, .hr-stripes {
+    height: 10px;
+    background: transparent url(../../component-manager/assets/img/base/stripes.png) repeat-x;
+    border-bottom: none;
+}
+
+
+/* HELPERS */
+
+/* Icons and Images */
+html#{$documentID} body#{$frameworkClass} {
+    .icon, .icon-default {
+        &.with-background {
+            display: inline-block;
+            padding: 0.3333em;
+            min-width: 1.75em;
+            min-height: 1.5em;
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
+        &.with-background.rounded {
+
+        }
+        &.box-shadow {
+            @include box-shadow($customOutsetBoxShadow2);
+        }
+    }
+    img.icon {
+        margin: 0;
+        width: 128px;
+        height: 128px;
+        &.x-small {
+            width: 64px;
+            height: 64px;
+        }
+        &.small {
+            width: 96px;
+            height: 96px;
+        }
+        &.medium {
+            width: 180px;
+            height: 180px;
+        }
+        &.x-medium {
+            width: 240px;
+            height: 240px;
+        }
+        &.big {
+            width: 320px;
+            height: 320px;
+        }
+        &.x-big {
+            width: 480px;
+            height: 480px;
+        }
+    }
+    img {
+        &.map {
+            min-height: inherit;
+        }
+        &.retina {
+            height: 115px;
+            &.x-small {
+                height: 57px;
+            }
+            &.small {
+                height: 85px;
+            }
+            &.medium {
+                height: 160px;
+            }
+            &.x-medium {
+                height: 213px;
+            }
+            &.big {
+                height: 284px;
+            }
+            &.x-big {
+                height: 426px;
+            }
+        }
+    }
+}
+
+/* Various */
+html#{$documentID} body#{$frameworkClass} {
+    // Floats
+    .left {
+        float: left;
+    }
+    .right {
+        float: right;
+    }
+
+    // Aligns
+    .align-left {
+        text-align: left;
+    }
+    .align-right {
+        text-align: right;
+    }
+    .align-center {
+        text-align: center;
+    }
+    .centered {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    // Spaces
+    .spaced {
+        margin: 1.5em 0;
+    }
+    .no-margin {
+        margin: 0;
+    }
+    .no-padding {
+        padding: 0;
+    }
+
+    // Widths
+    .full-width {
+        width: 100%;
+    }
+    .third-width {
+        width: 75%;
+    }
+    .half-width {
+        width: 50%;
+    }
+    .quarter-width {
+        width: 25%;
+    }
+    .small-width {
+        width: 15%;
+    }
+
+    // Sizes
+    .x-small {
+        font-size: 50%;
+    }
+    .small {
+        font-size: 75%;
+    }
+    .medium {
+        font-size: 150%;
+    }
+    .x-medium {
+        font-size: 200%;
+    }
+    .big {
+        font-size: 300%;
+    }
+    .x-big {
+        font-size: 400%;
+    }
+
+    // Others
+    .spaced .item {
+        margin: 1.5em 0;
+    }
+    .description {
+        display: block;
+        font-size: 85%;
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    }
+    .no-float {
+        float: none;
+    }
+    .close {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        float: right;
+        display: inline-block;
+        margin: 0.1666em -0.25em 0 0;
+        padding: 0.3333em 0.5em;
+        background: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.1);
+        &:hover, &:active {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+        }
+    }
+    .closed {
+        display: none !important;
+    }
+    .message .close {
+        color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.25);
+        background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
+        &:hover, &:active {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+    .collapse {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        float: right;
+        display: inline-block;
+        margin: 0.1666em -0.25em 0 0;
+        padding: 0.3333em 0.5em;
+    }
+    .rounded {
+        @include border-radius($defaultBorderRadius);
+    }
+    .round {
+        @include border-radius(5em);
+    }
+    .indented {
+        text-indent: 1em;
+    }
+    .overflowed {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    .more-content {
+        display: block;
+        text-align: center;
+        font-size: 200%;
+        margin: 0;
+    }
+    .with-tag {
+        position: relative;
+        .tag {
+            display: block;
+            position: absolute;
+            background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)) !important;
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            right: -0.75em;
+            top: -0.75em;
+            padding: 0.0833em 0.25em;
+            text-align: center;
+            min-width: 1.25em;
+            line-height: 1;
+            z-index: 998;
+            &.bottom {
+                top: auto;
+                bottom: -0.75em;
+            }
+            &.left {
+                right: inherit;
+                left: -0.75em;
+            }
+            &.left-bottom {
+                top: auto;
+                bottom: -0.75em;
+                right: auto;
+                left: -0.75em;
+            }
+        }
+    }
+    .with-background {
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        padding: 0 0.5em;
+    }
+    .label {
+        display: inline-block;
+        padding: 0.25em 0.5em;
+        margin: 0.5em;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    .with-label {
+        display: inline-block;
+        margin: 0 1.5em;
+        &.left {
+            margin-left: 0;
+        }
+        &.right {
+            margin-right: 0;
+        }
+        img {
+            margin: 0;
+            padding: 0;
+            @include box-shadow(none);
+        }
+        .label {
+            display: block;
+            margin: 0;
+            width: 100%;
+            font-style: italic;
+            text-align: right;
+            font-size: 85%;
+        }
+    }
+    .drop-caps {
+        min-height: 4.75em;
+    }
+    .drop-caps:first-letter, .drop-caps::first-letter {
+        float: left;
+        font-size: 500%;
+        line-height: 2;
+        padding-top: 0.125em;
+        padding-right: 0.125em;
+        color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    &.chrome, &.webkit {
+        .drop-caps:first-letter, .drop-caps::first-letter {
+            line-height: 0.75;
+        }
+    }
+    .highlighted {
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+    .underlined {
+        border-bottom: 0.0833em solid rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    .stroked {
+        text-decoration: line-through;
+    }
+    .colored {
+        color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    .quote, blockquote {
+        display: block;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        border-left: 0.4166em solid transparent;
+        padding: 1em;
+        font-style: italic;
+    }
+    .eye-popping {
+        font-size: 150%;
+        font-family: $headersFontFamily;
+        font-style: italic;
+        margin-top: 0.75em;
+    }
+    .tag {
+        padding: 0.25em 0.75em;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    .ribbon, .ribbon-left, .ribbon-right {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+        position: absolute;
+        background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+        padding: 0.5em 0.75em;
+        clear: both;
+        z-index: 990;
+        font-weight: $thickFontWeight;
+        @include transition($defaultTransition);
+        &:hover {
+            @include opacity(0.15);
+            cursor: default;
+        }
+    }
+    *:hover > .ribbon, *:hover > .ribbon-left, *:hover > .ribbon-right {
+        @include opacity(0.15);
+        cursor: default;
+    }
+    .ribbon {
+        width: 100%;
+        text-align: center;
+        margin-left: -10px;
+        @include box-sizing(content-box);
+    }
+    .ribbon::before {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        content: "";
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+    }
+    .ribbon::after {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -15px;
+        right: -6px;
+        content: "";
+        @include transform(rotate(270deg));
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+    }
+    .ribbon-left {
+        margin-left: -10px;
+        float: left;
+    }
+    .ribbon-left::before {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -10px;
+        left: -10px;
+        content: "";
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+    }
+    .ribbon-right {
+        margin-right: -10px;
+        float: right;
+        right: 0;
+    }
+    .ribbon-right::after {
+        display: block;
+        width: 10px;
+        height: 0px;
+        position: absolute;
+        bottom: -15px;
+        right: -5px;
+        content: "";
+        @include transform(rotate(270deg));
+        border-bottom: 10px solid transparent;
+        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+    }
+    .hidden-text {
+        text-indent: -999em;
+    }
+    .transparency {
+        @include opacity(0.5);
+    }
+    .block-type {
+        display: block;
+    }
+    .border {
+        border: 0.0833em solid rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+    }
+    .disabled {
+        @include opacity(0.5);
+        cursor: default;
+    }
+    .moving, .moving.right, .moving-right, .moving-left { /* Since we mostly all are LTR readers */
+        position: relative;
+        float: none;
+        cursor: default;
+    }
+    .moving {
+        &.right:hover {
+            margin-left: 1.5em;
+        }
+        &.left:hover {
+            margin-left: -1.5em;
+        }
+    }
+    .moving-right {
+        &:hover {
+            margin-left: 1.5em;
+        }
+    }
+    .moving-left {
+        &:hover {
+            margin-left: -1.5em;
+        }
+    }
+    .scrollable {
+        max-height: 200px;
+        overflow: auto;
+    }
+    .extra-space-small {
+        margin-bottom: 7.5em;
+    }
+    .extra-space-x-small {
+        margin-bottom: 10em;
+    }
+    .extra-space-medium {
+        margin-bottom: 15em;
+    }
+    .extra-space-x-medium {
+        margin-bottom: 20em;
+    }
+    .extra-space-big {
+        margin-bottom: 25em;
+    }
+    .extra-space-x-big {
+        margin-bottom: 31.25em;
+    }
+    .invert { // Helps in conjuction with your specific action
+
+    }
+
+    // Transforms
+    .rotate {
+        @include transform(rotate(180deg));
+    }
+    .rotate-45 {
+        @include transform(rotate(45deg));
+    }
+    .rotate-90 {
+        @include transform(rotate(90deg));
+    }
+    .rotate-135 {
+        @include transform(rotate(135deg));
+    }
+    .rotate-180 {
+        @include transform(rotate(180deg));
+    }
+    .rotate-270 {
+        @include transform(rotate(270deg));
+    }
+    .scale-full {
+        @include transform(scale(1));
+    }
+    .scale-third {
+        @include transform(scale(0.75));
+    }
+    .scale-half {
+        @include transform(scale(0.5));
+    }
+    .scale-quarter {
+        @include transform(scale(0.25));
+    }
+    .scale-double {
+        @include transform(scale(2));
+    }
+    .rotate-horizontal {
+        @include transform(scaleX(-1));
+    }
+    .translate-XY {
+        @include transform(translate(50%, 50%));   
+    }
+    .translate-right {
+        @include transform(translateX(50%));
+    }
+    .translate-left {
+        @include transform(translateX(-50%));
+    }
+    .translate-top {
+        @include transform(translateY(-50%));
+    }
+    .translate-bottom {
+        @include transform(translateY(50%));
+    }
+
+    // Positions
+    .position, .position.top, .position-top, .position.bottom, .position-bottom, .position.left, .position-left, .position.right, .position-right {
+        position: absolute;
+    }
+    .position.top, .position-top {
+        top: 0;
+    }
+
+    .position.bottom, .position-bottom {
+        bottom: 0;
+    }
+    .position.left, .position-left {
+        left: 0;
+    }
+    .position.right, .position-right {
+        right: 0;
+    }
+
+    // Colors
+    .red, .red-color, .icon.error {
+        color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+    }
+
+    .green, .green-color, .icon.ok {
+        color: rgbToHsla(nth($successColor, 1), nth($successColor, 2), nth($successColor, 3));
+    }
+
+    .blue, .blue-color {
+        color: rgbToHsla(nth($infoColor, 1), nth($infoColor, 2), nth($infoColor, 3));
+    }
+
+    .yellow, .yellow-color {
+        color: rgbToHsla(251,184,41);
+    }
+
+    .orange, .orange-color {
+        color: rgbToHsla(nth($pendingColor, 1), nth($pendingColor, 2), nth($pendingColor, 3));
+    }
+
+    .pink, .pink-color {
+        color: rgbToHsla(215,33,126);
+    }
+
+    .purple, .purple-color {
+        color: rgbToHsla(91,77,107);
+    }
+
+    .brown, .brown-color {
+        color: rgbToHsla(135,64,46);
+    }
+
+    // Background Colors
+    .background {
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+
+    .background.neutral, .background-neutral, .background.neutral > .content, .background-neutral > .content {
+        background-color: rgbToHsla(250,250,250);
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    }
+
+    .background.grey, .background-grey, .background.grey > .content, .background-grey > .content {
+        background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.red, .background-red, .background.red > .content, .background-red > .content {
+        background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.green, .background-green, .background.green > .content, .background-green > .content {
+        background-color: rgbToHsla(0,205,172) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.blue, .background-blue, .background.blue > .content, .background-blue > .content {
+        background-color: rgbToHsla(42,143,189) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.yellow, .background-yellow, .background.yellow > .content, .background-yellow > .content {
+        background-color: rgbToHsla(251,184,41) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.orange, .background-orange, .background.orange > .content, .background-orange > .content {
+        background-color: rgbToHsla(255,78,80) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.pink, .background-pink, .background.pink > .content, .background-pink > .content {
+        background-color: rgbToHsla(215,33,126) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.purple, .background-purple, .background.purple > .content, .background-purple > .content {
+        background-color: rgbToHsla(91,77,107) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    .background.brown, .background-brown, .background.brown > .content, .background-brown > .content {
+        background-color: rgbToHsla(135,64,46) !important;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        img {
+            border: 0.3333em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+        }
+    }
+
+    // Border Colors
+    .hr.neutral, .hr-neutral, .border.neutral, .border-neutral {
+        border-color: rgbToHsla(250,250,250);
+    }
+
+    .hr.grey, .hr-grey, .border.grey, .border-grey {
+        border-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    }
+
+    .hr.red, .hr-red, .border.red, .border-red {
+        border-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+    }
+
+    .hr.green, .hr-green, .border.green, .border-green {
+        border-color: rgbToHsla(nth($successColor, 1), nth($successColor, 2), nth($successColor, 3));
+    }
+
+    .hr.blue, .hr-blue, .border.blue, .border-blue {
+        border-color: rgbToHsla(nth($infoColor, 1), nth($infoColor, 2), nth($infoColor, 3));
+    }
+
+    .hr.yellow, .hr-yellow, .border.yellow, .border-yellow {
+        border-color: rgbToHsla(251,184,41);
+    }
+
+    .hr.orange, .hr-orange, .border.orange, .border-orange {
+        border-color: rgbToHsla(nth($pendingColor, 1), nth($pendingColor, 2), nth($pendingColor, 3));
+    }
+
+    .hr.pink, .hr-pink, .border.pink, .border-pink {
+        border-color: rgbToHsla(215,33,126);
+    }
+
+    .hr.purple, .hr-purple, .border.purple, .border-purple {
+        border-color: rgbToHsla(91,77,107);
+    }
+
+    .hr.brown, .hr-brown, .border.brown, .border-brown {
+        border-color: rgbToHsla(135,64,46);
+    }
+
+    // Loading Spinner
+    .loading {
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color:  rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.75);
+        z-index: 999;
+        text-align: center;
+        .icon {
+            position: absolute;
+            top: 50%;
+            font-size: 500%;
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            @include animation(rotate 0.75s infinite linear);
+        }
+    }
+    .loading-icon {
+        @include animation(rotate 0.75s infinite linear);
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .fixed, html#{$documentID} body#{$frameworkClass} .fixed-bottom {
+    display: block;
+    width: 100%;
+    z-index: 998;
+    position: fixed;
+    top: 0;
+    @include opacity(0.95);
+    &:hover {
+        @include opacity(1);
+    }
+}
+html#{$documentID} body#{$frameworkClass} .fixed-bottom {
+    top: auto;
+    bottom: 0;
+}
+
+
+/* Buttons and Controls */
+.button, button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 0.5em 1em;
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+    background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.85);
+    text-align: center;
+    border: none;
+    position: relative;
+    @extend %clearfix;
+    &:before, &:after {
+        @extend %clearfix-ba;
+    }
+    &:after {
+        @extend %clearfix-a;
+    }
+    @include transition(none);
+    &.small {
+        font-size: 78.6%;
+        @include text-shadow(none);
+    }
+    html#{$documentID} body#{$frameworkClass} &.big {
+        font-size: 150%;
+    }
+    html#{$documentID} &.thin {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+    }
+    &:hover {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    html#{$documentID} &:active, html#{$documentID} &.uk-active {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+        background-color: rgbToHsla(nth($buttonColor, 1), nth($buttonColor, 2), nth($buttonColor, 3));
+        @include transition(none);
+    }
+    &.only-icon .icon {
+        margin: 0;
+    }
+    &.processing {
+        &:active, &.active {
+            @include opacity(0.75);
+            .icon {
+                display: inline-block;
+                @include animation(rotate 0.75s infinite linear);
+            }
+        }
+        .icon {
+            display: none;
+            font-size: 150%;
+            margin-top: 2px;
+        }
+
+    }
+    html#{$documentID} &.disabled, html#{$documentID} &.disabled:hover, html#{$documentID} &.disabled:active, html#{$documentID} &.processing:active, html#{$documentID} &.processing.active {
+        @include opacity(0.5);
+        cursor: default;
+        top: 0;
+        margin-bottom: 0;
+        border-bottom-width: 0.25em;
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+    }
+    .icon {
+        margin-top: 0.25em;
+        margin-left: 0.25em;
+        margin-right: 0.25em;
+    }
+}
+
+.button-group {
+    .item {
+        float: left;
+    }
+}
+
+.show-all {
+    position: relative;
+    overflow: hidden;
+    > .trigger {
+        position: absolute;
+        bottom: 0;
+        html#{$documentID} &:active {
+            top: inherit;
+        }
+    }
+    &.active > .trigger {
+        position: relative;
+        margin-top: 1em;
+    }
+}
+
+.show-more {
+    > .trigger {
+        margin-top: 1em;
+    }
+}
+
+.tabs {
+    list-style-type: none;
+    .item {
+        display: inline-block;
+    }
+}
+
+html#{$documentID} .trigger {
+    top: auto;
+    margin-bottom: 0;
+    &:active {
+        border: none;
+    }
+}
+
+
+/* Menus */
+.menu.plain, .menu-plain {
+    min-height: 240px;
+    max-height: 100%;
+    height: auto;
+}
+
+html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .menu-list {
+    z-index: 998;
+    &.breadcrumb {
+        .item {
+            .link {
+                display: inline;
+                padding: 0;
+                line-height: $lineHeight;
+            }
+            .link, .link:hover, .link:active {
+                background: transparent;
+            }
+            .link:hover, .link:active {
+                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+            }
+            .icon {
+                font-size: 65%;
+                margin-left: 1em;
+            }
+            &.active .link, &.active span {
+                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+            }
+            &.active span {
+                cursor: default;
+            }
+        }
+        > .item {
+            margin: 0 1em 0 0;
+        }
+    }
+    > .item {
+        float: left;
+    }
+    &.vertical > .item {
+        float: none;
+    }
+    .item {
+        .link {
+            display: block;
+            padding: 0.75em 1em;
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            &:hover, &:active {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.9);
+            }
+        }
+    }
+    .separator {
+        .hr {
+            margin: 0;
+            border: none;
+            padding: 0.1666em 0 0;
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.1);
+        }
+    }
+    &.list {
+        .item {
+            .link {
+                background-color: transparent;
+                &:hover, &:active {
+                    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                }
+            }
+            &.active .link, &.active .link:hover, &.active .link:active {
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+        }
+    }
+    &.plain {
+        .item {
+            .link {
+                padding: 0.25em 1em;
+                background-color: transparent;
+                &:hover, &:active {
+                    background-color: transparent;
+                }
+            }
+        }
+    }
+    &.vertical {
+        > .item {
+            float: none;
+            max-width: 100%;
+            > .link {
+                max-width: 100%;
+            }
+        }
+        &.docked {
+            > .item {
+                width: 48px;
+                > .link {
+                    text-indent: -999em;
+                    text-transform: uppercase;
+                    .icon {
+                        text-indent: 0;
+                        display: none;
+                        &.main {
+                            font-size: 150%;
+                            display: inline-block;
+                            margin-top: 0;
+                        }
+                    }
+                    .icon-default {
+                        text-indent: 0;
+                        font-size: 150%;
+                        margin-top: 1px;
+                        margin-right: 0.5em;
+                    }
+                    .title {
+                        display: inline-block;
+                        text-indent: -999em;
+                        float: none;
+                    }
+                }
+                &.active {
+                    width: 100%;
+                    > .link {
+                        width: 100%;
+                        text-indent: 0;
+                        .title, .icon {
+                            display: inline-block;
+                            text-indent: 0;
+                        }
+                    }
+                }
+                &:hover {
+                    width: 100%;
+                    > .link {
+                        text-indent: 0;
+                        width: 100%;
+                        .icon {
+                            display: inline-block;
+                        }
+                        .title {
+                            display: inline-block;
+                            text-indent: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.vertical.plain {
+        position: relative;
+        > .item {
+            max-width: 100%;
+            > .link {
+                max-width: 100%;
+            }
+        }
+    }
+    &.list.vertical {
+        > .item {
+            max-width: 100%;
+            > .link {
+                max-width: 100%;
+                text-transform: uppercase;
+                .icon.main {
+                    display: none;
+                }
+            }
+        }
+    }
+    &.horizontal .submenu {
+        .link {
+            max-width: 100% !important;
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .menu-list {
+    .item {
+        .link {
+            background-color: transparent;
+            &:hover, &:active {
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                background-color: transparent;
+            }
+        }
+        &.active .link, &.active .link:hover, &.active .link:active {
+            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+        > .link {
+            text-transform: uppercase;
+        }
+    }
+    &.vertical {
+        > .item {
+            max-width: 100%;
+            > .link {
+                max-width: 100%;
+                text-transform: uppercase;
+                .icon.main {
+                    display: none;
+                }
+            }
+        }
+    }
+    > .item > .link {
+        font-weight: $thickFontWeight;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .breadcrumb {
+    .item {
+        float: left;
+        .link {
+            display: inline;
+            padding: 0;
+            line-height: $lineHeight;
+        }
+        .link, .link:hover, .link:active {
+            background: transparent !important;
+        }
+        .icon {
+            font-size: 65%;
+        }
+        &.active .link, &.active span {
+            color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+        }
+        &.active span {
+            cursor: default;
+        }
+    }
+    > .item {
+        margin: 0 1em 0 0;
+    }
+}
+
+.submenu {
+    &.vertical {
+        > .item {
+            max-width: 100%;
+            width: 100%;
+            float: none;
+            > .link {
+                max-width: 50%;
+            }
+        }
+    }
+    &.list.vertical {
+        > .item {
+            max-width: 100%;
+        }
+    }
+}
+
+.fixed-nav .menu.vertical.plain {
+    background-color: transparent;
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    padding: 0;
+}
+
+.fixed-nav > .menu, .fixed-nav .submenu {
+    background: none;
+    @include box-shadow(none);
+}
+
+.fixed-nav > .trigger {
+    padding: 0 0.25em;
+}
+
+.fixed-nav > .trigger.active {
+    background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+}
+
+.fixed-nav .menu .item .link {
+    background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+}
+
+.fixed .menu .item .link:hover, .fixed .menu .item .link:active {
+    background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+}
+
+
+/* Inputs */
+html#{$documentID} input[type='text'], html#{$documentID} textarea {
+    padding: 0.75em 1em;
+    @include box-sizing(border-box);
+    @include outline(none);
+    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    border: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    cursor: text;
+    @include transition($defaultTransition);
+    &.values {
+        background: none;
+        padding: 0;
+        margin-bottom: 0.5em;
+        border: none;
+        @include box-shadow(none);
+    }
+    &:focus {
+        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+        border-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+}
+
+select {
+    padding: 0.75em 1em;
+    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    border: none;
+    -webkit-appearance: none;
+}
+
+input[type='file'] {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    position: static;
+    cursor: pointer;
+    .input-wrapper & {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-indent: -999em;
+    }
+}
+
+html#{$documentID} input {
+    &:disabled {
+        cursor: default;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .input, html#{$documentID} body#{$frameworkClass}.framework .input {
+    @include outline(none);
+    &.text, &.editable:focus {
+        padding: 0.75em 1em;
+        @include box-sizing(border-box);
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        border: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        cursor: text;
+        @include box-shadow(none);
+        @include transition($defaultTransition);
+        min-width: 15em;
+    }
+    &.text {
+        &:focus {
+            color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+            border-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
+        &.disabled {
+            cursor: default;
+            @include opacity(0.75);
+        }
+        &.error {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($errorBack, 1), nth($errorBack, 2), nth($errorBack, 3));
+            border-color: transparent !important;
+            + .icon {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+            }
+            /* Chrome Placeholder Fix */
+            &::-webkit-input-placeholder {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+            }
+        }
+        &.ok {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($successBack, 1), nth($successBack, 2), nth($successBack, 3));
+            border-color: transparent !important;
+            + .icon {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+            }
+            /* Chrome Placeholder Fix */
+            &::-webkit-input-placeholder {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+            }
+        }
+        &.thin {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+    }
+    &.number {
+        padding: 0.75em 0.25em 0.75em 1em;
+    }
+    &.text.datepicker {
+        cursor: default;
+    }
+    &.blocknote {
+        background: transparent;
+        border: none;
+        border-bottom: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        @include box-shadow(none);
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0.25em;
+    }
+    &.editable {
+        background-color: transparent;
+        border: 0.1666em solid transparent;
+        @include box-shadow(none);
+        cursor: default;
+        &:hover {
+            border: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+    }
+    &.expanding {
+        width: 240px;
+        min-width: 240px;
+        @include transition($customTransition2);
+        &:focus {
+            width: 100%;
+        }
+    }
+    &.radio {
+        margin-right: 0.5em;
+        &.custom {
+            display: none;
+            + label {
+                display: inline-block;
+                padding: 0.5em 0.75em;
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                cursor: pointer;
+                margin-left: -3px;
+                min-width: 16px;
+                min-height: 16px;
+                font-weight: $thickFontWeight;
+                @include transition($defaultTransition);
+            }
+            &:checked + label {
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            }
+        }
+        &.custom.alt {
+            + label {
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                padding: 0.5em 0.75em;
+                border: 0.1666em solid transparent;
+            }
+            &:checked + label {
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                border-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+            }
+        }
+    }
+    &.checkbox {
+        margin-right: 0.5em;
+        &.custom {
+            display: none;
+            + label {
+                display: inline-block;
+                padding: 0.5em 1em;
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                cursor: pointer;
+                min-width: 16px;
+                min-height: 16px;
+                @include transition($defaultTransition);
+                .icon {
+                    margin: 0;
+                }
+            }
+            &:checked + label {
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                .icon {
+                    margin: 0;
+                }
+            }
+        }
+    }
+    &.select {
+        padding: 0.75em 1em;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        border: none;
+        &.multiple {
+            min-height: 6.75em;
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} {
+    .input-wrapper {
+        position: relative;
+        display: inline-block;
+        > .icon, > a.uk-form-password-toggle {
+            position: absolute;
+            right: 0.62em;
+            top: 0.5em;
+            margin: 0;
+            font-size: 150%;
+            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+        > .icon.close {
+            right: 0.6666em;
+            top: 0.5833em;
+            font-size: 100%;
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            &:hover, &:active {
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                background-color: transparent;
+            }
+        }
+        &.date-picker > .icon {
+            font-size: 100%;
+            top: 1em;
+            right: 1em;
+        }
+        &.date-picker .range-datepicker {
+            cursor: default;
+        }
+        &.with-icon {
+            .input {
+                padding-right: 3em;
+                &.error + .icon {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+                }
+                &.ok + .icon {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+                }
+            }
+        }
+        .button, button {
+            display: block;
+            float: right;
+            line-height: 1.5;
+            padding-top: 0.75em;
+            padding-bottom: 0.75em;
+            &:active {
+                margin-bottom: 0;
+                top: 0;
+            }
+        }
+        .input, input[type="text"] {
+            float: left;
+            margin: 0;
+        }
+        label {
+            margin: 0;
+        }
+        &.multiple {
+            display: block;
+            .button, button {
+                width: 20%;
+            }
+            .input, input[type="text"], .input:focus, input[type="text"]:focus {
+                width: 80%;
+            }
+            .input.expanding, input[type="text"].expanding {
+                width: auto;
+            }
+            .input.expanding:focus, input[type="text"].expanding:focus {
+                width: 100%;
+            }
+        }
+    }
+    .wrapper {
+        display: block;
+    }
+}
+
+textarea.editable {
+    resize: none;
+}
+
+label {
+    padding-right: 0.5em;
+    cursor: pointer;
+}
+
+
+/* Alerts and Warnings */
+html#{$documentID} body#{$frameworkClass} {
+    .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .ui-pnotify .alert, .uk-notify-message {
+        display: block;
+        padding: 0.75em 1em;
+        text-align: center;
+        border: 0.0833em solid transparent;
+        a {
+            color: inherit;
+            border-bottom: 0.0833em dotted;
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .message.thin, html#{$documentID} body#{$frameworkClass} .message-thin {
+    padding: 0 1em;
+    line-height: 2.25;
+}
+
+.message.warning, .message-warning, .message-modal.warning, .ui-pnotify .alert, html#{$documentID} .uk-notify .uk-notify-message-warning {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($pendingBack, 1), nth($pendingBack, 2), nth($pendingBack, 3));
+    .icon {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+    }
+}
+
+.message.error, .message.alert, .message-error, .message-alert, .message-modal.alert, .ui-pnotify .alert-error, html#{$documentID} .uk-notify .uk-notify-message-danger {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($errorBack, 1), nth($errorBack, 2), nth($errorBack, 3));
+    .icon {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+        &.tooltip {
+            margin-top: 0.1666em;
+        }
+    }
+}
+
+.message.info, .message-info, .message-modal.info, .ui-pnotify .alert-info, html#{$documentID} .uk-notify .uk-notify-message-info {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($infoBack, 1), nth($infoBack, 2), nth($infoBack, 3));
+    .icon {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+    }
+}
+
+.message.ok, .message-ok, .message-modal.ok, .ui-pnotify .alert-success, html#{$documentID} .uk-notify .uk-notify-message-success {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($successBack, 1), nth($successBack, 2), nth($successBack, 3));
+    .icon {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+    }
+}
+
+.message, .message.neutral, .message-neutral, .message-modal.neutral {
+    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+}
+
+.message.modal, .message-modal {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin: 0;
+    z-index: 996;
+}
+
+.message.modal .icon, .message-modal .icon {
+    cursor: pointer;
+    padding: 0.3333em 0.5em;
+    margin-top: 0;
+    background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+}
+
+.message.modal .icon:hover, .message-modal .icon:hover {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+}
+
+html#{$documentID} body#{$frameworkClass} .message.in-box, html#{$documentID} body#{$frameworkClass} .message-in-box {
+    @include box-shadow(none);
+}
+
+.message.with-icon .icon, .message-alert.with-icon .icon, .message-error.with-icon .icon, .message-info.with-icon .icon, .message-warning.with-icon .icon, .message-ok.with-icon .icon {
+    font-size: 175%;
+    margin-top: 0;
+}
+
+.tooltip {
+    cursor: default;
+    padding: 0.25em 0.5em;
+}
+
+
+/* Boxes, Containers and Controls */
+.modal {
+    display: none;
+}
+
+.box {
+    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    .flyer & {
+        background-color: transparent;
+    }
+    &.modal {
+        display: block;
+    }
+}
+
+html#{$documentID} .pane {
+    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    position: relative;
+    left: 0;
+    top: 0;
+    &.docking {
+        width: 100%;
+    }
+    &.right {
+        left: inherit;
+        right: 0;
+    }
+    .content {
+        padding: 0;
+        section {
+           padding: 1em; 
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .controls, html#{$documentID} body#{$frameworkClass} .controls-horizontal, html#{$documentID} body#{$frameworkClass} .floating-nav {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: auto;
+    margin: 0;
+    > .item, > * {
+        list-style-type: none;
+        text-align: center;
+        &.close {
+            margin: 0;
+            padding: 0;
+            float: none;
+            color: inherit;
+            background-color: transparent;
+        }
+    }
+    .docking .trigger {
+        display: block;
+        padding: 0.1666em 0.1666em 0.2em;
+        text-indent: -999em;
+        margin-top: 0;
+        font-size: 150%;
+        color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        &:hover {
+            background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
+        .icon {
+            display: block;
+            text-indent: 0;
+            padding: 0.5em;
+            margin-top: 0; 
+        }
+    }
+    > .item {
+        &.close:before {
+            content: " ";
+        }
+    }
+    .docking:hover &, .pane:hover & {
+        display: block;
+    }
+    &.tree {
+        display: block;
+        position: relative;
+        top: 0;
+        .collapse {
+            float: none;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &.left {
+        right: auto;
+        left: 0;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .controls-horizontal {
+    right: 0;
+    top: 0;
+    .item {
+        display: inline-block;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .controls, html#{$documentID} body#{$frameworkClass} .controls-horizontal {
+    > .item a {
+        padding: 0.5em 0.75em;
+    }
+    > .item > a {
+        display: block;
+    }
+    &.left {
+        > .item > a {
+            float: left;
+            min-width: 42px;
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} header .controls, html#{$documentID} body#{$frameworkClass} header .controls-horizontal {
+    margin-top: 0.3333em;
+    .item a {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .floating-nav {
+    display: none;
+    position: fixed;
+    top: 50%;
+    > * {
+        font-size: 100%;
+        display: block;
+        padding: 0.75em 1em;
+        width: 7.5em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.5);
+        .description {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            text-align: right;
+        }
+        &:hover, &:active {
+            font-size: 150%;
+            width: auto;
+            overflow: visible;
+            white-space: normal;
+            text-overflow: clip;
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            .description {
+                overflow: visible;
+                white-space: normal;
+                text-overflow: clip;
+            }
+        }
+        .icon {
+            font-size: 200%;
+            margin-left: 0.5em;
+            margin-top: 0.1666em;
+        }
+    }
+    &.left {
+        .description {
+            text-align: left;
+        }
+        .icon {
+            margin-left: 0;
+            margin-right: 0.5em;
+        }
+    }
+}
+
+.caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.5em 0.75em;
+    width: auto;
+    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    font-weight: $thickFontWeight;
+    width: auto;
+}
+
+.img {
+    display: inline-block;
+    position: relative;
+    background-color: transparent;
+    .caption {
+        text-transform: uppercase;
+    }
+    &.with-border .caption, &.with-border .overlay {
+        left: 1px;
+        right: 1px;
+        bottom: 1px;
+    }
+    &.with-border .overlay {
+        left: 0;
+    }
+}
+
+.thumb {
+    max-width: 120px;
+    border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+}
+
+a .thumb {
+    display: block;
+}
+
+.thumbs {
+    .item {
+        float: left;
+        padding: 0 0.5em 1em 0;
+        a {
+            display: block;
+        }
+        .thumb {
+            max-width: 120px;
+            border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+        }
+    }
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    @include opacity(0);
+    a.img:hover & {
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+        z-index: 990;
+        @include opacity(1);
+        @include transition(opacity 0.4s linear);
+    }
+    .icon {
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+        font-size: 200%;
+        position: absolute;
+        right: 0.5em;
+        top: 0.5em; 
+        padding: 0.25em 0.3333em;
+        margin-top: 0;
+        &:hover {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+    }
+}
+
+/* Box */
+.box {
+    position: relative;
+    .content {
+        padding: 1em;
+    }
+    > header, > footer {
+        padding: 0.75em 1em;
+        line-height: 2;
+    }
+    > header {
+        font-size: 125%;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        > .trigger {
+            padding: 0.5em;
+        }
+    }
+    > header, &.slide.active > header {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    }
+    > footer {
+        padding-top: 0.25em;
+        padding-bottom: 0.25em;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+        background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    }
+    .scroll {
+        max-height: 10em;
+    }
+    &.slide {
+        header {
+            cursor: default;
+        }
+    }
+}
+
+/* Asides */
+.aside, aside {
+    &.left {
+        margin: 0 1em 1em 0;
+    }
+    &.right {
+        margin: 0 0 1em 1em;
+    }
+}
+
+.content > header {
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    padding: 0.75em 1em;
+    font-size: 125%;
+}
+
+/* Tables */
+/* Classic Tables */
+table {
+    &.stripes tbody tr:nth-child(even) {
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    }
+    td, th {
+        padding: 0.5em 1em;
+        border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    }
+    th {
+        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+        background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3)); 
+    }
+    caption {
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        padding: 0.5em 1em;
+        font-size: 125%;
+        font-weight: $thickFontWeight;
+        text-transform: uppercase;
+    }
+    tfoot td {
+        background-color: rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+        border-top: none;
+    }
+    &.center {
+        text-align: center;
+    }
+    &.right {
+        text-align: right;
+    }
+    &.condensed {
+        td, th {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+    }
+}
+
+/* List Tables*/
+.table {
+    display: table;
+    width: auto;
+    position: relative;
+    header {
+        width: auto;
+        line-height: 2;
+        display: table-header-group;
+    }
+    footer {
+        width: auto;
+        display: table-footer-group;
+        line-height: 2;
+    }
+    header, footer {
+        .title {
+            display: block;
+            padding-left: 1em;
+            padding-right: 1em;
+            float: none;
+        }
+    }
+    .list {
+        &.last, &:last-child, &.col {
+            border-bottom: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+        float: left;
+        display: block;
+    }
+    .item {
+        border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        border-left: none;
+        border-bottom: none;
+        &.first, &:first-child {
+
+        }
+        .title {
+            display: block;
+            padding: 0.5em 1em;
+            float: none;
+        }
+    }
+    .col .item, .row .item.first, .row .item:first-child, .col .item.first, .col .item:first-child {
+        border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    }
+    .col .item {
+        border-left: none;
+    }
+    .row:first-child .item, .col:first-child .item {
+        border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    }
+    .rows {
+        display: table-row-group;
+        .list {
+            width: auto;
+            margin: 0;
+            .item {
+                display: table-cell;
+            }
+        }
+    }
+    .rows.stripes .list:nth-child(even), .cols.stripes .list:nth-child(even) {
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    }
+    .list {
+        display: block;
+        width: auto;
+        float: left;
+        margin: 0;
+        .item {
+            display: block;
+            &.header {
+                color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                font-weight: $thickFontWeight;
+            }
+            &.footer {
+                color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                font-weight: $thickFontWeight;
+            }
+        }
+    }
+    &.stripes {
+        .list {
+            .item:nth-child(even) {
+                .title {
+                    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                }
+            }
+        }
+    }
+    &.first, &:first-child {
+
+    }
+}
+
+/* Sections */
+html#{$documentID} .section, html#{$documentID} .section-free, html#{$documentID} .section-padded, html#{$documentID} .section-vertical, html#{$documentID} .section-horizontal, html#{$documentID} .section-left, html#{$documentID} .section-right, html#{$documentID} .section-top, html#{$documentID} .section-bottom {
+    position: relative;
+    margin: 1.5em;
+}
+
+html#{$documentID} .section.free, html#{$documentID} .section-free {
+    margin: 0;
+}
+
+html#{$documentID} .section.padded, html#{$documentID} .section-padded {
+    padding: 1em;
+}
+
+html#{$documentID} .section.vertical, html#{$documentID} .section-vertical {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+html#{$documentID} .section.horizontal, html#{$documentID} .section-horizontal {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+html#{$documentID} .section.left, html#{$documentID} .section-left {
+    margin-left: 0;
+}
+
+html#{$documentID} .section.right, html#{$documentID} .section-right {
+    margin-right: 0;
+}
+
+html#{$documentID} .section.top, html#{$documentID} .section-top {
+    margin-top: 0;
+}
+
+html#{$documentID} .section.bottom, html#{$documentID} .section-bottom {
+    margin-bottom: 0;
+}
+
+html#{$documentID} .section-full {
+    width: 100%;
+    margin: 1.5em 0;
+    padding: 0;
+}
+
+
+/* BEHAVIORS */
+
+/* Sliding Behavior */
+.slide { /* Action Class */
+    > .content {
+        display: none;
+    }
+    > * > .trigger, > .trigger > .icon {
+        cursor: pointer;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 0.5em;
+    }
+}
+
+.active .content {
+    display: block;
+}
+
+/* Icons Behavior */
+.icon, .icon-default {
+    float: none;
+    margin-top: 3px;
+}
+
+.icon.left, .icon-default.left {
+    float: left;
+    margin-right: 6px;
+}
+
+.icon.right, .icon-default.right {
+    float: right;
+    margin-left: 16px;
+}
+
+.icon.medium, .medium .icon, .icon-default.medium, .medium .icon-default {
+    margin-top: 6px;
+}
+
+.content > .icon, .content > .icon-default {
+    margin-top: 0;
+}
+
+
+/* COMPONENTS */
+
+/* Timeline */
+html#{$documentID} .timeline {
+    position: relative;
+    margin: 5em 0;
+    .bar {
+        padding: 0 3em;
+        height: auto;
+        max-height: 1em;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    }
+    .list {
+        .item {
+            display: block;
+            padding-right: 1em;
+            float: left;
+            width: auto;
+            min-width: 10em;
+            position: relative;
+            span {
+                display: block;
+                position: relative;
+            }
+            .datetime {
+               top: -4em; 
+            }
+            .content {
+                display: none;
+                position: absolute;
+                top: 4em;
+                padding: 0.75em;
+                min-height: 3em;
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                width: auto;
+                min-width: 300%;
+                z-index: 996;
+            }
+            .dot {
+                position: absolute;
+                top: -0.25em;
+                width: 1.5833em;
+                height: 1.5833em;
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                cursor: default;
+            }
+            img.dot {
+                width: 4.7499em;
+                height: 4.7499em;
+                top: -1.75em;
+                border: 0.25em solid rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                @include border-radius(5em);
+            }
+        }
+        .item:hover {
+            .content {
+                display: block;
+            }
+            .dot {
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.9);
+            }
+        }
+    }
+    &.vertical {
+        margin: 0 2em;
+        .bar {
+            max-height: inherit;
+            max-width: 1em;
+            width: auto;
+            padding: 3em 0;
+            margin: 0 auto;
+        }
+        .list .item {
+            padding-right: 0;
+            padding-bottom: 1em;
+            min-height: 10em;
+            min-width: inherit;
+            float: none;
+            .dot {
+                top: 0;
+                left: -0.3em;
+            }
+            img.dot {
+                width: 4.7499em;
+                height: 4.7499em;
+                left: -1.75em;
+                max-width: inherit;
+            }
+            .datetime, .title {
+                top: 0;
+                left: -16.5em;
+                text-align: right;
+                min-width: 180px;
+            }
+            .datetime {
+                top: 1.5em;
+            }
+            .title {
+                display: none;
+                padding: 0.5em 0.75em;
+                text-align: left;
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+            .content {
+                position: relative;
+                top: -4em;
+                left: 4em;
+                min-width: 480px;
+                display: none;
+            }
+            &:hover .content, &:hover .title {
+                display: inline-block;
+            }
+            &:hover .datetime {
+                top: 0;
+            }
+            &.inverse {
+
+            }
+        }
+    }
+    &.static .list .item .content, &.static .list .item .title {
+        display: inline-block;
+    }
+    &.static .list .item .content {
+        position: relative;
+    }
+    &.static .list .item .datetime {
+        top: 0;
+    }
+}
+
+/* Flyer */
+html#{$documentID} .flyer {
+    position: relative;
+    .content {
+        display: block;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    }
+    .action {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border: none;
+        font-weight: $thickFontWeight;
+        font-size: 125%;
+        @include box-shadow(none);
+        html#{$documentID} &:active {
+            top: 0;
+            margin-bottom: 0;
+        }
+    }
+}
+
+/* Tags */
+html#{$documentID} .tags {
+    margin: 0;
+    .item {
+        float: left;
+        display: block;
+        margin-right: 0.5em;
+        margin-bottom: 0.5em;
+    }
+    .item:last-child {
+        margin-right: 0;
+    }
+    .item .tag {
+        display: block;
+        text-transform: uppercase;
+        font-weight: $fontWeight;
+        font-size: 85%;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        &:hover, &:active {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+        }
+    }
+}
+
+/* Elements Revealer */
+html#{$documentID} .reveal {
+    .visible-element, .hidden-element {
+        width: 50%;
+        float: left;
+    }
+    .visible-element {
+        width: 100%;
+    }
+    .hidden-element {
+        display: none;
+    }
+}
+
+/* Comments */
+html#{$documentID} body#{$frameworkClass} .comments {
+    position: relative;
+    @include box-shadow(none);
+    > .list > .item {
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        .comment {
+            position: relative;
+        }
+        &.replied {
+            .reply {
+                .replier {
+                    margin-left: 4em;
+                    position: relative;
+                    > .icon {
+                        font-size: 150%;
+                        display: block;
+                        position: absolute;
+                        left: -1em;
+                        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.25);
+                        @include transform(rotate(180deg));
+                    }
+                    .comment-block .controls {
+                        display: none;
+                    }
+                    + .reply {
+                        margin-left: 4em;
+                    }
+                }
+                &:hover > .comment .controls {
+                    display: block;
+                }
+                > .comment:hover .controls {
+                    display: block;
+                }
+            }
+        }
+        &:nth-child(even) {
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
+        aside {
+            margin: 0;
+            padding: 1em;
+            &.commenter {
+                width: auto;
+                max-width: 20%;
+                .name {
+                    display: block;
+                    padding: 0.25em 0.5em;
+                    text-align: center;
+                    font-weight: $thickFontWeight;
+                    text-transform: uppercase;
+                    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                }
+                img {
+                    width: 100%;
+                    max-width: 120px;
+                    border: 0.25em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+                }
+            }
+            &.comment-block {
+                width: 80%;
+                padding-left: 0;
+                .controls {
+                    display: none;
+                    top: 1em;
+                    .item {
+                        display: block;
+                        .link {
+                            display: block;
+                        }
+                        .icon {
+                            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.25);
+                            display: block;
+                            margin-top: 0;
+                            padding: 0.5em 0.75em;
+                            &:hover, &:active {
+                                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                            }
+                        }
+                    }
+                }
+                p {
+                    margin-top: 0;
+                }
+            }
+        }
+        > .comment:hover .controls {
+            display: block;
+        }
+    }
+    .post-comment {
+        position: relative;
+        textarea {
+            margin-top: 1em;
+            width: 100%;
+        }
+        button {
+            position: absolute;
+            bottom: 0;
+            top: auto;
+            right: 0;
+            &:active {
+                top: auto;
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* Feedback */
+html#{$documentID} body#{$frameworkClass} .feedback, html#{$documentID} body#{$frameworkClass} .feedback-right {
+    .client {
+        display: block;
+        float: left;
+        max-width: 120px;
+        margin-right: 1.5em;
+        .avatar, .name {
+            display: block;
+        }
+        .avatar {
+            max-width: 100%;
+            border: 0.25em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+        }
+        .name {
+            text-align: center;
+            font-weight: $thickFontWeight;
+        }
+    }
+    .quote {
+        width: auto;
+        min-width: 25%;
+        max-width: 75%;
+        float: left;
+        position: relative;
+        @include box-shadow(0 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1));
+        .icon.main {
+            font-size: 150%;
+            position: absolute;
+            left: -0.5em;
+            margin-top: 0;
+            color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        }
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .feedback-right {
+    .client {
+        margin-right: 0;
+        margin-left: 1.5em;
+        float: left;
+    }
+    .quote {
+        border-left: none;
+        border-right: 0.4166em solid transparent;
+        .icon.main {
+            left: auto;
+            right: -0.5em;
+            margin-top: 0;
+        }
+    }
+}
+
+/* Social Icons */
+html#{$documentID} body#{$frameworkClass} .social {
+    .item {
+        float: left;
+        display: block;
+        text-align: center;
+        margin: 0 0.25em 0.25em 0;
+        &:last-child {
+            margin-right: 0;
+        }
+        a {
+            padding: 0.25em 0.6666em;
+            min-width: 32px;
+            display: block;
+            text-align: center;
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        }
+        &.facebook a:hover, &.facebook a:active {
+            color: #3C599B;
+        }
+        &.twitter a:hover, &.twitter a:active {
+            color: #32CCFE;
+        }
+        &.linkedin a:hover, &.linkedin a:active {
+            color: #017EB4;
+        }
+        &.google-plus a:hover, &.google-plus a:active {
+            color: #D95232;
+        }
+        &.github a:hover, &.github a:active {
+            color: #171516;
+        }
+        &.flickr a:hover, &.flickr a:active {
+            color: #FF0084;
+        }
+        &.pinterest a:hover, &.pinterest a:active {
+            color: #CC2127;
+        }
+        &.foursquare a:hover, &.foursquare a:active {
+            color: #156DB5;
+        }
+        &.instagram a:hover, &.instagram a:active {
+            color: #A16F55;
+        }
+        &.vimeo a:hover, &.vimeo a:active {
+            color: #1BB6EC;
+        }
+        &.tumblr a:hover, &.tumblr a:active {
+            color: #2C4762;
+        }
+        &.youtube a:hover, &.youtube a:active {
+            color: #D51D27;
+        }
+        &.stack-overflow a:hover, &.stack-overflow a:active {
+            color: #FE7413;
+        }
+        &.dribbble a:hover, &.dribbble a:active {
+            color: #E04C86;
+        }
+        &.skype a:hover, &.skype a:active {
+            color: #01AEF2;
+        }
+        &.dropbox a:hover, &.dropbox a:active {
+            color: #007EE5;
+        }
+        &.bitbucket a:hover, &.bitbucket a:active {
+            color: #205081;
+        }
+    }
+    &.with-background {
+        background-color: transparent !important;
+        padding: 0;
+        .item {
+            a {
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.25);
+            background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+                &:hover, &:active {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                }
+            }
+            &.facebook a:hover, &.facebook a:active {
+                background-color: #3C599B;
+            }
+            &.twitter a:hover, &.twitter a:active {
+                background-color: #32CCFE;
+            }
+            &.linkedin a:hover, &.linkedin a:active {
+                background-color: #017EB4;
+            }
+            &.google-plus a:hover, &.google-plus a:active {
+                background-color: #D95232;
+            }
+            &.github a:hover, &.github a:active {
+                background-color: #171516;
+            }
+            &.flickr a:hover, &.flickr a:active {
+                background-color: #FF0084;
+            }
+            &.pinterest a:hover, &.pinterest a:active {
+                background-color: #CC2127;
+            }
+            &.foursquare a:hover, &.foursquare a:active {
+                background-color: #156DB5;
+            }
+            &.instagram a:hover, &.instagram a:active {
+                background-color: #A16F55;
+            }
+            &.vimeo a:hover, &.vimeo a:active {
+                background-color: #1BB6EC;
+            }
+            &.tumblr a:hover, &.tumblr a:active {
+                background-color: #2C4762;
+            }
+            &.youtube a:hover, &.youtube a:active {
+                background-color: #D51D27;
+            }
+            &.stack-overflow a:hover, &.stack-overflow a:active {
+                background-color: #FE7413;
+            }
+            &.dribbble a:hover, &.dribbble a:active {
+                background-color: #E04C86;
+            }
+            &.skype a:hover, &.skype a:active {
+                background-color: #01AEF2;
+            }
+            &.dropbox a:hover, &.dropbox a:active {
+                background-color: #007EE5;
+            }
+            &.bitbucket a:hover, &.bitbucket a:active {
+                background-color: #205081;
+            }
+        }
+    }
+    &.transitioning {
+        .item {
+            a {
+
+            }
+        }
+    }
+}
+
+/* Pricing Tables */
+html#{$documentID} body#{$frameworkClass} .pricing-table, html#{$documentID} body#{$frameworkClass} .framework .pricing-table {
+    thead {
+        font-size: 200%;
+        th {
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            border: none;
+            padding: 0;
+            .title {
+                display: block;
+                float: none;
+                padding: 0.5em 1em;
+                border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            }
+            &:last-child {
+                .title {
+                    border-right: none;
+                }
+            }
+            &.features {
+                background-color: transparent;
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+        }
+    }
+    tbody {
+        td {
+            text-align: center;
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            .icon {
+                font-size: 150%;
+                display: inline-block;
+            }
+        }
+    }
+    tfoot {
+        td {
+            padding: 0;
+            background-color: transparent;
+            text-align: center;
+            border: none;
+            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            a {
+                display: block;
+                margin-right: 1px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+                background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                &:hover {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                }
+                &:active {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                }
+            }
+            &:last-child {
+                a {
+                    margin-right: 0;
+                }
+            }
+            html#{$documentID} &.one, html#{$documentID} &.two, html#{$documentID} &.three {
+                background-color: transparent;
+            }
+            .price {
+                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                font-size: 200%;
+                display: block;
+            }
+        }
+    }
+    th, td {
+        border: none;
+        &.featured {
+            background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+            a {
+                background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                &:hover {
+                    background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3), 0.9);
+                }
+                &:active {
+                    background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                }
+            }
+        }
+    }
+    td.featured {
+        color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} .table.pricing {
+    .list {
+        .item {
+            text-align: center;
+            border: none;
+            &.header, &.footer {
+                padding: 0;
+            }
+            &.header {
+                background-color: transparent;
+                .title {
+                    font-size: 200%;
+                    text-transform: uppercase;
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                    margin-right: 1px;
+                }
+            }
+            &.footer {
+                background-color: transparent;
+                a {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                    display: block;
+                    margin-right: 0;
+                    font-weight: $fontWeight;
+                    &:hover {
+                        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                        background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                    }
+                    &:active {
+                        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+                        background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                    }
+                }
+            }
+            .title {
+                display: block;
+                float: none;
+                padding: 0.5em 1em;
+                .icon {
+                    font-size: 150%;
+                    display: inline-block;
+                }
+            }
+            .price {
+                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                font-size: 200%;
+                display: block;
+            }
+        }
+        &.features {
+            display: table-cell;
+        }
+        &.features .item {
+            background-color: transparent;
+            .title {
+                padding-top: 0.72em;
+                padding-bottom: 0.73em;
+                background-color: transparent;
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+        }
+        &.features .item.header {
+            .title {
+                padding-top: 0.5em;
+                padding-bottom: 0.5em;
+            }
+        }
+        &.last, &:last-child {
+            .item {
+                &.footer a {
+                    margin-right: 0;
+                }
+                &.header .title {
+                    margin-right: 0;
+                }
+            }
+        }
+        &:nth-child(even) {
+            .header .title {
+                background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3)) !important;
+            }
+            .footer a {
+                background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+               &:hover {
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.9);
+               }
+               html#{$documentID} &:active {
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+               }
+            }
+        }
+        &.featured {
+            border: 0.25em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            margin: -1em 0;
+            .item .title {
+                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            }
+            .header .title {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)) !important;
+            }
+            .footer a {
+                background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+               &:hover {
+                    background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3), 0.9);
+               }
+               &:active {
+                    background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+               }
+            }
+        }
+    }
+    &.featured-outside {
+        .list {
+            @include opacity(0.5);
+            &:hover {
+                margin: 1em -1em -1em;
+                position: relative;
+                z-index: 995;
+                padding: 0.25em;
+                font-size: 125%;
+                background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                @include opacity(1);
+            }
+            &.features {
+                margin: 0;
+                padding: 0;
+                font-size: 100%;
+                background-color: transparent;
+                @include transition(none);
+                @include opacity(1);
+            }
+        }
+    }
+    .packages {
+        display: table-cell;
+        position: relative;
+    }
+}
+
+/* Spotlight */
+html#{$documentID} body#{$frameworkClass} .spotlight {
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    border-bottom: 0.5em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.15);
+    @include box-shadow(inset 0 -0.5em 1.5em rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3),0.85));
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+/* OTHERS */
+
+/* CSS3 Special Classes */
+html#{$documentID} {
+    @include box-shadow(none);
+    @include text-shadow(none);
+}
+html#{$documentID} body#{$frameworkClass}.no-border-radius, html#{$documentID} body#{$frameworkClass}.no-border-radius * {
+    @include border-radius(0);
+}
+
+html#{$documentID} body#{$frameworkClass}.no-box-shadow, html#{$documentID} body#{$frameworkClass}.no-box-shadow * {
+    @include box-shadow(none);
+}
+
+html#{$documentID} body#{$frameworkClass}.no-transition, html#{$documentID} body#{$frameworkClass}.no-transition * {
+    @include transition(none);
+}
+
+html#{$documentID} body#{$frameworkClass}.no-text-shadow, html#{$documentID} body#{$frameworkClass}.no-text-shadow * {
+    @include text-shadow(none);
+}
+
+/* Clearfixes */
+.clearfix, p.description, .menu, .menu-list, .submenu, .breadcrumb, .list, .input-wrapper, .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .flyer, .flyer > .content, .box > .content, .container, table, .table, .table .cols, .comment, .reveal, .reveal aside, .feedback, .feedback-right, .table.pricing .packages, .button-group, .pagination, aside.element, .content > p, .controls > .item, .controls-horizontal > .item {
+    @extend %clearfix;
+    &:before, &:after {
+        @extend %clearfix-ba;
+    }
+    &:after {
+        @extend %clearfix-a;
+    }
+}
+
+/* Apply CSS3 Properties from Config to Delegated Elements */
+@import "../features/css3-elements.scss";
+// @import "../features/minified/css3-elements.min.scss"; - minified version
+
+/*
+   =========================================================================
+*/
+
+
+/* ==========================================================================
+   Boilerplate Helper classes
+   ========================================================================== */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    *text-indent: -9999px;
+    &:before {
+        content: "";
+        display: block;
+        width: 0;
+        height: 150%;
+    }
+}
+
+html#{$documentID} .hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    &.focusable:active, &.focusable:focus {
+        clip: auto;
+        height: auto;
+        margin: 0;
+        overflow: visible;
+        position: static;
+        width: auto;
+    }
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+/* ==========================================================================
+   Boilerplate Print styles
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3)) !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid rgbToHsla(153,153,153);
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

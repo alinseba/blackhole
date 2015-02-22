@@ -1,0 +1,90 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "base/core.scss";
+@import "config/config.scss";
+
+
+/* Color Scheme */
+// Import your desired color scheme in here
+
+
+/* Clearfixes */
+.clearfix, #main-header .wrapper, #main-footer .wrapper {
+  	@extend %clearfix;
+  	&:before, &:after {
+      	@extend %clearfix-ba;
+  	}
+  	&:after {
+      	@extend %clearfix-a;
+  	}
+}
+
+/* Default Styles */
+html#{$documentID} body#{$frameworkClass} {
+	#main-header {
+		background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+		padding: 0.75em 0;
+		.wrapper {
+			margin: 0 auto;
+			padding: 0 1.5em;
+		}
+		.logo {
+            display: block;
+            float: left;
+            margin-top: 0;
+            margin-right: 0;
+            width: 100%;
+            a, a:hover, a:active {
+                display: block;
+                font-size: 125%;
+                text-transform: uppercase;
+                font-weight: 700;
+                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
+        }
+	}
+	#main-content {
+		h1 {
+			margin-bottom: 1em;
+		}
+		min-height: 800px;
+		.learn {
+			display: block;
+			margin-top: 1em;
+		}
+	}
+	#main-footer {
+		padding: 1em 1.5em;
+		a {
+			color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+		}
+		.copyright {
+			float: left;
+		}
+		.version {
+			float: right;
+			margin-right: 1.5em;
+		}
+		.social {
+			float: right;
+			.item {
+				margin-bottom: 0;
+			}
+		}
+		.copyright, .version {
+			margin-top: 0.25em;
+		}
+	}
+}
+
+/* Your Styles */
+
+
+/* Framework Overwrites */
+// Your overwrites on the framework go in here
+
+
+/* Various Overwrites */
+// Your overwrites on your project go in here

@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html id="myDocument" class="no-js my-document">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Component Manager - Notifications</title>
+        <meta name="author" content="Alin Seba">
+        <meta name="description" content="Blackhole - minimalistic but powerful and flexible SASS framework">
+        <meta name="keywords" content="reusable components, modularity, sass framework, semantic code">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'><!-- BODY FONT -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!-- HEADINGS FONT -->
+
+        <!-- === MAIN STYLES === -->
+        <link rel="stylesheet" href="../styles/base/normalize.min.css"><!-- CSS RESETER -->
+        <link rel="stylesheet" href="../styles/base/boilerplate.css"><!-- BOILERPLATE -->
+        <!-- <link rel="stylesheet" href="../styles/base/minified/boilerplate.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="../styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="../styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/main.css"><!-- MAIN STYLES -->
+        <!-- <link rel="stylesheet" href="styles/minified/main.min.css"> --><!-- minified version -->
+
+        <!-- === PLUGINS STYLES === -->
+        <link rel="stylesheet" href="styles/vendor/highlight/monokai_sublime.css">
+
+        <!-- === VENDOR SCRIPTS === -->
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- === PLUGIN SCRIPTS === -->
+        <script src="js/uikit/uikit.min.js"></script>
+        <script src="js/uikit/addons/notify.min.js"></script>
+        <script src="js/uikit/addons/pagination.min.js"></script>
+        <script src="js/plugins/highlight/highlight.pack.js"></script>
+
+    </head>
+    <body id="myFramework" class="my-framework no-text-shadow">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="framework" class="framework"><!-- FRAMEWORK STARTS HERE -->
+
+            <header id="main-header" class="section-free fixed-element"><!-- MAIN HEADER STARTS HERE -->
+                <!-- YOUR MAIN HEADER MARKUP -->
+                <nav id="main-menu">
+                    <ul class="menu components">
+                        <li class="item typography-components">
+                            <a title="Typography Section" class="link" href="typography.html">Typography</a>
+                        </li>
+                        <li class="item buttons-components">
+                            <a title="Buttons Section" class="link" href="ui-buttons.html">Buttons</a>
+                        </li>
+                        <li class="item inputs-components">
+                            <a title="Inputs Section" class="link" href="ui-inputs.html">Inputs</a>
+                        </li>
+                        <li class="item controls-components">
+                            <a title="Controls Section" class="link" href="ui-controls.html">Controls</a>
+                        </li>
+                        <li class="item navigation-components">
+                            <a title="Navigation Section" class="link" href="navigation.html">Navigation</a>
+                        </li>
+                        <li class="item notifications-components active">
+                            <a title="Notifications Section" class="link" href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="item boxes-components">
+                            <a title="Boxes Section" class="link" href="boxes.html">Boxes</a>
+                        </li>
+                        <li class="item tables-components">
+                            <a title="Tables Section" class="link" href="tables.html">Tables</a>
+                        </li>
+                        <li class="item icons-components">
+                            <a title="Icons Section" class="link" href="icons.html">Icons</a>
+                        </li>
+                        <li class="item media-components">
+                            <a title="Media Section" class="link" href="media.html">Media</a>
+                        </li>
+                        <li class="item components-components">
+                            <a title="Components Section" class="link" href="components.html">Components</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header><!-- MAIN HEADER ENDS HERE -->
+
+            <section id="main-section" class="section-vertical"><!-- MAIN SECTION STARTS HERE -->
+                <div id="main-content" class="section-free"><!-- MAIN CONTENT STARTS HERE -->
+                    <!-- YOUR MAIN SECTION MARKUP -->
+                    <ul id="notifications" class="list main notifications">
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#notifications-1'}">
+                                    <li class="item">
+                                        <a href="#notifications-1-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#notifications-1-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="notifications-1" class="list">
+                                    <li id="notifications-1-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="message-alert">This is a Simple Alert Message</span>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;span class="message-alert"&gt;This is a Simple Alert Message&lt;/span&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="notifications-1-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="message-alert">You have 3 errors waiting to be fixed</span>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;span class="message-alert"&gt;You have 3 errors waiting to be fixed&lt;/span&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#notifications-2'}">
+                                    <li class="item">
+                                        <a href="#notifications-2-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#notifications-2-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="notifications-2" class="list">
+                                    <li id="notifications-2-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="js-functionality">this component uses the <strong>legacyModal</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                            <div class="box">
+                                                <span class="message-modal alert">This is a Simple Modal Alert Message <span class="tooltip icon right" title="Close this box"></span></span>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="box"&gt;
+    &lt;span class="message-modal alert"&gt;This is a Simple Modal Alert Message &lt;span class="tooltip icon right" title="Close this box"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="notifications-2-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="box">
+                                                <span class="message-modal alert">You have 3 errors waiting to be fixed <span class="tooltip icon right" title="Close this box"></span></span>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="box"&gt;
+    &lt;span class="message-modal alert"&gt;You have 3 errors waiting to be fixed &lt;span class="tooltip icon right" title="Close this box"&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-alert with-icon">This is a Simple Alert Message with Icon <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-alert with-icon"&gt;This is a Simple Alert Message with Icon &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&lt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-alert with-icon transparency">This is a Simple Alert Message with Icon and Transparency <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-alert with-icon transparency"&gt;This is a Simple Alert Message with Icon and Transparency &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-warning with-icon">This is a Simple Warning Message with Icon <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-warning with-icon"&gt;This is a Simple Warning Message with Icon &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-error with-icon">This is a Simple Error Message with Icon <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-error with-icon"&gt;This is a Simple Error Message with Icon &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-info with-icon">This is a Simple Info Message with Icon <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-info with-icon"&gt;This is a Simple Info Message with Icon &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message-ok with-icon">This is a Simple OK Message with Icon <span class="icon right"></span></span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message-ok with-icon"&gt;This is a Simple OK Message with Icon &lt;span class="icon right"&gt;&lt;/span&gt;&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message">This is a Simple Neutral Message</span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message"&gt;This is a Simple Neutral Message&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message thin">This is a Simple Thin Message</span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message thin"&gt;This is a Simple Thin Message&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="message in-box">This is an In-box Message</span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="message in-box"&gt;This is an In-box Message&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#notifications-12'}">
+                                    <li class="item">
+                                        <a href="#notifications-12-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#notifications-12-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="notifications-12" class="list">
+                                    <li id="notifications-12-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="message flickering">This is a flickering message / item</span>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;span class="message flickering"&gt;This is a flickering message / item&lt;/span&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="notifications-12-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <span class="message flickering">You have 3 remaining major bugs waiting to be fixed</span>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;span class="message flickering"&gt;You have 3 remaining major bugs waiting to be fixed&lt;/span&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="tab-control">
+                                <ul class="list options" data-uk-switcher="{connect:'#notifications-16'}">
+                                    <li class="item">
+                                        <a href="#notifications-16-1" class="link" title="Generic">Generic</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="#notifications-16-2" class="link" title="Showcase">Showcase</a>
+                                    </li>
+                                </ul>
+                                <ul id="notifications-16" class="list">
+                                    <li id="notifications-16-1" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <h4 class="element-name"><span class="red">UIKit</span> Tooltip</h4>
+                                            <div class="uikit-component">
+                                                <a href="#" class="link" data-uk-tooltip title="Your Tooltip Message in Here">Hover here</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="link" data-uk-tooltip title="Your Tooltip Message in Here"&gt;Hover here&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                    <li id="notifications-16-2" class="tab-content reveal">
+                                        <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                            <div class="uikit-component">
+                                                <a href="#" class="link" data-uk-tooltip title="Close">Close</a>
+                                            </div>
+                                        </aside>
+                                        <aside class="code right hidden-element">
+                                            <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="link" data-uk-tooltip title="Close"&gt;Close&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                                        </aside>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Positioning Tooltips</h4>
+                                <div class="uikit-component tooltips">
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'top'}" title="Your Tooltip Message in Here">Top Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'top-left'}" title="Your Tooltip Message in Here">Top Left Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'top-right'}" title="Your Tooltip Message in Here">Top Right Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'bottom'}" title="Your Tooltip Message in Here">Bottom Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'bottom-left'}" title="Your Tooltip Message in Here">Bottom Left Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'bottom-right'}" title="Your Tooltip Message in Here">Bottom Right Positioned Tooltip</a>
+                                    <a href="#" class="link right" data-uk-tooltip="{pos: 'left'}" title="Your Tooltip Message in Here">Left Positioned Tooltip</a>
+                                    <a href="#" class="link" data-uk-tooltip="{pos: 'right'}" title="Your Tooltip Message in Here">Right Positioned Tooltip</a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component tooltips"&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'top'}" title="Your Tooltip Message in Here"&gt;Top Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'top-left'}" title="Your Tooltip Message in Here"&gt;Top Left Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'top-right'}" title="Your Tooltip Message in Here"&gt;Top Right Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'bottom'}" title="Your Tooltip Message in Here"&gt;Bottom Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'bottom-left'}" title="Your Tooltip Message in Here"&gt;Bottom Left Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'bottom-right'}" title="Your Tooltip Message in Here"&gt;Bottom Right Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link right" data-uk-tooltip="{pos: 'left'}" title="Your Tooltip Message in Here"&gt;Left Positioned Tooltip&lt;/a&gt;
+    &lt;a href="#" class="link" data-uk-tooltip="{pos: 'right'}" title="Your Tooltip Message in Here"&gt;Right Positioned Tooltip&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Notification</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button notify" title="UIKit Notification" data-pos="top-center" data-message="This is a Simple Notification"><span class="title">Simple Notification</span></a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button notify" title="UIKit Notification" data-pos="top-center" data-message="This is a Simple Notification"&gt;&lt;span class="title"&gt;Simple Notification&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Sticky Notification</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button sticky-notify" title="UIKit Sticky Notification" data-pos="top-center" data-message="This is a Sticky Notification"><span class="title">Sticky Notification</span></a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button sticky-notify" title="UIKit Sticky Notification" data-pos="top-center" data-message="This is a Sticky Notification"&gt;&lt;span class="title"&gt;Sticky Notification&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Delayed Notification</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button delay-notify" title="UIKit Delayed Notification" data-pos="top-center" data-message="This is a Delayed Notification"><span class="title">Delayed Notification</span></a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button delay-notify" title="UIKit Delayed Notification" data-pos="top-center" data-message="This is a Delayed Notification"&gt;&lt;span class="title"&gt;Delayed Notification&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Positioning Notifications</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button notify" title="UIKit Top Center Notification" data-pos="top-center" data-message="This is a Top Center Notification"><span class="title">Top Center Notification</span></a>
+                                    <a href="#" class="button notify" title="UIKit Top Left Notification" data-pos="top-left" data-message="This is a Top Left Notification"><span class="title">Top Left Notification</span></a>
+                                    <a href="#" class="button notify" title="UIKit Top Right Notification" data-pos="top-right" data-message="This is a Top Right Notification"><span class="title">Top Right Notification</span></a>
+                                    <a href="#" class="button notify" title="UIKit Bottom Center Notification" data-pos="bottom-center" data-message="This is a Bottom Center Notification"><span class="title">Bottom Center Notification</span></a>
+                                    <a href="#" class="button notify" title="UIKit Bottom Left Notification" data-pos="bottom-left" data-message="This is a Bottom Left Notification"><span class="title">Bottom Left Notification</span></a>
+                                    <a href="#" class="button notify" title="UIKit Bottom Right Notification" data-pos="bottom-right" data-message="This is a Bottom Right Notification"><span class="title">Bottom Right Notification</span></a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button notify" title="UIKit Top Center Notification" data-pos="top-center" data-message="This is a Top Center Notification"&gt;&lt;span class="title"&gt;Top Center Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify" title="UIKit Top Left Notification" data-pos="top-left" data-message="This is a Top Left Notification"&gt;&lt;span class="title"&gt;Top Left Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify" title="UIKit Top Right Notification" data-pos="top-right" data-message="This is a Top Right Notification"&gt;&lt;span class="title"&gt;Top Right Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify" title="UIKit Bottom Center Notification" data-pos="bottom-center" data-message="This is a Bottom Center Notification"&gt;&lt;span class="title"&gt;Bottom Center Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify" title="UIKit Bottom Left Notification" data-pos="bottom-left" data-message="This is a Bottom Left Notification"&gt;&lt;span class="title"&gt;Bottom Left Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify" title="UIKit Bottom Right Notification" data-pos="bottom-right" data-message="This is a Bottom Right Notification"&gt;&lt;span class="title"&gt;Bottom Right Notification&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Status Notifications</h4>
+                                <div class="uikit-component">
+                                    <a href="#" class="button notify-info" title="UIKit Info Notification" data-pos="top-center" data-message="This is a Info Notification"><span class="title">Info Notification</span></a>
+                                    <a href="#" class="button notify-success" title="UIKit Success Notification" data-pos="top-center" data-message="This is a Success Notification"><span class="title">Success Notification</span></a>
+                                    <a href="#" class="button notify-warning" title="UIKit Warning Notification" data-pos="top-center" data-message="This is a Warning Notification"><span class="title">Warning Notification</span></a>
+                                    <a href="#" class="button notify-danger" title="UIKit Danger Notification" data-pos="top-center" data-message="This is a Danger Notification"><span class="title">Danger Notification</span></a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;a href="#" class="button notify-info" title="UIKit Info Notification" data-pos="top-center" data-message="This is a Info Notification"&gt;&lt;span class="title"&gt;Info Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify-success" title="UIKit Success Notification" data-pos="top-center" data-message="This is a Success Notification"&gt;&lt;span class="title"&gt;Success Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify-warning" title="UIKit Warning Notification" data-pos="top-center" data-message="This is a Warning Notification"&gt;&lt;span class="title"&gt;Warning Notification&lt;/span&gt;&lt;/a&gt;
+    &lt;a href="#" class="button notify-danger" title="UIKit Danger Notification" data-pos="top-center" data-message="This is a Danger Notification"&gt;&lt;span class="title"&gt;Danger Notification&lt;/span&gt;&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                    </ul>
+                </div><!-- MAIN CONTENT ENDS HERE -->
+            </section><!-- MAIN SECTION ENDS HERE -->
+
+            <footer id="main-footer" class="section-free"><!-- MAIN FOOTER STARTS HERE -->
+                <!-- YOUR MAIN FOOTER MARKUP -->
+                <div class="wrapper"><!-- MAIN FOOTER WRAPPER STARTS HERE -->
+                    <span class="copyright"><strong>Blackhole</strong> - Released under <a href="http://opensource.org/licenses/MIT" target="_blank" title="MIT License">MIT</a> license</span>
+                    <ul class="list social with-background">
+                        <li class="item twitter">
+                            <a href="https://twitter.com/blackholesass" title="Twitter" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item github">
+                            <a href="https://github.com/frameworkName" title="Github" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item pinterest">
+                            <a href="https://pinterest.com/pin/frameworkProfile" title="Pinterest" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                    </ul>
+                </div><!-- MAIN FOOTER WRAPPER ENDS HERE -->
+            </footer><!-- MAIN FOOTER ENDS HERE -->
+
+        </div><!-- FRAMEWORK ENDS HERE -->
+
+        <a id="scroll-up" href="#" class="scrollup" title="Scroll to Top" data-uk-tooltip></a><!-- SCROLL TO TOP BUTTON -->
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Calling of needed JS Functions / Plugins -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // jQuery Calls in here
+            });
+
+            // JS Calls in here
+
+            // highlight.js
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

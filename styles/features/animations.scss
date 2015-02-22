@@ -1,0 +1,42 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../base/core.scss";
+@import "../config/config.scss";
+
+
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+
+/* Flickering */
+@include keyframes(flickering) {
+    0% { background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3)); }
+    100% { background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+}
+.flickering {
+    @include animation(flickering 0.3s infinite alternate ease-out);
+}
+
+/* Color Swap */
+@include keyframes(color-swap) {
+    0% { background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    12.5% { background-color: rgbToHsla(83,218,63); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    25% { background-color: rgbToHsla(0,174,217); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    37.5% { background-color: rgbToHsla(255,231,26); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    50% { background-color: rgbToHsla(255,102,63); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    62.5% { background-color: rgbToHsla(255,23,163); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    75% { background-color: rgbToHsla(124,92,203); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    87.5% { background-color: rgbToHsla(149,102,76); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+    100% { background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3)); color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); }
+}
+.color-swap {
+    @include animation(color-swap 12s infinite alternate ease-out);
+}
+
+/* Full Rotation */
+@include keyframes(rotate) {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

@@ -1,0 +1,509 @@
+/*!
+ *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('../../assets/fonts/icons/fontawesome-webfont.eot?v=4.2.0');
+  src: url('../../assets/fonts/icons/fontawesome-webfont.eot?#iefix&v=4.2.0') format('embedded-opentype'), url('../../assets/fonts/icons/fontawesome-webfont.woff?v=4.2.0') format('woff'), url('../../assets/fonts/icons/fontawesome-webfont.ttf?v=4.2.0') format('truetype'), url('../../assets/fonts/icons/fontawesome-webfont.svg?v=4.2.0#fontawesomeregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa, .fa-icon, .icon-default, .overlay .icon, header > .close, .social .facebook .icon, .social .twitter .icon, .social .linkedin .icon, .social .google-plus .icon, .social .github .icon, .social .flickr .icon, .social .pinterest .icon, .social .foursquare .icon, .social .instagram .icon, .social .vimeo .icon, .social .tumblr .icon, .social .youtube .icon, .social .stack-overflow .icon, .social .dribbble .icon, .social .skype .icon, .social .dropbox .icon, .social .bitbucket .icon, .scrollup, .only-icon .icon, .input-wrapper .icon, .input.ok + .icon, .input.error + .icon, .feedback .quote .icon.main, .feedback-right .quote .icon.main, .list.controls .minimize .icon, .list.controls .options .icon, .list.controls .close .icon, .controls-horizontal .minimize .icon, .controls-horizontal .options .icon, .controls-horizontal .close .icon, .uk-close, .uk-search-close, .input-wrapper .icon.close, .controls .minimize .icon, .controls .options .icon, .controls .close .icon, .ajax-loader .load .icon, .select .button .icon, .message.modal .icon, .message-modal .icon, .select.active .button .icon, .quote .icon.left, blockquote .icon.left, .quote .icon.right, blockquote .icon.right, .header .breadcrumb .item .icon, .breadcrumb .item .icon, .input.checkbox.custom:checked + label .icon, .input.checkbox.custom:checked + label .icon, .input.checkbox.custom + label .icon, .select .list .item .link .icon, .input-wrapper .file .icon, .input-wrapper.date-picker .icon, .overlay .icon, .menu.list > .item > .link .icon.main, .menu-list > .item > .link .icon.main, .slide > * > .trigger, .slide > header .trigger, .slide > h3 .trigger, .slide > a .trigger, .slide > a.trigger .icon, .slide > * > .icon, .slide.active > * > .trigger, .slide.active > header .trigger, .slide.active > h3 .trigger, .slide.active > a .trigger, .slide.active > a.trigger .icon, .slide.active > * > .icon, .collapsable .collapse, .collapsable.active .collapse, .message.alert .icon, .message.error .icon, .message-alert .icon, .message-error .icon, .icon.error, .message.tip .icon, .message-tip .icon, .message.warning .icon, .message-warning .icon, .message.info .icon, .message-info .icon, .message.ok .icon, .message-ok .icon, .icon.ok, .return .button .icon, .pane .list.controls .docking .trigger .icon, .pane.docked .list.controls .docking .trigger .icon, .flyer .content .icon, .price .icon, .input-wrapper.username .icon, .input-wrapper.password .icon, .tag .icon, .loading .icon, .rtl .menu.breadcrumb .item .icon, .rtl .menu-list.breadcrumb .item .icon, .rtl .pane .list.controls .docking .trigger .icon, .rtl .pane.docked .list.controls .docking .trigger .icon, .previous .icon, .next .icon, #search .icon, .favorites .icon, .show-more .icon, .icon.smile, .processing .icon {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.3333333333333333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.fa-2x {
+  font-size: 2em;
+}
+.fa-3x {
+  font-size: 3em;
+}
+.fa-4x {
+  font-size: 4em;
+}
+.fa-5x {
+  font-size: 5em;
+}
+.fa-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.142857142857143em;
+  list-style-type: none;
+}
+.fa-ul > li {
+  position: relative;
+}
+.fa-li {
+  position: absolute;
+  left: -2.142857142857143em;
+  width: 2.142857142857143em;
+  top: 0.14285714285714285em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.8571428571428572em;
+}
+.fa-border {
+  padding: .2em .25em .15em;
+  border: solid 0.08em #eeeeee;
+  border-radius: .1em;
+}
+.pull-right {
+  float: right;
+}
+.pull-left {
+  float: left;
+}
+.fa.pull-left {
+  margin-right: .3em;
+}
+.fa.pull-right {
+  margin-left: .3em;
+}
+.fa-spin {
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
+@-moz-keyframes spin {
+  0% {
+    -moz-transform: rotate(0deg);
+  }
+  100% {
+    -moz-transform: rotate(359deg);
+  }
+}
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+  }
+}
+@-o-keyframes spin {
+  0% {
+    -o-transform: rotate(0deg);
+  }
+  100% {
+    -o-transform: rotate(359deg);
+  }
+}
+@-ms-keyframes spin {
+  0% {
+    -ms-transform: rotate(0deg);
+  }
+  100% {
+    -ms-transform: rotate(359deg);
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+.fa-rotate-90 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1);
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.fa-rotate-180 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+.fa-rotate-270 {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  -webkit-transform: rotate(270deg);
+  -moz-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  -o-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+.fa-flip-horizontal {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1);
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+.fa-flip-vertical {
+  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1);
+  -webkit-transform: scale(1, -1);
+  -moz-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  -o-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  filter: none;
+}
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+.fa-stack-1x {
+  line-height: inherit;
+}
+.fa-stack-2x {
+  font-size: 2em;
+}
+.fa-inverse {
+  color: #ffffff;
+}
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-music:before, .music .icon:before {
+  content: "\f001";
+}
+.fa-search:before, .search .button .icon:before, #geocoding-form button .icon:before, .search-page .input-wrapper .icon:before, #search .icon:before {
+  content: "\f002";
+}
+.fa-heart:before, .heart .icon:before {
+  content: "\f004";
+}
+.fa-star:before, .rating-star + .br-widget a span:before, .rating-only-star + .br-widget a span:before, .favorites .icon:before, .remove-favorite .icon:before {
+  content: "\f005";
+}
+.fa-star-o:before, .add-favorite .icon:before {
+  content: "\f006";
+}
+.fa-user:before, .input-wrapper.username .icon:before {
+  content: "\f007";
+}
+.fa-check:before, .input.checkbox.custom:checked + label .icon:after, .input.checkbox.custom:checked + label .icon:after, .input.checkbox.custom + label .icon:after, .select .list .item .link .icon:before {
+  content: "\f00c";
+}
+.fa-gear:before,
+.fa-cog:before, .list.controls .options .icon:before, .controls-horizontal .options .icon:before, .controls .options .icon:before {
+  content: "\f013";
+}
+.fa-trash-o:before, .remove-bets .icon:before {
+  content: "\f014";
+}
+.fa-clock-o:before .deadline .icon:before {
+  content: "\f017";
+}
+.fa-download:before, .download h3 .icon:before, .download .button .icon:before {
+  content: "\f019";
+}
+.fa-book:before, .icon.features:before {
+  content: "\f02d";
+}
+.fa-align-right:before, .rtl-version .icon:before {
+  content: "\f038";
+}
+.fa-map-marker:before, .map header .icon:before, .address .icon:before {
+  content: "\f041";
+}
+.fa-chevron-left:before, .score-panel .show-more .icon:before {
+  content: "\f053";
+}
+.fa-chevron-right:before, .breadcrumb .item .icon:before, .score-panel .expanded .show-more .icon:before {
+  content: "\f054";
+}
+.fa-plus-circle:before, .message.overlay .keep-selection .icon:before {
+  content: "\f055";
+}
+.fa-minus-circle:before, .message.overlay .remove-selection .icon:before {
+  content: "\f056";
+}
+.fa-times-circle:before, .message.alert .icon:after, .message.error .icon:after, .message-alert .icon:after, .message-error .icon:after, .icon.error:before, .remove-entry .icon:before, .message.overlay .remove-selection .icon.remove:before, .message .controls .remove .icon:before, .clear .icon:before, .close:before {
+  content: "\f057";
+}
+.fa-check-circle:before, .statuses .ok:before, .input.ok + .icon:before, .message.ok .icon:after, .message-ok .icon:after, .icon.ok:before, .add-to-selection:hover:before, .add-to-selection:active:before, .icon.register:before {
+  content: "\f058";
+}
+.fa-times:before, .fa-remove:before, .fa-close:before, header > .close:before .list.controls .close .icon:before, .controls-horizontal .close .icon:before, .controls .close .icon:before, .message.modal .icon:after, .message-modal .icon:after, .select.active .button .icon:before, .input-wrapper .icon.close:before {
+  content: "\f00d";
+}
+.fa-question-circle:before, .tooltip .icon:before, .icon.about:before {
+  content: "\f059" !important;
+}
+.fa-check-circle-o:before, .add-to-selection:before {
+  content: "\f05d";
+}
+.fa-arrow-right:before, .newsletter .input-wrapper .icon:before, .button.promotion:hover .icon:before, .button.promotion:active .icon:before {
+  content: "\f061";
+}
+.fa-arrow-up:before, .scrollup:before, .only-icon.top .icon:before {
+  content: "\f062";
+}
+.fa-arrow-down:before, .only-icon.bottom .icon:before {
+  content: "\f063";
+}
+.fa-plus:before, .slide > * > .trigger:before, .slide > .trigger .icon:before, .slide > header .trigger:before, .slide > h3 .trigger:before, .slide > a .trigger:before, .slide > a.trigger .icon:before, .slide > * > .icon:before, .slide-sliding > * > .trigger .icon:before, .slide-sliding > .trigger .icon:before, .vertical-tabs.help .submenu .item.slide-sliding:hover > a > .icon:before, .expand > .icon:before, .increment-stake .icon:before {
+  content: "\f067";
+}
+.fa-minus:before, .slide.active > * > .trigger:before, .slide.active > .trigger .icon:before, .slide.active > header .trigger:before, .slide.active > h3 .trigger:before, .slide.active > a .trigger:before, .slide.active > a.trigger .icon:before, .slide.active > * > .icon:before, .slide-sliding.active > * > .trigger .icon:before, .slide-sliding.active > .trigger .icon:before, .vertical-tabs.help .submenu .item.slide-sliding.active:hover > a > .icon:before, .collapse > .icon:before, .decrement-stake .icon:before {
+  content: "\f068";
+}
+.slide > * > .icon:before, .slide.active > * > .icon:before {
+  content: " ";
+}
+.fa-asterisk:before, .input-wrapper.password .icon:before {
+  content: "\f069";
+}
+.fa-exclamation-circle:before, .input.error + .icon:before/*, .message.warning .icon:before, .message-warning .icon:before */{
+  content: "\f06a";
+}
+.fa-gift:before, .icon.demo:before {
+  content: "\f06b";
+}
+.fa-leaf:before, .leaf .icon:before {
+  content: "\f06c";
+}
+.fa-warning:before,
+.fa-exclamation-triangle:before, .message-warning .icon:before {
+  content: "\f071";
+}
+.fa-plane:before, .plane .icon:before {
+  content: "\f072";
+}
+.fa-magnet:before, .magnet .icon:before {
+  content: "\f076";
+}
+.fa-chevron-up:before, .collapsable .collapse:before, .go-to-the-table-of-contents .icon:before {
+  content: "\f077";
+}
+.fa-chevron-down:before, .collapsable.active .collapse:before, .bettype-sort > .active a .icon:before, .show-more .icon:before {
+  content: "\f078";
+}
+.fa-shopping-cart:before, .buy .icon:before, .button.promotion .icon:before {
+  content: "\f07a";
+}
+.fa-bar-chart-o:before, .event-statistics .icon:before {
+  content: "\f080";
+}
+.fa-external-link:before, .menu.list > .item > .link .icon.main:before, .menu-list > .item > .link .icon.main:before, .visit-website .icon:before, .link.website .icon:before {
+  content: "\f08e";
+}
+.fa-upload:before, .input-wrapper .file .icon:before, .file .icon:before {
+  content: "\f093";
+}
+.fa-phone-square:before, .phone .icon:before {
+  content: "\f098";
+}
+.fa-twitter:before, .social .twitter .icon:before {
+  content: "\f099";
+}
+.fa-facebook:before, .social .facebook .icon:before {
+  content: "\f09a";
+}
+.fa-github:before, .social .github .icon:before {
+  content: "\f09b";
+}
+.fa-credit-card:before, .flyer.bonus-promo .content .icon:before {
+  content: "\f09d";
+}
+.fa-hdd-o:before, .menu.list > .item.components > .link .icon.main:before, .menu-list > .item.components > .link .icon.main:before {
+  content: "\f0a0";
+}
+.fa-arrows-alt:before, .overlay .icon:before {
+  content: "\f0b2";
+}
+.fa-chain:before,
+.fa-link:before, .vertical-tabs .submenu .item:hover .icon:before, .vertical-tabs.help .submenu .item:hover .icon:before, .vertical-tabs.help .submenu .item > .submenu > .item:hover > a .icon:before {
+  content: "\f0c1";
+}
+.fa-pinterest:before, .social .pinterest .icon:before {
+  content: "\f0d2";
+}
+.fa-google-plus:before, .social .google-plus .icon:before {
+  content: "\f0d5";
+}
+.fa-caret-down:before, .list.controls .minimize .icon:before, .controls-horizontal .minimize .icon:before, .controls .minimize .icon:before {
+  content: "\f0d7";
+}
+.fa-caret-left:before, .feedback .quote .icon.main:before {
+  content: "\f0d9";
+}
+.fa-caret-right:before, .feedback-right .quote .icon.main:before {
+  content: "\f0da";
+}
+.fa-unsorted:before,
+.fa-sort:before, .accept-any-odds .icon:before {
+  content: "\f0dc";
+}
+.fa-sort-up:before,
+.fa-sort-desc:before, .accept-higher-odds .icon:before {
+  content: "\f0de";
+}
+.fa-envelope:before, .email .icon:before, .icon.contact:before {
+  content: "\f0e0";
+}
+.fa-linkedin:before, .social .linkedin .icon:before {
+  content: "\f0e1";
+}
+.fa-lightbulb-o:before, .message.tip .icon:before, .message-tip .icon:before {
+  content: "\f0eb";
+}
+.fa-cloud-download:before, .flyer .content .icon:before {
+  content: "\f0ed";
+}
+.fa-coffee:before, .icon-default:before, .only-icon .icon:before, .input-wrapper .icon:before {
+  content: "\f0f4";
+}
+.fa-angle-double-right:before, .read .icon:before {
+  content: "\f101";
+}
+.fa-angle-left:before .previous .icon:before {
+  content: "\f104";
+}
+.fa-angle-right:before, .dropdown-control .menu.vertical > .item .trigger .icon:before, .menu .dropdown-control > .link.trigger .icon:after, .next .icon:before {
+  content: "\f105";
+}
+.menu-jquery-wrapper.sliding > .item > .link .icon:before {
+  content: " ";
+}
+.fa-angle-down:before, .menu-jquery-wrapper > .item > .link .icon:before {
+  content: "\f107";
+}
+.fa-circle-o:before, .betting-types > .item .radio + label .icon:before {
+  content: "\f10c";
+}
+.fa-quote-left:before, .quote .icon.left:before, blockquote .icon.left:before, .quote .icon.right:before, blockquote .icon.right:before {
+  content: "\f10d";
+}
+.fa-spinner:before, .ajax-loader .load .icon:before, .loading .icon:before, .message.overlay .icon:before, .processing .icon:before {
+  content: "\f110";
+}
+.fa-smile-o:before, .icon.smile:before {
+  content: "\f118";
+}
+.fa-gamepad:before, .gamepad .icon:before {
+  content: "\f11b";
+}
+.fa-code:before, .code-viewer .icon:before {
+  content: "\f121";
+}
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before, .add-favorite:hover .icon:before, .add-favorite:active .icon:before, .remove-favorite:hover .icon:before, .remove-favorite:active .icon:before {
+  content: "\f123";
+}
+.fa-info:before, .message-info .icon:before {
+  content: "\f129";
+}
+.fa-calendar-o:before, .input-wrapper.date-picker .icon:before {
+  content: "\f133";
+}
+.fa-rocket:before, .rocket .icon:before {
+  content: "\f135";
+}
+.fa-chevron-circle-left:before, .pane .list.controls .docking .trigger .icon:before {
+  content: "\f137";
+}
+.fa-chevron-circle-right:before, .pane.docked .list.controls .docking .trigger .icon:before {
+  content: "\f138";
+}
+.fa-chevron-circle-up:before, .dropdown-control > .trigger.active .icon:after, .dropdown-control > .trigger.active .icon:after, .header.active > .link .icon:before, .dropdown-control > * > .trigger.active:after {
+  content: "\f139";
+}
+.fa-chevron-circle-down:before, .dropdown-control > .trigger .icon:after, .dropdown-control > .trigger .icon:after, .dropdown-control > * > .trigger:after, .header > .link .icon:before, .select .button .icon:before {
+  content: "\f13a";
+}
+.fa-html5:before, .technologies .html5 .icon:before, .icon.html5:before {
+  content: "\f13b";
+}
+.fa-css3:before, .technologies .css3 .icon:before {
+  content: "\f13c";
+}
+.fa-dollar:before,
+.fa-usd:before, .price .icon:before {
+  content: "\f155";
+}
+.fa-youtube:before, .social .youtube .icon:before {
+  content: "\f167";
+}
+.fa-dropbox:before, .social .dropbox .icon:before {
+  content: "\f16b";
+}
+.fa-stack-overflow:before, .social .stack-overflow .icon:before {
+  content: "\f16c";
+}
+.fa-instagram:before, .social .instagram .icon:before {
+  content: "\f16d";
+}
+.fa-flickr:before, .social .flickr .icon:before {
+  content: "\f16e";
+}
+.fa-bitbucket:before, .social .bitbucket .icon:before {
+  content: "\f171";
+}
+.fa-tumblr:before, .social .tumblr .icon:before {
+  content: "\f173";
+}
+.fa-apple:before, .os .ios .icon:before {
+  content: "\f179";
+}
+.fa-windows:before, .os .windows .icon:before {
+  content: "\f17a";
+}
+.fa-android:before, .os .android .icon:before {
+  content: "\f17b";
+}
+.fa-dribbble:before, .social .dribbble .icon:before {
+  content: "\f17d";
+}
+.fa-skype:before, .social .skype .icon:before {
+  content: "\f17e";
+}
+.fa-foursquare:before, .social .foursquare .icon:before {
+  content: "\f180";
+}
+.fa-dot-circle-o:before, .betting-types > .item .radio:checked + label .icon:before {
+  content: "\f192";
+}
+.fa-vimeo-square:before, .social .vimeo .icon:before {
+  content: "\f194";
+}
+.fa-cube:before, .icon.packages:before {
+  content: "\f1b2";
+}
+.fa-frown-o:before, .error-page #main-content > .icon:before {
+  content: "\f119";
+}

@@ -1,0 +1,31 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "config/config.scss";
+
+
+/* STYLES MODULES BOOT LOADER */
+
+/* Features */
+@import "features/animations.scss";
+// @import "features/minified/animations.min.scss"; - minified version
+@import "features/responsive.scss";
+// @import "features/minified/responsive.min.scss"; - minified version
+@import "features/rtl.scss";
+// @import "features/minified/rtl.min.scss"; - minified version
+
+/* Layout */
+@import "layout/main.scss";
+// @import "layout/minified/main.min.scss"; - minified version
+
+/* Helpers */
+@import "utils/helpers.scss";
+// @import "utils/minified/helpers.min.scss"; - minified version
+
+/* Components */
+// Import your desired components in here
+
+/* Font Icons */
+@import "vendor/font-awesome.css";
+// @import "vendor/minified/font-awesome.min.css"; - minified version

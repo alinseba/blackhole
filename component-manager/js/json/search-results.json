@@ -1,0 +1,9 @@
+{
+    "results": [
+        {"title":"Article title 1", "url":"#", "text":"Lorem ipsum dolor sit amet, consectetur ..."},
+        {"title":"Article title 2", "url":"#", "text":"Ut enim ad minim veniam, quis nostrud ..."},
+        {"title":"Article title 3", "url":"#", "text":"Duis aute irure dolor in reprehenderit ..."},
+        {"title":"Article title 4", "url":"#", "text":"Excepteur sint occaecat cupidatat non ..."},
+        {"title":"Article title 5", "url":"#", "text":"Lorem ipsum dolor sit amet, consectetur ..."}
+    ]
+}

@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Animations
+   ========================================================================== */
+/* Flickering */
+@keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-webkit-keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-moz-keyframes flickering {
+  0% {
+    background-color: hsla(0, 0%, 100%, 1);
+    color: hsla(240, 8%, 39%, 1);
+  }
+  100% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+.flickering {
+  animation: flickering 0.3s infinite alternate ease-out;
+  -moz-animation: flickering 0.3s infinite alternate ease-out;
+  -webkit-animation: flickering 0.3s infinite alternate ease-out;
+}
+
+/* Color Swap */
+@keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-webkit-keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+@-moz-keyframes color-swap {
+  0% {
+    background-color: hsla(351, 66%, 48%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  12.5% {
+    background-color: hsla(112, 68%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  25% {
+    background-color: hsla(192, 100%, 43%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  37.5% {
+    background-color: hsla(54, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  50% {
+    background-color: hsla(12, 100%, 62%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  62.5% {
+    background-color: hsla(324, 100%, 55%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  75% {
+    background-color: hsla(257, 52%, 58%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  87.5% {
+    background-color: hsla(21, 32%, 44%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+  100% {
+    background-color: hsla(0, 0%, 0%, 1);
+    color: hsla(0, 0%, 100%, 1);
+  }
+}
+.color-swap {
+  animation: color-swap 12s infinite alternate ease-out;
+  -moz-animation: color-swap 12s infinite alternate ease-out;
+  -webkit-animation: color-swap 12s infinite alternate ease-out;
+}
+
+/* Full Rotation */
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/*# sourceMappingURL=animations.css.map */

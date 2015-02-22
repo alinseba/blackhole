@@ -1,0 +1,63 @@
+﻿// RGB to HSLA convertor
+/// RGB to HSLA Convertor
+/// @group coloring
+/// @access public
+/// @author Alin Seba
+/// @link http://www.brandonheyer.com/2013/03/27/convert-hsl-to-rgb-and-rgb-to-hsl-via-php/
+/// @param {Color} $r - red color value
+/// @param {Color} $g - green color value
+/// @param {Color} $b - blue color value
+/// @param {Color} $a - alpha (opacity) value
+/// @return {Color}
+/// @example scss - Example
+/// .foo {
+///     color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)); // This will output the HSL color 'hsla(0, 0%, 100%, 1)', which is white
+/// }
+@function rgbToHsla($r, $g, $b, $a: 1.0) {
+    $r: $r / 255;
+    $g: $g / 255;
+    $b: $b / 255;
+    //$a: 1.0;
+    $max: max($r, $g, $b);
+    $min: min($r, $g, $b);
+    $h: ($max + $min) / 2;
+    $s: ($max + $min) / 2;
+    $l: ($max + $min) / 2;
+    $exp: 0;
+
+    @if ($max == $min) {
+        $h: 0; // achromatic
+        $s: $h;
+    }
+    @else {
+        $d: $max - $min;
+        @if ($l > 0.5) {
+            $s: $d / (2 - $max - $min);
+        }
+        @else {
+            $s: $d / ($max + $min);
+        }
+
+        @if ($g < $b) {
+            $exp: 6;
+        }
+        @else {
+            $exp: 0;
+        }
+
+        @if ($max == $r) {
+            $h: ($g - $b) / $d + $exp;
+        }
+        @else if ($max == $g) {
+            $h: ($b - $r) / $d + 2;
+        }
+        @else if ($max == $b) {
+            $h: ($r - $g) / $d + 4;
+        }
+
+        $h: $h / 6; // still not returning good values
+        $h: $h * 3.6; 
+    }
+
+    @return unquote("hsla(" + round($h*100) + ", " + round($s*100) + "%, " + round($l*100) + "%, " + $a + ")");
+}

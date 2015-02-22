@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> 
+<html id="myDocument" class="no-js my-document">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Component Manager - Inputs</title>
+        <meta name="author" content="Alin Seba">
+        <meta name="description" content="Blackhole - minimalistic but powerful and flexible SASS framework">
+        <meta name="keywords" content="reusable components, modularity, sass framework, semantic code">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'><!-- BODY FONT -->
+        <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'><!-- HEADINGS FONT -->
+
+        <!-- === MAIN STYLES === -->
+        <link rel="stylesheet" href="../styles/base/normalize.min.css"><!-- CSS RESETER -->
+        <link rel="stylesheet" href="../styles/base/boilerplate.css"><!-- BOILERPLATE -->
+        <!-- <link rel="stylesheet" href="../styles/base/minified/boilerplate.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="../styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="../styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/boot.css"><!-- BOOT MODULE -->
+        <!-- <link rel="stylesheet" href="styles/minified/boot.min.css"> --><!-- minified version -->
+        <link rel="stylesheet" href="styles/main.css"><!-- MAIN STYLES -->
+        <!-- <link rel="stylesheet" href="styles/minified/main.min.css"> --><!-- minified version -->
+
+        <!-- === PLUGINS STYLES === -->
+        <link rel="stylesheet" href="styles/vendor/highlight/monokai_sublime.css">
+
+        <!-- === VENDOR SCRIPTS === -->
+        <script src="../js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="../js/vendor/modernizr-2.8.3.min.js"></script>
+
+        <!-- === PLUGIN SCRIPTS === -->
+        <script src="js/uikit/uikit.min.js"></script>
+        <script src="js/uikit/addons/notify.min.js"></script>
+        <script src="js/uikit/addons/upload.min.js"></script>
+        <script src="js/uikit/addons/form-password.min.js"></script>
+        <script src="js/uikit/addons/autocomplete.min.js"></script>
+        <script src="js/uikit/addons/datepicker.min.js"></script>
+        <script src="js/uikit/addons/search.min.js"></script>
+        <script src="js/uikit/addons/timepicker.min.js"></script>
+        <script src="js/plugins/highlight/highlight.pack.js"></script>
+
+    </head>
+    <body id="myFramework" class="my-framework no-text-shadow">
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div id="framework" class="framework"><!-- FRAMEWORK STARTS HERE -->
+
+            <header id="main-header" class="section-free fixed-element"><!-- MAIN HEADER STARTS HERE -->
+                <!-- YOUR MAIN HEADER MARKUP -->
+                <nav id="main-menu">
+                    <ul class="menu components">
+                        <li class="item typography-components">
+                            <a title="Typography Section" class="link" href="typography.html">Typography</a>
+                        </li>
+                        <li class="item buttons-components">
+                            <a title="Buttons Section" class="link" href="ui-buttons.html">Buttons</a>
+                        </li>
+                        <li class="item inputs-components active">
+                            <a title="Inputs Section" class="link" href="ui-inputs.html">Inputs</a>
+                        </li>
+                        <li class="item controls-components">
+                            <a title="Controls Section" class="link" href="ui-controls.html">Controls</a>
+                        </li>
+                        <li class="item navigation-components">
+                            <a title="Navigation Section" class="link" href="navigation.html">Navigation</a>
+                        </li>
+                        <li class="item notifications-components">
+                            <a title="Notifications Section" class="link" href="notifications.html">Notifications</a>
+                        </li>
+                        <li class="item boxes-components">
+                            <a title="Boxes Section" class="link" href="boxes.html">Boxes</a>
+                        </li>
+                        <li class="item tables-components">
+                            <a title="Tables Section" class="link" href="tables.html">Tables</a>
+                        </li>
+                        <li class="item icons-components">
+                            <a title="Icons Section" class="link" href="icons.html">Icons</a>
+                        </li>
+                        <li class="item media-components">
+                            <a title="Media Section" class="link" href="media.html">Media</a>
+                        </li>
+                        <li class="item components-components">
+                            <a title="Components Section" class="link" href="components.html">Components</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header><!-- MAIN HEADER ENDS HERE -->
+
+            <section id="main-section" class="section-vertical"><!-- MAIN SECTION STARTS HERE -->
+                <div id="main-content" class="section-free"><!-- MAIN CONTENT STARTS HERE -->
+                    <!-- YOUR MAIN SECTION MARKUP -->
+                    <ul id="inputs" class="list main inputs">
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text" name="name" placeholder="this is a simple text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block">
+<code>&lt;input type="text" class="input text" name="name" placeholder="this is a simple text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text disabled" name="name" placeholder="this is a simple disabled text input" disabled />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text disabled" name="name" placeholder="this is a simple disabled text input" disabled /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <label for="input-with-label">Input Label</label><input type="text" class="input text" name="name" id="input-with-label" placeholder="this is a simple text input with label" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;label for="input-with-label"&gt;Input Label&lt;/label&gt;&lt;input type="text" class="input text" name="name" id="input-with-label" placeholder="this is a simple text input with label" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <label class="block-type" for="input-with-label2">Input Label</label><input type="text" class="input text" name="name" id="input-with-label2" placeholder="this is a simple text input with label on top" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;label class="block-type" for="input-with-label2"&gt;Input Label&lt;/label&gt;&lt;input type="text" class="input text" name="name" id="input-with-label2" placeholder="this is a simple text input with label on top" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text expanding" name="name" placeholder="this is an expanding text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text expanding" name="name" placeholder="this is an expanding text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="password" class="input text" name="name" placeholder="this is a simple password input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="password" class="input text" name="name" placeholder="this is a simple password input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Password Reveal</h4>
+                                <div class="uk-form-password input-wrapper with-icon">
+                                    <input type="password" class="input text" name="name" placeholder="this is a simple password input" />
+                                    <a href="#" class="uk-form-password-toggle" data-uk-form-password>Show</a>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uk-form-password input-wrapper with-icon"&gt;
+    &lt;input type="password" class="input text" name="name" placeholder="this is a simple password input" /&gt;
+    &lt;a href="#" class="uk-form-password-toggle" data-uk-form-password&gt;Show&lt;/a&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text error" name="name" placeholder="this is an error validating text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text error" name="name" placeholder="this is an error validating text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="input-wrapper with-icon">
+                                    <input type="text" class="input text error" name="name" placeholder="this is an error validating text input with icon" />
+                                    <span class="icon"></span>
+                                </span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="input-wrapper with-icon"&gt;
+    &lt;input type="text" class="input text error" name="name" placeholder="this is an error validating text input with icon" /&gt;
+    &lt;span class="icon"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text ok" name="name" placeholder="this is a valid validating text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text ok" name="name" placeholder="this is a valid validating text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="input-wrapper with-icon">
+                                    <input type="text" class="input text ok" name="name" placeholder="this is a valid validating text input with icon" />
+                                    <span class="icon"></span>
+                                </span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="input-wrapper with-icon"&gt;
+    &lt;input type="text" class="input text ok" name="name" placeholder="this is a valid validating text input with icon" /&gt;
+    &lt;span class="icon"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Autocomplete Input</h4>
+                                <div class="uikit-component">
+                                    <div class="uk-autocomplete" data-uk-autocomplete="{source: 'js/json/autocomplete.json'}">
+                                        <input type="text" class="input text" name="name" placeholder="this is an autocomplete input" required />
+                                    </div>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div class="uk-autocomplete" data-uk-autocomplete="{source: 'js/json/autocomplete.json'}"&gt;
+        &lt;input type="text" class="input text" name="name" placeholder="this is an autocomplete input" required /&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Search with JSON Results</h4>
+                                <div class="uikit-component">
+                                    <form class="uk-search" data-uk-search="{source: 'js/json/search-results.json'}">
+                                        <input type="search" class="input text search uk-search-field" name="name" placeholder="" />
+                                        <button class="uk-search-close" type="reset" title="Close Search Results"></button>
+                                    </form>
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;form class="uk-search" data-uk-search="{source: 'js/json/search-results.json'}"&gt;
+        &lt;input type="search" class="input text search uk-search-field" name="name" placeholder="" /&gt;
+        &lt;button class="uk-search-close" type="reset" title="Close Search Results"&gt;&lt;/button&gt;
+    &lt;/form&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">Integer Number Input</h4>
+                                <input type="number" class="input text number" name="number" value="1" min="1" max="15" step="1" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="number" class="input text number" name="number" value="1" min="1" max="15" step="1" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name">Decimal Number Input</h4>
+                                <input type="number" class="input text number" name="number" value="1.0" min="1.0" max="10.0" step="0.1" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="number" class="input text number" name="number" value="1.0" min="1.0" max="10.0" step="0.1" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="input-wrapper with-icon">
+                                    <input type="text" class="input text" name="name" placeholder="this is a text input with icon" />
+                                    <span class="icon"></span>
+                                </span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="input-wrapper with-icon"&gt;
+    &lt;input type="text" class="input text" name="name" placeholder="this is a text input with icon" /&gt;
+    &lt;span class="icon"&gt;&lt;/span&gt;
+&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="input-wrapper multiple">
+                                    <input type="text" class="input text" name="name" placeholder="this is a text input with button" />
+                                    <a href="#" class="button only-icon"><span class="icon"></span></a>
+                                </span>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;span class="input-wrapper multiple"&gt;
+    &lt;input type="text" class="input text" name="name" placeholder="this is a text input with button" /&gt;
+    &lt;a href="#" class="button only-icon"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/a&gt;
+&lt;/span&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <textarea class="input text" name="name" cols="70" rows="10">This is a simple textarea</textarea>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;textarea class="input text" name="name" cols="70" rows="10"&gt;This is a simple textarea&lt;/textarea&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <button type="submit" class="input button">Input Button</button>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;button type="submit" class="input button"&gt;Input Button&lt;/button&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <label for="radio1">A checked simple radio control</label><input type="radio" class="input radio" name="radio" id="radio1" value="value" checked="checked" />
+                                <label for="radio2">An unchecked simple radio control</label><input type="radio" class="input radio" name="radio" id="radio2" value="value" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;label for="radio1"&gt;A checked simple radio control&lt;/label&gt;&lt;input type="radio" class="input radio" name="radio" id="radio1" value="value" checked="checked" /&gt;
+&lt;label for="radio2"&gt;An unchecked simple radio control&lt;/label&gt;&lt;input type="radio" class="input radio" name="radio" id="radio2" value="value" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="radio" class="input radio custom" name="custom-radio" id="radio3" value="value" checked="checked" /><label for="radio3" class="first">ON</label>
+                                <input type="radio" class="input radio custom" name="custom-radio" id="radio4" value="value" /> <label for="radio4" class="last">OFF</label>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="radio" class="input radio custom" name="custom-radio" id="radio3" value="value" checked="checked" /&gt;&lt;label for="radio3" class="first"&gt;ON&lt;/label&gt;
+&lt;input type="radio" class="input radio custom" name="custom-radio" id="radio4" value="value" /&gt;&lt;label for="radio4" class="last"&gt;OFF&lt;/label&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="radio" class="input radio custom alt" name="custom-alt-radio" id="radio5" value="value" checked="checked" /><label for="radio5" class="first">ON</label>
+                                <input type="radio" class="input radio custom alt" name="custom-alt-radio" id="radio6" value="value" /> <label for="radio6" class="last">OFF</label>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="radio" class="input radio custom alt" name="custom-alt-radio" id="radio5" value="value" checked="checked" /&gt;&lt;label for="radio5" class="first"&gt;ON&lt;/label&gt;
+&lt;input type="radio" class="input radio custom alt" name="custom-alt-radio" id="radio6" value="value" /&gt;&lt;label for="radio6" class="last"&gt;OFF&lt;/label&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <label for="checkbox1">A checked checkbox control</label><input type="checkbox" class="input checkbox" name="checkbox" id="checkbox1" value="value" checked="checked" />
+                                <label for="checkbox2">An unchecked checkbox control</label><input type="checkbox" class="input checkbox" name="checkbox" id="checkbox2" value="value" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;label for="checkbox1"&gt;A checked checkbox control&lt;/label&gt;&lt;input type="checkbox" class="input checkbox" name="checkbox" id="checkbox1" value="value" checked="checked" /&gt;
+&lt;label for="checkbox2"&gt;An unchecked checkbox control&lt;/label&gt;&lt;input type="checkbox" class="input checkbox" name="checkbox" id="checkbox2" value="value" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="checkbox" class="input checkbox custom" name="customcheckbox" id="checkbox3" value="value" checked="checked" /><label for="checkbox3"><span class="icon"></span></label>
+                                <input type="checkbox" class="input checkbox custom" name="custom-checkbox" id="checkbox4" value="value" /> <label for="checkbox4"><span class="icon"></span></label>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="checkbox" class="input checkbox custom" name="customcheckbox" id="checkbox3" value="value" checked="checked" /&gt;&lt;label for="checkbox3"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/label&gt;
+&lt;input type="checkbox" class="input checkbox custom" name="custom-checkbox" id="checkbox4" value="value" /&gt;&lt;label for="checkbox4"&gt;&lt;span class="icon"&gt;&lt;/span&gt;&lt;/label&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="file" class="input" name="file" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="file" class="input" name="file" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <span class="js-functionality">this component uses the <strong>uploadFile</strong> function which you can find in the <strong>js/main.js</strong> file from your framework root directory</span>
+                                <div class="input-wrapper multiple">
+                                    <input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" />
+                                    <label for="file-input" class="button file">Upload File <span class="icon right"></span></label><input type="file" class="input" name="file" id="file-input" />
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="input-wrapper multiple"&gt;
+    &lt;input type="text" class="input text" name="text" value="Choose a file" disabled="disabled" /&gt;
+    &lt;label for="file-input" class="button file"&gt;Upload File&lt;span class="icon right"&gt;&lt;/span&gt;&lt;/label&gt;&lt;input type="file" class="input" name="file" id="file-input" /&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                            <h4 class="element-name"><span class="red">UIKit</span> Upload</h4>
+                            <div class="uikit-component">
+                                <div id="upload-drop" class="uk-placeholder">
+                                    <span class="file"><span class="icon left"></span> Attach files by dropping them here or</span>
+                                    <div class="uk-form-file">select them manually
+                                        <input id="upload-select" type="file">
+                                    </div>
+                                </div>
+                                <div id="progressbar" class="uk-progress uk-hidden">
+                                    <div class="uk-progress-bar" style="width: 0%;"></div>
+                                </div>
+                            </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;div id="upload-drop" class="uk-placeholder"&gt;
+        &lt;span class="file"&gt;&lt;span class="icon left"&gt;&lt;/span&gt; Attach files by dropping them here or&lt;/span&gt;
+        &lt;div class="uk-form-file"&gt;select them manually
+            &lt;input id="upload-select" type="file"&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div id="progressbar" class="uk-progress uk-hidden"&gt;
+        &lt;div class="uk-progress-bar" style="width: 0%;"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <select class="input">
+                                    <option value="item1">Select Item 1</option>
+                                    <option value="item2">Select Item 2</option>
+                                    <option value="item3">Select Item 3</option>
+                                    <option value="item4">Select Item 4</option>
+                                    <option value="item5">Select Item 5</option>
+                                </select>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;select class="input"&gt;
+    &lt;option value="item1"&gt;Select Item 1&lt;/option&gt;
+    &lt;option value="item2"&gt;Select Item 2&lt;/option&gt;
+    &lt;option value="item3"&gt;Select Item 3&lt;/option&gt;
+    &lt;option value="item4"&gt;Select Item 4&lt;/option&gt;
+    &lt;option value="item5"&gt;Select Item 5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <select class="input multiple" multiple>
+                                    <option value="item1">Select Item 1</option>
+                                    <option value="item2">Select Item 2</option>
+                                    <option value="item3">Select Item 3</option>
+                                    <option value="item4">Select Item 4</option>
+                                    <option value="item5">Select Item 5</option>
+                                </select>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;select class="input multiple" multiple&gt;
+    &lt;option value="item1"&gt;Select Item 1&lt;/option&gt;
+    &lt;option value="item2"&gt;Select Item 2&lt;/option&gt;
+    &lt;option value="item3"&gt;Select Item 3&lt;/option&gt;
+    &lt;option value="item4"&gt;Select Item 4&lt;/option&gt;
+    &lt;option value="item5"&gt;Select Item 5&lt;/option&gt;
+&lt;/select&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Datepicker</h4>
+                                <div class="uikit-component">
+                                    <input type="text" class="input text" name="datepicker" data-uk-datepicker="{format: 'DD.MM.YYYY'}" />
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;input type="text" class="input text" name="datepicker" data-uk-datepicker="{format: 'DD.MM.YYYY'}" /&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Timepicker</h4>
+                                <div class="uikit-component">
+                                    <input type="text" class="input text timepicker" name="timepicker" data-uk-timepicker />
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;input type="text" class="input text timepicker" name="timepicker" data-uk-timepicker /&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <h4 class="element-name"><span class="red">UIKit</span> Meridian Time Timepicker</h4>
+                                <div class="uikit-component">
+                                    <input type="text" class="input text timepicker" name="timepicker" data-uk-timepicker="{format: '12h'}" />
+                                </div>
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;div class="uikit-component"&gt;
+    &lt;input type="text" class="input text timepicker" name="timepicker" data-uk-timepicker="{format: '12h'}" /&gt;
+&lt;/div&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text blocknote" name="blocknote" placeholder="this is a blocknote-style text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text blocknote" name="blocknote" placeholder="this is a blocknote-style text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text editable" name="editable" placeholder="this is a triggered editable input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text editable" name="editable" placeholder="this is a triggered editable input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                        <li class="item reveal">
+                            <aside class="element left visible-element"><a href="#" class="button trigger right" title="Show content"><span class="title">View the code</span><span class="icon right"></span></a>
+                                <input type="text" class="input text thin" name="name" placeholder="this is a simple thin text input" />
+                            </aside>
+                            <aside class="code right hidden-element">
+                                <pre class="code-block"> 
+<code>&lt;input type="text" class="input text thin" name="name" placeholder="this is a simple thin text input" /&gt;</code></pre>
+                            </aside>
+                        </li>
+                    </ul>
+                </div><!-- MAIN CONTENT ENDS HERE -->
+            </section><!-- MAIN SECTION ENDS HERE -->
+
+            <footer id="main-footer" class="section-free"><!-- MAIN FOOTER STARTS HERE -->
+                <!-- YOUR MAIN FOOTER MARKUP -->
+                <div class="wrapper"><!-- MAIN FOOTER WRAPPER STARTS HERE -->
+                    <span class="copyright"><strong>Blackhole</strong> - Released under <a href="http://opensource.org/licenses/MIT" target="_blank" title="MIT License">MIT</a> license</span>
+                    <ul class="list social with-background">
+                        <li class="item twitter">
+                            <a href="https://twitter.com/blackholesass" title="Twitter" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item github">
+                            <a href="https://github.com/frameworkName" title="Github" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                        <li class="item pinterest">
+                            <a href="https://pinterest.com/pin/frameworkProfile" title="Pinterest" data-uk-tooltip><span class="icon"></span></a>
+                        </li>
+                    </ul>
+                </div><!-- MAIN FOOTER WRAPPER ENDS HERE -->
+            </footer><!-- MAIN FOOTER ENDS HERE -->
+
+        </div><!-- FRAMEWORK ENDS HERE -->
+
+        <a id="scroll-up" href="#" class="scrollup" title="Scroll to Top" data-uk-tooltip></a><!-- SCROLL TO TOP BUTTON -->
+
+        <script type="text/javascript" src="../js/main.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+        <!-- Calling of needed JS Functions / Plugins -->
+        <script type="text/javascript">
+            $(document).ready(function() {
+                // jQuery Calls in here
+                
+                framework.uploadFile(); // used for the Upload File component
+                framework.uiKitUpload(); // used for the UIKit Upload component
+            });
+
+            // JS Calls in here
+
+            // highlight.js
+            hljs.initHighlightingOnLoad();
+        </script>
+    </body>
+</html>

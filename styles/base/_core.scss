@@ -1,0 +1,899 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+   @import "../config/config";
+
+
+
+// =========================================================================
+// MIXINS
+// =========================================================================
+
+// =========================================================================
+
+// BROWSER PREFIXATIONS
+
+/// Text Shadow Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $shadows - the desired CSS3 text-shadow value
+/// @example scss - Example
+/// .foo {
+///     @include text-shadow(0 -0.1em 0 unquote("hsla(0, 0%, 0%, 0.2)"));
+/// }
+@mixin text-shadow($shadows) {
+    text-shadow: $shadows;
+    -moz-text-shadow: $shadows;
+    -webkit-text-shadow: $shadows;
+    -o-text-shadow: $shadows;
+}
+
+/// Box Shadow Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $shadows - the desired CSS3 box-shadow value
+/// @example scss - Example
+/// .foo {
+///     @include box-shadow(inset 0 0 0.1em unquote("hsla(0, 0%, 100%, 0.5)"));
+/// }
+@mixin box-shadow($shadows) {
+    box-shadow: $shadows;
+    -moz-box-shadow: $shadows;
+    -webkit-box-shadow: $shadows;
+    -o-box-shadow: $shadows;
+}
+
+/// Border Radius Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {Number} $radius - the desired CSS3 border-radius value
+/// @example scss - Example
+/// .foo {
+///     @include border-radius(0.8333em);
+/// }
+@mixin border-radius($radius) {
+    border-radius: $radius;
+    -moz-border-radius: $radius;
+    -webkit-border-radius: $radius;
+}
+
+/// Box Sizing Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $sizing - the desired CSS3 box-sizing value
+/// @example scss - Example
+/// .foo {
+///     @include box-sizing(border-box); // Example of setting the box-sizing CSS3 property to 'border-box'
+/// }
+@mixin box-sizing($sizing) {
+    box-sizing: $sizing;
+    -moz-box-sizing: $sizing;
+    -webkit-box-sizing: $sizing;
+}
+
+/// Outline Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $outline - the desired CSS outline value
+/// @example scss - Example
+/// .foo {
+///     @include outline(0); // Example of setting the outline CSS property to 0 (disabling it)
+/// }
+@mixin outline($outline) {
+    outline: $outline;
+    -moz-outline: $outline;
+    -webkit-outline: $outline;
+}
+
+/// Transition Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $transition - the desired CSS3 transition rule
+/// @example scss - Example
+/// .foo {
+///     @include transition(width 0.2s linear); // Example of setting the transition on some element's width property with the speed of 0.2s (seconds) and the easing effect of 'linear'
+/// }
+@mixin transition($transition) {
+    transition: $transition;
+    -moz-transition: $transition;
+    -webkit-transition: $transition;
+}
+
+/// Transform Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $transform - the desired CSS3 transform rule
+/// @example scss - Example
+/// .foo {
+///     @include transform(none !important); // Example of unsetting the CSS3 property transform on a specific element
+/// }
+@mixin transform($transform) {
+    transform: $transform;
+    -moz-transform: $transform;
+    -webkit-transform: $transform;
+    -ms-transform: $transform;
+}
+
+/// Animation Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $animation - the desired CSS3 animation rule
+/// @example scss - Example
+/// .foo {
+///     @include animation(score-change 0.35s infinite alternate ease-out); // Example of an animation which name is 'score-change', its animation speed is 0.35s (seconds), it plays forever (infinite), is alternating its keyframes and has the easing effect of 'ease-out'
+/// }
+@mixin animation($animation) {
+    animation: $animation;
+    -moz-animation: $animation;
+    -webkit-animation: $animation;
+}
+
+/// Keyframes Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {String} $name - the name of your CSS keyframe
+/// @content
+/// @example scss - Example
+/// .foo {
+///     @include keyframes(bet-increase) { // Example of some sort of color flickering
+///         0% { background-color : #B4BD32; color : rgba(255, 255, 255, 0.85); } 100% { background-color : #838a24; color : rgba(255, 255, 255, 0.85); }
+///     }
+/// }
+@mixin keyframes($name) {
+    @keyframes #{$name} { @content; }
+    @-webkit-keyframes #{$name} { @content; }
+    @-moz-keyframes #{$name} { @content; }
+}
+
+/// Opacity Browser Agent Prefixation
+/// @access public
+/// @author Alin Seba
+/// @group browser prefixation
+/// @param {Number} $opacity - the opacity value
+/// @example scss - Example
+/// .foo {
+///     @include opacity(0.5);
+/// }
+@mixin opacity($opacity) {
+    opacity: $opacity;
+    -moz-opacity: $opacity;
+    -webkit-opacity: $opacity;
+    filter: alpha(opacity=$opacity * 100);
+    -ms-filter: "alpha(opacity=" + $opacity * 100 + ")";
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=" + $opacity * 100 + ")";
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// BROWSER PREFIXATION (all-in-one)
+
+/// Mixin helper to output vendor prefixes
+/// @access public
+/// @group browser prefixation
+/// @author Hugo Giraudel
+/// @param {String} $property - Unprefixed CSS property
+/// @param {*} $value - Raw CSS value
+/// @param {List} $prefixes - List of prefixes to output
+@mixin prefix($property, $value, $prefixes: ()) {
+  @each $prefix in $prefixes {
+    #{'-' + $prefix + '-' + $property}: $value;
+  }
+
+  #{$property}: $value;
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// GRID GENERATOR
+
+// Grids Variables
+/// The predefined width of a big grid
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig: 1920px;
+/// The predefined width of a small grid
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid: 960px;
+/// The predefined number of grid cells
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridCols: 1; // default grid cols
+/// Grid cell size
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridCell: $grid / $gridCols; // the grid cell size
+
+// Margins
+/// The white space value between grid cells
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridMargin: 20px; // enter your value in here
+/// The number of white spaces between cells, without the last one (which will not have a margin at all, since the white space is on the right side of cells)
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridMargins: $gridCols - 1;
+/// Variable used to generate other predefined grid variations
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridMarginTotal: $gridMargin * $gridMargins;
+
+// Predefined variations of the 960px grid
+/// Predefined grid of 960px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-1: $grid; // 960px
+/// Predefined grid of 480px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-2: ($grid - $gridMarginTotal) / 2; // 480px
+/// Predefined grid of 320px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-3: ($grid - $gridMarginTotal) / 3; // 320px
+/// Predefined grid of 240px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-4: ($grid - $gridMarginTotal) / 4; // 240px
+/// Predefined grid of 192px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-5: ($grid - $gridMarginTotal) / 5; // 192px
+/// Predefined grid of 160px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-6: ($grid - $gridMarginTotal) / 6; // 160px
+/// Predefined grid of 137px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-7: ($grid - $gridMarginTotal) / 7; // 137.1428px
+/// Predefined grid of 120px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-8: ($grid - $gridMarginTotal) / 8; // 120px
+/// Predefined grid of 106px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-9: ($grid - $gridMarginTotal) / 9; // 106.6666px
+/// Predefined grid of 96px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$grid-10: ($grid - $gridMarginTotal) / 10; // 96px
+
+// Predefined variations of the 1920px grid
+/// Predefined grid of 1920px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-1: $grid-1 * 2; // 1920px
+/// Predefined grid of 960px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-2: $grid-2 * 2; // 960px
+/// Predefined grid of 640px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-3: $grid-3 * 2; // 640px
+/// Predefined grid of 480px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-4: $grid-4 * 2; // 480px
+/// Predefined grid of 384px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-5: $grid-5 * 2; // 384px
+/// Predefined grid of 320px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-6: $grid-6 * 2; // 320px
+/// Predefined grid of 274px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-7: $grid-7 * 2; // 274.2856px
+/// Predefined grid of 240px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-8: $grid-8 * 2; // 240px
+/// Predefined grid of 213px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-9: $grid-9 * 2; // 213.3332px
+/// Predefined grid of 192px
+/// @access public
+/// @type Variable
+/// @group generators
+/// @see {mixin} generate-grid
+$gridBig-10: $grid-10 * 2; // 192px
+
+/// Grid Generator
+/// @access public
+/// @author Alin Seba
+/// @group generators
+/// @param {Number} $grid - the width of your grid
+/// @param {Number} $gridCols - the number of cells for your grid
+/// @param {Number} $gridMargin [0] - the white space between your grid cells
+/// @example scss - Examples
+/// .foo {
+///     @include generate-grid(1280px, 5, 20px); // Example of grid with the width of 1280px, 5 cells and a value of 20px for white space between cells 
+/// }
+/// .foo {
+///     @include generate-grid(960px, 4); // Example of grid with the width of 960px and 4 cells
+/// }
+@mixin generate-grid($grid, $gridCols, $gridMargin: 0) {
+    $gridCell: ($grid - $gridMargin * ($gridCols - 1)) / $gridCols; // the grid cell size
+    .grid-#{$gridCols} {
+        @extend %clearfix;
+        &:before, &:after {
+            @extend %clearfix-ba;
+        }
+        &:after {
+            @extend %clearfix-a;
+        }
+        width: $grid;
+    }
+    .grid-#{$gridCols} .cell {
+        float: left;
+        width: $gridCell;
+        margin: $gridMargin;
+        margin-top: 0;
+        margin-left: 0;
+        &:first-child, &.first {
+            margin-left: 0;
+        }
+        &:last-child, &.last {
+            margin-right: 0;
+        }
+        &:nth-child(#{$gridCols}n) {
+            margin-right: 0;
+        }
+    }
+    .grid-#{$gridCols}.with-padding .cell {
+        margin: 0;
+        padding: $gridMargin;
+        padding-top: 0;
+        padding-left: 0;
+        padding-bottom: 0;
+        margin-bottom: $gridMargin;
+        &:first-child, &.first {
+            padding-left: 0;
+        }
+        &:last-child, &.last {
+            padding-right: 0;
+        }
+        &:nth-child(#{$gridCols}n) {
+            padding-right: 0;
+        }
+    }
+    .rtl .grid-#{$gridCols} .cell {
+        float: right;
+        margin: $gridMargin;
+        margin-top: 0;
+        margin-right: 0;
+        &:first-child, &.first {
+            margin-right: 0;
+        }
+        &:last-child, &.last {
+            margin-left: 0;
+        }
+        &:nth-child(#{$gridCols}n) {
+            margin-left: 0;
+        }
+    }
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// LAYOUT GENERATOR
+
+/// Layout Generator
+/// @access public
+/// @author Alin Seba
+/// @group generators
+/// @param {Number} $layoutWidth - the width of your layout
+/// @param {Number} $layoutMargin - the margin of your layout
+/// @param {Number} $layoutPadding - the padding of your layout
+/// @param {Number} $layoutCols - the number of columns your layout will contain
+/// @param {List} $layoutCellWidth [()] - the widths of each column from your layout
+/// @param {Number} $layoutCellMargin [0] - the white space between columns
+/// @example scss - Examples
+/// .foo {
+///     @include generate-layout(1920px, 0, 0, 4, (300px, 400px, 500px, 600px, 700px), 20px); // Example of layout with width: 1920px, margin: 0, padding: 0, 4 columns, (sizes of columns in pixels), and a white space of 20px
+/// }
+/// .foo {
+///     @include generate-layout(960px, 0, 0, 3, (360px, 240px, 360px)); // Example of layout with width: 960px, margin: 0, padding: 0, 3 columns, (sizes of columns in pixels), and no white space
+/// }
+/// .foo {
+///     @include generate-layout(100, 0, 2, 3, (25, 50, 25), 2); // Example of layout with width: 100%, margin: 0, padding: 2%, (sizes of columns in percents), and a white space of 2%
+/// }
+@mixin generate-layout($layoutWidth, $layoutMargin, $layoutPadding, $layoutCols, $layoutCellWidth: (), $layoutCellMargin: 0) {
+    .layout {
+        @extend %clearfix;
+        &:before, &:after {
+            @extend %clearfix-ba;
+        }
+        &:after {
+            @extend %clearfix-a;
+        }
+        @include box-sizing(border-box);
+        @if ($layoutPadding > 0) {
+            @if unit($layoutWidth) == "" {
+                width: unquote($layoutWidth - ($layoutPadding * $layoutCols - $layoutPadding) + "%");
+            }
+            @else {
+                width: $layoutWidth - ($layoutPadding * $layoutCols - $layoutPadding);
+            }
+        }
+        @else {
+            @if unit($layoutWidth) == "" {
+                width: unquote($layoutWidth + "%");
+            }
+            @else {
+                width: $layoutWidth;
+            }
+        }
+        @if unit($layoutWidth) == "" {
+            margin: unquote($layoutMargin + "%");
+        }
+        @else {
+            margin: $layoutMargin;
+        }
+        @if unit($layoutWidth) == "" {
+            padding: unquote($layoutPadding + "%");
+        }
+        @else {
+            padding: $layoutPadding;
+        }
+        position: relative;
+    }
+    .layout .cell {
+        float: left;
+        @if unit($layoutWidth) == "" {
+            margin: unquote($layoutCellMargin + "%");
+        }
+        @else {
+            margin: $layoutCellMargin;
+        }
+        margin-top: 0;
+        margin-left: 0;
+        &:first-child, &.first {
+            margin-left: 0;
+        }
+        &:last-child, &.last {
+            margin-right: 0;
+        }
+    }
+    @each $layoutCell in $layoutCellWidth {
+        .layout .cell.width-#{$layoutCell/* - $layoutCellMargin*/} {
+            @if unit($layoutWidth) == "" {
+                width: unquote($layoutCell - $layoutCellMargin + ($layoutCellMargin / $layoutCols) + "%");
+            }
+            @else {
+                width: $layoutCell - $layoutCellMargin + ($layoutCellMargin / $layoutCols);
+            }
+        }
+    }
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// CONTAINER COLS GENERATOR
+
+/// Generator of Container with Columns
+/// @access public
+/// @author Alin Seba
+/// @group generators
+/// @param {Number} $containerCols - number of columns
+/// @param {Number} $containerColsMargin - the white space between columns
+/// @param {Number} $containerWidth [auto] - the width of your container
+/// @example scss - Example
+/// .foo {
+///     @include generate-cols(4, 2%); // Generates a container with 4 columns and a white-space of 2%
+/// }
+@mixin generate-cols($containerCols, $containerColsMargin, $containerWidth: auto) {
+    .container {
+        @extend %clearfix;
+        &:before, &:after {
+            @extend %clearfix-ba;
+        }
+        &:after {
+            @extend %clearfix-a;
+        }
+        @include box-sizing(border-box);
+        width: $containerWidth;
+    }
+    .container .col {
+        float: left;
+        margin-right: $containerColsMargin;
+        margin-bottom: $containerColsMargin;
+    }
+    @for $i from 1 through $containerCols {
+        @if ($containerCols and $i == 1) {
+            .container.cols-#{$i} .col {
+                margin-right: 0;
+                width: 100%;
+            }
+        }
+        @else {
+            .container.cols-#{$i} .col {
+                width: ((100 - $containerColsMargin * $i) / $i) + ($containerColsMargin / $i);
+            }
+        }
+    }
+    .container .col:last-child {
+        margin-right: 0;
+    }
+    .rtl .container {
+        .col {
+            float: right;
+            margin-right: 0;
+            margin-left: $containerColsMargin;
+            &:last-child {
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// MEDIA QUERIES
+
+/// Media Queries
+/// @access public
+/// @author Alin Seba
+/// @group media-queries
+/// @param {Number} $width - breakpoint-1 width
+/// @param {String} $type - breakpoint-1 type (min / max)
+/// @param {Number} $width2 - breakpoint-2 width
+/// @param {String} $type2 - breakpoint-2 type (min / max)
+/// @param {String} $medium - medium to apply (screen, print, etc.)
+/// @param {String} $customQuery - your own custom query
+/// @content
+/// @example scss - Examples of using
+///     @include media-query(1400, max) { // Example for Max
+///         .foo {
+///             float: none;
+///             width: auto;
+///         }
+///     }
+///     @include media-query(1400, min) { // Example for Min
+///         .foo {
+///             border-right: none;
+///         }
+///     }
+///     @include media-query(700, min, 1400, max) { // Example for Min and Max
+///         .foo {
+///             margin: 0;
+///         }
+///     }
+///     @include media-query("", "", "", "", print) { // Example for Print // leave the values unneeded empty in order to know the order of the parameter
+///         /* print styles */
+///     }
+///     @include media-query("", "", "", "", screen, "(max-width: 505px) and (min-width: 303px)") { // Example for Custom Query // Custom Media Query
+///         .foo {
+///             margin: 0;
+///         }
+///     }
+@mixin media-query($width: "", $type: "", $width2: "", $type2: "", $medium: screen, $customQuery: "") {
+    $width: $width + 'px';
+    $width2: $width2 + 'px';
+    @if ($width2 != "" and $type2 != "") {
+        @media only #{$medium} and (#{$type}-width: $width) and (#{$type2}-width: $width2) { @content; }
+    }
+    @elseif $medium == print {
+        @media #{$medium},
+            (-o-min-device-pixel-ratio: 5/4),
+            (-webkit-min-device-pixel-ratio: 1.25),
+            (min-resolution: 120dpi) {
+                @content; // print styles
+            }
+    }
+    @elseif ($width != "" and $type != "" and $width2 and $type2 == "") {
+        @media only #{$medium} and (#{$type}-width: $width) { @content; } // Insert your styles
+    }
+    @else {
+        @media only #{$medium} and #{$customQuery} { @content; } // Insert your styles
+    }
+}
+
+
+// Map of breakpoints for responsive design. - USE THIS (RECOMMENDED) WHEN YOU WANT TO STYLE VARIOUS SPECIFIC ELEMENTS ON VARIOUS BREAKPOINTS
+
+/// @access private
+/// @group media-queries
+/// @see {mixin} respond-to
+/// @type Map
+$breakpoints: (
+  "small":  (max-width: 640px),
+  "medium": (min-width: 641px)
+  // Define more breakpoints in here
+) !global;
+
+/// Responsive Manager
+/// @access public
+/// @group media-queries
+/// @param {String} $breakpoint - Breakpoint
+/// @requires $breakpoints
+/// @example scss - Responsive Breakpoints
+/// .foo {
+///   color: red;
+///   @include respond-to("small") {
+///     color: blue;
+///   }
+/// }
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media #{inspect(map-get($breakpoints, $breakpoint))} {
+      @content;
+    }
+  }
+
+  @else {
+    @error "No value found for `#{$breakpoint}`. "
+         + "Please make sure it is defined in `$breakpoints` map.";
+  }
+}
+
+// =========================================================================
+
+
+
+// =========================================================================
+// VARIABLES AND PLACEHOLDERS
+// =========================================================================
+
+// =========================================================================
+
+// HEADERS
+/// The Ratio Value for Font Sizes
+/// @access public
+/// @type Variable
+/// @group headings
+$fontSizeRatio: 2.75; // 5.1428
+/// The Ratio Divider Value for Font Sizes
+/// @access public
+/// @type Variable
+/// @group headings
+$fontSizeDivider: 3.5; // 1.25
+// Sizes
+/// H1 Heading Font Size - calculated by multiplying the `$baseFontSize` with the `$fontSizeRatio`
+/// @access public
+/// @type Variable
+/// @group headings
+$mainHeaderSize: $baseFontSize * $fontSizeRatio; // H1
+/// H2 Heading Font Size - calculated by subtracting the division between `$baseFontSize` and `$fontSizeDivider` from the `$mainHeaderSize`, which is the H1 heading element
+/// @access public
+/// @type Variable
+/// @group headings
+$headerL2: $mainHeaderSize - $baseFontSize / $fontSizeDivider; // H2
+/// H3 Heading Font Size - calculated by subtracting the division between `$baseFontSize` and `$fontSizeDivider` from the `$mainHeaderSize`, which is the H1 heading element
+/// @access public
+/// @type Variable
+/// @group headings
+$headerL3: $headerL2 - $baseFontSize / $fontSizeDivider; // H3
+/// H4 Heading Font Size - calculated by subtracting the division between `$baseFontSize` and `$fontSizeDivider` from the `$mainHeaderSize`, which is the H1 heading element
+/// @access public
+/// @type Variable
+/// @group headings
+$headerL4: $headerL3 - $baseFontSize / $fontSizeDivider; // H4
+/// H5 Heading Font Size - calculated by subtracting the division between `$baseFontSize` and `$fontSizeDivider` from the `$mainHeaderSize`, which is the H1 heading element
+/// @access public
+/// @type Variable
+/// @group headings
+$headerL5: $headerL4 - $baseFontSize / $fontSizeDivider; // H5
+/// H6 Heading Font Size - calculated by subtracting the division between `$baseFontSize` and `$fontSizeDivider` from the `$mainHeaderSize`, which is the H1 heading element
+/// @access public
+/// @type Variable
+/// @group headings
+$headerL6: $headerL5 - $baseFontSize / $fontSizeDivider; // H6
+
+// =========================================================================
+
+
+// =========================================================================
+
+// CLEARFIX
+
+/// Micro Clearfix - :before and :after properties
+/// @group clearfixing
+/// @access public
+/// @example scss - Micro Clearfix
+/// .foo {
+///     @extend %clearfix;
+///     &:before, &:after {
+///         @extend %clearfix-ba;
+///     }
+///     &:after {
+///         @extend %clearfix-a;
+///     }
+/// }
+%clearfix-ba { // clearfix :before, :after
+    content: " ";
+    display: table;
+}
+
+/// Micro Clearfix - :after properties
+/// @group clearfixing
+/// @access public
+/// @example scss - Micro Clearfix
+/// .foo {
+///     @extend %clearfix;
+///     &:before, &:after {
+///         @extend %clearfix-ba;
+///     }
+///     &:after {
+///         @extend %clearfix-a;
+///     }
+/// }
+%clearfix-a { // clearfix :after
+    clear: both;
+}
+
+/// Micro Clearfix - general properties
+/// @group clearfixing
+/// @access public
+/// @example scss - Micro Clearfix
+/// .foo {
+///     @extend %clearfix;
+///     &:before, &:after {
+///         @extend %clearfix-ba;
+///     }
+///     &:after {
+///         @extend %clearfix-a;
+///     }
+/// }
+%clearfix {
+    *zoom: 1;
+}
+
+// =========================================================================
+
+
+// =========================================================================
+
+// SPRITE GENERATOR
+
+// Decomment the sprite generator lines to use it
+// == Sprite Generator ==
+// $sprite-width: 128px;
+// $sprite-height: 64px;
+// $sprite-item: 16px;
+
+// $sprite-hcells: $sprite-width / $sprite-item;
+// $sprite-vcells: $sprite-height / $sprite-item;
+
+// $sprite-img: url("../images/sprite.png") no-repeat;
+// $sprite: $sprite-img;
+// $spriteWidth: 16px;
+// $spriteHeight: 16px;
+
+// $i: 1; // iterators
+// $j: 1;
+// //$starting-point: 102px;
+
+// .sprite-icon {
+//     background: $sprite;
+//     width: $spriteWidth;
+//     height: $spriteHeight;
+// }
+
+// @for $i from 1 through $sprite-hcells {
+//     @for $j from 1 through $sprite-vcells {
+//         $pos: $i + "" + $j;
+//         $iconPos: -(($i * $sprite-item) - $sprite-item) + " " + -(($j * $sprite-item) - $sprite-item);
+//         .sprite-#{$j + "" + $i} .sprite-icon { background-position: unquote($iconPos); }
+//     }
+// }
+
+// =========================================================================
+
+
+
+// =========================================================================
+// FUNCTIONS
+// =========================================================================
+
+// =========================================================================
+
+// COLORING
+
+// Tint
+/// Slightly lighten a color
+/// @group coloring
+/// @access public
+/// @param {Color} $color - color to tint
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function tint($color, $percentage) {
+  @return mix($color, white, $percentage);
+}
+
+
+// Shade
+/// Slightly darken a color
+/// @group coloring
+/// @access public
+/// @param {Color} $color - color to shade
+/// @param {Number} $percentage - percentage of `$color` in returned color
+/// @return {Color}
+@function shade($color, $percentage) {
+  @return mix($color, black, $percentage);
+}
+
+// =========================================================================

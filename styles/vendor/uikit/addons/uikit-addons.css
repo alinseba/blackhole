@@ -1,0 +1,1359 @@
+/*! UIkit 2.8.0 | http://www.getuikit.com | (c) 2014 YOOtheme | MIT License */
+/* ========================================================================
+   Component: Dotnav
+ ========================================================================== */
+/*
+ * 1. Remove default list style
+ * 2. Remove whitespace between child elements when using `inline-block`
+ */
+.uikit-component {
+  /* Items
+   ========================================================================== */
+  /*
+   * 1. Reset whitespace hack
+   * 2. Remove the gap at the bottom of it container
+   */
+  /*
+   * Items
+   * 1. Remove the gap at the bottom of it container
+   * 2. Hide text if present
+   */
+  /*
+   * Hover
+   * 1. Apply hover style also to focus state
+   * 2. Remove default focus style
+   */
+  /* OnClick */
+  /* Active */
+  /* Modifier: 'dotnav-vertical'
+   ========================================================================== */
+  /* ========================================================================
+     Component: Slidenav
+   ========================================================================== */
+  /*
+   * 1. Required for `a` elements
+   * 2. Dimension
+   * 3. Style
+   */
+  /*
+   * Hover
+   * 1. Apply hover style also to focus state
+   * 2. Remove default focus style
+   * 3. Required for `a` elements
+   * 4. Style
+   */
+  /* Active */
+  /*
+   * Icons
+   */
+  /* Sub-object: `uk-slidenav-position`
+   ========================================================================== */
+  /*
+   * 1. Container width fits its content
+   * 2. Corrects max-width behavior (3.) if padding and border are used
+   * 3. Responsive behavior
+   * 4. Create position context for dropdowns
+   */
+  /*
+   * Center vertically
+   */
+  /* ========================================================================
+     Component: Form advanced
+     Note: Only works in Webkit at the moment
+   ========================================================================== */
+  /*
+   * 1. Style
+   * 2. Makes box more robust so it clips the child element
+   * 3. Vertical alignment
+   * 4. Remove default style
+   * 5. Fix black background on iOS
+   */
+  /* Radio */
+  /*
+   * Checked
+   */
+  /* Radio */
+  /* Checkbox */
+  /*
+   * Disabled
+   */
+  /* ========================================================================
+     Component: Form file
+   ========================================================================== */
+  /*
+   * 1. Behave like form elements
+   * 2. Create position context for dropdowns
+   * 3. Clip content
+   */
+  /*
+   * 1. Required for Firefox
+   * 2. Expand height and required for the cursor
+   */
+  /* ========================================================================
+     Component: Form password
+   ========================================================================== */
+  /* ========================================================================
+     Component: Form select
+   ========================================================================== */
+  /*
+   * 1. Behave like form elements
+   * 2. Create position context for dropdowns
+   * 3. Clip content
+   */
+  /*
+   * 1. Required for Firefox
+   * 1. Required for Webkit to make `height` work
+   */
+  /* ========================================================================
+     Component: Placeholder
+   ========================================================================== */
+  /*
+   * Add margin if adjacent element
+   */
+  /*
+   * Remove margin from the last-child
+   */
+  /* Modifier: `uk-placeholder-large`
+   ========================================================================== */
+  /* ========================================================================
+     Component: Autocomplete
+   ========================================================================== */
+  /*
+   * 1. Behave like form elements
+   * 2. Create position context for dropdowns
+   */
+  /* Nav modifier `uk-nav-autocomplete`
+   ========================================================================== */
+  /*
+   * Items
+   */
+  /*
+   * Active
+   * 1. Remove default focus style
+   */
+  /*
+   * Sub-object: `uk-nav-header`
+   */
+  /*
+   * Sub-object: `uk-nav-divider`
+   */
+  /* ========================================================================
+     Component: Datepicker
+   ========================================================================== */
+  /*
+   * Reset dropdown width
+   */
+  /* Sub-object: `uk-datepicker-nav`
+  ========================================================================== */
+  /*
+   * Micro clearfix
+   */
+  /*
+   * Previous and next navigation
+   */
+  /* Sub-object: `uk-datepicker-heading`
+  ========================================================================== */
+  /* Sub-object: `uk-datepicker-table`
+  ========================================================================== */
+  /* Block element behavior */
+  /*
+   * Item
+   */
+  /*
+   * Sub-object: `uk-datepicker-table-muted`
+   */
+  /*
+   * Hover
+   * 1. Apply hover style also to focus state
+   * 2. Remove default focus style
+   */
+  /* OnClick */
+  /*
+   * Active
+   */
+  /* ========================================================================
+     Component: HTML editor
+   ========================================================================== */
+  /* Sub-object `uk-htmleditor-navbar`
+   ========================================================================== */
+  /*
+   * Micro clearfix
+   */
+  /* Sub-object `uk-htmleditor-navbar-nav`
+   ========================================================================== */
+  /*
+   * 1. Dimensions
+   * 2. Style
+   */
+  /*
+   * Hover
+   * 1. Apply hover style also to focus state
+   * 2. Remove default focus style
+   */
+  /* OnClick */
+  /* Active */
+  /* Sub-object: `uk-htmleditor-navbar-flip`
+   ========================================================================== */
+  /* Sub-object for special buttons
+   ========================================================================== */
+  /* Sub-object `uk-htmleditor-content`
+   ========================================================================== */
+  /*
+   * Micro clearfix
+   */
+  /* Modifier `uk-htmleditor-fullscreen`
+   ========================================================================== */
+  /* Sub-objects `uk-htmleditor-code` and `uk-htmleditor-preview`
+   ========================================================================== */
+  /*
+   * Tab view
+   */
+  /*
+   * Split view
+   */
+  /* CodeMirror modifications
+   ========================================================================== */
+  /* ========================================================================
+     Component: Nestable
+   ========================================================================== */
+  /* Sub-object `uk-nestable-list`
+   ========================================================================== */
+  /* Sub-modifier `uk-nestable-list-dragged`
+   ========================================================================== */
+  /* Sub-object `uk-nestable-item`
+   ========================================================================== */
+  /* Sub-object `uk-nestable-placeholder`
+   * The placeholder which marks the drop area
+   ========================================================================== */
+  /* Sub-object `uk-nestable-empty`
+   * The style of an empty list
+   ========================================================================== */
+  /* Sub-object `uk-nestable-handle`
+   ========================================================================== */
+  /* Hover */
+  /* Icon */
+  /* Sub-object `uk-nestable-moving`
+   ========================================================================== */
+  /* Sub-object `[data-action='toggle']`
+   ========================================================================== */
+  /* Hidden by default */
+  /* Hover */
+  /* Icon */
+  /*
+   * Show if nested
+   */
+  /*
+   * Collapsed
+   */
+  /* ========================================================================
+     Component: Notify
+   ========================================================================== */
+  /*
+   * Message container for positioning
+   */
+  /* Position modifiers
+  ========================================================================== */
+  /* Responsiveness
+  ========================================================================== */
+  /* Phones portrait and smaller */
+  /* Sub-object: `uk-notify-message`
+  ========================================================================== */
+  /* Close in notify
+   ========================================================================== */
+  /* Modifier: `uk-alert-info`
+   ========================================================================== */
+  /* Modifier: `uk-alert-success`
+   ========================================================================== */
+  /* Modifier: `uk-notify-message-warning`
+   ========================================================================== */
+  /* Modifier: `uk-notify-message-danger`
+   ========================================================================== */
+  /* ========================================================================
+     Component: Search
+   ========================================================================== */
+  /*
+   * 1. Create position context for dropdowns
+   * 2. Needed for `form` element
+   */
+  /*
+   * Icon
+   */
+  /* Sub-object `uk-search-field`
+   ========================================================================== */
+  /*
+   * 1. Needed to reset iOS `input[type="search"]` appearance
+   */
+  /*
+   * Needed to reset iOS `input[type="search"]` appearance
+   * Higher specificity to override appearance set by normalize.less
+   */
+  /* Placeholder */
+  /* Removes cancel button in IE10 */
+  /* Focus */
+  /* Focus + active */
+  /* Sub-object `uk-search-close`
+   ========================================================================== */
+  /*
+   * 1. Required for `button` elements
+   * 2. Needed for Safari
+   */
+  /*
+   * Icon
+   */
+  /* Loading icon */
+  /* Dropdown modifier: `uk-dropdown-search`
+   ========================================================================== */
+  /*
+   * Dependency `uk-navbar-flip`
+   */
+  /* Nav modifier `uk-nav-search`
+   ========================================================================== */
+  /*
+   * Items
+   */
+  /*
+   * Active
+   * 1. Remove default focus style
+   */
+  /*
+   * Sub-object: `uk-nav-header`
+   */
+  /*
+   * Sub-object: `uk-nav-divider`
+   */
+  /*
+   * Nested items
+   */
+  /* Search in offcanvas
+   ========================================================================== */
+  /* ========================================================================
+     Component: Sortable
+   ========================================================================== */
+  /*
+   * Makes text unselectable
+   */
+  /*
+   * Prevents images and links from being dragged (default browser behavior)
+   * Currently only works in Webkit
+   */
+  /* Sub-modifier `uk-sortable-dragged`
+   ========================================================================== */
+  /* Sub-modifier `uk-sortable-placeholder`
+   ========================================================================== */
+  /* Sub-modifier `uk-sortable-over`
+   * Only if `warp:true`
+   ========================================================================== */
+  /* Sub-object `uk-nestable-moving`
+   ========================================================================== */
+  /* ========================================================================
+     Component: Sticky
+   ========================================================================== */
+  /* ========================================================================
+     Component: Upload
+   ========================================================================== */
+  /*
+   * Create a box-shadow when dragging a file over the upload area
+   */
+}
+.uikit-component .uk-dotnav {
+  padding: 0;
+  list-style: none;
+  font-size: 0.001px;
+}
+.uikit-component .uk-dotnav > li {
+  display: inline-block;
+  /* 1 */
+  font-size: 1rem;
+  /* 2 */
+  vertical-align: top;
+}
+.uikit-component .uk-dotnav > li:nth-child(n+2) {
+  margin-left: 15px;
+}
+.uikit-component .uk-dotnav > li > a {
+  display: inline-block;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: rgba(50, 50, 50, 0.1);
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+  overflow: hidden;
+  text-indent: -999%;
+}
+.uikit-component .uk-dotnav > li > a:hover,
+.uikit-component .uk-dotnav > li > a:focus {
+  background: rgba(50, 50, 50, 0.4);
+  /* 2 */
+  outline: none;
+}
+.uikit-component .uk-dotnav > li > a:active {
+  background: rgba(50, 50, 50, 0.6);
+}
+.uikit-component .uk-dotnav > li.uk-active > a {
+  background: rgba(50, 50, 50, 0.4);
+}
+.uikit-component .uk-dotnav-vertical > li {
+  display: block;
+}
+.uikit-component .uk-dotnav-vertical > li:nth-child(n+2) {
+  margin-left: 0;
+  margin-top: 15px;
+}
+.uikit-component .uk-slidenav {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60px;
+  height: 60px;
+  /* 3 */
+  line-height: 60px;
+  color: rgba(50, 50, 50, 0.4);
+  font-size: 60px;
+  text-align: center;
+}
+.uikit-component .uk-slidenav:hover,
+.uikit-component .uk-slidenav:focus {
+  /* 2 */
+  outline: none;
+  /* 3 */
+  text-decoration: none;
+  /* 4 */
+  color: rgba(50, 50, 50, 0.7);
+  cursor: pointer;
+}
+.uikit-component .uk-slidenav:active {
+  color: rgba(50, 50, 50, 0.9);
+}
+.uikit-component .uk-slidenav-previous:before {
+  content: "\f104";
+  font-family: FontAwesome;
+}
+.uikit-component .uk-slidenav-next:before {
+  content: "\f105";
+  font-family: FontAwesome;
+}
+.uikit-component .uk-slidenav-position {
+  /* 1 */
+  display: inline-block;
+  /* 2 */
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 3 */
+  max-width: 100%;
+  /* 4 */
+  position: relative;
+}
+.uikit-component .uk-slidenav-position .uk-slidenav {
+  display: none;
+  position: absolute;
+  top: 50%;
+  margin-top: -30px;
+}
+.uikit-component .uk-slidenav-position:hover .uk-slidenav {
+  display: block;
+}
+.uikit-component .uk-slidenav-position .uk-slidenav-previous {
+  left: 20px;
+}
+.uikit-component .uk-slidenav-position .uk-slidenav-next {
+  right: 20px;
+}
+.uikit-component .uk-form input[type="radio"],
+.uikit-component .uk-form input[type="checkbox"] {
+  /* 1 */
+  display: inline-block;
+  height: 14px;
+  width: 14px;
+  border: 1px solid #aaaaaa;
+  /* 2 */
+  overflow: hidden;
+  /* 3 */
+  margin-top: -4px;
+  vertical-align: middle;
+  /* 4 */
+  -webkit-appearance: none;
+  outline: 0;
+  /* 5 */
+  background: transparent;
+}
+.uikit-component .uk-form input[type="radio"] {
+  border-radius: 50%;
+}
+.uikit-component .uk-form input[type=checkbox]:checked:before,
+.uikit-component .uk-form input[type=radio]:checked:before {
+  display: block;
+}
+.uikit-component .uk-form input[type=radio]:checked:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  margin: 2px auto 0;
+  border-radius: 50%;
+  background: #00a8e6;
+}
+.uikit-component .uk-form input[type=checkbox]:checked:before {
+  content: "\f00c";
+  font-family: FontAwesome;
+  font-size: 12px;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  line-height: 12px;
+  color: #00a8e6;
+}
+.uikit-component .uk-form input[type=radio]:disabled,
+.uikit-component .uk-form input[type=checkbox]:disabled {
+  border-color: #dddddd;
+}
+.uikit-component .uk-form input[type=radio]:disabled:checked:before {
+  background-color: #aaaaaa;
+}
+.uikit-component .uk-form input[type=checkbox]:disabled:checked:before {
+  color: #aaaaaa;
+}
+.uikit-component .uk-form-file {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  overflow: hidden;
+}
+.uikit-component .uk-form-file input[type="file"] {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  /* 1 */
+  left: 0;
+  /* 2 */
+  font-size: 500px;
+}
+.uikit-component .uk-form-password {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.uikit-component .uk-form-password-toggle {
+  display: block;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  margin-top: -6px;
+  font-size: 13px;
+  line-height: 13px;
+  color: #999999;
+}
+.uikit-component .uk-form-password-toggle:hover {
+  color: #999999;
+  text-decoration: none;
+}
+.uikit-component .uk-form-password > input {
+  padding-right: 50px !important;
+}
+.uikit-component .uk-form-select {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+  /* 3 */
+  overflow: hidden;
+}
+.uikit-component .uk-form-select select {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  /* 1 */
+  left: 0;
+  /* 2 */
+  -webkit-appearance: none;
+}
+.uikit-component .uk-placeholder {
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 1px dashed #dddddd;
+  background: #fafafa;
+  color: #444444;
+}
+.uikit-component * + .uk-placeholder {
+  margin-top: 15px;
+}
+.uikit-component .uk-placeholder > :last-child {
+  margin-bottom: 0;
+}
+.uikit-component .uk-placeholder-large {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+.uikit-component .uk-autocomplete {
+  /* 1 */
+  display: inline-block;
+  vertical-align: middle;
+  /* 2 */
+  position: relative;
+}
+.uikit-component .uk-nav-autocomplete > li > a {
+  color: #444444;
+}
+.uikit-component .uk-nav-autocomplete > li.uk-active > a {
+  background: #00a8e6;
+  color: #ffffff;
+  /* 1 */
+  outline: none;
+}
+.uikit-component .uk-nav-autocomplete .uk-nav-header {
+  color: #999999;
+}
+.uikit-component .uk-nav-autocomplete .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+}
+.uikit-component .uk-datepicker {
+  width: auto;
+}
+.uikit-component .uk-datepicker-nav {
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+.uikit-component .uk-datepicker-nav:before,
+.uikit-component .uk-datepicker-nav:after {
+  content: " ";
+  display: table;
+}
+.uikit-component .uk-datepicker-nav:after {
+  clear: both;
+}
+.uikit-component .uk-datepicker-nav a {
+  color: #444444;
+  text-decoration: none;
+}
+.uikit-component .uk-datepicker-nav a:hover {
+  color: #444444;
+}
+.uikit-component .uk-datepicker-previous {
+  float: left;
+}
+.uikit-component .uk-datepicker-next {
+  float: right;
+}
+.uikit-component .uk-datepicker-previous:after,
+.uikit-component .uk-datepicker-next:after {
+  width: 20px;
+  font-family: FontAwesome;
+}
+.uikit-component .uk-datepicker-previous:after {
+  content: "\f053";
+}
+.uikit-component .uk-datepicker-next:after {
+  content: "\f054";
+}
+.uikit-component .uk-datepicker-table {
+  width: 100%;
+}
+.uikit-component .uk-datepicker-table th,
+.uikit-component .uk-datepicker-table td {
+  padding: 2px;
+}
+.uikit-component .uk-datepicker-table th {
+  font-size: 12px;
+}
+.uikit-component .uk-datepicker-table a {
+  display: block;
+  width: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+}
+.uikit-component a.uk-datepicker-table-muted {
+  color: #999999;
+}
+.uikit-component .uk-datepicker-table a:hover,
+.uikit-component .uk-datepicker-table a:focus {
+  background-color: #dddddd;
+  color: #444444;
+  /* 2 */
+  outline: none;
+}
+.uikit-component .uk-datepicker-table a:active {
+  background-color: #cccccc;
+  color: #444444;
+}
+.uikit-component .uk-datepicker-table a.uk-active {
+  background: #00a8e6;
+  color: #ffffff;
+}
+.uikit-component .uk-htmleditor-navbar {
+  background: #eeeeee;
+}
+.uikit-component .uk-htmleditor-navbar:before,
+.uikit-component .uk-htmleditor-navbar:after {
+  content: " ";
+  display: table;
+}
+.uikit-component .uk-htmleditor-navbar:after {
+  clear: both;
+}
+.uikit-component .uk-htmleditor-navbar-nav {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  float: left;
+}
+.uikit-component .uk-htmleditor-navbar-nav > li {
+  float: left;
+}
+.uikit-component .uk-htmleditor-navbar-nav > li > a {
+  display: block;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+  /* 1 */
+  height: 40px;
+  padding: 0 15px;
+  line-height: 40px;
+  /* 2 */
+  color: #444444;
+  font-size: 11px;
+  cursor: pointer;
+}
+.uikit-component .uk-htmleditor-navbar-nav > li:hover > a,
+.uikit-component .uk-htmleditor-navbar-nav > li > a:focus {
+  background-color: #f5f5f5;
+  color: #444444;
+  outline: none;
+  /* 2 */
+}
+.uikit-component .uk-htmleditor-navbar-nav > li > a:active {
+  background-color: #dddddd;
+  color: #444444;
+}
+.uikit-component .uk-htmleditor-navbar-nav > li.uk-active > a {
+  background-color: #f5f5f5;
+  color: #444444;
+}
+.uikit-component .uk-htmleditor-navbar-flip {
+  float: right;
+}
+.uikit-component [data-mode='split'] .uk-htmleditor-button-code,
+.uikit-component [data-mode='split'] .uk-htmleditor-button-preview {
+  display: none;
+}
+.uikit-component .uk-htmleditor-content {
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+  background: #ffffff;
+}
+.uikit-component .uk-htmleditor-content:before,
+.uikit-component .uk-htmleditor-content:after {
+  content: " ";
+  display: table;
+}
+.uikit-component .uk-htmleditor-content:after {
+  clear: both;
+}
+.uikit-component .uk-htmleditor-fullscreen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 990;
+}
+.uikit-component .uk-htmleditor-fullscreen .uk-htmleditor-content {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.uikit-component .uk-htmleditor-fullscreen .uk-icon-expand:before {
+  content: "\f066";
+}
+.uikit-component .uk-htmleditor-code,
+.uikit-component .uk-htmleditor-preview {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.uikit-component .uk-htmleditor-preview {
+  padding: 20px;
+  overflow-y: scroll;
+}
+.uikit-component [data-mode='tab'][data-active-tab='code'] .uk-htmleditor-preview,
+.uikit-component [data-mode='tab'][data-active-tab='preview'] .uk-htmleditor-code {
+  display: none;
+}
+.uikit-component [data-mode='split'] .uk-htmleditor-code,
+.uikit-component [data-mode='split'] .uk-htmleditor-preview {
+  float: left;
+  width: 50%;
+}
+.uikit-component [data-mode='split'] .uk-htmleditor-code {
+  border-right: 1px solid #eeeeee;
+}
+.uikit-component .uk-htmleditor .CodeMirror {
+  padding: 10px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.uikit-component .uk-nestable {
+  padding: 0;
+  list-style: none;
+}
+.uikit-component .uk-nestable-list {
+  margin: 0;
+  padding-left: 40px;
+  list-style: none;
+}
+.uikit-component .uk-nestable-list-dragged {
+  position: absolute;
+  z-index: 1050;
+  padding-left: 0;
+  pointer-events: none;
+}
+.uikit-component .uk-nestable-item {
+  margin-bottom: 10px;
+  padding: 5px;
+  background: #f5f5f5;
+}
+.uikit-component .uk-nestable-placeholder {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  border: 1px dashed #dddddd;
+}
+.uikit-component .uk-nestable-empty {
+  min-height: 40px;
+}
+.uikit-component .uk-nestable-handle {
+  display: inline-block;
+  font-size: 18px;
+  color: #dddddd;
+}
+.uikit-component .uk-nestable-handle:hover {
+  cursor: move;
+}
+.uikit-component .uk-nestable-handle:after {
+  content: "\f0c9";
+  font-family: FontAwesome;
+}
+.uikit-component .uk-nestable-moving,
+.uikit-component .uk-nestable-moving * {
+  cursor: move;
+}
+.uikit-component [data-nestable-action='toggle'] {
+  display: inline-block;
+  color: #999999;
+  visibility: hidden;
+}
+.uikit-component [data-nestable-action='toggle']:hover {
+  color: #444444;
+  cursor: pointer;
+}
+.uikit-component [data-nestable-action='toggle']:after {
+  content: "\f147";
+  font-family: FontAwesome;
+}
+.uikit-component .uk-parent > .uk-nestable-item [data-nestable-action='toggle'] {
+  visibility: visible;
+}
+.uikit-component .uk-collapsed > .uk-nestable-item [data-nestable-action='toggle']:after {
+  content: "\f196";
+}
+.uikit-component .uk-collapsed .uk-nestable-list {
+  display: none;
+}
+.uikit-component .uk-notify {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1040;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 350px;
+}
+.uikit-component .uk-notify-top-right,
+.uikit-component .uk-notify-bottom-right {
+  left: auto;
+  right: 10px;
+}
+.uikit-component .uk-notify-top-center,
+.uikit-component .uk-notify-bottom-center {
+  left: 50%;
+  margin-left: -175px;
+}
+.uikit-component .uk-notify-bottom-left,
+.uikit-component .uk-notify-bottom-right,
+.uikit-component .uk-notify-bottom-center {
+  top: auto;
+  bottom: 10px;
+}
+@media (max-width: 479px) {
+  .uikit-component {
+    /*
+       * Fit in small screen
+       */
+  }
+  .uikit-component .uk-notify {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+  }
+}
+.uikit-component .uk-notify-message {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: #444444;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+.uikit-component .uk-notify-message > .uk-close {
+  visibility: hidden;
+  float: right;
+}
+.uikit-component .uk-notify-message:hover > .uk-close {
+  visibility: visible;
+}
+.uikit-component .uk-notify-message-primary {
+  background: #ebf7fd;
+  color: #2d7091;
+}
+.uikit-component .uk-notify-message-success {
+  background: #f2fae3;
+  color: #659f13;
+}
+.uikit-component .uk-notify-message-warning {
+  background: #fffceb;
+  color: #e28327;
+}
+.uikit-component .uk-notify-message-danger {
+  background: #fff1f0;
+  color: #d85030;
+}
+.uikit-component .uk-search {
+  display: inline-block;
+  /* 1 */
+  position: relative;
+  /* 2 */
+  margin: 0;
+}
+.uikit-component .uk-search:after {
+  content: "\f002";
+  position: absolute;
+  top: 0.3333em;
+  left: 0.4166em;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-family: FontAwesome;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.2);
+}
+.uikit-component .uk-search-field {
+  width: 120px;
+  height: 30px;
+  padding: 0 30px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: #444444;
+  -webkit-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+  /* 1 */
+  border-radius: 0;
+}
+.uikit-component input.uk-search-field {
+  -webkit-appearance: none;
+}
+.uikit-component .uk-search-field:-ms-input-placeholder {
+  color: #999999;
+}
+.uikit-component .uk-search-field::-moz-placeholder {
+  color: #999999;
+}
+.uikit-component .uk-search-field::-webkit-input-placeholder {
+  color: #999999;
+}
+.uikit-component .uk-search-field::-ms-clear {
+  display: none;
+}
+.uikit-component .uk-search-field:focus {
+  outline: 0;
+}
+.uikit-component .uk-search-field:focus,
+.uikit-component .uk-search.uk-active .uk-search-field {
+  width: 180px;
+}
+.uikit-component .uk-search-close {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.2);
+  /* 1. */
+  padding: 0;
+  border: 0;
+  -webkit-appearance: none;
+  /* 2. */
+  background: transparent;
+}
+.uikit-component .uk-loading > .uk-search-close,
+.uikit-component .uk-active > .uk-search-close {
+  display: block;
+}
+.uikit-component .uk-search-close:after {
+  display: block;
+  content: "\f00d";
+  font-family: FontAwesome;
+}
+.uikit-component .uk-loading > .uk-search-close:after {
+  content: "\f110";
+  -webkit-animation: uk-spin 2s infinite linear;
+  animation: uk-spin 2s infinite linear;
+}
+.uikit-component .uk-dropdown-search {
+  width: 300px;
+  margin-top: 0;
+  background: #f5f5f5;
+  color: #444444;
+}
+.uikit-component .uk-open > .uk-dropdown-search {
+  -webkit-animation: uk-slide-top-fixed 0.2s ease-in-out;
+  animation: uk-slide-top-fixed 0.2s ease-in-out;
+}
+.uikit-component .uk-navbar-flip .uk-dropdown-search {
+  margin-top: 5px;
+  margin-right: -15px;
+}
+.uikit-component .uk-nav-search > li > a {
+  color: #444444;
+}
+.uikit-component .uk-nav-search > li.uk-active > a {
+  background: #00a8e6;
+  color: #ffffff;
+  /* 1 */
+  outline: none;
+}
+.uikit-component .uk-nav-search .uk-nav-header {
+  color: #999999;
+}
+.uikit-component .uk-nav-search .uk-nav-divider {
+  border-top: 1px solid #dddddd;
+}
+.uikit-component .uk-nav-search ul a {
+  color: #0077dd;
+}
+.uikit-component .uk-nav-search ul a:hover {
+  color: #005599;
+}
+.uikit-component .uk-offcanvas .uk-search {
+  display: block;
+  margin: 20px 15px;
+}
+.uikit-component .uk-offcanvas .uk-search:before {
+  color: #777777;
+}
+.uikit-component .uk-offcanvas .uk-search-field {
+  width: 100%;
+  border-color: transparent;
+  background: #1a1a1a;
+  color: #cccccc;
+}
+.uikit-component .uk-offcanvas .uk-search-field:-ms-input-placeholder {
+  color: #777777;
+}
+.uikit-component .uk-offcanvas .uk-search-field::-moz-placeholder {
+  color: #777777;
+}
+.uikit-component .uk-offcanvas .uk-search-field::-webkit-input-placeholder {
+  color: #777777;
+}
+.uikit-component .uk-sortable {
+  position: relative;
+}
+.uikit-component .uk-sortable > * {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.uikit-component .uk-sortable > * * {
+  -webkit-user-drag: none;
+  user-drag: none;
+}
+.uikit-component .uk-sortable-dragged {
+  position: absolute;
+  z-index: 1050;
+  pointer-events: none;
+}
+.uikit-component .uk-sortable-placeholder {
+  opacity: 0;
+}
+.uikit-component .uk-sortable-over {
+  opacity: 0.3;
+}
+.uikit-component .uk-sortable-moving,
+.uikit-component .uk-sortable-moving * {
+  cursor: move;
+}
+.uikit-component .uk-sticky {
+  z-index: 980;
+}
+.uikit-component .uk-dragover {
+  box-shadow: 0 0 20px rgba(100, 100, 100, 0.3);
+}
+
+/* ========================================================================
+     Component: Notify
+   ========================================================================== */
+/*
+ * Message container for positioning
+ */
+.uk-notify {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  z-index: 1040;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 350px;
+}
+
+/* Position modifiers
+========================================================================== */
+.uk-notify-top-right,
+.uk-notify-bottom-right {
+  left: auto;
+  right: 10px;
+}
+
+.uk-notify-top-center,
+.uk-notify-bottom-center {
+  left: 50%;
+  margin-left: -175px;
+}
+
+.uk-notify-bottom-left,
+.uk-notify-bottom-right,
+.uk-notify-bottom-center {
+  top: auto;
+  bottom: 10px;
+}
+
+/* Responsiveness
+========================================================================== */
+/* Phones portrait and smaller */
+@media (max-width: 479px) {
+  /*
+     * Fit in small screen
+     */
+  .uk-notify {
+    left: 10px;
+    right: 10px;
+    width: auto;
+    margin: 0;
+  }
+}
+/* Sub-object: `uk-notify-message`
+========================================================================== */
+.uk-notify-message {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 15px;
+  background: #444444;
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+/* Close in notify
+ ========================================================================== */
+.uk-notify-message > .uk-close {
+  visibility: hidden;
+  float: right;
+}
+
+.uk-notify-message:hover > .uk-close {
+  visibility: visible;
+}
+
+/* Modifier: `uk-alert-info`
+ ========================================================================== */
+.uk-notify-message-primary {
+  background: #ebf7fd;
+  color: #2d7091;
+}
+
+/* Modifier: `uk-alert-success`
+ ========================================================================== */
+.uk-notify-message-success {
+  background: #f2fae3;
+  color: #659f13;
+}
+
+/* Modifier: `uk-notify-message-warning`
+ ========================================================================== */
+.uk-notify-message-warning {
+  background: #fffceb;
+  color: #e28327;
+}
+
+/* Modifier: `uk-notify-message-danger`
+ ========================================================================== */
+.uk-notify-message-danger {
+  background: #fff1f0;
+  color: #d85030;
+}
+
+/* ========================================================================
+   Component: Datepicker
+ ========================================================================== */
+/*
+ * Reset dropdown width
+ */
+.uk-datepicker {
+  width: auto;
+}
+
+/* Sub-object: `uk-datepicker-nav`
+========================================================================== */
+.uk-datepicker-nav {
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 20px;
+}
+
+/*
+ * Micro clearfix
+ */
+.uk-datepicker-nav:before,
+.uk-datepicker-nav:after {
+  content: " ";
+  display: table;
+}
+
+.uk-datepicker-nav:after {
+  clear: both;
+}
+
+/*
+ * Previous and next navigation
+ */
+.uk-datepicker-nav a {
+  color: #444444;
+  text-decoration: none;
+}
+
+.uk-datepicker-nav a:hover {
+  color: #444444;
+}
+
+.uk-datepicker-previous {
+  float: left;
+}
+
+.uk-datepicker-next {
+  float: right;
+}
+
+.uk-datepicker-previous:after,
+.uk-datepicker-next:after {
+  width: 20px;
+  font-family: FontAwesome;
+}
+
+.uk-datepicker-previous:after {
+  content: "\f053";
+}
+
+.uk-datepicker-next:after {
+  content: "\f054";
+}
+
+/* Sub-object: `uk-datepicker-heading`
+========================================================================== */
+/* Sub-object: `uk-datepicker-table`
+========================================================================== */
+/* Block element behavior */
+.uk-datepicker-table {
+  width: 100%;
+}
+
+.uk-datepicker-table th,
+.uk-datepicker-table td {
+  padding: 2px;
+}
+
+.uk-datepicker-table th {
+  font-size: 12px;
+}
+
+/*
+ * Item
+ */
+.uk-datepicker-table a {
+  display: block;
+  width: 26px;
+  line-height: 24px;
+  text-align: center;
+  color: #444444;
+  text-decoration: none;
+}
+
+/*
+ * Sub-object: `uk-datepicker-table-muted`
+ */
+a.uk-datepicker-table-muted {
+  color: #999999;
+}
+
+/*
+ * Hover
+ * 1. Apply hover style also to focus state
+ * 2. Remove default focus style
+ */
+.uk-datepicker-table a:hover,
+.uk-datepicker-table a:focus {
+  background-color: #dddddd;
+  color: #444444;
+  /* 2 */
+  outline: none;
+}
+
+/* OnClick */
+.uk-datepicker-table a:active {
+  background-color: #cccccc;
+  color: #444444;
+}
+
+/*
+ * Active
+ */
+.uk-datepicker-table a.uk-active {
+  background: #00a8e6;
+  color: #ffffff;
+}
+
+/*# sourceMappingURL=uikit-addons.css.map */

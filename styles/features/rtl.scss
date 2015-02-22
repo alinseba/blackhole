@@ -1,0 +1,390 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../base/core.scss";
+@import "../config/config.scss";
+
+
+/* ==========================================================================
+   RTL (Right-To-Left) Styles
+   ========================================================================== */
+
+/* Clearfixes */
+.clearfix, .rtl .menu-list, .rtl .pagination {
+    @extend %clearfix;
+    &:before, &:after {
+        @extend %clearfix-ba;
+    }
+    &:after {
+        @extend %clearfix-a;
+    }
+}
+
+html#{$documentID} body#{$frameworkClass} {
+    .rtl, &.rtl p, &.rtl .title, &.rtl header { /* Right-to-Left support - element to be removed when it's used */
+        direction: rtl;
+        text-align: right !important;
+    }
+    &.rtl {
+        > * {
+            direction: rtl;
+            text-align: right;
+        }
+        .bootstrap-section {
+            direction: ltr;
+            text-align: left;
+        }
+        .right {
+            float: left;
+        }
+        .left {
+            float: right;
+        }
+        p img.left {
+            margin : 0 0 0.75em 0.75em;
+        }
+        p img.right {
+            margin : 0 0.75em 0.75em 0;
+        }
+        .with-label.left {
+            margin-left: 1.5em;
+            margin-right: 0;
+        }
+        .with-label.right {
+            margin-left: 0;
+            margin-right: 1.5em;
+        }
+        p .remark {
+            left: auto;
+            right: -2em;
+            float: right;
+        }
+        p .remark.right {
+            left: -2em;
+            right: auto;
+            float: left;
+        }
+        .list.enumerated .item, .list-enumerated .item, .enumerated .item {
+            margin-right: 0;
+            margin-left: 0.5em;
+        }
+        header > .icon {
+            float: left;
+        }
+        * .icon, * .message {
+            text-align: center !important;
+        }
+        * .icon.main {
+            text-align: center !important;
+        }
+        .icon.right {
+            margin-left: 0;
+            margin-right: 16px;
+            float: left;
+        }
+        .icon.left {
+            margin-left: 6px;
+            margin-right: 0;
+            float: right;
+        }
+        .icon.left.main {
+            margin-top: 0.25em;
+        }
+        .input-wrapper > .icon {
+            right: auto;
+            left: 0.62em;
+        }
+        .flyer .content > .icon.right {
+            float: left;
+        }
+        .close {
+            float: left;
+        }
+        * > span.title {
+            float: none;
+        }
+        &.chrome, &.webkit {
+            .framework {
+                a > span.title {
+                    float: right;
+                }
+            }
+        }
+        .breadcrumb .item {
+            float: right;
+        }
+        .menu.breadcrumb > .item, .menu-list.breadcrumb > .item {
+            margin: 0 0 0 1em;
+            float: right;
+            .icon {
+                margin-left: 0;
+                margin-right: 1em;
+            }
+        }
+        .input-wrapper.with-icon .input {
+            padding-right: 1em;
+            padding-left: 3em;
+        }
+        .button-group .item {
+            float: right;
+        }
+        .scrollup {
+            right: auto;
+            left: 0.75em;
+        }
+        label {
+            padding-right: 0;
+            padding-left: 0.5em;
+        }
+        form {
+            input[type="text"], input[type="password"], .input.text, textarea, select {
+                margin-right: 0;
+                margin-left: 1em;
+            }
+        }
+        .input-wrapper.multiple {
+            .input, input[type="text"], .input:focus, input[type="text"]:focus {
+                margin-left: 0;
+                float: right;
+            }
+        }
+        .input-wrapper {
+            input[type="text"], input[type="password"], .input.text {
+                margin-left: 0;
+            }
+        }
+        .overlay .icon {
+            right: auto;
+            left: 0;
+        }
+        .overlay {
+            left: auto;
+            right: 0;
+        }
+        .drop-caps:first-letter, .drop-caps::first-letter {
+            float: none;
+            padding-right: 0;
+            padding-left: 0.125em;
+        }
+        .with-tag .tag {
+            right: auto;
+            left: -0.75em;
+        }
+        .input.radio, .input.checkbox {
+            margin-right: 0;
+            margin-left: 0.5em;
+        }
+        label + input.radio:last-child, label + input.checkbox:last-child {
+            float: right;
+        }
+        .more-content {
+            text-align: center !important;
+        }
+        .controls-horizontal {
+            right: auto;
+            left: 15em;
+        }
+        .controls.left {
+            left: auto;
+            right: 30em;
+        }
+        .controls {
+            right: auto;
+            left: 0;
+        }
+        .box.closable .controls-horizontal {
+            right: auto;
+            left: 0.5em;
+        }
+        .comments > .list > .item aside.comment-block {
+            padding-left: 1em;
+            padding-right: 0;
+            float: left;
+        }
+        .comments > .list > .item aside.commenter {
+            float: right !important;
+        }
+        .comments > .list > .item aside.comment-block .controls {
+            right: auto;
+            left: 0;
+        }
+        .menu-list {
+            float: right;
+        }
+        .pagination {
+            float: right;
+        }
+        .pagination .item {
+            float: right;
+        }
+        .pagination .item:first-child, .pagination .item:last-child, .pagination .item:first-child a, .pagination .item:last-child a {
+            direction: rtl;
+        }
+        .ribbon-left {
+            left: 0;
+        }
+        .ribbon {
+            margin-left: 0;
+            margin-right: -10px;
+        }
+        .pane .controls {
+            right: auto;
+            left: 0;
+        }
+        .moving {
+            &.right:hover {
+                margin-right: 1.5em;
+                margin-left: 0;
+            }
+            &.left:hover {
+                margin-right: -1.5em;
+                margin-left: 0;
+            }
+        }
+        .moving-right {
+            &:hover {
+                margin-right: 1.5em;
+                margin-left: 0;
+            }
+        }
+        .moving-left {
+            &:hover {
+                margin-right: -1.5em;
+                margin-left: 0;
+            }
+        }
+        .social .item {
+            float: right;
+            margin: 0 0 0.25em 0.25em;
+        }
+        .social .item:last-child {
+            margin-left: 0;
+        }
+        .timeline .list .item {
+            float: right;
+        }
+        .timeline.vertical .list .item .content {
+            left: auto;
+            right: 4em;
+        }
+        .timeline.vertical .list .item .dot {
+            left: auto;
+            right: -0.3em;
+        }
+        .timeline.vertical .list .item img.dot {
+            left: auto;
+            right: -1.75em;
+        }
+        .timeline.vertical .list .item .datetime, .timeline.vertical .list .item .title {
+            left: auto;
+            right: -16.5em;
+        }
+        .timeline.vertical .list .item .title {
+            max-width: 180px;
+        }
+        .menu > .item, .menu-list > .item {
+            float: right;
+        }
+        .menu.vertical > .item, .menu-list.vertical > .item {
+            float: none;
+        }
+        .menu.vertical.docked, .menu-list.vertical.docked {
+            > .item > .link .icon-default {
+                margin-right: 0;
+            }
+        }
+        .caption {
+            left: auto;
+            right: 0;
+        }
+        .pricing-table thead th .title, .pricing-table tfoot td a {
+            text-align: center !important;
+        }
+        .table.pricing .list .item.header .title, .table.pricing .list .item .title {
+            text-align: center !important;
+        }
+        .table .list {
+            float: right;
+        }
+        .table .col .item {
+            border-right: none;
+            border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+        .feedback, .feedback-right {
+            float: right;
+        }
+        .feedback-roll .feedback {
+            float: none;
+        }
+        .comments .post-comment button {
+            right: auto;
+            left: 0;
+        }
+        .horizontal-terms {
+            dt {
+                float: right;
+            }
+            dd {
+                margin-left: 0;
+                margin-right: 3%;
+            }
+        }
+        .pagination {
+            float: none;
+            > .item, > li {
+                &.right {
+                    float: left;
+                }
+            }
+        }
+        .transforms {
+            > .item {
+                left: auto;
+                right: 15em;
+                &.title {
+                    right: 0;
+                }
+            }
+        }
+        .comments > .list > .item.replied .reply .replier {
+            margin-left: 0;
+            margin-right: 4em;
+        }
+        .comments > .list > .item.replied .reply .replier > .icon {
+            left: auto !important;
+            right: -1em;
+            @include transform(scaleX(1));
+            filter: FlipH;
+            -ms-filter: "FlipH";
+        }
+        .comments > .list > .item.replied .reply .replier + .reply {
+            margin-left: 0;
+            margin-right: 4em;
+        }
+        .thumbs .item {
+            padding: 0 0 1em 0.5em;
+            float: right;
+        }
+        .floating-nav {
+            &.previous, &.left {
+                left: auto;
+                right: 0;
+            }
+            &.next, &.right {
+                left: 0;
+                right: auto;
+            }
+            .icon {
+                &.right {
+                    margin-right: 0.5em;
+                    margin-left: 0;
+                }
+                &.left {
+                    margin-right: 0;
+                    margin-left: 0.5em;
+                }
+            }
+        }
+    }
+}
