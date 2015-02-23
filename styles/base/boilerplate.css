@@ -1411,7 +1411,7 @@ html#myDocument .button.thin, html#myDocument button.thin {
 }
 html#myDocument .button:active, html#myDocument .button.uk-active, html#myDocument button:active, html#myDocument button.uk-active {
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(17, 98%, 49%, 1);
+  background-color: hsla(170, 100%, 40%, 1);
   transition: none;
   -moz-transition: none;
   -webkit-transition: none;

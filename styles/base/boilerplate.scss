@@ -1389,7 +1389,7 @@ html#{$documentID} body#{$frameworkClass} .fixed-bottom {
     }
     html#{$documentID} &:active, html#{$documentID} &.uk-active {
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
-        background-color: rgbToHsla(nth($buttonColor, 1), nth($buttonColor, 2), nth($buttonColor, 3));
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
         @include transition(none);
     }
     &.only-icon .icon {

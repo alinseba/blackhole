@@ -36,6 +36,22 @@ html#myDocument body.my-framework #main-header .logo a, html#myDocument body.my-
   font-weight: 700;
   color: hsla(170, 100%, 40%, 1);
 }
+html#myDocument body.my-framework #main-header .logo .symbol {
+  display: inline-block;
+  margin: 0 0.3333em;
+  line-height: 1;
+  padding: 0.04166em;
+  color: hsla(0, 0%, 100%, 1);
+  border: 0.0833em dashed hsla(240, 8%, 39%, 0.5);
+  background-color: hsla(240, 8%, 39%, 1);
+  transform: scale(1.5, 1);
+  -moz-transform: scale(1.5, 1);
+  -webkit-transform: scale(1.5, 1);
+  -ms-transform: scale(1.5, 1);
+  border-radius: 0.4166em;
+  -moz-border-radius: 0.4166em;
+  -webkit-border-radius: 0.4166em;
+}
 html#myDocument body.my-framework #main-content {
   min-height: 800px;
 }

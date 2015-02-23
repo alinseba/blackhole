@@ -139,6 +139,38 @@
 */
 @media only screen and (min-width: 640px) and (max-width: 800px) {
   /* General */
+  html#myDocument body#myFramework .framework #main-section #main-content {
+    /* Component Manager */
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content .list.main aside {
+    float: none;
+    width: 100% !important;
+    padding-right: 0;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content .list.main aside.hidden-element {
+    margin-top: 1.5em;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element {
+    padding-right: 0;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger {
+    margin-left: 0;
+    margin-bottom: 0.75em;
+    float: none;
+    width: 100%;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger + * + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger + * + * {
+    float: none;
+    max-width: 100%;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list.main > .item:nth-child(1), html#myDocument body#myFramework .framework #main-section #main-content > .list.main > .item:nth-child(2), html#myDocument body#myFramework .framework #main-section #main-content > .list.main > .item:nth-child(3) {
+    display: none;
+  }
+
+  html#myDocument body#myFramework .framework #main-header {
+    position: relative;
+  }
+
   html#myDocument body.my-framework {
     transition: none;
     -moz-transition: none;
@@ -452,6 +484,35 @@
 */
 @media only screen and (max-width: 640px) {
   /* General */
+  html#myDocument body#myFramework .framework #main-section #main-content {
+    /* Component Manager */
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content .list.main aside {
+    float: none;
+    width: 100% !important;
+    padding-right: 0;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content .list.main aside.hidden-element {
+    margin-top: 1.5em;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element {
+    padding-right: 0;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger {
+    margin-left: 0;
+    margin-bottom: 0.75em;
+    float: none;
+    width: 100%;
+  }
+  html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item > aside.element > .trigger + * + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger + *, html#myDocument body#myFramework .framework #main-section #main-content > .list .item .tab-content > aside.element > .trigger + * + * {
+    float: none;
+    max-width: 100%;
+  }
+
+  html#myDocument body#myFramework .framework #main-header {
+    position: relative;
+  }
+
   html#myDocument body.my-framework {
     transition: none;
     -moz-transition: none;

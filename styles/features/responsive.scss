@@ -178,6 +178,43 @@
 @include media-query(640, min, 800, max) { // Change to fit your needs
 
     /* General */
+    html#{$documentID} body#{$frameworkID} .framework #main-section #main-content {
+        
+        /* Component Manager */
+        .list.main aside {
+            float: none;
+            width: 100% !important;
+            padding-right: 0;
+            &.hidden-element {
+                margin-top: 1.5em;
+            }
+        }
+        > .list .item > aside.element, > .list .item .tab-content > aside.element {
+            padding-right: 0;
+        }
+        > .list .item > aside.element > .trigger, > .list .item .tab-content > aside.element > .trigger {
+            margin-left: 0;
+            margin-bottom: 0.75em;
+            float: none;
+            width: 100%;
+            // background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+            // color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+        > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
+            float: none;
+            max-width: 100%;
+        }
+        > .list.main > .item {
+            &:nth-child(1), &:nth-child(2), &:nth-child(3) {
+                display: none;
+            }
+        }
+    }
+
+    html#{$documentID} body#{$frameworkID} .framework #main-header {
+        position: relative;
+    }
+    
     html#{$documentID} body#{$frameworkClass} {
         @include transition(none);
         * {
@@ -519,6 +556,38 @@
 @include media-query(640, max) { // Change to fit your needs
 
     /* General */
+    html#{$documentID} body#{$frameworkID} .framework #main-section #main-content {
+        
+        /* Component Manager */
+        .list.main aside {
+            float: none;
+            width: 100% !important;
+            padding-right: 0;
+            &.hidden-element {
+                margin-top: 1.5em;
+            }
+        }
+        > .list .item > aside.element, > .list .item .tab-content > aside.element {
+            padding-right: 0;
+        }
+        > .list .item > aside.element > .trigger, > .list .item .tab-content > aside.element > .trigger {
+            margin-left: 0;
+            margin-bottom: 0.75em;
+            float: none;
+            width: 100%;
+            // background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+            // color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+        > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
+            float: none;
+            max-width: 100%;
+        }
+    }
+
+    html#{$documentID} body#{$frameworkID} .framework #main-header {
+        position: relative;
+    }
+
     html#{$documentID} body#{$frameworkClass} {
         @include transition(none);
         * {
