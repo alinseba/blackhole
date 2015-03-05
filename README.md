@@ -7,7 +7,10 @@ I decided to develop this framework because I am tired of seeing everywhere bad 
 
 Though is somehow an **opinionated** framework, I promise it will not force you into doing anything you dont't like, its **opinions** on doing things in certain ways are coming from solid backgrounds such as **good sense**, **flexibility** and **simplicity**.
 
+## Documentation and Tutorials
 [Get started](http://www.html5depot.com/blackhole/index.html)
+[Tutorials](http://html5depot.com/blackhole/framework/documentation/tutorials.html)
+
 
 
 ## Download
