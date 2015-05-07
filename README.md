@@ -1,6 +1,8 @@
 # ![Blackhole](logo.png)
 > minimalistic but flexible and powerful SCSS / CSS framework
 
+## Version 1.11 Released
+
 Blackhole is a **minimalistic**, **semantic**, **modular**, but **powerful** and **flexible** SASS / CSS framework with the sole purpose of offering developers (you) a new approach on how they architect their websites / apps, aiming in making their work easy and pleasurable and giving the possibility of modifying and extending it the way they want.
 
 It's a good and fast solution for prototyping your projects and creating a solid but flexible architecture for them, only leaving to you the process of **configuring**, **creating some unique design**, and maybe **extend things** based on your needs.
