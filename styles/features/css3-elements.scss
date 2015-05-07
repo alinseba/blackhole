@@ -2,8 +2,8 @@
 // Partials Import
 // =========================================================================
 
-@import "base/core.scss";
-@import "config/config.scss";
+@import "../base/core.scss";
+@import "../config/config.scss";
 
 
 /* ELEMENTS WITH CSS3 PROPERTIES */
@@ -17,7 +17,7 @@
 /// @group project-configs
 $defaultTextShadowCollection: ();
 @each $defaultTextShadowElement in $defaultTextShadowElements {
-    $defaultTextShadowCollection: append($defaultTextShadowCollection, unquote('html#{$documentID} #{$defaultTextShadowElement}'), comma);
+    $defaultTextShadowCollection: append($defaultTextShadowCollection, unquote('#{$documentID} #{$defaultTextShadowElement}'), comma);
 }
 #{$defaultTextShadowCollection} {
     @include text-shadow($defaultTextShadow);
@@ -30,7 +30,7 @@ $defaultTextShadowCollection: ();
 /// @group project-configs
 $customInvertTextShadowCollection: ();
 @each $customInvertTextShadowElement in $customInvertTextShadowElements {
-    $customInvertTextShadowCollection: append($customInvertTextShadowCollection, unquote('html#{$documentID} #{$customInvertTextShadowElement}'), comma);
+    $customInvertTextShadowCollection: append($customInvertTextShadowCollection, unquote('#{$documentID} #{$customInvertTextShadowElement}'), comma);
 }
 #{$customInvertTextShadowCollection} {
     @include text-shadow($customInvertTextShadow);
@@ -46,7 +46,7 @@ $customInvertTextShadowCollection: ();
 /// @group project-configs
 $defaultOutsetBoxShadowCollection: ();
 @each $defaultOutsetBoxShadowElement in $defaultOutsetBoxShadowElements {
-    $defaultOutsetBoxShadowCollection: append($defaultOutsetBoxShadowCollection, unquote('html#{$documentID} #{$defaultOutsetBoxShadowElement}'), comma);
+    $defaultOutsetBoxShadowCollection: append($defaultOutsetBoxShadowCollection, unquote('#{$documentID} #{$defaultOutsetBoxShadowElement}'), comma);
 }
 #{$defaultOutsetBoxShadowCollection} {
     @include box-shadow($defaultOutsetBoxShadow);
@@ -59,7 +59,7 @@ $defaultOutsetBoxShadowCollection: ();
 /// @group project-configs
 $defaultInsetBoxShadowCollection: ();
 @each $defaultInsetBoxShadowElement in $defaultInsetBoxShadowElements {
-    $defaultInsetBoxShadowCollection: append($defaultInsetBoxShadowCollection, unquote('html#{$documentID} #{$defaultInsetBoxShadowElement}'), comma);
+    $defaultInsetBoxShadowCollection: append($defaultInsetBoxShadowCollection, unquote('#{$documentID} #{$defaultInsetBoxShadowElement}'), comma);
 }
 #{$defaultInsetBoxShadowCollection} {
     @include box-shadow($defaultInsetBoxShadow);
@@ -72,7 +72,7 @@ $defaultInsetBoxShadowCollection: ();
 /// @group project-configs
 $customOutsetBoxShadowCollection: ();
 @each $customOutsetBoxShadowElement in $customOutsetBoxShadowElements {
-    $customOutsetBoxShadowCollection: append($customOutsetBoxShadowCollection, unquote('html#{$documentID} #{$customOutsetBoxShadowElement}'), comma);
+    $customOutsetBoxShadowCollection: append($customOutsetBoxShadowCollection, unquote('#{$documentID} #{$customOutsetBoxShadowElement}'), comma);
 }
 #{$customOutsetBoxShadowCollection} {
     @include box-shadow($customOutsetBoxShadow);
@@ -85,7 +85,7 @@ $customOutsetBoxShadowCollection: ();
 /// @group project-configs
 $customInsetBoxShadowCollection: ();
 @each $customInsetBoxShadowElement in $customInsetBoxShadowElements {
-    $customInsetBoxShadowCollection: append($customInsetBoxShadowCollection, unquote('html#{$documentID} #{$customInsetBoxShadowElement}'), comma);
+    $customInsetBoxShadowCollection: append($customInsetBoxShadowCollection, unquote('#{$documentID} #{$customInsetBoxShadowElement}'), comma);
 }
 #{$customInsetBoxShadowCollection} {
     @include box-shadow($customInsetBoxShadow);
@@ -98,7 +98,7 @@ $customInsetBoxShadowCollection: ();
 /// @group project-configs
 $customInsetBoxShadow2Collection: ();
 @each $customInsetBoxShadow2Element in $customInsetBoxShadow2Elements {
-    $customInsetBoxShadow2Collection: append($customInsetBoxShadow2Collection, unquote('html#{$documentID} #{$customInsetBoxShadow2Element}'), comma);
+    $customInsetBoxShadow2Collection: append($customInsetBoxShadow2Collection, unquote('#{$documentID} #{$customInsetBoxShadow2Element}'), comma);
 }
 #{$customInsetBoxShadow2Collection} {
     @include box-shadow($customInsetBoxShadow2);
@@ -111,7 +111,7 @@ $customInsetBoxShadow2Collection: ();
 /// @group project-configs
 $customInsetBoxShadow3Collection: ();
 @each $customInsetBoxShadow3Element in $customInsetBoxShadow3Elements {
-    $customInsetBoxShadow3Collection: append($customInsetBoxShadow3Collection, unquote('html#{$documentID} #{$customInsetBoxShadow3Element}'), comma);
+    $customInsetBoxShadow3Collection: append($customInsetBoxShadow3Collection, unquote('#{$documentID} #{$customInsetBoxShadow3Element}'), comma);
 }
 #{$customInsetBoxShadow3Collection} {
     @include box-shadow($customInsetBoxShadow3);
@@ -124,7 +124,7 @@ $customInsetBoxShadow3Collection: ();
 /// @group project-configs
 $customInsetBoxShadow4Collection: ();
 @each $customInsetBoxShadow4Element in $customInsetBoxShadow4Elements {
-    $customInsetBoxShadow4Collection: append($customInsetBoxShadow4Collection, unquote('html#{$documentID} #{$customInsetBoxShadow4Element}'), comma);
+    $customInsetBoxShadow4Collection: append($customInsetBoxShadow4Collection, unquote('#{$documentID} #{$customInsetBoxShadow4Element}'), comma);
 }
 #{$customInsetBoxShadow4Collection} {
     @include box-shadow($customInsetBoxShadow4);
@@ -140,7 +140,7 @@ $customInsetBoxShadow4Collection: ();
 /// @group project-configs
 $defaultBorderRadiusCollection: ();
 @each $defaultBorderRadiusElement in $defaultBorderRadiusElements {
-    $defaultBorderRadiusCollection: append($defaultBorderRadiusCollection, unquote('html#{$documentID} #{$defaultBorderRadiusElement}'), comma);
+    $defaultBorderRadiusCollection: append($defaultBorderRadiusCollection, unquote('#{$documentID} #{$defaultBorderRadiusElement}'), comma);
 }
 #{$defaultBorderRadiusCollection} {
     @include border-radius($defaultBorderRadius);
@@ -153,7 +153,7 @@ $defaultBorderRadiusCollection: ();
 /// @group project-configs
 $customBorderRadiusCollection: ();
 @each $customBorderRadiusElement in $customBorderRadiusElements {
-    $customBorderRadiusCollection: append($customBorderRadiusCollection, unquote('html#{$documentID} #{$customBorderRadiusElement}'), comma);
+    $customBorderRadiusCollection: append($customBorderRadiusCollection, unquote('#{$documentID} #{$customBorderRadiusElement}'), comma);
 }
 #{$customBorderRadiusCollection} {
     @include border-radius($customBorderRadius);
@@ -166,7 +166,7 @@ $customBorderRadiusCollection: ();
 /// @group project-configs
 $customBorderRadius2Collection: ();
 @each $customBorderRadius2Element in $customBorderRadius2Elements {
-    $customBorderRadius2Collection: append($customBorderRadius2Collection, unquote('html#{$documentID} #{$customBorderRadius2Element}'), comma);
+    $customBorderRadius2Collection: append($customBorderRadius2Collection, unquote('#{$documentID} #{$customBorderRadius2Element}'), comma);
 }
 #{$customBorderRadius2Collection} {
     @include border-radius($customBorderRadius2);
@@ -179,7 +179,7 @@ $customBorderRadius2Collection: ();
 /// @group project-configs
 $customBorderRadius3Collection: ();
 @each $customBorderRadius3Element in $customBorderRadius3Elements {
-    $customBorderRadius3Collection: append($customBorderRadius3Collection, unquote('html#{$documentID} #{$customBorderRadius3Element}'), comma);
+    $customBorderRadius3Collection: append($customBorderRadius3Collection, unquote('#{$documentID} #{$customBorderRadius3Element}'), comma);
 }
 #{$customBorderRadius3Collection} {
     @include border-radius($customBorderRadius3);
@@ -195,7 +195,7 @@ $customBorderRadius3Collection: ();
 /// @group project-configs
 $defaultTransitionCollection: ();
 @each $defaultTransitionElement in $defaultTransitionElements {
-    $defaultTransitionCollection: append($defaultTransitionCollection, unquote('html#{$documentID} #{$defaultTransitionElement}'), comma);
+    $defaultTransitionCollection: append($defaultTransitionCollection, unquote('#{$documentID} #{$defaultTransitionElement}'), comma);
 }
 #{$defaultTransitionCollection} {
     @include transition($defaultTransition);
@@ -208,7 +208,7 @@ $defaultTransitionCollection: ();
 /// @group project-configs
 $customTransitionCollection: ();
 @each $customTransitionElement in $customTransitionElements {
-    $customTransitionCollection: append($customTransitionCollection, unquote('html#{$documentID} #{$customTransitionElement}'), comma);
+    $customTransitionCollection: append($customTransitionCollection, unquote('#{$documentID} #{$customTransitionElement}'), comma);
 }
 #{$customTransitionCollection} {
     @include transition($customTransition);
@@ -221,7 +221,7 @@ $customTransitionCollection: ();
 /// @group project-configs
 $customTransition2Collection: ();
 @each $customTransition2Element in $customTransition2Elements {
-    $customTransition2Collection: append($customTransition2Collection, unquote('html#{$documentID} #{$customTransition2Element}'), comma);
+    $customTransition2Collection: append($customTransition2Collection, unquote('#{$documentID} #{$customTransition2Element}'), comma);
 }
 #{$customTransition2Collection} {
     @include transition($customTransition2);
@@ -234,7 +234,7 @@ $customTransition2Collection: ();
 /// @group project-configs
 $customTransition3Collection: ();
 @each $customTransition3Element in $customTransition3Elements {
-    $customTransition3Collection: append($customTransition3Collection, unquote('html#{$documentID} #{$customTransition3Element}'), comma);
+    $customTransition3Collection: append($customTransition3Collection, unquote('#{$documentID} #{$customTransition3Element}'), comma);
 }
 #{$customTransition3Collection} {
     @include transition($customTransition3);
@@ -247,7 +247,7 @@ $customTransition3Collection: ();
 /// @group project-configs
 $noTransitionCollection: ();
 @each $noTransitionElement in $noTransitionElements {
-    $noTransitionCollection: append($noTransitionCollection, unquote('html#{$documentID} #{$noTransitionElement}'), comma);
+    $noTransitionCollection: append($noTransitionCollection, unquote('#{$documentID} #{$noTransitionElement}'), comma);
 }
 #{$noTransitionCollection} {
     @include transition($noTransition);

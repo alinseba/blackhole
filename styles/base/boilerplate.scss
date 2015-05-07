@@ -132,7 +132,7 @@ p {
     margin: 1em 0;
     position: relative;
     line-height: 1.75;
-    html#{$documentID} &:first-child {
+    #{$documentID} &:first-child {
         margin-top: 0;
     }
     &:last-child {
@@ -214,8 +214,8 @@ dt {
 
 code {
     color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-    border: 0.0833em solid rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
     padding: 0.25em;
 }
 
@@ -239,10 +239,10 @@ a {
     &.content {
         display: block;
         background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-        html#{$documentID} &:hover, html#{$documentID} &:active {
+        #{$documentID} &:hover, #{$documentID} &:active {
             color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
         }
-        html#{$documentID} .invert &:hover, html#{$documentID} .invert &:active {
+        #{$documentID} .invert &:hover, #{$documentID} .invert &:active {
             background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
             color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         }
@@ -297,7 +297,7 @@ footer {
 */
 
 /* Forms */
-html#{$documentID} body#{$frameworkClass} form {
+#{$frameworkClass} form {
     label {
         display: block;
         margin-top: 0.75em;
@@ -399,7 +399,7 @@ html#{$documentID} body#{$frameworkClass} form {
 }
 
 /* Lists and Menus */
-body#{$frameworkClass} .list, body#{$frameworkClass} .list-enumerated {
+#{$frameworkClass} .list, #{$frameworkClass} .list-enumerated {
     margin: 0;
     .item {
         list-style-type: none;
@@ -465,62 +465,60 @@ body#{$frameworkClass} .list, body#{$frameworkClass} .list-enumerated {
     }
 }
 
-.list, html#{$documentID} .menu, html#{$documentID} .menu-list, html#{$documentID} .submenu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    &.with-separator {
-        padding: 0.5em 0;
-        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-        .separator {
-            margin: 0.5em 0;
+#{$frameworkClass} {
+    .list, .menu, .menu-list {
+        .submenu {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            &.with-separator {
+                padding: 0.5em 0;
+                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                .separator {
+                    margin: 0.5em 0;
+                }
+            }
+            .item {
+                list-style-type: none;
+            }
         }
     }
-    .item {
-        list-style-type: none;
+    .menu, .menu-list, .submenu {
+        &.with-separator {
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
     }
-}
-
-html#{$documentID} .menu, html#{$documentID} .menu-list, html#{$documentID} .submenu {
-    &.with-separator {
-        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+    ol.list, ol.list.with-bullet {
+        .item {
+            list-style-type: decimal;
+        }
     }
-}
-
-html#{$documentID} ol.list {
-    .item {
-        list-style-type: decimal;
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} {
-    .list.enumerated, .list-enumerated, .enumerated {
+    .list-enumerated, .enumerated {
         .item {
             display: inline;
             margin-right: 0.5em;
             margin-bottom: 0;
         }
     }
-    .list.enumerated {
+    .list-enumerated {
         .item {
             display: inline-block;
             margin-bottom: 0.5em;
         }
     }
-}
-
-.submenu {
-    margin: 0;
-    list-style-type: none;
-    position: relative;
-    z-index: 996;
-    .item {
-        float: none;
+    .submenu {
+        margin: 0;
+        list-style-type: none;
+        position: relative;
+        z-index: 996;
+        .item {
+            float: none;
+        }
     }
 }
 
 /* Horizontal Terms */
-html#{$documentID} .horizontal-terms {
+#{$frameworkClass} .horizontal-terms {
     dt {
         float: left;
         clear: both;
@@ -545,16 +543,13 @@ html#{$documentID} .horizontal-terms {
 }
 
 /* Pagination */
-html#{$documentID} .pagination {
+#{$frameworkClass} .pagination {
     .item, li {
         list-style-type: none;
         float: left;
         display: block;
         .button {
             border-left: none;
-        }
-        &:first-child .button, &.first .button {
-
         }
         .link, a, span {
             padding: 0.25em 0.5em;
@@ -593,45 +588,44 @@ html#{$documentID} .pagination {
 }
 
 /* Horizontal Rules */
-.hr, .hr-dotted, .hr-dashed, .hr-thick, .hr-stripes {
-    display: block;
-    border-bottom: 0.0833em solid rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
-    margin: 0.5em 0;
-}
+#{$frameworkClass} {
+    .hr, .hr-dotted, .hr-dashed, .hr-thick, .hr-stripes {
+        display: block;
+        border-bottom: 0.0833em solid rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+        margin: 0.5em 0;
+    }
 
-.hr.dotted, .hr-dotted {
-    border-bottom-style: dotted;
-}
+    .hr-dotted {
+        border-bottom-style: dotted;
+    }
 
-.hr.dashed, .hr-dashed {
-    border-bottom-style: dashed;
-}
+    .hr-dashed {
+        border-bottom-style: dashed;
+    }
 
-.hr.thick, .hr-thick {
-    border-bottom-width: 0.25em;
-}
+    .hr-thick, .thick {
+        border-bottom-width: 0.25em;
+    }
 
-.hr.stripes, .hr-stripes {
-    height: 10px;
-    background: transparent url(../../component-manager/assets/img/base/stripes.png) repeat-x;
-    border-bottom: none;
+    .hr-stripes {
+        height: 10px;
+        background: transparent url(../../component-manager/assets/img/base/stripes.png) repeat-x;
+        border-bottom: none;
+    }
 }
 
 
 /* HELPERS */
 
 /* Icons and Images */
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
     .icon, .icon-default {
         &.with-background {
             display: inline-block;
             padding: 0.3333em;
-            min-width: 1.75em;
+            min-width: 1.5em;
             min-height: 1.5em;
             color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-        }
-        &.with-background.rounded {
-
         }
         &.box-shadow {
             @include box-shadow($customOutsetBoxShadow2);
@@ -695,7 +689,7 @@ html#{$documentID} body#{$frameworkClass} {
 }
 
 /* Various */
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
     // Floats
     .left {
         float: left;
@@ -704,24 +698,12 @@ html#{$documentID} body#{$frameworkClass} {
         float: right;
     }
 
-    // Aligns
-    .align-left {
-        text-align: left;
-    }
-    .align-right {
-        text-align: right;
-    }
-    .align-center {
-        text-align: center;
-    }
-    .centered {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
     // Spaces
     .spaced {
         margin: 1.5em 0;
+        .item {
+            margin: 1.5em 0;
+        }
     }
     .no-margin {
         margin: 0;
@@ -768,16 +750,9 @@ html#{$documentID} body#{$frameworkClass} {
     }
 
     // Others
-    .spaced .item {
-        margin: 1.5em 0;
-    }
     .description {
         display: block;
         font-size: 85%;
-        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
-    }
-    .no-float {
-        float: none;
     }
     .close {
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
@@ -838,11 +813,13 @@ html#{$documentID} body#{$frameworkClass} {
             color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
             right: -0.75em;
             top: -0.75em;
-            padding: 0.0833em 0.25em;
+            padding: 0.3333em 0.25em 0.25em;
+            font-size: 75%;
             text-align: center;
             min-width: 1.25em;
             line-height: 1;
             z-index: 998;
+            @include border-radius($customBorderRadius2);
             &.bottom {
                 top: auto;
                 bottom: -0.75em;
@@ -915,7 +892,7 @@ html#{$documentID} body#{$frameworkClass} {
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
     }
     .underlined {
-        border-bottom: 0.0833em solid rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        border-bottom: 0.1666em solid rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
     }
     .stroked {
         text-decoration: line-through;
@@ -929,6 +906,9 @@ html#{$documentID} body#{$frameworkClass} {
         border-left: 0.4166em solid transparent;
         padding: 1em;
         font-style: italic;
+        .icon {
+            margin-top: 0.25em;
+        }
     }
     .eye-popping {
         font-size: 150%;
@@ -962,72 +942,69 @@ html#{$documentID} body#{$frameworkClass} {
     .ribbon {
         width: 100%;
         text-align: center;
-        margin-left: -10px;
+        margin-left: -0.75em;
         @include box-sizing(content-box);
     }
     .ribbon::before {
         display: block;
-        width: 10px;
-        height: 0px;
+        width: 1em;
+        height: 0;
         position: absolute;
-        bottom: -10px;
-        left: -10px;
+        bottom: -0.75em;
+        left: -1%;
         content: "";
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+        border-bottom: 0.75em solid transparent;
+        border-right: 0.75em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
     }
     .ribbon::after {
         display: block;
-        width: 10px;
-        height: 0px;
+        width: 1em;
+        height: 0;
         position: absolute;
-        bottom: -15px;
-        right: -6px;
+        bottom: -1.25em;
+        right: -0.5em;
         content: "";
         @include transform(rotate(270deg));
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+        border-bottom: 0.75em solid transparent;
+        border-right: 0.75em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
     }
     .ribbon-left {
-        margin-left: -10px;
+        margin-left: -0.75em;
         float: left;
     }
     .ribbon-left::before {
         display: block;
-        width: 10px;
-        height: 0px;
+        width: 1em;
+        height: 0;
         position: absolute;
-        bottom: -10px;
-        left: -10px;
+        bottom: -0.75em;
+        left: -1em;
         content: "";
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+        border-bottom: 0.75em solid transparent;
+        border-right: 0.75em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
     }
     .ribbon-right {
-        margin-right: -10px;
+        margin-right: -0.75em;
         float: right;
         right: 0;
     }
     .ribbon-right::after {
         display: block;
-        width: 10px;
-        height: 0px;
+        width: 1em;
+        height: 0;
         position: absolute;
-        bottom: -15px;
-        right: -5px;
+        bottom: -1.25em;
+        right: -0.5em;
         content: "";
         @include transform(rotate(270deg));
-        border-bottom: 10px solid transparent;
-        border-right: 10px solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
+        border-bottom: 0.75em solid transparent;
+        border-right: 0.75em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.2);
     }
     .hidden-text {
         text-indent: -999em;
     }
     .transparency {
         @include opacity(0.5);
-    }
-    .block-type {
-        display: block;
     }
     .border {
         border: 0.0833em solid rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
@@ -1036,18 +1013,10 @@ html#{$documentID} body#{$frameworkClass} {
         @include opacity(0.5);
         cursor: default;
     }
-    .moving, .moving.right, .moving-right, .moving-left { /* Since we mostly all are LTR readers */
+    .moving-right, .moving-left { /* Since we mostly all are LTR readers */
         position: relative;
         float: none;
         cursor: default;
-    }
-    .moving {
-        &.right:hover {
-            margin-left: 1.5em;
-        }
-        &.left:hover {
-            margin-left: -1.5em;
-        }
     }
     .moving-right {
         &:hover {
@@ -1062,24 +1031,6 @@ html#{$documentID} body#{$frameworkClass} {
     .scrollable {
         max-height: 200px;
         overflow: auto;
-    }
-    .extra-space-small {
-        margin-bottom: 7.5em;
-    }
-    .extra-space-x-small {
-        margin-bottom: 10em;
-    }
-    .extra-space-medium {
-        margin-bottom: 15em;
-    }
-    .extra-space-x-medium {
-        margin-bottom: 20em;
-    }
-    .extra-space-big {
-        margin-bottom: 25em;
-    }
-    .extra-space-x-big {
-        margin-bottom: 31.25em;
     }
     .invert { // Helps in conjuction with your specific action
 
@@ -1139,20 +1090,20 @@ html#{$documentID} body#{$frameworkClass} {
     }
 
     // Positions
-    .position, .position.top, .position-top, .position.bottom, .position-bottom, .position.left, .position-left, .position.right, .position-right {
+    .position-top, .position-bottom, .position-left, .position-right {
         position: absolute;
     }
-    .position.top, .position-top {
+    .position-top {
         top: 0;
     }
 
-    .position.bottom, .position-bottom {
+    .position-bottom {
         bottom: 0;
     }
-    .position.left, .position-left {
+    .position-left {
         left: 0;
     }
-    .position.right, .position-right {
+    .position-right {
         right: 0;
     }
 
@@ -1195,12 +1146,12 @@ html#{$documentID} body#{$frameworkClass} {
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
     }
 
-    .background.neutral, .background-neutral, .background.neutral > .content, .background-neutral > .content {
+    .background-neutral, .background-neutral > .content {
         background-color: rgbToHsla(250,250,250);
         color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
     }
 
-    .background.grey, .background-grey, .background.grey > .content, .background-grey > .content {
+    .background-grey, .background-grey > .content {
         background-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
         img {
@@ -1208,7 +1159,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.red, .background-red, .background.red > .content, .background-red > .content {
+    .background-red, .background-red > .content {
         background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3)) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1216,7 +1167,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.green, .background-green, .background.green > .content, .background-green > .content {
+    .background-green, .background-green > .content {
         background-color: rgbToHsla(0,205,172) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1224,7 +1175,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.blue, .background-blue, .background.blue > .content, .background-blue > .content {
+    .background-blue, .background-blue > .content {
         background-color: rgbToHsla(42,143,189) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1232,7 +1183,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.yellow, .background-yellow, .background.yellow > .content, .background-yellow > .content {
+    .background-yellow, .background-yellow > .content {
         background-color: rgbToHsla(251,184,41) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1240,7 +1191,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.orange, .background-orange, .background.orange > .content, .background-orange > .content {
+    .background-orange, .background-orange > .content {
         background-color: rgbToHsla(255,78,80) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1248,7 +1199,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.pink, .background-pink, .background.pink > .content, .background-pink > .content {
+    .background-pink, .background-pink > .content {
         background-color: rgbToHsla(215,33,126) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1256,7 +1207,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.purple, .background-purple, .background.purple > .content, .background-purple > .content {
+    .background-purple, .background-purple > .content {
         background-color: rgbToHsla(91,77,107) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1264,7 +1215,7 @@ html#{$documentID} body#{$frameworkClass} {
         }
     }
 
-    .background.brown, .background-brown, .background.brown > .content, .background-brown > .content {
+    .background-brown, .background-brown > .content {
         background-color: rgbToHsla(135,64,46) !important;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
         img {
@@ -1273,43 +1224,43 @@ html#{$documentID} body#{$frameworkClass} {
     }
 
     // Border Colors
-    .hr.neutral, .hr-neutral, .border.neutral, .border-neutral {
+    .hr-neutral, .border-neutral {
         border-color: rgbToHsla(250,250,250);
     }
 
-    .hr.grey, .hr-grey, .border.grey, .border-grey {
+    .hr-grey, .border-grey {
         border-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
     }
 
-    .hr.red, .hr-red, .border.red, .border-red {
+    .hr-red, .border-red {
         border-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
     }
 
-    .hr.green, .hr-green, .border.green, .border-green {
+    .hr-green, .border-green {
         border-color: rgbToHsla(nth($successColor, 1), nth($successColor, 2), nth($successColor, 3));
     }
 
-    .hr.blue, .hr-blue, .border.blue, .border-blue {
+    .hr-blue, .border-blue {
         border-color: rgbToHsla(nth($infoColor, 1), nth($infoColor, 2), nth($infoColor, 3));
     }
 
-    .hr.yellow, .hr-yellow, .border.yellow, .border-yellow {
+    .hr-yellow, .border-yellow {
         border-color: rgbToHsla(251,184,41);
     }
 
-    .hr.orange, .hr-orange, .border.orange, .border-orange {
+    .hr-orange, .border-orange {
         border-color: rgbToHsla(nth($pendingColor, 1), nth($pendingColor, 2), nth($pendingColor, 3));
     }
 
-    .hr.pink, .hr-pink, .border.pink, .border-pink {
+    .hr-pink, .border-pink {
         border-color: rgbToHsla(215,33,126);
     }
 
-    .hr.purple, .hr-purple, .border.purple, .border-purple {
+    .hr-purple, .border-purple {
         border-color: rgbToHsla(91,77,107);
     }
 
-    .hr.brown, .hr-brown, .border.brown, .border-brown {
+    .hr-brown, .border-brown {
         border-color: rgbToHsla(135,64,46);
     }
 
@@ -1337,7 +1288,7 @@ html#{$documentID} body#{$frameworkClass} {
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .fixed, html#{$documentID} body#{$frameworkClass} .fixed-bottom {
+#{$frameworkClass} .fixed, #{$frameworkClass} .fixed-bottom {
     display: block;
     width: 100%;
     z-index: 998;
@@ -1348,87 +1299,88 @@ html#{$documentID} body#{$frameworkClass} .fixed, html#{$documentID} body#{$fram
         @include opacity(1);
     }
 }
-html#{$documentID} body#{$frameworkClass} .fixed-bottom {
+#{$frameworkClass} .fixed-bottom {
     top: auto;
     bottom: 0;
 }
 
 
 /* Buttons and Controls */
-.button, button {
-    display: inline-block;
-    text-decoration: none;
-    padding: 0.5em 1em;
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
-    background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.85);
-    text-align: center;
-    border: none;
-    position: relative;
-    @extend %clearfix;
-    &:before, &:after {
-        @extend %clearfix-ba;
-    }
-    &:after {
-        @extend %clearfix-a;
-    }
-    @include transition(none);
-    &.small {
-        font-size: 78.6%;
-        @include text-shadow(none);
-    }
-    html#{$documentID} body#{$frameworkClass} &.big {
-        font-size: 150%;
-    }
-    html#{$documentID} &.thin {
-        padding-top: 0.25em;
-        padding-bottom: 0.25em;
-    }
-    &:hover {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-    }
-    html#{$documentID} &:active, html#{$documentID} &.uk-active {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
-        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+#{$frameworkClass} {
+    .button, button {
+        display: inline-block;
+        text-decoration: none;
+        padding: 0.5em 1em;
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.85);
+        text-align: center;
+        border: none;
+        position: relative;
+        @extend %clearfix;
+        &:before, &:after {
+            @extend %clearfix-ba;
+        }
+        &:after {
+            @extend %clearfix-a;
+        }
         @include transition(none);
-    }
-    &.only-icon .icon {
-        margin: 0;
-    }
-    &.processing {
-        &:active, &.active {
-            @include opacity(0.75);
-            .icon {
-                display: inline-block;
-                @include animation(rotate 0.75s infinite linear);
+        &.small {
+            font-size: 78.6%;
+            @include text-shadow(none);
+        }
+        #{$documentID} &.big {
+            font-size: 150%;
+        }
+        #{$documentID} &.thin {
+            padding-top: 0.25em;
+            padding-bottom: 0.25em;
+        }
+        &:hover {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        }
+        #{$documentID} &:active, #{$documentID} &.uk-active {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            @include transition(none);
+        }
+        &.only-icon .icon {
+            margin: 0;
+        }
+        &.processing {
+            &:active, &.active {
+                @include opacity(0.75);
+                .icon {
+                    display: inline-block;
+                    @include animation(rotate 0.75s infinite linear);
+                }
             }
+            .icon {
+                display: none;
+                font-size: 150%;
+                margin-top: 2px;
+            }
+
+        }
+        #{$documentID} &.disabled, #{$documentID} &.disabled:hover, #{$documentID} &.disabled:active, #{$documentID} &.processing:active, #{$documentID} &.processing.active {
+            @include opacity(0.5);
+            cursor: default;
+            top: 0;
+            margin-bottom: 0;
+            border-bottom-width: 0.25em;
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
         }
         .icon {
-            display: none;
-            font-size: 150%;
-            margin-top: 2px;
+            margin-top: 0.25em;
+            margin-left: 0.25em;
+            margin-right: 0.25em;
         }
-
     }
-    html#{$documentID} &.disabled, html#{$documentID} &.disabled:hover, html#{$documentID} &.disabled:active, html#{$documentID} &.processing:active, html#{$documentID} &.processing.active {
-        @include opacity(0.5);
-        cursor: default;
-        top: 0;
-        margin-bottom: 0;
-        border-bottom-width: 0.25em;
-        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
-    }
-    .icon {
-        margin-top: 0.25em;
-        margin-left: 0.25em;
-        margin-right: 0.25em;
-    }
-}
-
-.button-group {
-    .item {
-        float: left;
+    .button-group {
+        .item {
+            float: left;
+        }
     }
 }
 
@@ -1438,7 +1390,7 @@ html#{$documentID} body#{$frameworkClass} .fixed-bottom {
     > .trigger {
         position: absolute;
         bottom: 0;
-        html#{$documentID} &:active {
+        #{$frameworkClass} &:active {
             top: inherit;
         }
     }
@@ -1461,7 +1413,7 @@ html#{$documentID} body#{$frameworkClass} .fixed-bottom {
     }
 }
 
-html#{$documentID} .trigger {
+#{$frameworkClass} .trigger {
     top: auto;
     margin-bottom: 0;
     &:active {
@@ -1471,14 +1423,15 @@ html#{$documentID} .trigger {
 
 
 /* Menus */
-.menu.plain, .menu-plain {
+.menu-plain {
     min-height: 240px;
     max-height: 100%;
     height: auto;
 }
 
-html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .menu-list {
+#{$frameworkClass} .menu, #{$frameworkClass} .menu-list {
     z-index: 998;
+    margin: 0;
     &.breadcrumb {
         .item {
             .link {
@@ -1570,51 +1523,51 @@ html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frame
                 > .link {
                     text-indent: -999em;
                     text-transform: uppercase;
-                    .icon {
-                        text-indent: 0;
-                        display: none;
-                        &.main {
-                            font-size: 150%;
-                            display: inline-block;
-                            margin-top: 0;
-                        }
-                    }
-                    .icon-default {
-                        text-indent: 0;
-                        font-size: 150%;
-                        margin-top: 1px;
-                        margin-right: 0.5em;
-                    }
-                    .title {
-                        display: inline-block;
-                        text-indent: -999em;
-                        float: none;
-                    }
+                }
+                > .link .icon {
+                    text-indent: 0;
+                    display: none;
+                }
+                > .link .icon.main {
+                    font-size: 150%;
+                    display: inline-block;
+                    margin-top: 0;
+                }
+                > .link .icon-default {
+                    text-indent: 0;
+                    font-size: 150%;
+                    margin-top: 1px;
+                    margin-right: 0.5em;
+                }
+                > .link .title {
+                    display: inline-block;
+                    text-indent: -999em;
+                    float: none;
                 }
                 &.active {
                     width: 100%;
-                    > .link {
-                        width: 100%;
-                        text-indent: 0;
-                        .title, .icon {
-                            display: inline-block;
-                            text-indent: 0;
-                        }
-                    }
+                }
+                &.active > .link {
+                    width: 100%;
+                    text-indent: 0;
+                }
+                &.active > .link .title, &.active > .link .icon {
+                    display: inline-block;
+                    text-indent: 0;
                 }
                 &:hover {
                     width: 100%;
-                    > .link {
-                        text-indent: 0;
-                        width: 100%;
-                        .icon {
-                            display: inline-block;
-                        }
-                        .title {
-                            display: inline-block;
-                            text-indent: 0;
-                        }
-                    }
+                }
+                &:hover > .link {
+                    text-indent: 0;
+                    width: 100%;
+                }
+                &:hover > .link .icon, &:hover > .link .title {
+                    display: inline-block;
+                }
+                &:hover > .link .title {
+                    display: inline-block;
+                    text-indent: 0;
                 }
             }
         }
@@ -1634,9 +1587,9 @@ html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frame
             > .link {
                 max-width: 100%;
                 text-transform: uppercase;
-                .icon.main {
-                    display: none;
-                }
+            }
+            > .link .icon.main {
+                display: none;
             }
         }
     }
@@ -1647,7 +1600,7 @@ html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frame
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .menu-list {
+#{$frameworkClass} .menu-list {
     .item {
         .link {
             background-color: transparent;
@@ -1669,9 +1622,9 @@ html#{$documentID} body#{$frameworkClass} .menu-list {
             > .link {
                 max-width: 100%;
                 text-transform: uppercase;
-                .icon.main {
-                    display: none;
-                }
+            }
+            > .link .icon.main {
+                display: none;
             }
         }
     }
@@ -1680,7 +1633,7 @@ html#{$documentID} body#{$frameworkClass} .menu-list {
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .breadcrumb {
+#{$frameworkClass} .breadcrumb {
     .item {
         float: left;
         .link {
@@ -1755,57 +1708,65 @@ html#{$documentID} body#{$frameworkClass} .breadcrumb {
 
 
 /* Inputs */
-html#{$documentID} input[type='text'], html#{$documentID} textarea {
-    padding: 0.75em 1em;
-    @include box-sizing(border-box);
-    @include outline(none);
-    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    border: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
-    cursor: text;
-    @include transition($defaultTransition);
-    &.values {
-        background: none;
-        padding: 0;
-        margin-bottom: 0.5em;
-        border: none;
-        @include box-shadow(none);
-    }
-    &:focus {
-        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-        border-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+#{$frameworkClass} {
+    input[type='text'], textarea {
+        padding: 0.75em 1em;
+        @include box-sizing(border-box);
+        @include outline(none);
         background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        border: 0.1666em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        cursor: text;
+        @include transition($defaultTransition);
+        &.values {
+            background: none;
+            padding: 0;
+            margin-bottom: 0.5em;
+            border: none;
+            @include box-shadow(none);
+        }
+        &:focus {
+            color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+            border-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
     }
-}
+    select {
+        padding: 0.75em 1em;
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        border: none;
+        -webkit-appearance: none;
+    }
 
-select {
-    padding: 0.75em 1em;
-    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-    border: none;
-    -webkit-appearance: none;
-}
-
-input[type='file'] {
-    position: absolute;
-    margin: 0;
-    padding: 0;
-    position: static;
-    cursor: pointer;
-    .input-wrapper & {
+    input[type='file'] {
         position: absolute;
-        top: 0;
-        right: 0;
-        text-indent: -999em;
+        margin: 0;
+        padding: 0;
+        position: static;
+        cursor: pointer;
+        .input-wrapper & {
+            position: absolute;
+            top: 0;
+            right: 0;
+            text-indent: -999em;
+        }
+    }
+    input {
+        &:disabled {
+            cursor: default;
+        }
+    }
+    textarea.editable {
+        resize: none;
+    }
+
+    label {
+        padding-right: 0.5em;
+        cursor: pointer;
     }
 }
 
-html#{$documentID} input {
-    &:disabled {
-        cursor: default;
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} .input, html#{$documentID} body#{$frameworkClass}.framework .input {
+#{$frameworkClass} .input/*, #{$frameworkClass}.framework .input*/ {
     @include outline(none);
     &.text, &.editable:focus {
         padding: 0.75em 1em;
@@ -1898,7 +1859,7 @@ html#{$documentID} body#{$frameworkClass} .input, html#{$documentID} body#{$fram
                 padding: 0.5em 0.75em;
                 background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
                 cursor: pointer;
-                margin-left: -3px;
+                margin-left: -0.25em;
                 min-width: 16px;
                 min-height: 16px;
                 font-weight: $thickFontWeight;
@@ -1957,7 +1918,7 @@ html#{$documentID} body#{$frameworkClass} .input, html#{$documentID} body#{$fram
     }
 }
 
-html#{$documentID} body#{$frameworkClass} {
+#{$frameworkClass} {
     .input-wrapper {
         position: relative;
         display: inline-block;
@@ -2037,19 +1998,10 @@ html#{$documentID} body#{$frameworkClass} {
     }
 }
 
-textarea.editable {
-    resize: none;
-}
-
-label {
-    padding-right: 0.5em;
-    cursor: pointer;
-}
-
 
 /* Alerts and Warnings */
-html#{$documentID} body#{$frameworkClass} {
-    .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .ui-pnotify .alert, .uk-notify-message {
+#{$frameworkClass} {
+    .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .uk-notify-message {
         display: block;
         padding: 0.75em 1em;
         text-align: center;
@@ -2058,108 +2010,101 @@ html#{$documentID} body#{$frameworkClass} {
             color: inherit;
             border-bottom: 0.0833em dotted;
         }
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} .message.thin, html#{$documentID} body#{$frameworkClass} .message-thin {
-    padding: 0 1em;
-    line-height: 2.25;
-}
-
-.message.warning, .message-warning, .message-modal.warning, .ui-pnotify .alert, html#{$documentID} .uk-notify .uk-notify-message-warning {
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    background-color: rgbToHsla(nth($pendingBack, 1), nth($pendingBack, 2), nth($pendingBack, 3));
-    .icon {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
-    }
-}
-
-.message.error, .message.alert, .message-error, .message-alert, .message-modal.alert, .ui-pnotify .alert-error, html#{$documentID} .uk-notify .uk-notify-message-danger {
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    background-color: rgbToHsla(nth($errorBack, 1), nth($errorBack, 2), nth($errorBack, 3));
-    .icon {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
-        &.tooltip {
-            margin-top: 0.1666em;
+        .icon.tooltip {
+            margin-top: 0;
         }
     }
-}
-
-.message.info, .message-info, .message-modal.info, .ui-pnotify .alert-info, html#{$documentID} .uk-notify .uk-notify-message-info {
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    background-color: rgbToHsla(nth($infoBack, 1), nth($infoBack, 2), nth($infoBack, 3));
-    .icon {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+    .message-thin {
+        padding: 0 1em;
+        line-height: 2.25;
     }
-}
-
-.message.ok, .message-ok, .message-modal.ok, .ui-pnotify .alert-success, html#{$documentID} .uk-notify .uk-notify-message-success {
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    background-color: rgbToHsla(nth($successBack, 1), nth($successBack, 2), nth($successBack, 3));
-    .icon {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+    .message-warning, .message-modal.warning, .uk-notify .uk-notify-message-warning {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($pendingBack, 1), nth($pendingBack, 2), nth($pendingBack, 3));
+        .icon {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+        }
     }
-}
-
-.message, .message.neutral, .message-neutral, .message-modal.neutral {
-    color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
-    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-}
-
-.message.modal, .message-modal {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 100%;
-    margin: 0;
-    z-index: 996;
-}
-
-.message.modal .icon, .message-modal .icon {
-    cursor: pointer;
-    padding: 0.3333em 0.5em;
-    margin-top: 0;
-    background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
-}
-
-.message.modal .icon:hover, .message-modal .icon:hover {
-    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
-}
-
-html#{$documentID} body#{$frameworkClass} .message.in-box, html#{$documentID} body#{$frameworkClass} .message-in-box {
-    @include box-shadow(none);
-}
-
-.message.with-icon .icon, .message-alert.with-icon .icon, .message-error.with-icon .icon, .message-info.with-icon .icon, .message-warning.with-icon .icon, .message-ok.with-icon .icon {
-    font-size: 175%;
-    margin-top: 0;
-}
-
-.tooltip {
-    cursor: default;
-    padding: 0.25em 0.5em;
+    .message-error, .message-alert, .message-modal.error, .message-modal.alert, .uk-notify .uk-notify-message-danger {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($errorBack, 1), nth($errorBack, 2), nth($errorBack, 3));
+        .icon {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+            &.tooltip {
+                margin-top: 0.1666em;
+            }
+        }
+    }
+    .message-info, .message-modal.info, .uk-notify .uk-notify-message-info {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($infoBack, 1), nth($infoBack, 2), nth($infoBack, 3));
+        .icon {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+        }
+    }
+    .message-ok, .message-modal.ok, .uk-notify .uk-notify-message-success {
+        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        background-color: rgbToHsla(nth($successBack, 1), nth($successBack, 2), nth($successBack, 3));
+        .icon {
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+        }
+    }
+    .message, .message-neutral, .message-modal.neutral {
+        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    }
+    .message-modal {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 100%;
+        margin: 0;
+        z-index: 996;
+        .icon {
+            cursor: pointer;
+            padding: 0.3333em 0.5em;
+            margin-top: 0;
+            background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.35);
+            &:hover {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+            }
+        }
+    }
+    .message-in-box {
+        @include box-shadow(none);
+    }
+    .message.with-icon .icon, .message-alert.with-icon .icon, .message-error.with-icon .icon, .message-info.with-icon .icon, .message-warning.with-icon .icon, .message-ok.with-icon .icon {
+        font-size: 150%;
+        margin-top: 0;
+    }
+    .tooltip {
+        cursor: default;
+        padding: 0.25em 0.5em;
+    }
 }
 
 
 /* Boxes, Containers and Controls */
-.modal {
-    display: none;
+#{$frameworkClass} {
+    .modal {
+        display: none;
+    }
+
+    .box {
+        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        .flyer & {
+            background-color: transparent;
+        }
+        &.modal {
+            display: block;
+        }
+    }
 }
 
-.box {
-    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-    .flyer & {
-        background-color: transparent;
-    }
-    &.modal {
-        display: block;
-    }
-}
-
-html#{$documentID} .pane {
+#{$frameworkClass} .pane {
     background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
     position: relative;
     left: 0;
@@ -2179,98 +2124,98 @@ html#{$documentID} .pane {
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .controls, html#{$documentID} body#{$frameworkClass} .controls-horizontal, html#{$documentID} body#{$frameworkClass} .floating-nav {
-    display: block;
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: auto;
-    margin: 0;
-    > .item, > * {
-        list-style-type: none;
-        text-align: center;
-        &.close {
-            margin: 0;
-            padding: 0;
-            float: none;
-            color: inherit;
-            background-color: transparent;
+#{$documentID} #{$frameworkClass} {
+    .controls, .controls-horizontal, .floating-nav {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: auto;
+        margin: 0;
+        > .item {
+            list-style-type: none;
+            text-align: center;
+            &.close {
+                margin: 0;
+                padding: 0;
+                float: none;
+                color: inherit;
+                background-color: transparent;
+            }
+            .icon {
+                margin-top: 0;
+                min-width: 16px;
+            }
+        }
+        .docking .trigger {
+            display: block;
+            padding: 0.1666em 0.1666em 0.2em;
+            margin-top: 0;
+            font-size: 150%;
+            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+            &:hover {
+                background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            }
+            .icon {
+                display: block;
+                text-indent: 0;
+                padding: 0.5em;
+                margin-top: 0; 
+            }
+        }
+        > .item {
+            &.close:before {
+                content: " ";
+            }
+        }
+        .docking:hover &, .pane:hover & {
+            display: block;
+        }
+        &.left {
+            right: auto;
+            left: 0;
         }
     }
-    .docking .trigger {
-        display: block;
-        padding: 0.1666em 0.1666em 0.2em;
-        text-indent: -999em;
-        margin-top: 0;
-        font-size: 150%;
-        color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-        &:hover {
-            background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    .controls-horizontal {
+        right: 0;
+        top: 0;
+        .item {
+            display: inline-block;
+        }
+    }
+    .controls, .controls-horizontal {
+        > .item a {
+            padding: 0.5em 0.75em;
+        }
+        > .item > a {
+            display: block;
+        }
+        &.left {
+            > .item > a {
+                float: left;
+                min-width: 42px;
+            }
+        }
+    }
+    .controls-horizontal {
+        > .item > a {
+            margin-left: -0.3333em;
+        }
+        > .item:first-child > a {
+            margin-left: 0;
+        }
+    }
+    header .controls, header .controls-horizontal {
+        margin-top: 0.3333em;
+        .item a {
             color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
         }
-        .icon {
-            display: block;
-            text-indent: 0;
-            padding: 0.5em;
-            margin-top: 0; 
-        }
-    }
-    > .item {
-        &.close:before {
-            content: " ";
-        }
-    }
-    .docking:hover &, .pane:hover & {
-        display: block;
-    }
-    &.tree {
-        display: block;
-        position: relative;
-        top: 0;
-        .collapse {
-            float: none;
-            padding: 0;
-            margin: 0;
-        }
-    }
-    &.left {
-        right: auto;
-        left: 0;
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .controls-horizontal {
-    right: 0;
-    top: 0;
-    .item {
-        display: inline-block;
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} .controls, html#{$documentID} body#{$frameworkClass} .controls-horizontal {
-    > .item a {
-        padding: 0.5em 0.75em;
-    }
-    > .item > a {
-        display: block;
-    }
-    &.left {
-        > .item > a {
-            float: left;
-            min-width: 42px;
-        }
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} header .controls, html#{$documentID} body#{$frameworkClass} header .controls-horizontal {
-    margin-top: 0.3333em;
-    .item a {
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} .floating-nav {
+#{$frameworkClass} .floating-nav {
     display: none;
     position: fixed;
     top: 50%;
@@ -2322,90 +2267,92 @@ html#{$documentID} body#{$frameworkClass} .floating-nav {
     }
 }
 
-.caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    padding: 0.5em 0.75em;
-    width: auto;
-    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
-    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-    font-weight: $thickFontWeight;
-    width: auto;
-}
-
-.img {
-    display: inline-block;
-    position: relative;
-    background-color: transparent;
+#{$frameworkClass} {
     .caption {
-        text-transform: uppercase;
-    }
-    &.with-border .caption, &.with-border .overlay {
-        left: 1px;
-        right: 1px;
-        bottom: 1px;
-    }
-    &.with-border .overlay {
-        left: 0;
-    }
-}
-
-.thumb {
-    max-width: 120px;
-    border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
-}
-
-a .thumb {
-    display: block;
-}
-
-.thumbs {
-    .item {
-        float: left;
-        padding: 0 0.5em 1em 0;
-        a {
-            display: block;
-        }
-        .thumb {
-            max-width: 120px;
-            border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
-        }
-    }
-}
-
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-    @include opacity(0);
-    a.img:hover & {
-        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
-        z-index: 990;
-        @include opacity(1);
-        @include transition(opacity 0.4s linear);
-    }
-    .icon {
-        color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
-        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
-        font-size: 200%;
         position: absolute;
-        right: 0.5em;
-        top: 0.5em; 
-        padding: 0.25em 0.3333em;
-        margin-top: 0;
-        &:hover {
-            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+        bottom: 0;
+        left: 0;
+        padding: 0.5em 0.75em;
+        width: auto;
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+        font-weight: $thickFontWeight;
+        width: auto;
+    }
+
+    .img {
+        display: inline-block;
+        position: relative;
+        background-color: transparent;
+        .caption {
+            text-transform: uppercase;
+        }
+        &.with-border .caption, &.with-border .overlay {
+            left: 1px;
+            right: 1px;
+            bottom: 1px;
+        }
+        &.with-border .overlay {
+            left: 0;
+        }
+    }
+
+    .thumb {
+        max-width: 120px;
+        border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+    }
+
+    a .thumb {
+        display: block;
+    }
+
+    .thumbs {
+        .item {
+            float: left;
+            padding: 0 0.5em 1em 0;
+            a {
+                display: block;
+            }
+            .thumb {
+                max-width: 120px;
+                border: 0.4166em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+            }
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        @include opacity(0);
+        a.img:hover & {
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+            z-index: 990;
+            @include opacity(1);
+            @include transition(opacity 0.4s linear);
+        }
+        .icon {
+            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+            font-size: 200%;
+            position: absolute;
+            right: 0.5em;
+            top: 0.5em; 
+            padding: 0.25em 0.3333em;
+            margin-top: 0;
+            &:hover {
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            }
         }
     }
 }
 
 /* Box */
-.box {
+#{$frameworkClass} .box {
     position: relative;
     .content {
         padding: 1em;
@@ -2443,16 +2390,19 @@ a .thumb {
 }
 
 /* Asides */
-.aside, aside {
-    &.left {
-        margin: 0 1em 1em 0;
-    }
-    &.right {
-        margin: 0 0 1em 1em;
+#{$frameworkClass} {
+    .aside, aside {
+        &.left {
+            margin: 0 1em 1em 0;
+        }
+        &.right {
+            margin: 0 0 1em 1em;
+        }
     }
 }
 
-.content > header {
+/* Content Header */
+#{$frameworkClass} .content > header {
     color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
     background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
     padding: 0.75em 1em;
@@ -2460,194 +2410,182 @@ a .thumb {
 }
 
 /* Tables */
-/* Classic Tables */
-table {
-    &.stripes tbody tr:nth-child(even) {
-        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-    }
-    td, th {
-        padding: 0.5em 1em;
-        border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-    }
-    th {
-        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-        background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3)); 
-    }
-    caption {
-        background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-        padding: 0.5em 1em;
-        font-size: 125%;
-        font-weight: $thickFontWeight;
-        text-transform: uppercase;
-    }
-    tfoot td {
-        background-color: rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
-        border-top: none;
-    }
-    &.center {
-        text-align: center;
-    }
-    &.right {
-        text-align: right;
-    }
-    &.condensed {
+#{$frameworkClass} {
+    /* Classic Tables */
+    table {
+        &.stripes tbody tr:nth-child(even) {
+            background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        }
         td, th {
-            padding-top: 0.25em;
-            padding-bottom: 0.25em;
-        }
-    }
-}
-
-/* List Tables*/
-.table {
-    display: table;
-    width: auto;
-    position: relative;
-    header {
-        width: auto;
-        line-height: 2;
-        display: table-header-group;
-    }
-    footer {
-        width: auto;
-        display: table-footer-group;
-        line-height: 2;
-    }
-    header, footer {
-        .title {
-            display: block;
-            padding-left: 1em;
-            padding-right: 1em;
-            float: none;
-        }
-    }
-    .list {
-        &.last, &:last-child, &.col {
-            border-bottom: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-        }
-        float: left;
-        display: block;
-    }
-    .item {
-        border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-        border-left: none;
-        border-bottom: none;
-        &.first, &:first-child {
-
-        }
-        .title {
-            display: block;
             padding: 0.5em 1em;
-            float: none;
+            border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+        th {
+            color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+            background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3)); 
+        }
+        caption {
+            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+            padding: 0.5em 1em;
+            font-size: 125%;
+            font-weight: $thickFontWeight;
+            text-transform: uppercase;
+        }
+        tfoot td {
+            background-color: rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+            border-top: none;
+        }
+        &.center {
+            text-align: center;
+        }
+        &.right {
+            text-align: right;
+        }
+        &.condensed {
+            td, th {
+                padding-top: 0.25em;
+                padding-bottom: 0.25em;
+            }
         }
     }
-    .col .item, .row .item.first, .row .item:first-child, .col .item.first, .col .item:first-child {
-        border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-    }
-    .col .item {
-        border-left: none;
-    }
-    .row:first-child .item, .col:first-child .item {
-        border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
-    }
-    .rows {
-        display: table-row-group;
-        .list {
+    /* List Tables*/
+    .table {
+        display: table;
+        width: auto;
+        position: relative;
+        header {
             width: auto;
+            line-height: 2;
+            display: table-header-group;
+        }
+        footer {
+            width: auto;
+            display: table-footer-group;
+            line-height: 2;
+        }
+        header, footer {
+            .title {
+                display: block;
+                padding-left: 1em;
+                padding-right: 1em;
+                float: none;
+            }
+        }
+        .list {
+            &:last-child, &.col {
+                border-bottom: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+            }
+            float: left;
+            display: block;
+        }
+        .item {
+            border: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+            border-left: none;
+            border-bottom: none;
+            .title {
+                display: block;
+                padding: 0.5em 1em;
+                float: none;
+            }
+        }
+        .col .item, .row .item:first-child, .col .item:first-child {
+            border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+        .col .item {
+            border-left: none;
+        }
+        .row:first-child .item, .col:first-child .item {
+            border-left: 0.0833em solid rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+        }
+        .rows {
+            display: table-row-group;
+            .list {
+                width: auto;
+                margin: 0;
+                .item {
+                    display: table-cell;
+                }
+            }
+        }
+        .rows.stripes .list:nth-child(even), .cols.stripes .list:nth-child(even) {
+            background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+        }
+        .list {
+            display: block;
+            width: auto;
+            float: left;
             margin: 0;
             .item {
-                display: table-cell;
-            }
-        }
-    }
-    .rows.stripes .list:nth-child(even), .cols.stripes .list:nth-child(even) {
-        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-    }
-    .list {
-        display: block;
-        width: auto;
-        float: left;
-        margin: 0;
-        .item {
-            display: block;
-            &.header {
-                color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-                font-weight: $thickFontWeight;
-            }
-            &.footer {
-                color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-                background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-                font-weight: $thickFontWeight;
-            }
-        }
-    }
-    &.stripes {
-        .list {
-            .item:nth-child(even) {
-                .title {
+                display: block;
+                &.header {
+                    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
                     background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                    font-weight: $thickFontWeight;
+                }
+                &.footer {
+                    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                    background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                    font-weight: $thickFontWeight;
+                }
+            }
+        }
+        &.stripes {
+            .list {
+                .item:nth-child(even) {
+                    .title {
+                        background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+                    }
                 }
             }
         }
     }
-    &.first, &:first-child {
-
-    }
 }
 
 /* Sections */
-html#{$documentID} .section, html#{$documentID} .section-free, html#{$documentID} .section-padded, html#{$documentID} .section-vertical, html#{$documentID} .section-horizontal, html#{$documentID} .section-left, html#{$documentID} .section-right, html#{$documentID} .section-top, html#{$documentID} .section-bottom {
-    position: relative;
-    margin: 1.5em;
-}
-
-html#{$documentID} .section.free, html#{$documentID} .section-free {
-    margin: 0;
-}
-
-html#{$documentID} .section.padded, html#{$documentID} .section-padded {
-    padding: 1em;
-}
-
-html#{$documentID} .section.vertical, html#{$documentID} .section-vertical {
-    margin-left: 0;
-    margin-right: 0;
-}
-
-html#{$documentID} .section.horizontal, html#{$documentID} .section-horizontal {
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-html#{$documentID} .section.left, html#{$documentID} .section-left {
-    margin-left: 0;
-}
-
-html#{$documentID} .section.right, html#{$documentID} .section-right {
-    margin-right: 0;
-}
-
-html#{$documentID} .section.top, html#{$documentID} .section-top {
-    margin-top: 0;
-}
-
-html#{$documentID} .section.bottom, html#{$documentID} .section-bottom {
-    margin-bottom: 0;
-}
-
-html#{$documentID} .section-full {
-    width: 100%;
-    margin: 1.5em 0;
-    padding: 0;
+#{$frameworkClass} {
+    .section, .section-freee, .section-padded, .section-vertical, .section-horizontal, .section-left, .section-right, .section-top, .section-bottom {
+        position: relative;
+        margin: 1.5em;
+    }
+    .section-free {
+        margin: 0;
+    }
+    .section-padded {
+        padding: 1em;
+    }
+    .section-vertical {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .section-horizontal {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .section-left {
+        margin-left: 0;
+    }
+    .section-right {
+        margin-right: 0;
+    }
+    .section-top {
+        margin-top: 0;
+    }
+    .section-bottom {
+        margin-bottom: 0;
+    }
+    .section-full {
+        width: 100%;
+        margin: 1.5em 0;
+        padding: 0;
+    }
 }
 
 
 /* BEHAVIORS */
 
 /* Sliding Behavior */
-.slide { /* Action Class */
+#{$frameworkClass} .slide { /* Action Class */
     > .content {
         display: none;
     }
@@ -2659,39 +2597,42 @@ html#{$documentID} .section-full {
     }
 }
 
-.active .content {
+/* Content Behavior inside Active State */
+#{$frameworkClass} .active .content {
     display: block;
 }
 
 /* Icons Behavior */
-.icon, .icon-default {
-    float: none;
-    margin-top: 3px;
-}
+#{$frameworkClass} {
+    .icon, .icon-default {
+        float: none;
+        margin-top: 0.1666em;
+    }
 
-.icon.left, .icon-default.left {
-    float: left;
-    margin-right: 6px;
-}
+    .icon.left, .icon-default.left {
+        float: left;
+        margin-right: 6px;
+    }
 
-.icon.right, .icon-default.right {
-    float: right;
-    margin-left: 16px;
-}
+    .icon.right, .icon-default.right {
+        float: right;
+        margin-left: 16px;
+    }
 
-.icon.medium, .medium .icon, .icon-default.medium, .medium .icon-default {
-    margin-top: 6px;
-}
+    .icon.medium, .medium .icon, .icon-default.medium, .medium .icon-default {
+        margin-top: 0.3333em;
+    }
 
-.content > .icon, .content > .icon-default {
-    margin-top: 0;
+    .content > .icon, .content > .icon-default {
+        margin-top: 0;
+    }
 }
 
 
 /* COMPONENTS */
 
 /* Timeline */
-html#{$documentID} .timeline {
+#{$frameworkClass} .timeline {
     position: relative;
     margin: 5em 0;
     .bar {
@@ -2805,9 +2746,6 @@ html#{$documentID} .timeline {
             &:hover .datetime {
                 top: 0;
             }
-            &.inverse {
-
-            }
         }
     }
     &.static .list .item .content, &.static .list .item .title {
@@ -2822,7 +2760,7 @@ html#{$documentID} .timeline {
 }
 
 /* Flyer */
-html#{$documentID} .flyer {
+#{$frameworkClass} .flyer {
     position: relative;
     .content {
         display: block;
@@ -2837,7 +2775,7 @@ html#{$documentID} .flyer {
         font-weight: $thickFontWeight;
         font-size: 125%;
         @include box-shadow(none);
-        html#{$documentID} &:active {
+        #{$documentID} &:active {
             top: 0;
             margin-bottom: 0;
         }
@@ -2845,7 +2783,7 @@ html#{$documentID} .flyer {
 }
 
 /* Tags */
-html#{$documentID} .tags {
+#{$frameworkClass} .tags {
     margin: 0;
     .item {
         float: left;
@@ -2870,7 +2808,7 @@ html#{$documentID} .tags {
 }
 
 /* Elements Revealer */
-html#{$documentID} .reveal {
+#{$frameworkClass} .reveal {
     .visible-element, .hidden-element {
         width: 50%;
         float: left;
@@ -2884,7 +2822,7 @@ html#{$documentID} .reveal {
 }
 
 /* Comments */
-html#{$documentID} body#{$frameworkClass} .comments {
+#{$documentID} #{$frameworkClass} .comments {
     position: relative;
     @include box-shadow(none);
     > .list > .item {
@@ -2897,20 +2835,21 @@ html#{$documentID} body#{$frameworkClass} .comments {
                 .replier {
                     margin-left: 4em;
                     position: relative;
-                    > .icon {
-                        font-size: 150%;
-                        display: block;
-                        position: absolute;
-                        left: -1em;
-                        color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.25);
-                        @include transform(rotate(180deg));
-                    }
-                    .comment-block .controls {
-                        display: none;
-                    }
-                    + .reply {
-                        margin-left: 4em;
-                    }
+                }
+                .replier > .icon {
+                    font-size: 150%;
+                    display: block;
+                    position: absolute;
+                    left: -1em;
+                    color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.25);
+                    @include transform(rotate(180deg));
+                }
+                .replier .comment-block .controls {
+                    display: none;
+                    z-index: 999;
+                }
+                .replier + .reply {
+                    margin-left: 4em;
                 }
                 &:hover > .comment .controls {
                     display: block;
@@ -2949,22 +2888,23 @@ html#{$documentID} body#{$frameworkClass} .comments {
                 .controls {
                     display: none;
                     top: 1em;
-                    .item {
-                        display: block;
-                        .link {
-                            display: block;
-                        }
-                        .icon {
-                            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-                            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.25);
-                            display: block;
-                            margin-top: 0;
-                            padding: 0.5em 0.75em;
-                            &:hover, &:active {
-                                color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-                            }
-                        }
-                    }
+                    z-index: 999;
+                }
+                .controls .item {
+                    display: block;
+                }
+                .controls .item .link {
+                    display: block;
+                }
+                .controls .item .icon {
+                    background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.25);
+                    display: block;
+                    margin-top: 0;
+                    padding: 0.5em 0.75em;
+                }
+                .controls .item .icon:hover, .controls .item .icon:active {
+                    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
                 }
                 p {
                     margin-top: 0;
@@ -2995,60 +2935,61 @@ html#{$documentID} body#{$frameworkClass} .comments {
 }
 
 /* Feedback */
-html#{$documentID} body#{$frameworkClass} .feedback, html#{$documentID} body#{$frameworkClass} .feedback-right {
-    .client {
-        display: block;
-        float: left;
-        max-width: 120px;
-        margin-right: 1.5em;
-        .avatar, .name {
+#{$frameworkClass} {
+    .feedback, .feedback-right {
+        .client {
             display: block;
+            float: left;
+            max-width: 120px;
+            margin-right: 1.5em;
+            .avatar, .name {
+                display: block;
+            }
+            .avatar {
+                max-width: 100%;
+                border: 0.25em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+            }
+            .name {
+                text-align: center;
+                font-weight: $thickFontWeight;
+            }
         }
-        .avatar {
-            max-width: 100%;
-            border: 0.25em solid rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
-        }
-        .name {
-            text-align: center;
-            font-weight: $thickFontWeight;
+        .quote {
+            width: auto;
+            min-width: 25%;
+            max-width: 75%;
+            float: left;
+            position: relative;
+            @include box-shadow(0 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1));
+            .icon.main {
+                font-size: 150%;
+                position: absolute;
+                left: -0.5em;
+                margin-top: 0;
+                color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+            }
         }
     }
-    .quote {
-        width: auto;
-        min-width: 25%;
-        max-width: 75%;
-        float: left;
-        position: relative;
-        @include box-shadow(0 0.1666em 0 rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1));
-        .icon.main {
-            font-size: 150%;
-            position: absolute;
-            left: -0.5em;
-            margin-top: 0;
-            color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
+    .feedback-right {
+        .client {
+            margin-right: 0;
+            margin-left: 1.5em;
+            float: left;
         }
-    }
-}
-
-html#{$documentID} body#{$frameworkClass} .feedback-right {
-    .client {
-        margin-right: 0;
-        margin-left: 1.5em;
-        float: left;
-    }
-    .quote {
-        border-left: none;
-        border-right: 0.4166em solid transparent;
-        .icon.main {
-            left: auto;
-            right: -0.5em;
-            margin-top: 0;
+        .quote {
+            border-left: none;
+            border-right: 0.4166em solid transparent;
+            .icon.main {
+                left: auto;
+                right: -0.5em;
+                margin-top: 0;
+            }
         }
     }
 }
 
 /* Social Icons */
-html#{$documentID} body#{$frameworkClass} .social {
+#{$frameworkClass} .social {
     .item {
         float: left;
         display: block;
@@ -3059,7 +3000,7 @@ html#{$documentID} body#{$frameworkClass} .social {
         }
         a {
             padding: 0.25em 0.6666em;
-            min-width: 32px;
+            min-width: 2.25em;
             display: block;
             text-align: center;
             color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
@@ -3121,8 +3062,9 @@ html#{$documentID} body#{$frameworkClass} .social {
         padding: 0;
         .item {
             a {
-            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.25);
-            background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+                min-height: 2.25em;
+                color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.25);
+                background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
                 &:hover, &:active {
                     color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
                 }
@@ -3190,102 +3132,100 @@ html#{$documentID} body#{$frameworkClass} .social {
 }
 
 /* Pricing Tables */
-html#{$documentID} body#{$frameworkClass} .pricing-table, html#{$documentID} body#{$frameworkClass} .framework .pricing-table {
-    thead {
-        font-size: 200%;
-        th {
-            background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-            border: none;
-            padding: 0;
-            .title {
-                display: block;
-                float: none;
-                padding: 0.5em 1em;
-                border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-            }
-            &:last-child {
+#{$frameworkClass} {
+    .pricing-table/*, .framework .pricing-table*/ {
+        thead {
+            font-size: 200%;
+            th {
+                background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                border: none;
+                padding: 0;
                 .title {
+                    display: block;
+                    float: none;
+                    padding: 0.5em 1em;
+                    border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                }
+                &:last-child .title {
                     border-right: none;
                 }
+                &.features {
+                    background-color: transparent;
+                    color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                }
             }
-            &.features {
+        }
+        tbody {
+            td {
+                text-align: center;
+                color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+                .icon {
+                    font-size: 150%;
+                    display: inline-block;
+                }
+            }
+        }
+        tfoot {
+            td {
+                padding: 0;
                 background-color: transparent;
+                text-align: center;
+                border: none;
                 color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-            }
-        }
-    }
-    tbody {
-        td {
-            text-align: center;
-            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
-            .icon {
-                font-size: 150%;
-                display: inline-block;
-            }
-        }
-    }
-    tfoot {
-        td {
-            padding: 0;
-            background-color: transparent;
-            text-align: center;
-            border: none;
-            color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
-            a {
-                display: block;
-                margin-right: 1px;
-                overflow: hidden;
-                text-overflow: ellipsis;
-                white-space: nowrap;
-                color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
-                background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-                &:hover {
+                a {
+                    display: block;
+                    margin-right: 1px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.75);
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                }
+                a:hover {
                     color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
                     background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
                 }
-                &:active {
+                a:active {
                     color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
                     background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
                 }
-            }
-            &:last-child {
-                a {
+                &:last-child a {
                     margin-right: 0;
                 }
-            }
-            html#{$documentID} &.one, html#{$documentID} &.two, html#{$documentID} &.three {
-                background-color: transparent;
-            }
-            .price {
-                color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
-                font-size: 200%;
-                display: block;
+                #{$documentID} &.one, #{$documentID} &.two, #{$documentID} &.three {
+                    background-color: transparent;
+                }
+                .price {
+                    color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                    font-size: 200%;
+                    display: block;
+                }
             }
         }
-    }
-    th, td {
-        border: none;
-        &.featured {
-            background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
-            a {
+        th, td {
+            border: none;
+            &.featured {
                 background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
-                &:hover {
+                a {
+                    background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+                }
+                a:hover {
                     background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3), 0.9);
                 }
-                &:active {
+                a:active {
                     background-color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
                 }
             }
         }
-    }
-    td.featured {
-        color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
-        background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        td.featured {
+            color: rgbToHsla(nth($errorColor, 1), nth($errorColor, 2), nth($errorColor, 3));
+            background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+        }
     }
 }
 
-html#{$documentID} body#{$frameworkClass} .table.pricing {
+#{$frameworkClass} .table.pricing {
     .list {
         .item {
             text-align: center;
@@ -3311,14 +3251,14 @@ html#{$documentID} body#{$frameworkClass} .table.pricing {
                     display: block;
                     margin-right: 0;
                     font-weight: $fontWeight;
-                    &:hover {
-                        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-                        background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-                    }
-                    &:active {
-                        color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
-                        background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-                    }
+                }
+                a:hover {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+                }
+                a:active {
+                    color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+                    background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
                 }
             }
             .title {
@@ -3373,7 +3313,7 @@ html#{$documentID} body#{$frameworkClass} .table.pricing {
                &:hover {
                     background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.9);
                }
-               html#{$documentID} &:active {
+               #{$documentID} &:active {
                     background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
                }
             }
@@ -3429,7 +3369,7 @@ html#{$documentID} body#{$frameworkClass} .table.pricing {
 }
 
 /* Spotlight */
-html#{$documentID} body#{$frameworkClass} .spotlight {
+#{$frameworkClass} .spotlight {
     margin: 0;
     padding: 1em 0;
     text-align: center;
@@ -3451,24 +3391,21 @@ html#{$documentID} body#{$frameworkClass} .spotlight {
 /* OTHERS */
 
 /* CSS3 Special Classes */
-html#{$documentID} {
+#{$frameworkClass} {
     @include box-shadow(none);
     @include text-shadow(none);
-}
-html#{$documentID} body#{$frameworkClass}.no-border-radius, html#{$documentID} body#{$frameworkClass}.no-border-radius * {
-    @include border-radius(0);
-}
-
-html#{$documentID} body#{$frameworkClass}.no-box-shadow, html#{$documentID} body#{$frameworkClass}.no-box-shadow * {
-    @include box-shadow(none);
-}
-
-html#{$documentID} body#{$frameworkClass}.no-transition, html#{$documentID} body#{$frameworkClass}.no-transition * {
-    @include transition(none);
-}
-
-html#{$documentID} body#{$frameworkClass}.no-text-shadow, html#{$documentID} body#{$frameworkClass}.no-text-shadow * {
-    @include text-shadow(none);
+    &.no-border-radius, &.no-border-radius * {
+        @include border-radius(0);
+    }
+    &.no-box-shadow, &.no-box-shadow * {
+        @include box-shadow(none);
+    }
+    &.no-transition, &.no-transition * {
+        @include transition(none);
+    }
+    &.no-text-shadow, &.no-text-shadow * {
+        @include text-shadow(none);
+    }
 }
 
 /* Clearfixes */
@@ -3508,7 +3445,7 @@ html#{$documentID} body#{$frameworkClass}.no-text-shadow, html#{$documentID} bod
     }
 }
 
-html#{$documentID} .hidden {
+#{$frameworkClass} .hidden {
     display: none;
     visibility: hidden;
 }

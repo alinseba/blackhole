@@ -22,7 +22,7 @@
 }
 
 /* Default Styles */
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
 	#main-header {
 		background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
 		padding: 0.75em 0;

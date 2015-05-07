@@ -1,0 +1,260 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../../../../styles/base/core.scss";
+@import "../../../../styles/config/config.scss";
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/*
+   =========================================================================
+*/
+
+@include media-query(800, min) {
+
+    /* General */
+    
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, min) {
+
+    /* General */
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, min, 1280, max) {
+
+    /* General */
+
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(1024, max) { // Change to fit your needs
+
+    /* General */
+
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(640, min, 800, max) { // Change to fit your needs
+
+    /* Tables */
+    /* Classic Tables */
+    #{$documentID} #{$frameworkClass} table {
+        &.uk-datepicker-table {
+            display: table;
+            thead {
+                float: none;
+                display: table-header-group;
+            }
+            tbody {
+                display: table-row-group;
+            }
+            tr {
+                display: table-row;
+                margin: 0;
+                td, th {
+                    display: table-cell;
+                    min-width: inherit;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(640, max) { // Change to fit your needs
+
+    #{$documentID} #{$frameworkClass} {
+        .uikit-component .uk-sortable {
+            > * {
+                width: 49%;
+                float: left;
+                margin-right: 2%;
+                &:nth-child(2n) {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+
+    /* Buttons and Controls */
+    #{$documentID} #{$frameworkClass} .uikit-dropdown {
+        max-width: 100%;
+        .button {
+            display: block;
+            width: 100%;
+        }
+    }
+
+    #{$documentID} #{$frameworkClass} .uikit-component.uk-button-group {
+        > a, > .button {
+            width: 75%;
+            float: left;
+        }
+        .uikit-dropdown {
+            width: 25%;
+            float: left !important;
+            .uikit-trigger {
+                float: left;
+                width: 100%;
+                margin-bottom: 0;
+                padding-bottom: 0.5em;
+                padding-top: 0.5em;
+                text-align: center;
+                .icon {
+                    float: none;
+                    margin: 0;
+                }
+            }
+            .uk-dropdown {
+                min-width: 400%;
+            }
+        }
+    }
+
+    /* Tables */
+    /* Classic Tables */
+    #{$documentID} #{$frameworkClass} table {
+        &.uk-datepicker-table {
+            display: table;
+            thead {
+                float: none;
+                display: table-header-group;
+            }
+            tbody {
+                display: table-row-group;
+            }
+            tr {
+                display: table-row;
+                margin: 0;
+                td, th {
+                    display: table-cell;
+                    min-width: inherit;
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    // UIKit
+    #{$documentID} #{$frameworkClass} .uk-autocomplete, #{$documentID} #{$frameworkClass} .uk-search {
+        width: 100%;
+    }
+    #{$documentID} #{$frameworkClass} .uikit-component .uk-search {
+        .uk-search-field {
+            width: 100% !important;
+        }
+    }
+    #{$documentID} #{$frameworkClass} .uikit-component .uk-htmleditor {
+        .uk-htmleditor-toolbar {
+            width: 100%;
+        }
+        .uk-htmleditor-navbar-flip {
+            width: 100%;
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(639, max) { // Change to fit your needs
+
+    /* General */
+
+
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query(480, max) { // Change to fit your needs
+
+    /* General */
+    #{$documentID} #{$frameworkClass} .uikit-component .uk-sortable {
+        > * {
+            width: 100%;
+            float: none;
+            margin-right: 0;
+            &:nth-child(2n) {
+                margin-right: 0;
+            }
+        }
+    }
+}
+
+/*
+   =========================================================================
+*/
+
+
+/*
+   =========================================================================
+*/
+
+@include media-query("", "", "", "", print) {
+    // Your printing styles   
+}
+
+/*
+   =========================================================================
+*/

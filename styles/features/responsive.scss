@@ -68,7 +68,7 @@
 @include media-query(1024, max) { // Change to fit your needs
 
     /* General */
-    html#{$documentID} body#{$frameworkClass} {
+    #{$documentID} #{$frameworkClass} {
         .fixed, .fixed-bottom {
             @include opacity(1);
         }
@@ -102,7 +102,7 @@
 
     /* Components */
     /* Timeline */
-    html#{$documentID} body#{$frameworkClass} .timeline {
+    #{$documentID} #{$frameworkClass} .timeline {
         .list .item {
             float: none;
             min-height: 10em;
@@ -178,7 +178,7 @@
 @include media-query(640, min, 800, max) { // Change to fit your needs
 
     /* General */
-    html#{$documentID} body#{$frameworkID} .framework #main-section #main-content {
+    #{$documentID} #{$frameworkID} .framework #main-section #main-content {
         
         /* Component Manager */
         .list.main aside {
@@ -197,8 +197,6 @@
             margin-bottom: 0.75em;
             float: none;
             width: 100%;
-            // background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-            // color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
         }
         > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
             float: none;
@@ -206,16 +204,16 @@
         }
         > .list.main > .item {
             &:nth-child(1), &:nth-child(2), &:nth-child(3) {
-                display: none;
+                // display: none;
             }
         }
     }
 
-    html#{$documentID} body#{$frameworkID} .framework #main-header {
+    #{$documentID} #{$frameworkID} .framework #main-header {
         position: relative;
     }
     
-    html#{$documentID} body#{$frameworkClass} {
+    #{$documentID} #{$frameworkClass} {
         @include transition(none);
         * {
             @include transition(none);
@@ -261,19 +259,19 @@
 
     /* Components */
     /* Typography */
-    html#{$documentID} body#{$frameworkClass} .drop-caps:first-letter {
+    #{$documentID} #{$frameworkClass} .drop-caps:first-letter {
         line-height: 1;
         padding-top: 0;
     }
 
     /* Menus */ 
-    html#{$documentID} body#{$frameworkClass} .menu {
+    #{$documentID} #{$frameworkClass} .menu {
         &.vertical {
             width: 100%;
             padding-right: 0;
         }
     }
-    html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .submenu {
+    #{$documentID} #{$frameworkClass} .menu, #{$documentID} #{$frameworkClass} .submenu {
         width: 100%;
         position: relative;
         > .item {
@@ -299,7 +297,7 @@
 
     /* Tables */
     /* Classic Tables */
-    html#{$documentID} body#{$frameworkClass} table {
+    #{$documentID} #{$frameworkClass} table {
         display: block;
         width: 100%;
         caption {
@@ -345,29 +343,10 @@
         td.gutter, td.code {
             display: inline-block;
         }
-        &.uk-datepicker-table {
-            display: table;
-            thead {
-                float: none;
-                display: table-header-group;
-            }
-            tbody {
-                display: table-row-group;
-            }
-            tr {
-                display: table-row;
-                margin: 0;
-                td, th {
-                    display: table-cell;
-                    min-width: inherit;
-                    border-bottom: none;
-                }
-            }
-        }
     }
 
     /* List Tables */
-    html#{$documentID} body#{$frameworkClass} .table {
+    #{$documentID} #{$frameworkClass} .table {
         .cols {
             .list {
             float: none;
@@ -384,12 +363,12 @@
 
     /* Pricing Tables */
     /* Classic Table */
-    html#{$documentID} body#{$frameworkClass} .pricing-table {
+    #{$documentID} #{$frameworkClass} .pricing-table {
         thead th .title {
             font-size: 85%;
         }
         thead th:last-child .title {
-            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
         }
         tbody td .icon {
             margin-top: 0;
@@ -401,7 +380,7 @@
     }
 
     /* List Table */
-    html#{$documentID} body#{$frameworkClass} .table.pricing {
+    #{$documentID} #{$frameworkClass} .table.pricing {
         width: 100%;
         .list {
             float: none;
@@ -431,12 +410,12 @@
                         float: none;
                         width: 100%;
                         margin-bottom: 1em;
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                        &.featured {
-                            border: none;
-                        }
+                    }
+                    .list:last-child {
+                        margin-bottom: 0;
+                    }
+                    .list.featured {
+                        border: none;
                     }
                 }
                 &:hover {
@@ -454,19 +433,19 @@
     }
 
     /* Comments */
-    html#{$documentID} body#{$frameworkClass} .comments {
+    #{$documentID} #{$frameworkClass} .comments {
         > .list > .item {
             &.replied {
                 .reply {
                     .replier {
                         margin-left: 1em;
-                        + .reply {
-                            margin-left: 1em;
-                        }
-                        .icon {
-                            left: 0;
-                            top: -1em;
-                        }
+                    }
+                    .replier + .reply {
+                        margin-left: 1em;
+                    }
+                    .replier .icon {
+                        left: 0;
+                        top: -1em;
                     }
                 }
             }
@@ -484,7 +463,7 @@
         }
     }
     /* Timeline */
-    html#{$documentID} body#{$frameworkClass} .timeline {
+    #{$documentID} #{$frameworkClass} .timeline {
         .list .item {
             float: none;
             min-height: 10em;
@@ -556,7 +535,7 @@
 @include media-query(640, max) { // Change to fit your needs
 
     /* General */
-    html#{$documentID} body#{$frameworkID} .framework #main-section #main-content {
+    #{$documentID} #{$frameworkID} .framework #main-section #main-content {
         
         /* Component Manager */
         .list.main aside {
@@ -575,8 +554,6 @@
             margin-bottom: 0.75em;
             float: none;
             width: 100%;
-            // background-color: rgbToHsla(nth($elementsBackground, 1), nth($elementsBackground, 2), nth($elementsBackground, 3));
-            // color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
         }
         > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
             float: none;
@@ -584,11 +561,11 @@
         }
     }
 
-    html#{$documentID} body#{$frameworkID} .framework #main-header {
+    #{$documentID} #{$frameworkID} .framework #main-header {
         position: relative;
     }
 
-    html#{$documentID} body#{$frameworkClass} {
+    #{$documentID} #{$frameworkClass} {
         @include transition(none);
         * {
             @include transition(none);
@@ -630,61 +607,16 @@
             bottom: 3.5em;
             right: 0;
         }
-        .uikit-component .uk-sortable {
-            > * {
-                width: 49%;
-                float: left;
-                margin-right: 2%;
-                &:nth-child(2n) {
-                    margin-right: 0;
-                }
-            }
-        }
     }
 
     /* Components */
     /* Typography */
-    html#{$documentID} body#{$frameworkClass} .drop-caps:first-letter {
+    #{$documentID} #{$frameworkClass} .drop-caps:first-letter {
         line-height: 1;
         padding-top: 0;
     }
 
-    /* Buttons and Controls */
-    html#{$documentID} body#{$frameworkClass} .uikit-dropdown {
-        max-width: 100%;
-        .button {
-            display: block;
-            width: 100%;
-        }
-    }
-
-    html#{$documentID} body#{$frameworkClass} .uikit-component.uk-button-group {
-        > a, > .button {
-            width: 75%;
-            float: left;
-        }
-        .uikit-dropdown {
-            width: 25%;
-            float: left !important;
-            .uikit-trigger {
-                float: left;
-                width: 100%;
-                margin-bottom: 0;
-                padding-bottom: 0.5em;
-                padding-top: 0.5em;
-                text-align: center;
-                .icon {
-                    float: none;
-                    margin: 0;
-                }
-            }
-            .uk-dropdown {
-                min-width: 400%;
-            }
-        }
-    }
-
-    html#{$documentID} body#{$frameworkClass} {
+    #{$documentID} #{$frameworkClass} {
         .show-all, .show-more {
             > .trigger {
                 width: 100%;
@@ -693,7 +625,7 @@
     }
 
     /* Menus */ 
-    html#{$documentID} body#{$frameworkClass} .menu {
+    #{$documentID} #{$frameworkClass} .menu {
         &.vertical {
             width: 100%;
             padding-right: 0;
@@ -701,29 +633,29 @@
     }
 
     /* Inputs */
-    html#{$documentID} body#{$frameworkClass} {
+    #{$documentID} #{$frameworkClass} {
         input[type='text'], input[type='number'], textarea, .input.text, select, .select, .input-wrapper.with-icon, .input-wrapper.date-picker, .input-wrapper.with-icon .input, .input-wrapper.with-icon input[type='text'], .input-wrapper.date-picker .input, .input-wrapper.date-picker input[type='text'] {
             width: 100%;
         }
     }
-    html#{$documentID} body#{$frameworkClass} .date-picker-wrapper .item {
+    #{$documentID} #{$frameworkClass} .date-picker-wrapper .item {
         float: none;
         margin-right: 0;
     }
-    html#{$documentID} body#{$frameworkClass} .input-wrapper {
+    #{$documentID} #{$frameworkClass} .input-wrapper {
         .input {
             width: auto;
         }
     }
 
     /* Boxes and Containers */
-    html#{$documentID} body#{$frameworkClass} .flyer {
+    #{$documentID} #{$frameworkClass} .flyer {
         width: 100%;
     }
 
     /* Tables */
     /* Classic Tables */
-    html#{$documentID} body#{$frameworkClass} table {
+    #{$documentID} #{$frameworkClass} table {
         display: block;
         width: 100%;
         caption {
@@ -769,29 +701,10 @@
         td.gutter, td.code {
             display: inline-block;
         }
-        &.uk-datepicker-table {
-            display: table;
-            thead {
-                float: none;
-                display: table-header-group;
-            }
-            tbody {
-                display: table-row-group;
-            }
-            tr {
-                display: table-row;
-                margin: 0;
-                td, th {
-                    display: table-cell;
-                    min-width: inherit;
-                    border-bottom: none;
-                }
-            }
-        }
     }
 
     /* List Tables */
-    html#{$documentID} body#{$frameworkClass} .table {
+    #{$documentID} #{$frameworkClass} .table {
         .cols {
             .list {
             float: none;
@@ -807,7 +720,7 @@
     }
 
     /* Timeline */
-    html#{$documentID} body#{$frameworkClass} .timeline {
+    #{$documentID} #{$frameworkClass} .timeline {
         .list .item {
             float: none;
             min-height: 10em;
@@ -867,7 +780,7 @@
     }
 
     /* Menus */
-    html#{$documentID} body#{$frameworkClass} .menu, html#{$documentID} body#{$frameworkClass} .submenu {
+    #{$documentID} #{$frameworkClass} .menu, #{$documentID} #{$frameworkClass} .submenu {
         width: 100%;
         position: relative;
         > .item {
@@ -893,12 +806,12 @@
 
     /* Pricing Tables */
     /* Classic Table */
-    html#{$documentID} body#{$frameworkClass} .pricing-table {
+    #{$documentID} #{$frameworkClass} .pricing-table {
         thead th .title {
             font-size: 85%;
         }
         thead th:last-child .title {
-            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+            border-right: 0.0833em solid rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
         }
         tbody td .icon {
             margin-top: 0;
@@ -910,7 +823,7 @@
     }
 
     /* List Table */
-    html#{$documentID} body#{$frameworkClass} .table.pricing {
+    #{$documentID} #{$frameworkClass} .table.pricing {
         width: 100%;
         .list {
             float: none;
@@ -940,12 +853,12 @@
                         float: none;
                         width: 100%;
                         margin-bottom: 1em;
-                        &:last-child {
-                            margin-bottom: 0;
-                        }
-                        &.featured {
-                            border: none;
-                        }
+                    }
+                    .list:last-child {
+                       margin-bottom: 0; 
+                    }
+                    .list.featured {
+                        border: none;
                     }
                 }
                 &:hover {
@@ -963,19 +876,19 @@
     }
 
     /* Comments */
-    html#{$documentID} body#{$frameworkClass} .comments {
+    #{$documentID} #{$frameworkClass} .comments {
         > .list > .item {
             &.replied {
                 .reply {
                     .replier {
                         margin-left: 1em;
-                        + .reply {
-                            margin-left: 1em;
-                        }
-                        .icon {
-                            left: 0;
-                            top: -1em;
-                        }
+                    }
+                    .replier + .reply {
+                        margin-left: 1em;
+                    }
+                    .replier .icon {
+                        left: 0;
+                        top: -1em;
                     }
                 }
             }
@@ -994,7 +907,7 @@
     }
 
     /* Various */
-    html#{$documentID} body#{$frameworkClass} .horizontal-terms {
+    #{$documentID} #{$frameworkClass} .horizontal-terms {
         dt, dd {
             float: none !important;
             clear: none;
@@ -1005,24 +918,6 @@
         }
         dt {
             margin-top: 1em;
-        }
-    }
-
-    // UIKit
-    html#{$documentID} body#{$frameworkClass} .uk-autocomplete, html#{$documentID} body#{$frameworkClass} .uk-search {
-        width: 100%;
-    }
-    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-search {
-        .uk-search-field {
-            width: 100% !important;
-        }
-    }
-    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-htmleditor {
-        .uk-htmleditor-toolbar {
-            width: 100%;
-        }
-        .uk-htmleditor-navbar-flip {
-            width: 100%;
         }
     }
 }
@@ -1055,17 +950,7 @@
 @include media-query(480, max) { // Change to fit your needs
 
     /* General */
-    html#{$documentID} body#{$frameworkClass} .uikit-component .uk-sortable {
-        > * {
-            width: 100%;
-            float: none;
-            margin-right: 0;
-            &:nth-child(2n) {
-                margin-right: 0;
-            }
-        }
-    }
-    html#{$documentID} body#{$frameworkClass} .tooltips {
+    #{$documentID} #{$frameworkClass} .tooltips {
         > a {
             width: 100% !important;
         }

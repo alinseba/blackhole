@@ -105,12 +105,12 @@ $basePadding: 0;
 /// @access public
 /// @type Variable
 /// @group project-configs
-$linkColor: 0,205,172;
+$linkColor: 31,187,166;
 /// Link HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$linkColorHEX: unquote("#00cdac");
+$linkColorHEX: unquote("#1fbba6");
 /// Main RGB Color
 /// @access public
 /// @type Variable
@@ -145,22 +145,22 @@ $blackColorHEX: unquote("#000");
 /// @access public
 /// @type Variable
 /// @group project-configs
-$accentColor: 0,205,172;
+$accentColor: 31,187,166;
 /// Accent HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$accentColorHEX: unquote("#00cdac");
+$accentColorHEX: unquote("#1fbba6");
 /// Button Text RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$buttonColor: 12,124,107;
+$buttonColor: 255,255,255;
 /// Button Text HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$buttonColorHEX: unquote("#0c7c6b");
+$buttonColorHEX: unquote("#fff");
 /// Main Background RGB Color
 /// @access public
 /// @type Variable
@@ -177,94 +177,94 @@ $mainBackgroundHEX: unquote("#f6f6f6");
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsBackground: 241,241,241;
+$elementsBackground: 255,255,255;
 /// Elements Background HEX Color  - the background color used for UI elements such as boxes
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsBackgroundHEX: unquote("#f1f1f1");
+$elementsBackgroundHEX: unquote("#fff");
 /// Elements Action Background RGB Color - the background color used for UI elements when they change their state (such as on hover)
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsActionBackground: 246,246,246;
+$elementsActionBackground: 249,250,252;
 /// Elements Action Background HEX Color - the background color used for UI elements when they change their state (such as on hover)
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsActionBackgroundHEX: unquote("#f6f6f6");
+$elementsActionBackgroundHEX: unquote("#f9fafc");
 /// Elements Background RGB Color 2 - the alternative background color used for UI elements in other states or situations
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsBackground2: 230,230,230;
+$elementsBackground2: 234,237,241;
 /// Elements Background HEX Color 2 - the alternative background color used for UI elements in other states or situations
 /// @access public
 /// @type Variable
 /// @group project-configs
-$elementsBackground2HEX: unquote("#e6e6e6");
+$elementsBackground2HEX: unquote("#eaedf1");
 
 // Other Colors
 /// Tip Message Text RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$tipColor: 22,216,161;
+$tipColor: 31,187,166;
 /// Tip Message Text HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$tipColorHEX: unquote("#16D8A1");
+$tipColorHEX: unquote("#1fbba6");
 /// Tip Message Background RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$tipBack: 22,216,161;
+$tipBack: 31,187,166;
 /// Tip Message Background HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$tipBackHEX: unquote("#16D8A1");
+$tipBackHEX: unquote("#1fbba6");
 /// Pending / Warning State Text RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$pendingColor: 238,83,31;
+$pendingColor: 239,120,52;
 /// Pending / Warning State Text HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$pendingColorHEX: unquote("#EE531F");
+$pendingColorHEX: unquote("#ef7834");
 /// Pending / Warning State Background RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$pendingBack: 238,83,31;
+$pendingBack: 239,120,52;
 /// Pending / Warning State Background HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$pendingBackHEX: unquote("#EE531F");
+$pendingBackHEX: unquote("#ef7834");
 /// Success / Valid State Text RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$successColor: 0,205,172;
+$successColor: 31,187,166;
 /// Success / Valid State Text HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$successColorHEX: unquote("#00cdac");
+$successColorHEX: unquote("#1fbba6");
 /// Success / Valid State Background RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$successBack: 0,205,172;
+$successBack: 31,187,166;
 /// Success / Valid State Background HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$successBackHEX: unquote("#00cdac");
+$successBackHEX: unquote("#1fbba6");
 /// Error / Invalid State Text RGB Color
 /// @access public
 /// @type Variable
@@ -289,42 +289,42 @@ $errorBackHEX: unquote("#CC2A41");
 /// @access public
 /// @type Variable
 /// @group project-configs
-$infoColor: 22,159,216;
+$infoColor: 20,184,212;
 /// Info / Notification State Text HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$infoColorHEX: unquote("#169fd8");
+$infoColorHEX: unquote("#14b8d4");
 /// Info / Notification State Background RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$infoBack: 22,159,216;
+$infoBack: 20,184,212;
 /// Info / Notification State Background HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$infoBackHEX: unquote("#169fd8");
+$infoBackHEX: unquote("#14b8d4");
 /// Neutral (Grey) Background RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$neutralBack: 230,230,230;
+$neutralBack: 234,237,241;
 /// Neutral (Grey) Background HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$neutralBackHEX: unquote("#e6e6e6");
+$neutralBackHEX: unquote("#eaedf1");
 /// Color Scheme Complementary RGB Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$complementaryColor: 91,91,106;
+$complementaryColor: 50,58,69;
 /// Color Scheme Complementary HEX Color
 /// @access public
 /// @type Variable
 /// @group project-configs
-$complementaryColorHEX: unquote("#5b5b6a");
+$complementaryColorHEX: unquote("#323a45");
 
 
 // CSS3 PROPERTIES - Storing Variables and Arrays for Your Elements

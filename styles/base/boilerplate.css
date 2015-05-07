@@ -1,13 +1,13 @@
-.button:before, .button:after, button:before, button:after, .clearfix:before, .clearfix:after, p.description:before, p.description:after, .menu:before, .menu:after, .menu-list:before, .menu-list:after, .submenu:before, .submenu:after, .breadcrumb:before, .breadcrumb:after, .list:before, .list:after, .input-wrapper:before, .input-wrapper:after, .message:before, .message:after, .message-thin:before, .message-thin:after, .message-warning:before, .message-warning:after, .message-error:before, .message-error:after, .message-alert:before, .message-alert:after, .message-info:before, .message-info:after, .message-ok:before, .message-ok:after, .message-neutral:before, .message-neutral:after, .message-modal:before, .message-modal:after, .message-tooltip:before, .message-tooltip:after, .message-in-box:before, .message-in-box:after, .flyer:before, .flyer:after, .flyer > .content:before, .flyer > .content:after, .box > .content:before, .box > .content:after, .container:before, .container:after, table:before, table:after, .table:before, .table:after, .table .cols:before, .table .cols:after, .comment:before, .comment:after, .reveal:before, .reveal:after, .reveal aside:before, .reveal aside:after, .feedback:before, .feedback:after, .feedback-right:before, .feedback-right:after, .table.pricing .packages:before, .table.pricing .packages:after, .button-group:before, .button-group:after, .pagination:before, .pagination:after, aside.element:before, aside.element:after, .content > p:before, .content > p:after, .controls > .item:before, .controls > .item:after, .controls-horizontal > .item:before, .controls-horizontal > .item:after {
+.my-framework .button:before, .my-framework .button:after, .my-framework button:before, .my-framework button:after, .clearfix:before, .clearfix:after, p.description:before, p.description:after, .menu:before, .menu:after, .menu-list:before, .menu-list:after, .submenu:before, .submenu:after, .breadcrumb:before, .breadcrumb:after, .list:before, .list:after, .input-wrapper:before, .input-wrapper:after, .message:before, .message:after, .message-thin:before, .message-thin:after, .message-warning:before, .message-warning:after, .message-error:before, .message-error:after, .message-alert:before, .message-alert:after, .message-info:before, .message-info:after, .message-ok:before, .message-ok:after, .message-neutral:before, .message-neutral:after, .message-modal:before, .message-modal:after, .message-tooltip:before, .message-tooltip:after, .message-in-box:before, .message-in-box:after, .flyer:before, .flyer:after, .flyer > .content:before, .flyer > .content:after, .box > .content:before, .box > .content:after, .container:before, .container:after, table:before, table:after, .table:before, .table:after, .table .cols:before, .table .cols:after, .comment:before, .comment:after, .reveal:before, .reveal:after, .reveal aside:before, .reveal aside:after, .feedback:before, .feedback:after, .feedback-right:before, .feedback-right:after, .table.pricing .packages:before, .table.pricing .packages:after, .button-group:before, .button-group:after, .pagination:before, .pagination:after, aside.element:before, aside.element:after, .content > p:before, .content > p:after, .controls > .item:before, .controls > .item:after, .controls-horizontal > .item:before, .controls-horizontal > .item:after {
   content: " ";
   display: table;
 }
 
-.button:after, button:after, .clearfix:after, p.description:after, .menu:after, .menu-list:after, .submenu:after, .breadcrumb:after, .list:after, .input-wrapper:after, .message:after, .message-thin:after, .message-warning:after, .message-error:after, .message-alert:after, .message-info:after, .message-ok:after, .message-neutral:after, .message-modal:after, .message-tooltip:after, .message-in-box:after, .flyer:after, .flyer > .content:after, .box > .content:after, .container:after, table:after, .table:after, .table .cols:after, .comment:after, .reveal:after, .reveal aside:after, .feedback:after, .feedback-right:after, .table.pricing .packages:after, .button-group:after, .pagination:after, aside.element:after, .content > p:after, .controls > .item:after, .controls-horizontal > .item:after {
+.my-framework .button:after, .my-framework button:after, .clearfix:after, p.description:after, .menu:after, .menu-list:after, .submenu:after, .breadcrumb:after, .list:after, .input-wrapper:after, .message:after, .message-thin:after, .message-warning:after, .message-error:after, .message-alert:after, .message-info:after, .message-ok:after, .message-neutral:after, .message-modal:after, .message-tooltip:after, .message-in-box:after, .flyer:after, .flyer > .content:after, .box > .content:after, .container:after, table:after, .table:after, .table .cols:after, .comment:after, .reveal:after, .reveal aside:after, .feedback:after, .feedback-right:after, .table.pricing .packages:after, .button-group:after, .pagination:after, aside.element:after, .content > p:after, .controls > .item:after, .controls-horizontal > .item:after {
   clear: both;
 }
 
-.button, button, .clearfix, p.description, .menu, .menu-list, .submenu, .breadcrumb, .list, .input-wrapper, .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .flyer, .flyer > .content, .box > .content, .container, table, .table, .table .cols, .comment, .reveal, .reveal aside, .feedback, .feedback-right, .table.pricing .packages, .button-group, .pagination, aside.element, .content > p, .controls > .item, .controls-horizontal > .item {
+.my-framework .button, .my-framework button, .clearfix, p.description, .menu, .menu-list, .submenu, .breadcrumb, .list, .input-wrapper, .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .flyer, .flyer > .content, .box > .content, .container, table, .table, .table .cols, .comment, .reveal, .reveal aside, .feedback, .feedback-right, .table.pricing .packages, .button-group, .pagination, aside.element, .content > p, .controls > .item, .controls-horizontal > .item {
   *zoom: 1;
 }
 
@@ -28,7 +28,7 @@ body {
 }
 
 ::-moz-selection {
-  background: hsla(170, 100%, 40%, 1);
+  background: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   text-shadow: none;
   -moz-text-shadow: none;
@@ -37,7 +37,7 @@ body {
 }
 
 ::selection {
-  background: hsla(170, 100%, 40%, 1);
+  background: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   text-shadow: none;
   -moz-text-shadow: none;
@@ -144,7 +144,7 @@ p {
   position: relative;
   line-height: 1.75;
 }
-html#myDocument p:first-child {
+#myDocument p:first-child {
   margin-top: 0;
 }
 p:last-child {
@@ -169,7 +169,7 @@ p .remark {
   max-width: 320px;
   font-size: 125%;
   float: left;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
 p .remark.right {
   float: right;
@@ -222,9 +222,9 @@ dt {
 }
 
 code {
-  color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
-  border: 0.0833em solid hsla(0, 0%, 95%, 1);
+  color: hsla(215, 16%, 23%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
+  border: 0.0833em solid hsla(220, 33%, 98%, 1);
   padding: 0.25em;
 }
 
@@ -238,7 +238,7 @@ img.border, .img.border {
 }
 
 a {
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
   text-decoration: none;
   line-height: 1.5;
   outline: none;
@@ -250,12 +250,12 @@ a.img {
 }
 a.content {
   display: block;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument a.content:hover, html#myDocument a.content:active {
+#myDocument a.content:hover, #myDocument a.content:active {
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument .invert a.content:hover, html#myDocument .invert a.content:active {
+#myDocument .invert a.content:hover, #myDocument .invert a.content:active {
   background-color: hsla(240, 8%, 39%, 1);
   color: hsla(0, 0%, 100%, 1) !important;
 }
@@ -297,7 +297,7 @@ header {
 footer {
   padding: 0.5em 1em;
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
 
 /*
@@ -307,78 +307,78 @@ footer {
    =========================================================================
 */
 /* Forms */
-html#myDocument body.my-framework form label {
+.my-framework form label {
   display: block;
   margin-top: 0.75em;
 }
-html#myDocument body.my-framework form label.error {
+.my-framework form label.error {
   display: inline-block;
   margin-top: 0;
   color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework form label:first-child {
+.my-framework form label:first-child {
   margin-top: 0;
 }
-html#myDocument body.my-framework form label + span {
+.my-framework form label + span {
   margin-left: 1em;
 }
-html#myDocument body.my-framework form label + .username, html#myDocument body.my-framework form label + .password, html#myDocument body.my-framework form label + .email {
+.my-framework form label + .username, .my-framework form label + .password, .my-framework form label + .email {
   margin-left: 0;
 }
-html#myDocument body.my-framework form fieldset {
+.my-framework form fieldset {
   margin-bottom: 1em;
 }
-html#myDocument body.my-framework form fieldset:last-child {
+.my-framework form fieldset:last-child {
   margin-bottom: 0;
 }
-html#myDocument body.my-framework form.form-validate fieldset .wrapper {
+.my-framework form.form-validate fieldset .wrapper {
   margin-bottom: 0.5em;
 }
-html#myDocument body.my-framework form.form-validate fieldset .wrapper:last-child {
+.my-framework form.form-validate fieldset .wrapper:last-child {
   margin-bottom: 0;
 }
-html#myDocument body.my-framework form.form-validate fieldset .wrapper .checkbox {
+.my-framework form.form-validate fieldset .wrapper .checkbox {
   display: inline-block;
   margin-left: 0.5em;
 }
-html#myDocument body.my-framework form.form-validate fieldset .wrapper label {
+.my-framework form.form-validate fieldset .wrapper label {
   display: inline-block;
 }
-html#myDocument body.my-framework form.form-validate fieldset .wrapper label.error {
+.my-framework form.form-validate fieldset .wrapper label.error {
   min-height: inherit;
   min-width: inherit;
   padding: 0 0.5em 0 0;
   cursor: default;
   background-color: transparent;
 }
-html#myDocument body.my-framework form input[type="text"], html#myDocument body.my-framework form input[type="password"], html#myDocument body.my-framework form .input.text, html#myDocument body.my-framework form textarea, html#myDocument body.my-framework form select {
+.my-framework form input[type="text"], .my-framework form input[type="password"], .my-framework form .input.text, .my-framework form textarea, .my-framework form select {
   margin-right: 1em;
   outline: none;
   -moz-outline: none;
   -webkit-outline: none;
 }
-html#myDocument body.my-framework form input[type="search"] input[type="search"].input, html#myDocument body.my-framework form .input.search {
+.my-framework form input[type="search"] input[type="search"].input, .my-framework form .input.search {
   padding-left: 3em;
   padding-right: 3em;
   margin-right: 0;
 }
-html#myDocument body.my-framework form input[type="search"] input[type="search"].input + .close, html#myDocument body.my-framework form .input.search + .close {
+.my-framework form input[type="search"] input[type="search"].input + .close, .my-framework form .input.search + .close {
   margin-top: 0;
   margin-right: 0;
 }
-html#myDocument body.my-framework form .input-wrapper input[type="text"], html#myDocument body.my-framework form .input-wrapper input[type="password"], html#myDocument body.my-framework form .input-wrapper .input.text {
+.my-framework form .input-wrapper input[type="text"], .my-framework form .input-wrapper input[type="password"], .my-framework form .input-wrapper .input.text {
   margin-right: 0;
 }
-html#myDocument body.my-framework form .group {
+.my-framework form .group {
   margin-bottom: 0.75em;
 }
-html#myDocument body.my-framework form .group label {
+.my-framework form .group label {
   margin-top: 0;
 }
-html#myDocument body.my-framework form .group:last-child {
+.my-framework form .group:last-child {
   margin-bottom: 0;
 }
-html#myDocument body.my-framework form a {
+.my-framework form a {
   margin-top: 1em;
 }
 
@@ -398,38 +398,38 @@ html#myDocument body.my-framework form a {
 }
 
 /* Lists and Menus */
-body.my-framework .list, body.my-framework .list-enumerated {
+.my-framework .list, .my-framework .list-enumerated {
   margin: 0;
 }
-body.my-framework .list .item, body.my-framework .list-enumerated .item {
+.my-framework .list .item, .my-framework .list-enumerated .item {
   list-style-type: none;
 }
-body.my-framework .list .item .link, body.my-framework .list-enumerated .item .link {
+.my-framework .list .item .link, .my-framework .list-enumerated .item .link {
   padding: 0.25em 0.5em;
   line-height: 1.5;
 }
-body.my-framework .list.with-bullet .item, body.my-framework .list-enumerated.with-bullet .item {
+.my-framework .list.with-bullet .item, .my-framework .list-enumerated.with-bullet .item {
   list-style-type: circle;
   list-style-position: inside;
 }
-.menu body.my-framework .list .item .link, .menu body.my-framework .list-enumerated .item .link {
+.menu .my-framework .list .item .link, .menu .my-framework .list-enumerated .item .link {
   padding: 0.25em 0.5em;
 }
-body.my-framework .list.cols > .item, body.my-framework .list-enumerated.cols > .item {
+.my-framework .list.cols > .item, .my-framework .list-enumerated.cols > .item {
   float: left;
 }
-body.my-framework .list.pagination .item, body.my-framework .list-enumerated.pagination .item {
+.my-framework .list.pagination .item, .my-framework .list-enumerated.pagination .item {
   list-style-type: none;
   float: left;
   display: block;
 }
-body.my-framework .list.pagination .item .button, body.my-framework .list-enumerated.pagination .item .button {
+.my-framework .list.pagination .item .button, .my-framework .list-enumerated.pagination .item .button {
   border-left: none;
 }
-body.my-framework .list.pagination .item .link, body.my-framework .list-enumerated.pagination .item .link {
+.my-framework .list.pagination .item .link, .my-framework .list-enumerated.pagination .item .link {
   padding: 0.25em 0.5em;
 }
-body.my-framework .list.pagination .item.active .link, body.my-framework .list.pagination .item.active .button, body.my-framework .list-enumerated.pagination .item.active .link, body.my-framework .list-enumerated.pagination .item.active .button {
+.my-framework .list.pagination .item.active .link, .my-framework .list.pagination .item.active .button, .my-framework .list-enumerated.pagination .item.active .link, .my-framework .list-enumerated.pagination .item.active .button {
   cursor: default;
   background-color: transparent;
   border: none;
@@ -439,10 +439,10 @@ body.my-framework .list.pagination .item.active .link, body.my-framework .list.p
   -o-box-shadow: none;
   color: hsla(240, 8%, 39%, 1);
 }
-body.my-framework .list.pagination .item.active .button, body.my-framework .list-enumerated.pagination .item.active .button {
+.my-framework .list.pagination .item.active .button, .my-framework .list-enumerated.pagination .item.active .button {
   padding: 0.5833em 1em;
 }
-body.my-framework .list.pagination .item.disabled .button, body.my-framework .list.pagination .item.disabled .button:hover, body.my-framework .list.pagination .item.disabled .button:active, body.my-framework .list-enumerated.pagination .item.disabled .button, body.my-framework .list-enumerated.pagination .item.disabled .button:hover, body.my-framework .list-enumerated.pagination .item.disabled .button:active {
+.my-framework .list.pagination .item.disabled .button, .my-framework .list.pagination .item.disabled .button:hover, .my-framework .list.pagination .item.disabled .button:active, .my-framework .list-enumerated.pagination .item.disabled .button, .my-framework .list-enumerated.pagination .item.disabled .button:hover, .my-framework .list-enumerated.pagination .item.disabled .button:active {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -453,10 +453,10 @@ body.my-framework .list.pagination .item.disabled .button, body.my-framework .li
   top: 0;
   margin-bottom: 0;
   border-bottom-width: 0.1666em;
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 0.85);
 }
-body.my-framework .list.pagination .item.disabled .link, body.my-framework .list.pagination .item.disabled .link:hover, body.my-framework .list.pagination .item.disabled .link:active, body.my-framework .list-enumerated.pagination .item.disabled .link, body.my-framework .list-enumerated.pagination .item.disabled .link:hover, body.my-framework .list-enumerated.pagination .item.disabled .link:active {
+.my-framework .list.pagination .item.disabled .link, .my-framework .list.pagination .item.disabled .link:hover, .my-framework .list.pagination .item.disabled .link:active, .my-framework .list-enumerated.pagination .item.disabled .link, .my-framework .list-enumerated.pagination .item.disabled .link:hover, .my-framework .list-enumerated.pagination .item.disabled .link:active {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -466,87 +466,83 @@ body.my-framework .list.pagination .item.disabled .link, body.my-framework .list
   cursor: default;
 }
 
-.list, html#myDocument .menu, html#myDocument .menu-list, html#myDocument .submenu {
+.my-framework .list .submenu, .my-framework .menu .submenu, .my-framework .menu-list .submenu {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
-.list.with-separator, html#myDocument .menu.with-separator, html#myDocument .menu-list.with-separator, html#myDocument .submenu.with-separator {
+.my-framework .list .submenu.with-separator, .my-framework .menu .submenu.with-separator, .my-framework .menu-list .submenu.with-separator {
   padding: 0.5em 0;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-.list.with-separator .separator, html#myDocument .menu.with-separator .separator, html#myDocument .menu-list.with-separator .separator, html#myDocument .submenu.with-separator .separator {
+.my-framework .list .submenu.with-separator .separator, .my-framework .menu .submenu.with-separator .separator, .my-framework .menu-list .submenu.with-separator .separator {
   margin: 0.5em 0;
 }
-.list .item, html#myDocument .menu .item, html#myDocument .menu-list .item, html#myDocument .submenu .item {
+.my-framework .list .submenu .item, .my-framework .menu .submenu .item, .my-framework .menu-list .submenu .item {
   list-style-type: none;
 }
-
-html#myDocument .menu.with-separator, html#myDocument .menu-list.with-separator, html#myDocument .submenu.with-separator {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework .menu.with-separator, .my-framework .menu-list.with-separator, .my-framework .submenu.with-separator {
+  background-color: hsla(172, 72%, 43%, 1);
 }
-
-html#myDocument ol.list .item {
+.my-framework ol.list .item, .my-framework ol.list.with-bullet .item {
   list-style-type: decimal;
 }
-
-html#myDocument body.my-framework .list.enumerated .item, html#myDocument body.my-framework .list-enumerated .item, html#myDocument body.my-framework .enumerated .item {
+.my-framework .list-enumerated .item, .my-framework .enumerated .item {
   display: inline;
   margin-right: 0.5em;
   margin-bottom: 0;
 }
-html#myDocument body.my-framework .list.enumerated .item {
+.my-framework .list-enumerated .item {
   display: inline-block;
   margin-bottom: 0.5em;
 }
-
-.submenu {
+.my-framework .submenu {
   margin: 0;
   list-style-type: none;
   position: relative;
   z-index: 996;
 }
-.submenu .item {
+.my-framework .submenu .item {
   float: none;
 }
 
 /* Horizontal Terms */
-html#myDocument .horizontal-terms dt {
+.my-framework .horizontal-terms dt {
   float: left;
   clear: both;
   min-width: 120px;
   width: 36.7%;
   margin-top: 1em;
 }
-html#myDocument .horizontal-terms dd {
+.my-framework .horizontal-terms dd {
   float: left;
   margin-left: 3%;
   width: 60.3%;
   margin-top: 1em;
 }
-html#myDocument .horizontal-terms dt:first-child {
+.my-framework .horizontal-terms dt:first-child {
   margin-top: 0;
 }
-html#myDocument .horizontal-terms dt:first-child + dd {
+.my-framework .horizontal-terms dt:first-child + dd {
   margin-top: 0;
 }
 
 /* Pagination */
-html#myDocument .pagination .item, html#myDocument .pagination li {
+.my-framework .pagination .item, .my-framework .pagination li {
   list-style-type: none;
   float: left;
   display: block;
 }
-html#myDocument .pagination .item .button, html#myDocument .pagination li .button {
+.my-framework .pagination .item .button, .my-framework .pagination li .button {
   border-left: none;
 }
-html#myDocument .pagination .item .link, html#myDocument .pagination .item a, html#myDocument .pagination .item span, html#myDocument .pagination li .link, html#myDocument .pagination li a, html#myDocument .pagination li span {
+.my-framework .pagination .item .link, .my-framework .pagination .item a, .my-framework .pagination .item span, .my-framework .pagination li .link, .my-framework .pagination li a, .my-framework .pagination li span {
   padding: 0.25em 0.5em;
 }
-html#myDocument .pagination .item .button, html#myDocument .pagination li .button {
+.my-framework .pagination .item .button, .my-framework .pagination li .button {
   padding: 0.5em 1em;
 }
-html#myDocument .pagination .item.active .link, html#myDocument .pagination .item.active .button, html#myDocument .pagination li.active .link, html#myDocument .pagination li.active .button {
+.my-framework .pagination .item.active .link, .my-framework .pagination .item.active .button, .my-framework .pagination li.active .link, .my-framework .pagination li.active .button {
   cursor: default;
   background-color: transparent;
   border: none;
@@ -556,10 +552,10 @@ html#myDocument .pagination .item.active .link, html#myDocument .pagination .ite
   -o-box-shadow: none;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument .pagination .item.active .button, html#myDocument .pagination li.active .button {
+.my-framework .pagination .item.active .button, .my-framework .pagination li.active .button {
   padding: 0.5833em 1em;
 }
-html#myDocument .pagination .item.disabled .button, html#myDocument .pagination .item.disabled .button:hover, html#myDocument .pagination .item.disabled .button:active, html#myDocument .pagination li.disabled .button, html#myDocument .pagination li.disabled .button:hover, html#myDocument .pagination li.disabled .button:active {
+.my-framework .pagination .item.disabled .button, .my-framework .pagination .item.disabled .button:hover, .my-framework .pagination .item.disabled .button:active, .my-framework .pagination li.disabled .button, .my-framework .pagination li.disabled .button:hover, .my-framework .pagination li.disabled .button:active {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -570,10 +566,10 @@ html#myDocument .pagination .item.disabled .button, html#myDocument .pagination 
   top: 0;
   margin-bottom: 0;
   border-bottom-width: 0.1666em;
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 0.85);
 }
-html#myDocument .pagination .item.disabled .link, html#myDocument .pagination .item.disabled .link:hover, html#myDocument .pagination .item.disabled .link:active, html#myDocument .pagination li.disabled .link, html#myDocument .pagination li.disabled .link:hover, html#myDocument .pagination li.disabled .link:active {
+.my-framework .pagination .item.disabled .link, .my-framework .pagination .item.disabled .link:hover, .my-framework .pagination .item.disabled .link:active, .my-framework .pagination li.disabled .link, .my-framework .pagination li.disabled .link:hover, .my-framework .pagination li.disabled .link:active {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -584,25 +580,21 @@ html#myDocument .pagination .item.disabled .link, html#myDocument .pagination .i
 }
 
 /* Horizontal Rules */
-.hr, .hr-dotted, .hr-dashed, .hr-thick, .hr-stripes {
+.my-framework .hr, .my-framework .hr-dotted, .my-framework .hr-dashed, .my-framework .hr-thick, .my-framework .hr-stripes {
   display: block;
-  border-bottom: 0.0833em solid hsla(0, 0%, 90%, 1);
+  border-bottom: 0.0833em solid hsla(214, 20%, 93%, 1);
   margin: 0.5em 0;
 }
-
-.hr.dotted, .hr-dotted {
+.my-framework .hr-dotted {
   border-bottom-style: dotted;
 }
-
-.hr.dashed, .hr-dashed {
+.my-framework .hr-dashed {
   border-bottom-style: dashed;
 }
-
-.hr.thick, .hr-thick {
+.my-framework .hr-thick, .my-framework .thick {
   border-bottom-width: 0.25em;
 }
-
-.hr.stripes, .hr-stripes {
+.my-framework .hr-stripes {
   height: 10px;
   background: transparent url(../../component-manager/assets/img/base/stripes.png) repeat-x;
   border-bottom: none;
@@ -610,147 +602,130 @@ html#myDocument .pagination .item.disabled .link, html#myDocument .pagination .i
 
 /* HELPERS */
 /* Icons and Images */
-html#myDocument body.my-framework .icon.with-background, html#myDocument body.my-framework .icon-default.with-background {
+#myDocument .my-framework .icon.with-background, #myDocument .my-framework .icon-default.with-background {
   display: inline-block;
   padding: 0.3333em;
-  min-width: 1.75em;
+  min-width: 1.5em;
   min-height: 1.5em;
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .icon.box-shadow, html#myDocument body.my-framework .icon-default.box-shadow {
+#myDocument .my-framework .icon.box-shadow, #myDocument .my-framework .icon-default.box-shadow {
   box-shadow: 0 0.0833em 0 hsla(0, 0%, 0%, 0.1);
   -moz-box-shadow: 0 0.0833em 0 hsla(0, 0%, 0%, 0.1);
   -webkit-box-shadow: 0 0.0833em 0 hsla(0, 0%, 0%, 0.1);
   -o-box-shadow: 0 0.0833em 0 hsla(0, 0%, 0%, 0.1);
 }
-html#myDocument body.my-framework img.icon {
+#myDocument .my-framework img.icon {
   margin: 0;
   width: 128px;
   height: 128px;
 }
-html#myDocument body.my-framework img.icon.x-small {
+#myDocument .my-framework img.icon.x-small {
   width: 64px;
   height: 64px;
 }
-html#myDocument body.my-framework img.icon.small {
+#myDocument .my-framework img.icon.small {
   width: 96px;
   height: 96px;
 }
-html#myDocument body.my-framework img.icon.medium {
+#myDocument .my-framework img.icon.medium {
   width: 180px;
   height: 180px;
 }
-html#myDocument body.my-framework img.icon.x-medium {
+#myDocument .my-framework img.icon.x-medium {
   width: 240px;
   height: 240px;
 }
-html#myDocument body.my-framework img.icon.big {
+#myDocument .my-framework img.icon.big {
   width: 320px;
   height: 320px;
 }
-html#myDocument body.my-framework img.icon.x-big {
+#myDocument .my-framework img.icon.x-big {
   width: 480px;
   height: 480px;
 }
-html#myDocument body.my-framework img.map {
+#myDocument .my-framework img.map {
   min-height: inherit;
 }
-html#myDocument body.my-framework img.retina {
+#myDocument .my-framework img.retina {
   height: 115px;
 }
-html#myDocument body.my-framework img.retina.x-small {
+#myDocument .my-framework img.retina.x-small {
   height: 57px;
 }
-html#myDocument body.my-framework img.retina.small {
+#myDocument .my-framework img.retina.small {
   height: 85px;
 }
-html#myDocument body.my-framework img.retina.medium {
+#myDocument .my-framework img.retina.medium {
   height: 160px;
 }
-html#myDocument body.my-framework img.retina.x-medium {
+#myDocument .my-framework img.retina.x-medium {
   height: 213px;
 }
-html#myDocument body.my-framework img.retina.big {
+#myDocument .my-framework img.retina.big {
   height: 284px;
 }
-html#myDocument body.my-framework img.retina.x-big {
+#myDocument .my-framework img.retina.x-big {
   height: 426px;
 }
 
 /* Various */
-html#myDocument body.my-framework .left {
+#myDocument .my-framework .left {
   float: left;
 }
-html#myDocument body.my-framework .right {
+#myDocument .my-framework .right {
   float: right;
 }
-html#myDocument body.my-framework .align-left {
-  text-align: left;
-}
-html#myDocument body.my-framework .align-right {
-  text-align: right;
-}
-html#myDocument body.my-framework .align-center {
-  text-align: center;
-}
-html#myDocument body.my-framework .centered {
-  margin-left: auto;
-  margin-right: auto;
-}
-html#myDocument body.my-framework .spaced {
+#myDocument .my-framework .spaced {
   margin: 1.5em 0;
 }
-html#myDocument body.my-framework .no-margin {
+#myDocument .my-framework .spaced .item {
+  margin: 1.5em 0;
+}
+#myDocument .my-framework .no-margin {
   margin: 0;
 }
-html#myDocument body.my-framework .no-padding {
+#myDocument .my-framework .no-padding {
   padding: 0;
 }
-html#myDocument body.my-framework .full-width {
+#myDocument .my-framework .full-width {
   width: 100%;
 }
-html#myDocument body.my-framework .third-width {
+#myDocument .my-framework .third-width {
   width: 75%;
 }
-html#myDocument body.my-framework .half-width {
+#myDocument .my-framework .half-width {
   width: 50%;
 }
-html#myDocument body.my-framework .quarter-width {
+#myDocument .my-framework .quarter-width {
   width: 25%;
 }
-html#myDocument body.my-framework .small-width {
+#myDocument .my-framework .small-width {
   width: 15%;
 }
-html#myDocument body.my-framework .x-small {
+#myDocument .my-framework .x-small {
   font-size: 50%;
 }
-html#myDocument body.my-framework .small {
+#myDocument .my-framework .small {
   font-size: 75%;
 }
-html#myDocument body.my-framework .medium {
+#myDocument .my-framework .medium {
   font-size: 150%;
 }
-html#myDocument body.my-framework .x-medium {
+#myDocument .my-framework .x-medium {
   font-size: 200%;
 }
-html#myDocument body.my-framework .big {
+#myDocument .my-framework .big {
   font-size: 300%;
 }
-html#myDocument body.my-framework .x-big {
+#myDocument .my-framework .x-big {
   font-size: 400%;
 }
-html#myDocument body.my-framework .spaced .item {
-  margin: 1.5em 0;
-}
-html#myDocument body.my-framework .description {
+#myDocument .my-framework .description {
   display: block;
   font-size: 85%;
-  color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .no-float {
-  float: none;
-}
-html#myDocument body.my-framework .close {
+#myDocument .my-framework .close {
   color: hsla(0, 0%, 100%, 1) !important;
   float: right;
   display: inline-block;
@@ -758,105 +733,109 @@ html#myDocument body.my-framework .close {
   padding: 0.3333em 0.5em;
   background: hsla(0, 0%, 100%, 0.1);
 }
-html#myDocument body.my-framework .close:hover, html#myDocument body.my-framework .close:active {
+#myDocument .my-framework .close:hover, #myDocument .my-framework .close:active {
   color: hsla(0, 0%, 100%, 1);
   background: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .closed {
+#myDocument .my-framework .closed {
   display: none !important;
 }
-html#myDocument body.my-framework .message .close {
+#myDocument .my-framework .message .close {
   color: hsla(0, 0%, 0%, 0.25);
   background-color: hsla(0, 0%, 0%, 0.05);
 }
-html#myDocument body.my-framework .message .close:hover, html#myDocument body.my-framework .message .close:active {
+#myDocument .my-framework .message .close:hover, #myDocument .my-framework .message .close:active {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .collapse {
+#myDocument .my-framework .collapse {
   color: hsla(0, 0%, 100%, 1) !important;
   float: right;
   display: inline-block;
   margin: 0.1666em -0.25em 0 0;
   padding: 0.3333em 0.5em;
 }
-html#myDocument body.my-framework .rounded {
+#myDocument .my-framework .rounded {
   border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
 }
-html#myDocument body.my-framework .round {
+#myDocument .my-framework .round {
   border-radius: 5em;
   -moz-border-radius: 5em;
   -webkit-border-radius: 5em;
 }
-html#myDocument body.my-framework .indented {
+#myDocument .my-framework .indented {
   text-indent: 1em;
 }
-html#myDocument body.my-framework .overflowed {
+#myDocument .my-framework .overflowed {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-html#myDocument body.my-framework .more-content {
+#myDocument .my-framework .more-content {
   display: block;
   text-align: center;
   font-size: 200%;
   margin: 0;
 }
-html#myDocument body.my-framework .with-tag {
+#myDocument .my-framework .with-tag {
   position: relative;
 }
-html#myDocument body.my-framework .with-tag .tag {
+#myDocument .my-framework .with-tag .tag {
   display: block;
   position: absolute;
   background-color: hsla(351, 66%, 48%, 1) !important;
   color: hsla(0, 0%, 100%, 1);
   right: -0.75em;
   top: -0.75em;
-  padding: 0.0833em 0.25em;
+  padding: 0.3333em 0.25em 0.25em;
+  font-size: 75%;
   text-align: center;
   min-width: 1.25em;
   line-height: 1;
   z-index: 998;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
 }
-html#myDocument body.my-framework .with-tag .tag.bottom {
+#myDocument .my-framework .with-tag .tag.bottom {
   top: auto;
   bottom: -0.75em;
 }
-html#myDocument body.my-framework .with-tag .tag.left {
+#myDocument .my-framework .with-tag .tag.left {
   right: inherit;
   left: -0.75em;
 }
-html#myDocument body.my-framework .with-tag .tag.left-bottom {
+#myDocument .my-framework .with-tag .tag.left-bottom {
   top: auto;
   bottom: -0.75em;
   right: auto;
   left: -0.75em;
 }
-html#myDocument body.my-framework .with-background {
-  background-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .with-background {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   padding: 0 0.5em;
 }
-html#myDocument body.my-framework .label {
+#myDocument .my-framework .label {
   display: inline-block;
   padding: 0.25em 0.5em;
   margin: 0.5em;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .with-label {
+#myDocument .my-framework .with-label {
   display: inline-block;
   margin: 0 1.5em;
 }
-html#myDocument body.my-framework .with-label.left {
+#myDocument .my-framework .with-label.left {
   margin-left: 0;
 }
-html#myDocument body.my-framework .with-label.right {
+#myDocument .my-framework .with-label.right {
   margin-right: 0;
 }
-html#myDocument body.my-framework .with-label img {
+#myDocument .my-framework .with-label img {
   margin: 0;
   padding: 0;
   box-shadow: none;
@@ -864,7 +843,7 @@ html#myDocument body.my-framework .with-label img {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-html#myDocument body.my-framework .with-label .label {
+#myDocument .my-framework .with-label .label {
   display: block;
   margin: 0;
   width: 100%;
@@ -872,52 +851,55 @@ html#myDocument body.my-framework .with-label .label {
   text-align: right;
   font-size: 85%;
 }
-html#myDocument body.my-framework .drop-caps {
+#myDocument .my-framework .drop-caps {
   min-height: 4.75em;
 }
-html#myDocument body.my-framework .drop-caps:first-letter, html#myDocument body.my-framework .drop-caps::first-letter {
+#myDocument .my-framework .drop-caps:first-letter, #myDocument .my-framework .drop-caps::first-letter {
   float: left;
   font-size: 500%;
   line-height: 2;
   padding-top: 0.125em;
   padding-right: 0.125em;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework.chrome .drop-caps:first-letter, html#myDocument body.my-framework.chrome .drop-caps::first-letter, html#myDocument body.my-framework.webkit .drop-caps:first-letter, html#myDocument body.my-framework.webkit .drop-caps::first-letter {
+#myDocument .my-framework.chrome .drop-caps:first-letter, #myDocument .my-framework.chrome .drop-caps::first-letter, #myDocument .my-framework.webkit .drop-caps:first-letter, #myDocument .my-framework.webkit .drop-caps::first-letter {
   line-height: 0.75;
 }
-html#myDocument body.my-framework .highlighted {
-  background-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .highlighted {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .underlined {
-  border-bottom: 0.0833em solid hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .underlined {
+  border-bottom: 0.1666em solid hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .stroked {
+#myDocument .my-framework .stroked {
   text-decoration: line-through;
 }
-html#myDocument body.my-framework .colored {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .colored {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .quote, html#myDocument body.my-framework blockquote {
+#myDocument .my-framework .quote, #myDocument .my-framework blockquote {
   display: block;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   border-left: 0.4166em solid transparent;
   padding: 1em;
   font-style: italic;
 }
-html#myDocument body.my-framework .eye-popping {
+#myDocument .my-framework .quote .icon, #myDocument .my-framework blockquote .icon {
+  margin-top: 0.25em;
+}
+#myDocument .my-framework .eye-popping {
   font-size: 150%;
   font-family: "Nunito", sans-serif;
   font-style: italic;
   margin-top: 0.75em;
 }
-html#myDocument body.my-framework .tag {
+#myDocument .my-framework .tag {
   padding: 0.25em 0.75em;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .ribbon, html#myDocument body.my-framework .ribbon-left, html#myDocument body.my-framework .ribbon-right {
+#myDocument .my-framework .ribbon, #myDocument .my-framework .ribbon-left, #myDocument .my-framework .ribbon-right {
   color: hsla(0, 0%, 100%, 0.85);
   position: absolute;
   background-color: hsla(351, 66%, 48%, 1);
@@ -929,7 +911,7 @@ html#myDocument body.my-framework .ribbon, html#myDocument body.my-framework .ri
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 }
-html#myDocument body.my-framework .ribbon:hover, html#myDocument body.my-framework .ribbon-left:hover, html#myDocument body.my-framework .ribbon-right:hover {
+#myDocument .my-framework .ribbon:hover, #myDocument .my-framework .ribbon-left:hover, #myDocument .my-framework .ribbon-right:hover {
   opacity: 0.15;
   -moz-opacity: 0.15;
   -webkit-opacity: 0.15;
@@ -938,7 +920,7 @@ html#myDocument body.my-framework .ribbon:hover, html#myDocument body.my-framewo
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
   cursor: default;
 }
-html#myDocument body.my-framework *:hover > .ribbon, html#myDocument body.my-framework *:hover > .ribbon-left, html#myDocument body.my-framework *:hover > .ribbon-right {
+#myDocument .my-framework *:hover > .ribbon, #myDocument .my-framework *:hover > .ribbon-left, #myDocument .my-framework *:hover > .ribbon-right {
   opacity: 0.15;
   -moz-opacity: 0.15;
   -webkit-opacity: 0.15;
@@ -947,79 +929,79 @@ html#myDocument body.my-framework *:hover > .ribbon, html#myDocument body.my-fra
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
   cursor: default;
 }
-html#myDocument body.my-framework .ribbon {
+#myDocument .my-framework .ribbon {
   width: 100%;
   text-align: center;
-  margin-left: -10px;
+  margin-left: -0.75em;
   box-sizing: content-box;
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
 }
-html#myDocument body.my-framework .ribbon::before {
+#myDocument .my-framework .ribbon::before {
   display: block;
-  width: 10px;
-  height: 0px;
+  width: 1em;
+  height: 0;
   position: absolute;
-  bottom: -10px;
-  left: -10px;
+  bottom: -0.75em;
+  left: -1%;
   content: "";
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 0.75em solid transparent;
+  border-right: 0.75em solid hsla(0, 0%, 0%, 0.2);
 }
-html#myDocument body.my-framework .ribbon::after {
+#myDocument .my-framework .ribbon::after {
   display: block;
-  width: 10px;
-  height: 0px;
+  width: 1em;
+  height: 0;
   position: absolute;
-  bottom: -15px;
-  right: -6px;
+  bottom: -1.25em;
+  right: -0.5em;
   content: "";
   transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 0.75em solid transparent;
+  border-right: 0.75em solid hsla(0, 0%, 0%, 0.2);
 }
-html#myDocument body.my-framework .ribbon-left {
-  margin-left: -10px;
+#myDocument .my-framework .ribbon-left {
+  margin-left: -0.75em;
   float: left;
 }
-html#myDocument body.my-framework .ribbon-left::before {
+#myDocument .my-framework .ribbon-left::before {
   display: block;
-  width: 10px;
-  height: 0px;
+  width: 1em;
+  height: 0;
   position: absolute;
-  bottom: -10px;
-  left: -10px;
+  bottom: -0.75em;
+  left: -1em;
   content: "";
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 0.75em solid transparent;
+  border-right: 0.75em solid hsla(0, 0%, 0%, 0.2);
 }
-html#myDocument body.my-framework .ribbon-right {
-  margin-right: -10px;
+#myDocument .my-framework .ribbon-right {
+  margin-right: -0.75em;
   float: right;
   right: 0;
 }
-html#myDocument body.my-framework .ribbon-right::after {
+#myDocument .my-framework .ribbon-right::after {
   display: block;
-  width: 10px;
-  height: 0px;
+  width: 1em;
+  height: 0;
   position: absolute;
-  bottom: -15px;
-  right: -5px;
+  bottom: -1.25em;
+  right: -0.5em;
   content: "";
   transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid hsla(0, 0%, 0%, 0.2);
+  border-bottom: 0.75em solid transparent;
+  border-right: 0.75em solid hsla(0, 0%, 0%, 0.2);
 }
-html#myDocument body.my-framework .hidden-text {
+#myDocument .my-framework .hidden-text {
   text-indent: -999em;
 }
-html#myDocument body.my-framework .transparency {
+#myDocument .my-framework .transparency {
   opacity: 0.5;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -1027,13 +1009,10 @@ html#myDocument body.my-framework .transparency {
   -ms-filter: "alpha(opacity=50)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-html#myDocument body.my-framework .block-type {
-  display: block;
+#myDocument .my-framework .border {
+  border: 0.0833em solid hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework .border {
-  border: 0.0833em solid hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .disabled {
+#myDocument .my-framework .disabled {
   opacity: 0.5;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -1042,289 +1021,265 @@ html#myDocument body.my-framework .disabled {
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
   cursor: default;
 }
-html#myDocument body.my-framework .moving, html#myDocument body.my-framework .moving.right, html#myDocument body.my-framework .moving-right, html#myDocument body.my-framework .moving-left {
+#myDocument .my-framework .moving-right, #myDocument .my-framework .moving-left {
   /* Since we mostly all are LTR readers */
   position: relative;
   float: none;
   cursor: default;
 }
-html#myDocument body.my-framework .moving.right:hover {
+#myDocument .my-framework .moving-right:hover {
   margin-left: 1.5em;
 }
-html#myDocument body.my-framework .moving.left:hover {
+#myDocument .my-framework .moving-left:hover {
   margin-left: -1.5em;
 }
-html#myDocument body.my-framework .moving-right:hover {
-  margin-left: 1.5em;
-}
-html#myDocument body.my-framework .moving-left:hover {
-  margin-left: -1.5em;
-}
-html#myDocument body.my-framework .scrollable {
+#myDocument .my-framework .scrollable {
   max-height: 200px;
   overflow: auto;
 }
-html#myDocument body.my-framework .extra-space-small {
-  margin-bottom: 7.5em;
-}
-html#myDocument body.my-framework .extra-space-x-small {
-  margin-bottom: 10em;
-}
-html#myDocument body.my-framework .extra-space-medium {
-  margin-bottom: 15em;
-}
-html#myDocument body.my-framework .extra-space-x-medium {
-  margin-bottom: 20em;
-}
-html#myDocument body.my-framework .extra-space-big {
-  margin-bottom: 25em;
-}
-html#myDocument body.my-framework .extra-space-x-big {
-  margin-bottom: 31.25em;
-}
-html#myDocument body.my-framework .rotate {
+#myDocument .my-framework .rotate {
   transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
-html#myDocument body.my-framework .rotate-45 {
+#myDocument .my-framework .rotate-45 {
   transform: rotate(45deg);
   -moz-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
 }
-html#myDocument body.my-framework .rotate-90 {
+#myDocument .my-framework .rotate-90 {
   transform: rotate(90deg);
   -moz-transform: rotate(90deg);
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
 }
-html#myDocument body.my-framework .rotate-135 {
+#myDocument .my-framework .rotate-135 {
   transform: rotate(135deg);
   -moz-transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
   -ms-transform: rotate(135deg);
 }
-html#myDocument body.my-framework .rotate-180 {
+#myDocument .my-framework .rotate-180 {
   transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
-html#myDocument body.my-framework .rotate-270 {
+#myDocument .my-framework .rotate-270 {
   transform: rotate(270deg);
   -moz-transform: rotate(270deg);
   -webkit-transform: rotate(270deg);
   -ms-transform: rotate(270deg);
 }
-html#myDocument body.my-framework .scale-full {
+#myDocument .my-framework .scale-full {
   transform: scale(1);
   -moz-transform: scale(1);
   -webkit-transform: scale(1);
   -ms-transform: scale(1);
 }
-html#myDocument body.my-framework .scale-third {
+#myDocument .my-framework .scale-third {
   transform: scale(0.75);
   -moz-transform: scale(0.75);
   -webkit-transform: scale(0.75);
   -ms-transform: scale(0.75);
 }
-html#myDocument body.my-framework .scale-half {
+#myDocument .my-framework .scale-half {
   transform: scale(0.5);
   -moz-transform: scale(0.5);
   -webkit-transform: scale(0.5);
   -ms-transform: scale(0.5);
 }
-html#myDocument body.my-framework .scale-quarter {
+#myDocument .my-framework .scale-quarter {
   transform: scale(0.25);
   -moz-transform: scale(0.25);
   -webkit-transform: scale(0.25);
   -ms-transform: scale(0.25);
 }
-html#myDocument body.my-framework .scale-double {
+#myDocument .my-framework .scale-double {
   transform: scale(2);
   -moz-transform: scale(2);
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
 }
-html#myDocument body.my-framework .rotate-horizontal {
+#myDocument .my-framework .rotate-horizontal {
   transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -webkit-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
 }
-html#myDocument body.my-framework .translate-XY {
+#myDocument .my-framework .translate-XY {
   transform: translate(50%, 50%);
   -moz-transform: translate(50%, 50%);
   -webkit-transform: translate(50%, 50%);
   -ms-transform: translate(50%, 50%);
 }
-html#myDocument body.my-framework .translate-right {
+#myDocument .my-framework .translate-right {
   transform: translateX(50%);
   -moz-transform: translateX(50%);
   -webkit-transform: translateX(50%);
   -ms-transform: translateX(50%);
 }
-html#myDocument body.my-framework .translate-left {
+#myDocument .my-framework .translate-left {
   transform: translateX(-50%);
   -moz-transform: translateX(-50%);
   -webkit-transform: translateX(-50%);
   -ms-transform: translateX(-50%);
 }
-html#myDocument body.my-framework .translate-top {
+#myDocument .my-framework .translate-top {
   transform: translateY(-50%);
   -moz-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
 }
-html#myDocument body.my-framework .translate-bottom {
+#myDocument .my-framework .translate-bottom {
   transform: translateY(50%);
   -moz-transform: translateY(50%);
   -webkit-transform: translateY(50%);
   -ms-transform: translateY(50%);
 }
-html#myDocument body.my-framework .position, html#myDocument body.my-framework .position.top, html#myDocument body.my-framework .position-top, html#myDocument body.my-framework .position.bottom, html#myDocument body.my-framework .position-bottom, html#myDocument body.my-framework .position.left, html#myDocument body.my-framework .position-left, html#myDocument body.my-framework .position.right, html#myDocument body.my-framework .position-right {
+#myDocument .my-framework .position-top, #myDocument .my-framework .position-bottom, #myDocument .my-framework .position-left, #myDocument .my-framework .position-right {
   position: absolute;
 }
-html#myDocument body.my-framework .position.top, html#myDocument body.my-framework .position-top {
+#myDocument .my-framework .position-top {
   top: 0;
 }
-html#myDocument body.my-framework .position.bottom, html#myDocument body.my-framework .position-bottom {
+#myDocument .my-framework .position-bottom {
   bottom: 0;
 }
-html#myDocument body.my-framework .position.left, html#myDocument body.my-framework .position-left {
+#myDocument .my-framework .position-left {
   left: 0;
 }
-html#myDocument body.my-framework .position.right, html#myDocument body.my-framework .position-right {
+#myDocument .my-framework .position-right {
   right: 0;
 }
-html#myDocument body.my-framework .red, html#myDocument body.my-framework .red-color, html#myDocument body.my-framework .icon.error {
+#myDocument .my-framework .red, #myDocument .my-framework .red-color, #myDocument .my-framework .icon.error {
   color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .green, html#myDocument body.my-framework .green-color, html#myDocument body.my-framework .icon.ok {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .green, #myDocument .my-framework .green-color, #myDocument .my-framework .icon.ok {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .blue, html#myDocument body.my-framework .blue-color {
-  color: hsla(198, 82%, 47%, 1);
+#myDocument .my-framework .blue, #myDocument .my-framework .blue-color {
+  color: hsla(189, 83%, 45%, 1);
 }
-html#myDocument body.my-framework .yellow, html#myDocument body.my-framework .yellow-color {
+#myDocument .my-framework .yellow, #myDocument .my-framework .yellow-color {
   color: hsla(41, 96%, 57%, 1);
 }
-html#myDocument body.my-framework .orange, html#myDocument body.my-framework .orange-color {
-  color: hsla(15, 86%, 53%, 1);
+#myDocument .my-framework .orange, #myDocument .my-framework .orange-color {
+  color: hsla(22, 85%, 57%, 1);
 }
-html#myDocument body.my-framework .pink, html#myDocument body.my-framework .pink-color {
+#myDocument .my-framework .pink, #myDocument .my-framework .pink-color {
   color: hsla(329, 73%, 49%, 1);
 }
-html#myDocument body.my-framework .purple, html#myDocument body.my-framework .purple-color {
+#myDocument .my-framework .purple, #myDocument .my-framework .purple-color {
   color: hsla(268, 16%, 36%, 1);
 }
-html#myDocument body.my-framework .brown, html#myDocument body.my-framework .brown-color {
+#myDocument .my-framework .brown, #myDocument .my-framework .brown-color {
   color: hsla(12, 49%, 35%, 1);
 }
-html#myDocument body.my-framework .background {
-  background-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .background {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .background.neutral, html#myDocument body.my-framework .background-neutral, html#myDocument body.my-framework .background.neutral > .content, html#myDocument body.my-framework .background-neutral > .content {
+#myDocument .my-framework .background-neutral, #myDocument .my-framework .background-neutral > .content {
   background-color: hsla(0, 0%, 98%, 1);
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .background.grey, html#myDocument body.my-framework .background-grey, html#myDocument body.my-framework .background.grey > .content, html#myDocument body.my-framework .background-grey > .content {
+#myDocument .my-framework .background-grey, #myDocument .my-framework .background-grey > .content {
   background-color: hsla(240, 8%, 39%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .background.grey img, html#myDocument body.my-framework .background-grey img, html#myDocument body.my-framework .background.grey > .content img, html#myDocument body.my-framework .background-grey > .content img {
+#myDocument .my-framework .background-grey img, #myDocument .my-framework .background-grey > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.red, html#myDocument body.my-framework .background-red, html#myDocument body.my-framework .background.red > .content, html#myDocument body.my-framework .background-red > .content {
+#myDocument .my-framework .background-red, #myDocument .my-framework .background-red > .content {
   background-color: hsla(351, 66%, 48%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.red img, html#myDocument body.my-framework .background-red img, html#myDocument body.my-framework .background.red > .content img, html#myDocument body.my-framework .background-red > .content img {
+#myDocument .my-framework .background-red img, #myDocument .my-framework .background-red > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.green, html#myDocument body.my-framework .background-green, html#myDocument body.my-framework .background.green > .content, html#myDocument body.my-framework .background-green > .content {
+#myDocument .my-framework .background-green, #myDocument .my-framework .background-green > .content {
   background-color: hsla(170, 100%, 40%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.green img, html#myDocument body.my-framework .background-green img, html#myDocument body.my-framework .background.green > .content img, html#myDocument body.my-framework .background-green > .content img {
+#myDocument .my-framework .background-green img, #myDocument .my-framework .background-green > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.blue, html#myDocument body.my-framework .background-blue, html#myDocument body.my-framework .background.blue > .content, html#myDocument body.my-framework .background-blue > .content {
+#myDocument .my-framework .background-blue, #myDocument .my-framework .background-blue > .content {
   background-color: hsla(199, 64%, 45%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.blue img, html#myDocument body.my-framework .background-blue img, html#myDocument body.my-framework .background.blue > .content img, html#myDocument body.my-framework .background-blue > .content img {
+#myDocument .my-framework .background-blue img, #myDocument .my-framework .background-blue > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.yellow, html#myDocument body.my-framework .background-yellow, html#myDocument body.my-framework .background.yellow > .content, html#myDocument body.my-framework .background-yellow > .content {
+#myDocument .my-framework .background-yellow, #myDocument .my-framework .background-yellow > .content {
   background-color: hsla(41, 96%, 57%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.yellow img, html#myDocument body.my-framework .background-yellow img, html#myDocument body.my-framework .background.yellow > .content img, html#myDocument body.my-framework .background-yellow > .content img {
+#myDocument .my-framework .background-yellow img, #myDocument .my-framework .background-yellow > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.orange, html#myDocument body.my-framework .background-orange, html#myDocument body.my-framework .background.orange > .content, html#myDocument body.my-framework .background-orange > .content {
+#myDocument .my-framework .background-orange, #myDocument .my-framework .background-orange > .content {
   background-color: hsla(359, 100%, 65%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.orange img, html#myDocument body.my-framework .background-orange img, html#myDocument body.my-framework .background.orange > .content img, html#myDocument body.my-framework .background-orange > .content img {
+#myDocument .my-framework .background-orange img, #myDocument .my-framework .background-orange > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.pink, html#myDocument body.my-framework .background-pink, html#myDocument body.my-framework .background.pink > .content, html#myDocument body.my-framework .background-pink > .content {
+#myDocument .my-framework .background-pink, #myDocument .my-framework .background-pink > .content {
   background-color: hsla(329, 73%, 49%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.pink img, html#myDocument body.my-framework .background-pink img, html#myDocument body.my-framework .background.pink > .content img, html#myDocument body.my-framework .background-pink > .content img {
+#myDocument .my-framework .background-pink img, #myDocument .my-framework .background-pink > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.purple, html#myDocument body.my-framework .background-purple, html#myDocument body.my-framework .background.purple > .content, html#myDocument body.my-framework .background-purple > .content {
+#myDocument .my-framework .background-purple, #myDocument .my-framework .background-purple > .content {
   background-color: hsla(268, 16%, 36%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.purple img, html#myDocument body.my-framework .background-purple img, html#myDocument body.my-framework .background.purple > .content img, html#myDocument body.my-framework .background-purple > .content img {
+#myDocument .my-framework .background-purple img, #myDocument .my-framework .background-purple > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .background.brown, html#myDocument body.my-framework .background-brown, html#myDocument body.my-framework .background.brown > .content, html#myDocument body.my-framework .background-brown > .content {
+#myDocument .my-framework .background-brown, #myDocument .my-framework .background-brown > .content {
   background-color: hsla(12, 49%, 35%, 1) !important;
   color: hsla(0, 0%, 100%, 1) !important;
 }
-html#myDocument body.my-framework .background.brown img, html#myDocument body.my-framework .background-brown img, html#myDocument body.my-framework .background.brown > .content img, html#myDocument body.my-framework .background-brown > .content img {
+#myDocument .my-framework .background-brown img, #myDocument .my-framework .background-brown > .content img {
   border: 0.3333em solid hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .hr.neutral, html#myDocument body.my-framework .hr-neutral, html#myDocument body.my-framework .border.neutral, html#myDocument body.my-framework .border-neutral {
+#myDocument .my-framework .hr-neutral, #myDocument .my-framework .border-neutral {
   border-color: hsla(0, 0%, 98%, 1);
 }
-html#myDocument body.my-framework .hr.grey, html#myDocument body.my-framework .hr-grey, html#myDocument body.my-framework .border.grey, html#myDocument body.my-framework .border-grey {
+#myDocument .my-framework .hr-grey, #myDocument .my-framework .border-grey {
   border-color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .hr.red, html#myDocument body.my-framework .hr-red, html#myDocument body.my-framework .border.red, html#myDocument body.my-framework .border-red {
+#myDocument .my-framework .hr-red, #myDocument .my-framework .border-red {
   border-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .hr.green, html#myDocument body.my-framework .hr-green, html#myDocument body.my-framework .border.green, html#myDocument body.my-framework .border-green {
-  border-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .hr-green, #myDocument .my-framework .border-green {
+  border-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .hr.blue, html#myDocument body.my-framework .hr-blue, html#myDocument body.my-framework .border.blue, html#myDocument body.my-framework .border-blue {
-  border-color: hsla(198, 82%, 47%, 1);
+#myDocument .my-framework .hr-blue, #myDocument .my-framework .border-blue {
+  border-color: hsla(189, 83%, 45%, 1);
 }
-html#myDocument body.my-framework .hr.yellow, html#myDocument body.my-framework .hr-yellow, html#myDocument body.my-framework .border.yellow, html#myDocument body.my-framework .border-yellow {
+#myDocument .my-framework .hr-yellow, #myDocument .my-framework .border-yellow {
   border-color: hsla(41, 96%, 57%, 1);
 }
-html#myDocument body.my-framework .hr.orange, html#myDocument body.my-framework .hr-orange, html#myDocument body.my-framework .border.orange, html#myDocument body.my-framework .border-orange {
-  border-color: hsla(15, 86%, 53%, 1);
+#myDocument .my-framework .hr-orange, #myDocument .my-framework .border-orange {
+  border-color: hsla(22, 85%, 57%, 1);
 }
-html#myDocument body.my-framework .hr.pink, html#myDocument body.my-framework .hr-pink, html#myDocument body.my-framework .border.pink, html#myDocument body.my-framework .border-pink {
+#myDocument .my-framework .hr-pink, #myDocument .my-framework .border-pink {
   border-color: hsla(329, 73%, 49%, 1);
 }
-html#myDocument body.my-framework .hr.purple, html#myDocument body.my-framework .hr-purple, html#myDocument body.my-framework .border.purple, html#myDocument body.my-framework .border-purple {
+#myDocument .my-framework .hr-purple, #myDocument .my-framework .border-purple {
   border-color: hsla(268, 16%, 36%, 1);
 }
-html#myDocument body.my-framework .hr.brown, html#myDocument body.my-framework .hr-brown, html#myDocument body.my-framework .border.brown, html#myDocument body.my-framework .border-brown {
+#myDocument .my-framework .hr-brown, #myDocument .my-framework .border-brown {
   border-color: hsla(12, 49%, 35%, 1);
 }
-html#myDocument body.my-framework .loading {
+#myDocument .my-framework .loading {
   display: block;
   position: absolute;
   left: 0;
@@ -1335,7 +1290,7 @@ html#myDocument body.my-framework .loading {
   z-index: 999;
   text-align: center;
 }
-html#myDocument body.my-framework .loading .icon {
+#myDocument .my-framework .loading .icon {
   position: absolute;
   top: 50%;
   font-size: 500%;
@@ -1344,13 +1299,13 @@ html#myDocument body.my-framework .loading .icon {
   -moz-animation: rotate 0.75s infinite linear;
   -webkit-animation: rotate 0.75s infinite linear;
 }
-html#myDocument body.my-framework .loading-icon {
+#myDocument .my-framework .loading-icon {
   animation: rotate 0.75s infinite linear;
   -moz-animation: rotate 0.75s infinite linear;
   -webkit-animation: rotate 0.75s infinite linear;
 }
 
-html#myDocument body.my-framework .fixed, html#myDocument body.my-framework .fixed-bottom {
+.my-framework .fixed, .my-framework .fixed-bottom {
   display: block;
   width: 100%;
   z-index: 998;
@@ -1363,7 +1318,7 @@ html#myDocument body.my-framework .fixed, html#myDocument body.my-framework .fix
   -ms-filter: "alpha(opacity=95)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=95)";
 }
-html#myDocument body.my-framework .fixed:hover, html#myDocument body.my-framework .fixed-bottom:hover {
+.my-framework .fixed:hover, .my-framework .fixed-bottom:hover {
   opacity: 1;
   -moz-opacity: 1;
   -webkit-opacity: 1;
@@ -1372,18 +1327,18 @@ html#myDocument body.my-framework .fixed:hover, html#myDocument body.my-framewor
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
-html#myDocument body.my-framework .fixed-bottom {
+.my-framework .fixed-bottom {
   top: auto;
   bottom: 0;
 }
 
 /* Buttons and Controls */
-.button, button {
+.my-framework .button, .my-framework button {
   display: inline-block;
   text-decoration: none;
   padding: 0.5em 1em;
   color: hsla(0, 0%, 100%, 0.75);
-  background-color: hsla(170, 100%, 40%, 0.85);
+  background-color: hsla(172, 72%, 43%, 0.85);
   text-align: center;
   border: none;
   position: relative;
@@ -1391,35 +1346,35 @@ html#myDocument body.my-framework .fixed-bottom {
   -moz-transition: none;
   -webkit-transition: none;
 }
-.button.small, button.small {
+.my-framework .button.small, .my-framework button.small {
   font-size: 78.6%;
   text-shadow: none;
   -moz-text-shadow: none;
   -webkit-text-shadow: none;
   -o-text-shadow: none;
 }
-html#myDocument body.my-framework .button.big, html#myDocument body.my-framework button.big {
+#myDocument .my-framework .button.big, #myDocument .my-framework button.big {
   font-size: 150%;
 }
-html#myDocument .button.thin, html#myDocument button.thin {
+#myDocument .my-framework .button.thin, #myDocument .my-framework button.thin {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
-.button:hover, button:hover {
+.my-framework .button:hover, .my-framework button:hover {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument .button:active, html#myDocument .button.uk-active, html#myDocument button:active, html#myDocument button.uk-active {
+#myDocument .my-framework .button:active, #myDocument .my-framework .button.uk-active, #myDocument .my-framework button:active, #myDocument .my-framework button.uk-active {
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   transition: none;
   -moz-transition: none;
   -webkit-transition: none;
 }
-.button.only-icon .icon, button.only-icon .icon {
+.my-framework .button.only-icon .icon, .my-framework button.only-icon .icon {
   margin: 0;
 }
-.button.processing:active, .button.processing.active, button.processing:active, button.processing.active {
+.my-framework .button.processing:active, .my-framework .button.processing.active, .my-framework button.processing:active, .my-framework button.processing.active {
   opacity: 0.75;
   -moz-opacity: 0.75;
   -webkit-opacity: 0.75;
@@ -1427,18 +1382,18 @@ html#myDocument .button:active, html#myDocument .button.uk-active, html#myDocume
   -ms-filter: "alpha(opacity=75)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
-.button.processing:active .icon, .button.processing.active .icon, button.processing:active .icon, button.processing.active .icon {
+.my-framework .button.processing:active .icon, .my-framework .button.processing.active .icon, .my-framework button.processing:active .icon, .my-framework button.processing.active .icon {
   display: inline-block;
   animation: rotate 0.75s infinite linear;
   -moz-animation: rotate 0.75s infinite linear;
   -webkit-animation: rotate 0.75s infinite linear;
 }
-.button.processing .icon, button.processing .icon {
+.my-framework .button.processing .icon, .my-framework button.processing .icon {
   display: none;
   font-size: 150%;
   margin-top: 2px;
 }
-html#myDocument .button.disabled, html#myDocument .button.disabled:hover, html#myDocument .button.disabled:active, html#myDocument .button.processing:active, html#myDocument .button.processing.active, html#myDocument button.disabled, html#myDocument button.disabled:hover, html#myDocument button.disabled:active, html#myDocument button.processing:active, html#myDocument button.processing.active {
+#myDocument .my-framework .button.disabled, #myDocument .my-framework .button.disabled:hover, #myDocument .my-framework .button.disabled:active, #myDocument .my-framework .button.processing:active, #myDocument .my-framework .button.processing.active, #myDocument .my-framework button.disabled, #myDocument .my-framework button.disabled:hover, #myDocument .my-framework button.disabled:active, #myDocument .my-framework button.processing:active, #myDocument .my-framework button.processing.active {
   opacity: 0.5;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -1449,16 +1404,15 @@ html#myDocument .button.disabled, html#myDocument .button.disabled:hover, html#m
   top: 0;
   margin-bottom: 0;
   border-bottom-width: 0.25em;
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 0.85);
 }
-.button .icon, button .icon {
+.my-framework .button .icon, .my-framework button .icon {
   margin-top: 0.25em;
   margin-left: 0.25em;
   margin-right: 0.25em;
 }
-
-.button-group .item {
+.my-framework .button-group .item {
   float: left;
 }
 
@@ -1470,7 +1424,7 @@ html#myDocument .button.disabled, html#myDocument .button.disabled:hover, html#m
   position: absolute;
   bottom: 0;
 }
-html#myDocument .show-all > .trigger:active {
+.my-framework .show-all > .trigger:active {
   top: inherit;
 }
 .show-all.active > .trigger {
@@ -1489,215 +1443,216 @@ html#myDocument .show-all > .trigger:active {
   display: inline-block;
 }
 
-html#myDocument .trigger {
+.my-framework .trigger {
   top: auto;
   margin-bottom: 0;
 }
-html#myDocument .trigger:active {
+.my-framework .trigger:active {
   border: none;
 }
 
 /* Menus */
-.menu.plain, .menu-plain {
+.menu-plain {
   min-height: 240px;
   max-height: 100%;
   height: auto;
 }
 
-html#myDocument body.my-framework .menu, html#myDocument body.my-framework .menu-list {
+.my-framework .menu, .my-framework .menu-list {
   z-index: 998;
+  margin: 0;
 }
-html#myDocument body.my-framework .menu.breadcrumb .item .link, html#myDocument body.my-framework .menu-list.breadcrumb .item .link {
+.my-framework .menu.breadcrumb .item .link, .my-framework .menu-list.breadcrumb .item .link {
   display: inline;
   padding: 0;
   line-height: 1.5;
 }
-html#myDocument body.my-framework .menu.breadcrumb .item .link, html#myDocument body.my-framework .menu.breadcrumb .item .link:hover, html#myDocument body.my-framework .menu.breadcrumb .item .link:active, html#myDocument body.my-framework .menu-list.breadcrumb .item .link, html#myDocument body.my-framework .menu-list.breadcrumb .item .link:hover, html#myDocument body.my-framework .menu-list.breadcrumb .item .link:active {
+.my-framework .menu.breadcrumb .item .link, .my-framework .menu.breadcrumb .item .link:hover, .my-framework .menu.breadcrumb .item .link:active, .my-framework .menu-list.breadcrumb .item .link, .my-framework .menu-list.breadcrumb .item .link:hover, .my-framework .menu-list.breadcrumb .item .link:active {
   background: transparent;
 }
-html#myDocument body.my-framework .menu.breadcrumb .item .link:hover, html#myDocument body.my-framework .menu.breadcrumb .item .link:active, html#myDocument body.my-framework .menu-list.breadcrumb .item .link:hover, html#myDocument body.my-framework .menu-list.breadcrumb .item .link:active {
+.my-framework .menu.breadcrumb .item .link:hover, .my-framework .menu.breadcrumb .item .link:active, .my-framework .menu-list.breadcrumb .item .link:hover, .my-framework .menu-list.breadcrumb .item .link:active {
   color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .menu.breadcrumb .item .icon, html#myDocument body.my-framework .menu-list.breadcrumb .item .icon {
+.my-framework .menu.breadcrumb .item .icon, .my-framework .menu-list.breadcrumb .item .icon {
   font-size: 65%;
   margin-left: 1em;
 }
-html#myDocument body.my-framework .menu.breadcrumb .item.active .link, html#myDocument body.my-framework .menu.breadcrumb .item.active span, html#myDocument body.my-framework .menu-list.breadcrumb .item.active .link, html#myDocument body.my-framework .menu-list.breadcrumb .item.active span {
+.my-framework .menu.breadcrumb .item.active .link, .my-framework .menu.breadcrumb .item.active span, .my-framework .menu-list.breadcrumb .item.active .link, .my-framework .menu-list.breadcrumb .item.active span {
   color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .menu.breadcrumb .item.active span, html#myDocument body.my-framework .menu-list.breadcrumb .item.active span {
+.my-framework .menu.breadcrumb .item.active span, .my-framework .menu-list.breadcrumb .item.active span {
   cursor: default;
 }
-html#myDocument body.my-framework .menu.breadcrumb > .item, html#myDocument body.my-framework .menu-list.breadcrumb > .item {
+.my-framework .menu.breadcrumb > .item, .my-framework .menu-list.breadcrumb > .item {
   margin: 0 1em 0 0;
 }
-html#myDocument body.my-framework .menu > .item, html#myDocument body.my-framework .menu-list > .item {
+.my-framework .menu > .item, .my-framework .menu-list > .item {
   float: left;
 }
-html#myDocument body.my-framework .menu.vertical > .item, html#myDocument body.my-framework .menu-list.vertical > .item {
+.my-framework .menu.vertical > .item, .my-framework .menu-list.vertical > .item {
   float: none;
 }
-html#myDocument body.my-framework .menu .item .link, html#myDocument body.my-framework .menu-list .item .link {
+.my-framework .menu .item .link, .my-framework .menu-list .item .link {
   display: block;
   padding: 0.75em 1em;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .menu .item .link:hover, html#myDocument body.my-framework .menu .item .link:active, html#myDocument body.my-framework .menu-list .item .link:hover, html#myDocument body.my-framework .menu-list .item .link:active {
+.my-framework .menu .item .link:hover, .my-framework .menu .item .link:active, .my-framework .menu-list .item .link:hover, .my-framework .menu-list .item .link:active {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 0.9);
+  background-color: hsla(172, 72%, 43%, 0.9);
 }
-html#myDocument body.my-framework .menu .separator .hr, html#myDocument body.my-framework .menu-list .separator .hr {
+.my-framework .menu .separator .hr, .my-framework .menu-list .separator .hr {
   margin: 0;
   border: none;
   padding: 0.1666em 0 0;
   background-color: hsla(0, 0%, 100%, 0.1);
 }
-html#myDocument body.my-framework .menu.list .item .link, html#myDocument body.my-framework .menu-list.list .item .link {
+.my-framework .menu.list .item .link, .my-framework .menu-list.list .item .link {
   background-color: transparent;
 }
-html#myDocument body.my-framework .menu.list .item .link:hover, html#myDocument body.my-framework .menu.list .item .link:active, html#myDocument body.my-framework .menu-list.list .item .link:hover, html#myDocument body.my-framework .menu-list.list .item .link:active {
-  color: hsla(170, 100%, 40%, 1);
+.my-framework .menu.list .item .link:hover, .my-framework .menu.list .item .link:active, .my-framework .menu-list.list .item .link:hover, .my-framework .menu-list.list .item .link:active {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .menu.list .item.active .link, html#myDocument body.my-framework .menu.list .item.active .link:hover, html#myDocument body.my-framework .menu.list .item.active .link:active, html#myDocument body.my-framework .menu-list.list .item.active .link, html#myDocument body.my-framework .menu-list.list .item.active .link:hover, html#myDocument body.my-framework .menu-list.list .item.active .link:active {
-  color: hsla(170, 100%, 40%, 1);
+.my-framework .menu.list .item.active .link, .my-framework .menu.list .item.active .link:hover, .my-framework .menu.list .item.active .link:active, .my-framework .menu-list.list .item.active .link, .my-framework .menu-list.list .item.active .link:hover, .my-framework .menu-list.list .item.active .link:active {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .menu.plain .item .link, html#myDocument body.my-framework .menu-list.plain .item .link {
+.my-framework .menu.plain .item .link, .my-framework .menu-list.plain .item .link {
   padding: 0.25em 1em;
   background-color: transparent;
 }
-html#myDocument body.my-framework .menu.plain .item .link:hover, html#myDocument body.my-framework .menu.plain .item .link:active, html#myDocument body.my-framework .menu-list.plain .item .link:hover, html#myDocument body.my-framework .menu-list.plain .item .link:active {
+.my-framework .menu.plain .item .link:hover, .my-framework .menu.plain .item .link:active, .my-framework .menu-list.plain .item .link:hover, .my-framework .menu-list.plain .item .link:active {
   background-color: transparent;
 }
-html#myDocument body.my-framework .menu.vertical > .item, html#myDocument body.my-framework .menu-list.vertical > .item {
+.my-framework .menu.vertical > .item, .my-framework .menu-list.vertical > .item {
   float: none;
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical > .item > .link, html#myDocument body.my-framework .menu-list.vertical > .item > .link {
+.my-framework .menu.vertical > .item > .link, .my-framework .menu-list.vertical > .item > .link {
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item, html#myDocument body.my-framework .menu-list.vertical.docked > .item {
+.my-framework .menu.vertical.docked > .item, .my-framework .menu-list.vertical.docked > .item {
   width: 48px;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item > .link, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link {
+.my-framework .menu.vertical.docked > .item > .link, .my-framework .menu-list.vertical.docked > .item > .link {
   text-indent: -999em;
   text-transform: uppercase;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item > .link .icon, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .icon {
+.my-framework .menu.vertical.docked > .item > .link .icon, .my-framework .menu-list.vertical.docked > .item > .link .icon {
   text-indent: 0;
   display: none;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item > .link .icon.main, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .icon.main {
+.my-framework .menu.vertical.docked > .item > .link .icon.main, .my-framework .menu-list.vertical.docked > .item > .link .icon.main {
   font-size: 150%;
   display: inline-block;
   margin-top: 0;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item > .link .icon-default, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .icon-default {
+.my-framework .menu.vertical.docked > .item > .link .icon-default, .my-framework .menu-list.vertical.docked > .item > .link .icon-default {
   text-indent: 0;
   font-size: 150%;
   margin-top: 1px;
   margin-right: 0.5em;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item > .link .title, html#myDocument body.my-framework .menu-list.vertical.docked > .item > .link .title {
+.my-framework .menu.vertical.docked > .item > .link .title, .my-framework .menu-list.vertical.docked > .item > .link .title {
   display: inline-block;
   text-indent: -999em;
   float: none;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item.active, html#myDocument body.my-framework .menu-list.vertical.docked > .item.active {
+.my-framework .menu.vertical.docked > .item.active, .my-framework .menu-list.vertical.docked > .item.active {
   width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item.active > .link, html#myDocument body.my-framework .menu-list.vertical.docked > .item.active > .link {
+.my-framework .menu.vertical.docked > .item.active > .link, .my-framework .menu-list.vertical.docked > .item.active > .link {
   width: 100%;
   text-indent: 0;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item.active > .link .title, html#myDocument body.my-framework .menu.vertical.docked > .item.active > .link .icon, html#myDocument body.my-framework .menu-list.vertical.docked > .item.active > .link .title, html#myDocument body.my-framework .menu-list.vertical.docked > .item.active > .link .icon {
+.my-framework .menu.vertical.docked > .item.active > .link .title, .my-framework .menu.vertical.docked > .item.active > .link .icon, .my-framework .menu-list.vertical.docked > .item.active > .link .title, .my-framework .menu-list.vertical.docked > .item.active > .link .icon {
   display: inline-block;
   text-indent: 0;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item:hover, html#myDocument body.my-framework .menu-list.vertical.docked > .item:hover {
+.my-framework .menu.vertical.docked > .item:hover, .my-framework .menu-list.vertical.docked > .item:hover {
   width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item:hover > .link, html#myDocument body.my-framework .menu-list.vertical.docked > .item:hover > .link {
+.my-framework .menu.vertical.docked > .item:hover > .link, .my-framework .menu-list.vertical.docked > .item:hover > .link {
   text-indent: 0;
   width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item:hover > .link .icon, html#myDocument body.my-framework .menu-list.vertical.docked > .item:hover > .link .icon {
+.my-framework .menu.vertical.docked > .item:hover > .link .icon, .my-framework .menu.vertical.docked > .item:hover > .link .title, .my-framework .menu-list.vertical.docked > .item:hover > .link .icon, .my-framework .menu-list.vertical.docked > .item:hover > .link .title {
   display: inline-block;
 }
-html#myDocument body.my-framework .menu.vertical.docked > .item:hover > .link .title, html#myDocument body.my-framework .menu-list.vertical.docked > .item:hover > .link .title {
+.my-framework .menu.vertical.docked > .item:hover > .link .title, .my-framework .menu-list.vertical.docked > .item:hover > .link .title {
   display: inline-block;
   text-indent: 0;
 }
-html#myDocument body.my-framework .menu.vertical.plain, html#myDocument body.my-framework .menu-list.vertical.plain {
+.my-framework .menu.vertical.plain, .my-framework .menu-list.vertical.plain {
   position: relative;
 }
-html#myDocument body.my-framework .menu.vertical.plain > .item, html#myDocument body.my-framework .menu-list.vertical.plain > .item {
+.my-framework .menu.vertical.plain > .item, .my-framework .menu-list.vertical.plain > .item {
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu.vertical.plain > .item > .link, html#myDocument body.my-framework .menu-list.vertical.plain > .item > .link {
+.my-framework .menu.vertical.plain > .item > .link, .my-framework .menu-list.vertical.plain > .item > .link {
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu.list.vertical > .item, html#myDocument body.my-framework .menu-list.list.vertical > .item {
+.my-framework .menu.list.vertical > .item, .my-framework .menu-list.list.vertical > .item {
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu.list.vertical > .item > .link, html#myDocument body.my-framework .menu-list.list.vertical > .item > .link {
+.my-framework .menu.list.vertical > .item > .link, .my-framework .menu-list.list.vertical > .item > .link {
   max-width: 100%;
   text-transform: uppercase;
 }
-html#myDocument body.my-framework .menu.list.vertical > .item > .link .icon.main, html#myDocument body.my-framework .menu-list.list.vertical > .item > .link .icon.main {
+.my-framework .menu.list.vertical > .item > .link .icon.main, .my-framework .menu-list.list.vertical > .item > .link .icon.main {
   display: none;
 }
-html#myDocument body.my-framework .menu.horizontal .submenu .link, html#myDocument body.my-framework .menu-list.horizontal .submenu .link {
+.my-framework .menu.horizontal .submenu .link, .my-framework .menu-list.horizontal .submenu .link {
   max-width: 100% !important;
 }
 
-html#myDocument body.my-framework .menu-list .item .link {
+.my-framework .menu-list .item .link {
   background-color: transparent;
 }
-html#myDocument body.my-framework .menu-list .item .link:hover, html#myDocument body.my-framework .menu-list .item .link:active {
-  color: hsla(170, 100%, 40%, 1);
+.my-framework .menu-list .item .link:hover, .my-framework .menu-list .item .link:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: transparent;
 }
-html#myDocument body.my-framework .menu-list .item.active .link, html#myDocument body.my-framework .menu-list .item.active .link:hover, html#myDocument body.my-framework .menu-list .item.active .link:active {
-  color: hsla(170, 100%, 40%, 1);
+.my-framework .menu-list .item.active .link, .my-framework .menu-list .item.active .link:hover, .my-framework .menu-list .item.active .link:active {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .menu-list .item > .link {
+.my-framework .menu-list .item > .link {
   text-transform: uppercase;
 }
-html#myDocument body.my-framework .menu-list.vertical > .item {
+.my-framework .menu-list.vertical > .item {
   max-width: 100%;
 }
-html#myDocument body.my-framework .menu-list.vertical > .item > .link {
+.my-framework .menu-list.vertical > .item > .link {
   max-width: 100%;
   text-transform: uppercase;
 }
-html#myDocument body.my-framework .menu-list.vertical > .item > .link .icon.main {
+.my-framework .menu-list.vertical > .item > .link .icon.main {
   display: none;
 }
-html#myDocument body.my-framework .menu-list > .item > .link {
+.my-framework .menu-list > .item > .link {
   font-weight: 700;
 }
 
-html#myDocument body.my-framework .breadcrumb .item {
+.my-framework .breadcrumb .item {
   float: left;
 }
-html#myDocument body.my-framework .breadcrumb .item .link {
+.my-framework .breadcrumb .item .link {
   display: inline;
   padding: 0;
   line-height: 1.5;
 }
-html#myDocument body.my-framework .breadcrumb .item .link, html#myDocument body.my-framework .breadcrumb .item .link:hover, html#myDocument body.my-framework .breadcrumb .item .link:active {
+.my-framework .breadcrumb .item .link, .my-framework .breadcrumb .item .link:hover, .my-framework .breadcrumb .item .link:active {
   background: transparent !important;
 }
-html#myDocument body.my-framework .breadcrumb .item .icon {
+.my-framework .breadcrumb .item .icon {
   font-size: 65%;
 }
-html#myDocument body.my-framework .breadcrumb .item.active .link, html#myDocument body.my-framework .breadcrumb .item.active span {
+.my-framework .breadcrumb .item.active .link, .my-framework .breadcrumb .item.active span {
   color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .breadcrumb .item.active span {
+.my-framework .breadcrumb .item.active span {
   cursor: default;
 }
-html#myDocument body.my-framework .breadcrumb > .item {
+.my-framework .breadcrumb > .item {
   margin: 0 1em 0 0;
 }
 
@@ -1737,16 +1692,16 @@ html#myDocument body.my-framework .breadcrumb > .item {
 
 .fixed-nav .menu .item .link {
   background-color: hsla(240, 8%, 39%, 1);
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
 
 .fixed .menu .item .link:hover, .fixed .menu .item .link:active {
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
 
 /* Inputs */
-html#myDocument input[type='text'], html#myDocument textarea {
+.my-framework input[type='text'], .my-framework textarea {
   padding: 0.75em 1em;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1755,14 +1710,14 @@ html#myDocument input[type='text'], html#myDocument textarea {
   -moz-outline: none;
   -webkit-outline: none;
   background-color: hsla(0, 0%, 100%, 1);
-  border: 0.1666em solid hsla(0, 0%, 96%, 1);
+  border: 0.1666em solid hsla(220, 33%, 98%, 1);
   color: hsla(240, 8%, 39%, 1);
   cursor: text;
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 }
-html#myDocument input[type='text'].values, html#myDocument textarea.values {
+.my-framework input[type='text'].values, .my-framework textarea.values {
   background: none;
   padding: 0;
   margin-bottom: 0.5em;
@@ -1772,49 +1727,53 @@ html#myDocument input[type='text'].values, html#myDocument textarea.values {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-html#myDocument input[type='text']:focus, html#myDocument textarea:focus {
-  color: hsla(240, 8%, 39%, 1);
-  border-color: hsla(170, 100%, 40%, 1);
+.my-framework input[type='text']:focus, .my-framework textarea:focus {
+  color: hsla(215, 16%, 23%, 1);
+  border-color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
-
-select {
+.my-framework select {
   padding: 0.75em 1em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   border: none;
   -webkit-appearance: none;
 }
-
-input[type='file'] {
+.my-framework input[type='file'] {
   position: absolute;
   margin: 0;
   padding: 0;
   position: static;
   cursor: pointer;
 }
-.input-wrapper input[type='file'] {
+.input-wrapper .my-framework input[type='file'] {
   position: absolute;
   top: 0;
   right: 0;
   text-indent: -999em;
 }
-
-html#myDocument input:disabled {
+.my-framework input:disabled {
   cursor: default;
 }
+.my-framework textarea.editable {
+  resize: none;
+}
+.my-framework label {
+  padding-right: 0.5em;
+  cursor: pointer;
+}
 
-html#myDocument body.my-framework .input, html#myDocument body.my-framework.framework .input {
+.my-framework .input {
   outline: none;
   -moz-outline: none;
   -webkit-outline: none;
 }
-html#myDocument body.my-framework .input.text, html#myDocument body.my-framework .input.editable:focus, html#myDocument body.my-framework.framework .input.text, html#myDocument body.my-framework.framework .input.editable:focus {
+.my-framework .input.text, .my-framework .input.editable:focus {
   padding: 0.75em 1em;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   background-color: hsla(0, 0%, 100%, 1);
-  border: 0.1666em solid hsla(0, 0%, 96%, 1);
+  border: 0.1666em solid hsla(220, 33%, 98%, 1);
   color: hsla(240, 8%, 39%, 1);
   cursor: text;
   box-shadow: none;
@@ -1826,12 +1785,12 @@ html#myDocument body.my-framework .input.text, html#myDocument body.my-framework
   -webkit-transition: all 0.2s linear;
   min-width: 15em;
 }
-html#myDocument body.my-framework .input.text:focus, html#myDocument body.my-framework.framework .input.text:focus {
-  color: hsla(240, 8%, 39%, 1);
-  border-color: hsla(170, 100%, 40%, 1);
+.my-framework .input.text:focus {
+  color: hsla(215, 16%, 23%, 1);
+  border-color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .input.text.disabled, html#myDocument body.my-framework.framework .input.text.disabled {
+.my-framework .input.text.disabled {
   cursor: default;
   opacity: 0.75;
   -moz-opacity: 0.75;
@@ -1840,44 +1799,44 @@ html#myDocument body.my-framework .input.text.disabled, html#myDocument body.my-
   -ms-filter: "alpha(opacity=75)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
 }
-html#myDocument body.my-framework .input.text.error, html#myDocument body.my-framework.framework .input.text.error {
+.my-framework .input.text.error {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(351, 66%, 48%, 1);
   border-color: transparent !important;
   /* Chrome Placeholder Fix */
 }
-html#myDocument body.my-framework .input.text.error + .icon, html#myDocument body.my-framework.framework .input.text.error + .icon {
+.my-framework .input.text.error + .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-html#myDocument body.my-framework .input.text.error::-webkit-input-placeholder, html#myDocument body.my-framework.framework .input.text.error::-webkit-input-placeholder {
+.my-framework .input.text.error::-webkit-input-placeholder {
   color: hsla(0, 0%, 100%, 0.5);
 }
-html#myDocument body.my-framework .input.text.ok, html#myDocument body.my-framework.framework .input.text.ok {
+.my-framework .input.text.ok {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   border-color: transparent !important;
   /* Chrome Placeholder Fix */
 }
-html#myDocument body.my-framework .input.text.ok + .icon, html#myDocument body.my-framework.framework .input.text.ok + .icon {
+.my-framework .input.text.ok + .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-html#myDocument body.my-framework .input.text.ok::-webkit-input-placeholder, html#myDocument body.my-framework.framework .input.text.ok::-webkit-input-placeholder {
+.my-framework .input.text.ok::-webkit-input-placeholder {
   color: hsla(0, 0%, 100%, 0.5);
 }
-html#myDocument body.my-framework .input.text.thin, html#myDocument body.my-framework.framework .input.text.thin {
+.my-framework .input.text.thin {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
-html#myDocument body.my-framework .input.number, html#myDocument body.my-framework.framework .input.number {
+.my-framework .input.number {
   padding: 0.75em 0.25em 0.75em 1em;
 }
-html#myDocument body.my-framework .input.text.datepicker, html#myDocument body.my-framework.framework .input.text.datepicker {
+.my-framework .input.text.datepicker {
   cursor: default;
 }
-html#myDocument body.my-framework .input.blocknote, html#myDocument body.my-framework.framework .input.blocknote {
+.my-framework .input.blocknote {
   background: transparent;
   border: none;
-  border-bottom: 0.1666em solid hsla(0, 0%, 96%, 1);
+  border-bottom: 0.1666em solid hsla(220, 33%, 98%, 1);
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -1886,7 +1845,7 @@ html#myDocument body.my-framework .input.blocknote, html#myDocument body.my-fram
   padding-right: 0;
   padding-bottom: 0.25em;
 }
-html#myDocument body.my-framework .input.editable, html#myDocument body.my-framework.framework .input.editable {
+.my-framework .input.editable {
   background-color: transparent;
   border: 0.1666em solid transparent;
   box-shadow: none;
@@ -1895,31 +1854,31 @@ html#myDocument body.my-framework .input.editable, html#myDocument body.my-frame
   -o-box-shadow: none;
   cursor: default;
 }
-html#myDocument body.my-framework .input.editable:hover, html#myDocument body.my-framework.framework .input.editable:hover {
-  border: 0.1666em solid hsla(0, 0%, 96%, 1);
+.my-framework .input.editable:hover {
+  border: 0.1666em solid hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework .input.expanding, html#myDocument body.my-framework.framework .input.expanding {
+.my-framework .input.expanding {
   width: 240px;
   min-width: 240px;
   transition: width 0.2s linear;
   -moz-transition: width 0.2s linear;
   -webkit-transition: width 0.2s linear;
 }
-html#myDocument body.my-framework .input.expanding:focus, html#myDocument body.my-framework.framework .input.expanding:focus {
+.my-framework .input.expanding:focus {
   width: 100%;
 }
-html#myDocument body.my-framework .input.radio, html#myDocument body.my-framework.framework .input.radio {
+.my-framework .input.radio {
   margin-right: 0.5em;
 }
-html#myDocument body.my-framework .input.radio.custom, html#myDocument body.my-framework.framework .input.radio.custom {
+.my-framework .input.radio.custom {
   display: none;
 }
-html#myDocument body.my-framework .input.radio.custom + label, html#myDocument body.my-framework.framework .input.radio.custom + label {
+.my-framework .input.radio.custom + label {
   display: inline-block;
   padding: 0.5em 0.75em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   cursor: pointer;
-  margin-left: -3px;
+  margin-left: -0.25em;
   min-width: 16px;
   min-height: 16px;
   font-weight: 700;
@@ -1927,30 +1886,30 @@ html#myDocument body.my-framework .input.radio.custom + label, html#myDocument b
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 }
-html#myDocument body.my-framework .input.radio.custom:checked + label, html#myDocument body.my-framework.framework .input.radio.custom:checked + label {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework .input.radio.custom:checked + label {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .input.radio.custom.alt + label, html#myDocument body.my-framework.framework .input.radio.custom.alt + label {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .input.radio.custom.alt + label {
+  background-color: hsla(0, 0%, 100%, 1);
   padding: 0.5em 0.75em;
   border: 0.1666em solid transparent;
 }
-html#myDocument body.my-framework .input.radio.custom.alt:checked + label, html#myDocument body.my-framework.framework .input.radio.custom.alt:checked + label {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework .input.radio.custom.alt:checked + label {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   border-color: hsla(0, 0%, 0%, 0.15);
 }
-html#myDocument body.my-framework .input.checkbox, html#myDocument body.my-framework.framework .input.checkbox {
+.my-framework .input.checkbox {
   margin-right: 0.5em;
 }
-html#myDocument body.my-framework .input.checkbox.custom, html#myDocument body.my-framework.framework .input.checkbox.custom {
+.my-framework .input.checkbox.custom {
   display: none;
 }
-html#myDocument body.my-framework .input.checkbox.custom + label, html#myDocument body.my-framework.framework .input.checkbox.custom + label {
+.my-framework .input.checkbox.custom + label {
   display: inline-block;
   padding: 0.5em 1em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   cursor: pointer;
   min-width: 16px;
   min-height: 16px;
@@ -1958,168 +1917,155 @@ html#myDocument body.my-framework .input.checkbox.custom + label, html#myDocumen
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 }
-html#myDocument body.my-framework .input.checkbox.custom + label .icon, html#myDocument body.my-framework.framework .input.checkbox.custom + label .icon {
+.my-framework .input.checkbox.custom + label .icon {
   margin: 0;
 }
-html#myDocument body.my-framework .input.checkbox.custom:checked + label, html#myDocument body.my-framework.framework .input.checkbox.custom:checked + label {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework .input.checkbox.custom:checked + label {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .input.checkbox.custom:checked + label .icon, html#myDocument body.my-framework.framework .input.checkbox.custom:checked + label .icon {
+.my-framework .input.checkbox.custom:checked + label .icon {
   margin: 0;
 }
-html#myDocument body.my-framework .input.select, html#myDocument body.my-framework.framework .input.select {
+.my-framework .input.select {
   padding: 0.75em 1em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   border: none;
 }
-html#myDocument body.my-framework .input.select.multiple, html#myDocument body.my-framework.framework .input.select.multiple {
+.my-framework .input.select.multiple {
   min-height: 6.75em;
 }
 
-html#myDocument body.my-framework .input-wrapper {
+.my-framework .input-wrapper {
   position: relative;
   display: inline-block;
 }
-html#myDocument body.my-framework .input-wrapper > .icon, html#myDocument body.my-framework .input-wrapper > a.uk-form-password-toggle {
+.my-framework .input-wrapper > .icon, .my-framework .input-wrapper > a.uk-form-password-toggle {
   position: absolute;
   right: 0.62em;
   top: 0.5em;
   margin: 0;
   font-size: 150%;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .input-wrapper > .icon.close {
+.my-framework .input-wrapper > .icon.close {
   right: 0.6666em;
   top: 0.5833em;
   font-size: 100%;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .input-wrapper > .icon.close:hover, html#myDocument body.my-framework .input-wrapper > .icon.close:active {
-  color: hsla(170, 100%, 40%, 1);
+.my-framework .input-wrapper > .icon.close:hover, .my-framework .input-wrapper > .icon.close:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: transparent;
 }
-html#myDocument body.my-framework .input-wrapper.date-picker > .icon {
+.my-framework .input-wrapper.date-picker > .icon {
   font-size: 100%;
   top: 1em;
   right: 1em;
 }
-html#myDocument body.my-framework .input-wrapper.date-picker .range-datepicker {
+.my-framework .input-wrapper.date-picker .range-datepicker {
   cursor: default;
 }
-html#myDocument body.my-framework .input-wrapper.with-icon .input {
+.my-framework .input-wrapper.with-icon .input {
   padding-right: 3em;
 }
-html#myDocument body.my-framework .input-wrapper.with-icon .input.error + .icon {
+.my-framework .input-wrapper.with-icon .input.error + .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-html#myDocument body.my-framework .input-wrapper.with-icon .input.ok + .icon {
+.my-framework .input-wrapper.with-icon .input.ok + .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-html#myDocument body.my-framework .input-wrapper .button, html#myDocument body.my-framework .input-wrapper button {
+.my-framework .input-wrapper .button, .my-framework .input-wrapper button {
   display: block;
   float: right;
   line-height: 1.5;
   padding-top: 0.75em;
   padding-bottom: 0.75em;
 }
-html#myDocument body.my-framework .input-wrapper .button:active, html#myDocument body.my-framework .input-wrapper button:active {
+.my-framework .input-wrapper .button:active, .my-framework .input-wrapper button:active {
   margin-bottom: 0;
   top: 0;
 }
-html#myDocument body.my-framework .input-wrapper .input, html#myDocument body.my-framework .input-wrapper input[type="text"] {
+.my-framework .input-wrapper .input, .my-framework .input-wrapper input[type="text"] {
   float: left;
   margin: 0;
 }
-html#myDocument body.my-framework .input-wrapper label {
+.my-framework .input-wrapper label {
   margin: 0;
 }
-html#myDocument body.my-framework .input-wrapper.multiple {
+.my-framework .input-wrapper.multiple {
   display: block;
 }
-html#myDocument body.my-framework .input-wrapper.multiple .button, html#myDocument body.my-framework .input-wrapper.multiple button {
+.my-framework .input-wrapper.multiple .button, .my-framework .input-wrapper.multiple button {
   width: 20%;
 }
-html#myDocument body.my-framework .input-wrapper.multiple .input, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework .input-wrapper.multiple .input:focus, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"]:focus {
+.my-framework .input-wrapper.multiple .input, .my-framework .input-wrapper.multiple input[type="text"], .my-framework .input-wrapper.multiple .input:focus, .my-framework .input-wrapper.multiple input[type="text"]:focus {
   width: 80%;
 }
-html#myDocument body.my-framework .input-wrapper.multiple .input.expanding, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"].expanding {
+.my-framework .input-wrapper.multiple .input.expanding, .my-framework .input-wrapper.multiple input[type="text"].expanding {
   width: auto;
 }
-html#myDocument body.my-framework .input-wrapper.multiple .input.expanding:focus, html#myDocument body.my-framework .input-wrapper.multiple input[type="text"].expanding:focus {
+.my-framework .input-wrapper.multiple .input.expanding:focus, .my-framework .input-wrapper.multiple input[type="text"].expanding:focus {
   width: 100%;
 }
-html#myDocument body.my-framework .wrapper {
+.my-framework .wrapper {
   display: block;
-}
-
-textarea.editable {
-  resize: none;
-}
-
-label {
-  padding-right: 0.5em;
-  cursor: pointer;
 }
 
 /* Alerts and Warnings */
-html#myDocument body.my-framework .message, html#myDocument body.my-framework .message-thin, html#myDocument body.my-framework .message-warning, html#myDocument body.my-framework .message-error, html#myDocument body.my-framework .message-alert, html#myDocument body.my-framework .message-info, html#myDocument body.my-framework .message-ok, html#myDocument body.my-framework .message-neutral, html#myDocument body.my-framework .message-modal, html#myDocument body.my-framework .message-tooltip, html#myDocument body.my-framework .message-in-box, html#myDocument body.my-framework .ui-pnotify .alert, html#myDocument body.my-framework .uk-notify-message {
+.my-framework .message, .my-framework .message-thin, .my-framework .message-warning, .my-framework .message-error, .my-framework .message-alert, .my-framework .message-info, .my-framework .message-ok, .my-framework .message-neutral, .my-framework .message-modal, .my-framework .message-tooltip, .my-framework .message-in-box, .my-framework .uk-notify-message {
   display: block;
   padding: 0.75em 1em;
   text-align: center;
   border: 0.0833em solid transparent;
 }
-html#myDocument body.my-framework .message a, html#myDocument body.my-framework .message-thin a, html#myDocument body.my-framework .message-warning a, html#myDocument body.my-framework .message-error a, html#myDocument body.my-framework .message-alert a, html#myDocument body.my-framework .message-info a, html#myDocument body.my-framework .message-ok a, html#myDocument body.my-framework .message-neutral a, html#myDocument body.my-framework .message-modal a, html#myDocument body.my-framework .message-tooltip a, html#myDocument body.my-framework .message-in-box a, html#myDocument body.my-framework .ui-pnotify .alert a, html#myDocument body.my-framework .uk-notify-message a {
+.my-framework .message a, .my-framework .message-thin a, .my-framework .message-warning a, .my-framework .message-error a, .my-framework .message-alert a, .my-framework .message-info a, .my-framework .message-ok a, .my-framework .message-neutral a, .my-framework .message-modal a, .my-framework .message-tooltip a, .my-framework .message-in-box a, .my-framework .uk-notify-message a {
   color: inherit;
   border-bottom: 0.0833em dotted;
 }
-
-html#myDocument body.my-framework .message.thin, html#myDocument body.my-framework .message-thin {
+.my-framework .message .icon.tooltip, .my-framework .message-thin .icon.tooltip, .my-framework .message-warning .icon.tooltip, .my-framework .message-error .icon.tooltip, .my-framework .message-alert .icon.tooltip, .my-framework .message-info .icon.tooltip, .my-framework .message-ok .icon.tooltip, .my-framework .message-neutral .icon.tooltip, .my-framework .message-modal .icon.tooltip, .my-framework .message-tooltip .icon.tooltip, .my-framework .message-in-box .icon.tooltip, .my-framework .uk-notify-message .icon.tooltip {
+  margin-top: 0;
+}
+.my-framework .message-thin {
   padding: 0 1em;
   line-height: 2.25;
 }
-
-.message.warning, .message-warning, .message-modal.warning, .ui-pnotify .alert, html#myDocument .uk-notify .uk-notify-message-warning {
+.my-framework .message-warning, .my-framework .message-modal.warning, .my-framework .uk-notify .uk-notify-message-warning {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(15, 86%, 53%, 1);
+  background-color: hsla(22, 85%, 57%, 1);
 }
-.message.warning .icon, .message-warning .icon, .message-modal.warning .icon, .ui-pnotify .alert .icon, html#myDocument .uk-notify .uk-notify-message-warning .icon {
+.my-framework .message-warning .icon, .my-framework .message-modal.warning .icon, .my-framework .uk-notify .uk-notify-message-warning .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-
-.message.error, .message.alert, .message-error, .message-alert, .message-modal.alert, .ui-pnotify .alert-error, html#myDocument .uk-notify .uk-notify-message-danger {
+.my-framework .message-error, .my-framework .message-alert, .my-framework .message-modal.error, .my-framework .message-modal.alert, .my-framework .uk-notify .uk-notify-message-danger {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(351, 66%, 48%, 1);
 }
-.message.error .icon, .message.alert .icon, .message-error .icon, .message-alert .icon, .message-modal.alert .icon, .ui-pnotify .alert-error .icon, html#myDocument .uk-notify .uk-notify-message-danger .icon {
+.my-framework .message-error .icon, .my-framework .message-alert .icon, .my-framework .message-modal.error .icon, .my-framework .message-modal.alert .icon, .my-framework .uk-notify .uk-notify-message-danger .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-.message.error .icon.tooltip, .message.alert .icon.tooltip, .message-error .icon.tooltip, .message-alert .icon.tooltip, .message-modal.alert .icon.tooltip, .ui-pnotify .alert-error .icon.tooltip, html#myDocument .uk-notify .uk-notify-message-danger .icon.tooltip {
+.my-framework .message-error .icon.tooltip, .my-framework .message-alert .icon.tooltip, .my-framework .message-modal.error .icon.tooltip, .my-framework .message-modal.alert .icon.tooltip, .my-framework .uk-notify .uk-notify-message-danger .icon.tooltip {
   margin-top: 0.1666em;
 }
-
-.message.info, .message-info, .message-modal.info, .ui-pnotify .alert-info, html#myDocument .uk-notify .uk-notify-message-info {
+.my-framework .message-info, .my-framework .message-modal.info, .my-framework .uk-notify .uk-notify-message-info {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(198, 82%, 47%, 1);
+  background-color: hsla(189, 83%, 45%, 1);
 }
-.message.info .icon, .message-info .icon, .message-modal.info .icon, .ui-pnotify .alert-info .icon, html#myDocument .uk-notify .uk-notify-message-info .icon {
+.my-framework .message-info .icon, .my-framework .message-modal.info .icon, .my-framework .uk-notify .uk-notify-message-info .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-
-.message.ok, .message-ok, .message-modal.ok, .ui-pnotify .alert-success, html#myDocument .uk-notify .uk-notify-message-success {
+.my-framework .message-ok, .my-framework .message-modal.ok, .my-framework .uk-notify .uk-notify-message-success {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-.message.ok .icon, .message-ok .icon, .message-modal.ok .icon, .ui-pnotify .alert-success .icon, html#myDocument .uk-notify .uk-notify-message-success .icon {
+.my-framework .message-ok .icon, .my-framework .message-modal.ok .icon, .my-framework .uk-notify .uk-notify-message-success .icon {
   color: hsla(0, 0%, 100%, 0.35);
 }
-
-.message, .message.neutral, .message-neutral, .message-modal.neutral {
+.my-framework .message, .my-framework .message-neutral, .my-framework .message-modal.neutral {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-
-.message.modal, .message-modal {
+.my-framework .message-modal {
   display: block;
   position: absolute;
   top: 0;
@@ -2128,73 +2074,67 @@ html#myDocument body.my-framework .message.thin, html#myDocument body.my-framewo
   margin: 0;
   z-index: 996;
 }
-
-.message.modal .icon, .message-modal .icon {
+.my-framework .message-modal .icon {
   cursor: pointer;
   padding: 0.3333em 0.5em;
   margin-top: 0;
   background-color: hsla(0, 0%, 0%, 0.05);
   color: hsla(0, 0%, 100%, 0.35);
 }
-
-.message.modal .icon:hover, .message-modal .icon:hover {
+.my-framework .message-modal .icon:hover {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(0, 0%, 0%, 0.15);
 }
-
-html#myDocument body.my-framework .message.in-box, html#myDocument body.my-framework .message-in-box {
+.my-framework .message-in-box {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-
-.message.with-icon .icon, .message-alert.with-icon .icon, .message-error.with-icon .icon, .message-info.with-icon .icon, .message-warning.with-icon .icon, .message-ok.with-icon .icon {
-  font-size: 175%;
+.my-framework .message.with-icon .icon, .my-framework .message-alert.with-icon .icon, .my-framework .message-error.with-icon .icon, .my-framework .message-info.with-icon .icon, .my-framework .message-warning.with-icon .icon, .my-framework .message-ok.with-icon .icon {
+  font-size: 150%;
   margin-top: 0;
 }
-
-.tooltip {
+.my-framework .tooltip {
   cursor: default;
   padding: 0.25em 0.5em;
 }
 
 /* Boxes, Containers and Controls */
-.modal {
+.my-framework .modal {
   display: none;
 }
-
-.box {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .box {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-.flyer .box {
+.flyer .my-framework .box {
   background-color: transparent;
 }
-.box.modal {
+.my-framework .box.modal {
   display: block;
 }
 
-html#myDocument .pane {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .pane {
+  background-color: hsla(0, 0%, 100%, 1);
   position: relative;
   left: 0;
   top: 0;
 }
-html#myDocument .pane.docking {
+.my-framework .pane.docking {
   width: 100%;
 }
-html#myDocument .pane.right {
+.my-framework .pane.right {
   left: inherit;
   right: 0;
 }
-html#myDocument .pane .content {
+.my-framework .pane .content {
   padding: 0;
 }
-html#myDocument .pane .content section {
+.my-framework .pane .content section {
   padding: 1em;
 }
 
-html#myDocument body.my-framework .controls, html#myDocument body.my-framework .controls-horizontal, html#myDocument body.my-framework .floating-nav {
+#myDocument .my-framework .controls, #myDocument .my-framework .controls-horizontal, #myDocument .my-framework .floating-nav {
   display: block;
   position: absolute;
   top: 0;
@@ -2202,89 +2142,85 @@ html#myDocument body.my-framework .controls, html#myDocument body.my-framework .
   width: auto;
   margin: 0;
 }
-html#myDocument body.my-framework .controls > .item, html#myDocument body.my-framework .controls > *, html#myDocument body.my-framework .controls-horizontal > .item, html#myDocument body.my-framework .controls-horizontal > *, html#myDocument body.my-framework .floating-nav > .item, html#myDocument body.my-framework .floating-nav > * {
+#myDocument .my-framework .controls > .item, #myDocument .my-framework .controls-horizontal > .item, #myDocument .my-framework .floating-nav > .item {
   list-style-type: none;
   text-align: center;
 }
-html#myDocument body.my-framework .controls > .item.close, html#myDocument body.my-framework .controls > *.close, html#myDocument body.my-framework .controls-horizontal > .item.close, html#myDocument body.my-framework .controls-horizontal > *.close, html#myDocument body.my-framework .floating-nav > .item.close, html#myDocument body.my-framework .floating-nav > *.close {
+#myDocument .my-framework .controls > .item.close, #myDocument .my-framework .controls-horizontal > .item.close, #myDocument .my-framework .floating-nav > .item.close {
   margin: 0;
   padding: 0;
   float: none;
   color: inherit;
   background-color: transparent;
 }
-html#myDocument body.my-framework .controls .docking .trigger, html#myDocument body.my-framework .controls-horizontal .docking .trigger, html#myDocument body.my-framework .floating-nav .docking .trigger {
+#myDocument .my-framework .controls > .item .icon, #myDocument .my-framework .controls-horizontal > .item .icon, #myDocument .my-framework .floating-nav > .item .icon {
+  margin-top: 0;
+  min-width: 16px;
+}
+#myDocument .my-framework .controls .docking .trigger, #myDocument .my-framework .controls-horizontal .docking .trigger, #myDocument .my-framework .floating-nav .docking .trigger {
   display: block;
   padding: 0.1666em 0.1666em 0.2em;
-  text-indent: -999em;
   margin-top: 0;
   font-size: 150%;
-  color: hsla(170, 100%, 40%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+  color: hsla(172, 72%, 43%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .controls .docking .trigger:hover, html#myDocument body.my-framework .controls-horizontal .docking .trigger:hover, html#myDocument body.my-framework .floating-nav .docking .trigger:hover {
-  background-color: hsla(240, 8%, 39%, 1);
+#myDocument .my-framework .controls .docking .trigger:hover, #myDocument .my-framework .controls-horizontal .docking .trigger:hover, #myDocument .my-framework .floating-nav .docking .trigger:hover {
+  background-color: hsla(215, 16%, 23%, 1);
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .controls .docking .trigger .icon, html#myDocument body.my-framework .controls-horizontal .docking .trigger .icon, html#myDocument body.my-framework .floating-nav .docking .trigger .icon {
+#myDocument .my-framework .controls .docking .trigger .icon, #myDocument .my-framework .controls-horizontal .docking .trigger .icon, #myDocument .my-framework .floating-nav .docking .trigger .icon {
   display: block;
   text-indent: 0;
   padding: 0.5em;
   margin-top: 0;
 }
-html#myDocument body.my-framework .controls > .item.close:before, html#myDocument body.my-framework .controls-horizontal > .item.close:before, html#myDocument body.my-framework .floating-nav > .item.close:before {
+#myDocument .my-framework .controls > .item.close:before, #myDocument .my-framework .controls-horizontal > .item.close:before, #myDocument .my-framework .floating-nav > .item.close:before {
   content: " ";
 }
-.docking:hover html#myDocument body.my-framework .controls, .pane:hover html#myDocument body.my-framework .controls, .docking:hover html#myDocument body.my-framework .controls-horizontal, .pane:hover html#myDocument body.my-framework .controls-horizontal, .docking:hover html#myDocument body.my-framework .floating-nav, .pane:hover html#myDocument body.my-framework .floating-nav {
+.docking:hover #myDocument .my-framework .controls, .pane:hover #myDocument .my-framework .controls, .docking:hover #myDocument .my-framework .controls-horizontal, .pane:hover #myDocument .my-framework .controls-horizontal, .docking:hover #myDocument .my-framework .floating-nav, .pane:hover #myDocument .my-framework .floating-nav {
   display: block;
 }
-html#myDocument body.my-framework .controls.tree, html#myDocument body.my-framework .controls-horizontal.tree, html#myDocument body.my-framework .floating-nav.tree {
-  display: block;
-  position: relative;
-  top: 0;
-}
-html#myDocument body.my-framework .controls.tree .collapse, html#myDocument body.my-framework .controls-horizontal.tree .collapse, html#myDocument body.my-framework .floating-nav.tree .collapse {
-  float: none;
-  padding: 0;
-  margin: 0;
-}
-html#myDocument body.my-framework .controls.left, html#myDocument body.my-framework .controls-horizontal.left, html#myDocument body.my-framework .floating-nav.left {
+#myDocument .my-framework .controls.left, #myDocument .my-framework .controls-horizontal.left, #myDocument .my-framework .floating-nav.left {
   right: auto;
   left: 0;
 }
-
-html#myDocument body.my-framework .controls-horizontal {
+#myDocument .my-framework .controls-horizontal {
   right: 0;
   top: 0;
 }
-html#myDocument body.my-framework .controls-horizontal .item {
+#myDocument .my-framework .controls-horizontal .item {
   display: inline-block;
 }
-
-html#myDocument body.my-framework .controls > .item a, html#myDocument body.my-framework .controls-horizontal > .item a {
+#myDocument .my-framework .controls > .item a, #myDocument .my-framework .controls-horizontal > .item a {
   padding: 0.5em 0.75em;
 }
-html#myDocument body.my-framework .controls > .item > a, html#myDocument body.my-framework .controls-horizontal > .item > a {
+#myDocument .my-framework .controls > .item > a, #myDocument .my-framework .controls-horizontal > .item > a {
   display: block;
 }
-html#myDocument body.my-framework .controls.left > .item > a, html#myDocument body.my-framework .controls-horizontal.left > .item > a {
+#myDocument .my-framework .controls.left > .item > a, #myDocument .my-framework .controls-horizontal.left > .item > a {
   float: left;
   min-width: 42px;
 }
-
-html#myDocument body.my-framework header .controls, html#myDocument body.my-framework header .controls-horizontal {
+#myDocument .my-framework .controls-horizontal > .item > a {
+  margin-left: -0.3333em;
+}
+#myDocument .my-framework .controls-horizontal > .item:first-child > a {
+  margin-left: 0;
+}
+#myDocument .my-framework header .controls, #myDocument .my-framework header .controls-horizontal {
   margin-top: 0.3333em;
 }
-html#myDocument body.my-framework header .controls .item a, html#myDocument body.my-framework header .controls-horizontal .item a {
+#myDocument .my-framework header .controls .item a, #myDocument .my-framework header .controls-horizontal .item a {
   color: hsla(0, 0%, 100%, 1);
 }
 
-html#myDocument body.my-framework .floating-nav {
+.my-framework .floating-nav {
   display: none;
   position: fixed;
   top: 50%;
 }
-html#myDocument body.my-framework .floating-nav > * {
+.my-framework .floating-nav > * {
   font-size: 100%;
   display: block;
   padding: 0.75em 1em;
@@ -2293,93 +2229,88 @@ html#myDocument body.my-framework .floating-nav > * {
   white-space: nowrap;
   text-overflow: ellipsis;
   color: hsla(0, 0%, 100%, 1) !important;
-  background-color: hsla(170, 100%, 40%, 0.5);
+  background-color: hsla(172, 72%, 43%, 0.5);
 }
-html#myDocument body.my-framework .floating-nav > * .description {
+.my-framework .floating-nav > * .description {
   color: hsla(0, 0%, 100%, 1);
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
   text-align: right;
 }
-html#myDocument body.my-framework .floating-nav > *:hover, html#myDocument body.my-framework .floating-nav > *:active {
+.my-framework .floating-nav > *:hover, .my-framework .floating-nav > *:active {
   font-size: 150%;
   width: auto;
   overflow: visible;
   white-space: normal;
   text-overflow: clip;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .floating-nav > *:hover .description, html#myDocument body.my-framework .floating-nav > *:active .description {
+.my-framework .floating-nav > *:hover .description, .my-framework .floating-nav > *:active .description {
   overflow: visible;
   white-space: normal;
   text-overflow: clip;
 }
-html#myDocument body.my-framework .floating-nav > * .icon {
+.my-framework .floating-nav > * .icon {
   font-size: 200%;
   margin-left: 0.5em;
   margin-top: 0.1666em;
 }
-html#myDocument body.my-framework .floating-nav.left .description {
+.my-framework .floating-nav.left .description {
   text-align: left;
 }
-html#myDocument body.my-framework .floating-nav.left .icon {
+.my-framework .floating-nav.left .icon {
   margin-left: 0;
   margin-right: 0.5em;
 }
 
-.caption {
+.my-framework .caption {
   position: absolute;
   bottom: 0;
   left: 0;
   padding: 0.5em 0.75em;
   width: auto;
   background-color: hsla(0, 0%, 100%, 0.75);
-  color: hsla(240, 8%, 39%, 1);
+  color: hsla(215, 16%, 23%, 1);
   font-weight: 700;
   width: auto;
 }
-
-.img {
+.my-framework .img {
   display: inline-block;
   position: relative;
   background-color: transparent;
 }
-.img .caption {
+.my-framework .img .caption {
   text-transform: uppercase;
 }
-.img.with-border .caption, .img.with-border .overlay {
+.my-framework .img.with-border .caption, .my-framework .img.with-border .overlay {
   left: 1px;
   right: 1px;
   bottom: 1px;
 }
-.img.with-border .overlay {
+.my-framework .img.with-border .overlay {
   left: 0;
 }
-
-.thumb {
+.my-framework .thumb {
   max-width: 120px;
   border: 0.4166em solid hsla(0, 0%, 0%, 0.1);
 }
-
-a .thumb {
+.my-framework a .thumb {
   display: block;
 }
-
-.thumbs .item {
+.my-framework .thumbs .item {
   float: left;
   padding: 0 0.5em 1em 0;
 }
-.thumbs .item a {
+.my-framework .thumbs .item a {
   display: block;
 }
-.thumbs .item .thumb {
+.my-framework .thumbs .item .thumb {
   max-width: 120px;
   border: 0.4166em solid hsla(0, 0%, 0%, 0.1);
 }
-
-.overlay {
+.my-framework .overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -2393,7 +2324,7 @@ a .thumb {
   -ms-filter: "alpha(opacity=0)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
-a.img:hover .overlay {
+a.img:hover .my-framework .overlay {
   background-color: hsla(0, 0%, 100%, 0.5);
   z-index: 990;
   opacity: 1;
@@ -2406,7 +2337,7 @@ a.img:hover .overlay {
   -moz-transition: opacity 0.4s linear;
   -webkit-transition: opacity 0.4s linear;
 }
-.overlay .icon {
+.my-framework .overlay .icon {
   color: hsla(240, 8%, 39%, 1);
   background-color: hsla(0, 0%, 100%, 0.75);
   font-size: 200%;
@@ -2416,223 +2347,216 @@ a.img:hover .overlay {
   padding: 0.25em 0.3333em;
   margin-top: 0;
 }
-.overlay .icon:hover {
+.my-framework .overlay .icon:hover {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
 
 /* Box */
-.box {
+.my-framework .box {
   position: relative;
 }
-.box .content {
+.my-framework .box .content {
   padding: 1em;
 }
-.box > header, .box > footer {
+.my-framework .box > header, .my-framework .box > footer {
   padding: 0.75em 1em;
   line-height: 2;
 }
-.box > header {
+.my-framework .box > header {
   font-size: 125%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-.box > header > .trigger {
+.my-framework .box > header > .trigger {
   padding: 0.5em;
 }
-.box > header, .box.slide.active > header {
+.my-framework .box > header, .my-framework .box.slide.active > header {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-.box > footer {
+.my-framework .box > footer {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-.box .scroll {
+.my-framework .box .scroll {
   max-height: 10em;
 }
-.box.slide header {
+.my-framework .box.slide header {
   cursor: default;
 }
 
 /* Asides */
-.aside.left, aside.left {
+.my-framework .aside.left, .my-framework aside.left {
   margin: 0 1em 1em 0;
 }
-.aside.right, aside.right {
+.my-framework .aside.right, .my-framework aside.right {
   margin: 0 0 1em 1em;
 }
 
-.content > header {
+/* Content Header */
+.my-framework .content > header {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   padding: 0.75em 1em;
   font-size: 125%;
 }
 
 /* Tables */
-/* Classic Tables */
-table.stripes tbody tr:nth-child(even) {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework {
+  /* Classic Tables */
+  /* List Tables*/
 }
-table td, table th {
+.my-framework table.stripes tbody tr:nth-child(even) {
+  background-color: hsla(0, 0%, 100%, 1);
+}
+.my-framework table td, .my-framework table th {
   padding: 0.5em 1em;
-  border: 0.0833em solid hsla(0, 0%, 96%, 1);
+  border: 0.0833em solid hsla(220, 33%, 98%, 1);
 }
-table th {
-  color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 96%, 1);
+.my-framework table th {
+  color: hsla(215, 16%, 23%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
 }
-table caption {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework table caption {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   padding: 0.5em 1em;
   font-size: 125%;
   font-weight: 700;
   text-transform: uppercase;
 }
-table tfoot td {
-  background-color: hsla(0, 0%, 90%, 1);
+.my-framework table tfoot td {
+  background-color: hsla(214, 20%, 93%, 1);
   border-top: none;
 }
-table.center {
+.my-framework table.center {
   text-align: center;
 }
-table.right {
+.my-framework table.right {
   text-align: right;
 }
-table.condensed td, table.condensed th {
+.my-framework table.condensed td, .my-framework table.condensed th {
   padding-top: 0.25em;
   padding-bottom: 0.25em;
 }
-
-/* List Tables*/
-.table {
+.my-framework .table {
   display: table;
   width: auto;
   position: relative;
 }
-.table header {
+.my-framework .table header {
   width: auto;
   line-height: 2;
   display: table-header-group;
 }
-.table footer {
+.my-framework .table footer {
   width: auto;
   display: table-footer-group;
   line-height: 2;
 }
-.table header .title, .table footer .title {
+.my-framework .table header .title, .my-framework .table footer .title {
   display: block;
   padding-left: 1em;
   padding-right: 1em;
   float: none;
 }
-.table .list {
+.my-framework .table .list {
   float: left;
   display: block;
 }
-.table .list.last, .table .list:last-child, .table .list.col {
-  border-bottom: 0.0833em solid hsla(0, 0%, 96%, 1);
+.my-framework .table .list:last-child, .my-framework .table .list.col {
+  border-bottom: 0.0833em solid hsla(220, 33%, 98%, 1);
 }
-.table .item {
-  border: 0.0833em solid hsla(0, 0%, 96%, 1);
+.my-framework .table .item {
+  border: 0.0833em solid hsla(220, 33%, 98%, 1);
   border-left: none;
   border-bottom: none;
 }
-.table .item .title {
+.my-framework .table .item .title {
   display: block;
   padding: 0.5em 1em;
   float: none;
 }
-.table .col .item, .table .row .item.first, .table .row .item:first-child, .table .col .item.first, .table .col .item:first-child {
-  border-left: 0.0833em solid hsla(0, 0%, 96%, 1);
+.my-framework .table .col .item, .my-framework .table .row .item:first-child, .my-framework .table .col .item:first-child {
+  border-left: 0.0833em solid hsla(220, 33%, 98%, 1);
 }
-.table .col .item {
+.my-framework .table .col .item {
   border-left: none;
 }
-.table .row:first-child .item, .table .col:first-child .item {
-  border-left: 0.0833em solid hsla(0, 0%, 96%, 1);
+.my-framework .table .row:first-child .item, .my-framework .table .col:first-child .item {
+  border-left: 0.0833em solid hsla(220, 33%, 98%, 1);
 }
-.table .rows {
+.my-framework .table .rows {
   display: table-row-group;
 }
-.table .rows .list {
+.my-framework .table .rows .list {
   width: auto;
   margin: 0;
 }
-.table .rows .list .item {
+.my-framework .table .rows .list .item {
   display: table-cell;
 }
-.table .rows.stripes .list:nth-child(even), .table .cols.stripes .list:nth-child(even) {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .table .rows.stripes .list:nth-child(even), .my-framework .table .cols.stripes .list:nth-child(even) {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-.table .list {
+.my-framework .table .list {
   display: block;
   width: auto;
   float: left;
   margin: 0;
 }
-.table .list .item {
+.my-framework .table .list .item {
   display: block;
 }
-.table .list .item.header {
-  color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .table .list .item.header {
+  color: hsla(215, 16%, 23%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   font-weight: 700;
 }
-.table .list .item.footer {
-  color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .table .list .item.footer {
+  color: hsla(215, 16%, 23%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   font-weight: 700;
 }
-.table.stripes .list .item:nth-child(even) .title {
-  background-color: hsla(0, 0%, 95%, 1);
+.my-framework .table.stripes .list .item:nth-child(even) .title {
+  background-color: hsla(0, 0%, 100%, 1);
 }
 
 /* Sections */
-html#myDocument .section, html#myDocument .section-free, html#myDocument .section-padded, html#myDocument .section-vertical, html#myDocument .section-horizontal, html#myDocument .section-left, html#myDocument .section-right, html#myDocument .section-top, html#myDocument .section-bottom {
+.my-framework .section, .my-framework .section-freee, .my-framework .section-padded, .my-framework .section-vertical, .my-framework .section-horizontal, .my-framework .section-left, .my-framework .section-right, .my-framework .section-top, .my-framework .section-bottom {
   position: relative;
   margin: 1.5em;
 }
-
-html#myDocument .section.free, html#myDocument .section-free {
+.my-framework .section-free {
   margin: 0;
 }
-
-html#myDocument .section.padded, html#myDocument .section-padded {
+.my-framework .section-padded {
   padding: 1em;
 }
-
-html#myDocument .section.vertical, html#myDocument .section-vertical {
+.my-framework .section-vertical {
   margin-left: 0;
   margin-right: 0;
 }
-
-html#myDocument .section.horizontal, html#myDocument .section-horizontal {
+.my-framework .section-horizontal {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-html#myDocument .section.left, html#myDocument .section-left {
+.my-framework .section-left {
   margin-left: 0;
 }
-
-html#myDocument .section.right, html#myDocument .section-right {
+.my-framework .section-right {
   margin-right: 0;
 }
-
-html#myDocument .section.top, html#myDocument .section-top {
+.my-framework .section-top {
   margin-top: 0;
 }
-
-html#myDocument .section.bottom, html#myDocument .section-bottom {
+.my-framework .section-bottom {
   margin-bottom: 0;
 }
-
-html#myDocument .section-full {
+.my-framework .section-full {
   width: 100%;
   margin: 1.5em 0;
   padding: 0;
@@ -2640,60 +2564,57 @@ html#myDocument .section-full {
 
 /* BEHAVIORS */
 /* Sliding Behavior */
-.slide {
+.my-framework .slide {
   /* Action Class */
 }
-.slide > .content {
+.my-framework .slide > .content {
   display: none;
 }
-.slide > * > .trigger, .slide > .trigger > .icon {
+.my-framework .slide > * > .trigger, .my-framework .slide > .trigger > .icon {
   cursor: pointer;
   margin-left: 0;
   margin-top: 0;
   padding: 0.5em;
 }
 
-.active .content {
+/* Content Behavior inside Active State */
+.my-framework .active .content {
   display: block;
 }
 
 /* Icons Behavior */
-.icon, .icon-default {
+.my-framework .icon, .my-framework .icon-default {
   float: none;
-  margin-top: 3px;
+  margin-top: 0.1666em;
 }
-
-.icon.left, .icon-default.left {
+.my-framework .icon.left, .my-framework .icon-default.left {
   float: left;
   margin-right: 6px;
 }
-
-.icon.right, .icon-default.right {
+.my-framework .icon.right, .my-framework .icon-default.right {
   float: right;
   margin-left: 16px;
 }
-
-.icon.medium, .medium .icon, .icon-default.medium, .medium .icon-default {
-  margin-top: 6px;
+.my-framework .icon.medium, .my-framework .medium .icon, .my-framework .icon-default.medium, .my-framework .medium .icon-default {
+  margin-top: 0.3333em;
 }
-
-.content > .icon, .content > .icon-default {
+.my-framework .content > .icon, .my-framework .content > .icon-default {
   margin-top: 0;
 }
 
 /* COMPONENTS */
 /* Timeline */
-html#myDocument .timeline {
+.my-framework .timeline {
   position: relative;
   margin: 5em 0;
 }
-html#myDocument .timeline .bar {
+.my-framework .timeline .bar {
   padding: 0 3em;
   height: auto;
   max-height: 1em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument .timeline .list .item {
+.my-framework .timeline .list .item {
   display: block;
   padding-right: 1em;
   float: left;
@@ -2701,122 +2622,122 @@ html#myDocument .timeline .list .item {
   min-width: 10em;
   position: relative;
 }
-html#myDocument .timeline .list .item span {
+.my-framework .timeline .list .item span {
   display: block;
   position: relative;
 }
-html#myDocument .timeline .list .item .datetime {
+.my-framework .timeline .list .item .datetime {
   top: -4em;
 }
-html#myDocument .timeline .list .item .content {
+.my-framework .timeline .list .item .content {
   display: none;
   position: absolute;
   top: 4em;
   padding: 0.75em;
   min-height: 3em;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   width: auto;
   min-width: 300%;
   z-index: 996;
 }
-html#myDocument .timeline .list .item .dot {
+.my-framework .timeline .list .item .dot {
   position: absolute;
   top: -0.25em;
   width: 1.5833em;
   height: 1.5833em;
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
   cursor: default;
 }
-html#myDocument .timeline .list .item img.dot {
+.my-framework .timeline .list .item img.dot {
   width: 4.7499em;
   height: 4.7499em;
   top: -1.75em;
-  border: 0.25em solid hsla(170, 100%, 40%, 1);
+  border: 0.25em solid hsla(172, 72%, 43%, 1);
   border-radius: 5em;
   -moz-border-radius: 5em;
   -webkit-border-radius: 5em;
 }
-html#myDocument .timeline .list .item:hover .content {
+.my-framework .timeline .list .item:hover .content {
   display: block;
 }
-html#myDocument .timeline .list .item:hover .dot {
-  background-color: hsla(170, 100%, 40%, 0.9);
+.my-framework .timeline .list .item:hover .dot {
+  background-color: hsla(172, 72%, 43%, 0.9);
 }
-html#myDocument .timeline.vertical {
+.my-framework .timeline.vertical {
   margin: 0 2em;
 }
-html#myDocument .timeline.vertical .bar {
+.my-framework .timeline.vertical .bar {
   max-height: inherit;
   max-width: 1em;
   width: auto;
   padding: 3em 0;
   margin: 0 auto;
 }
-html#myDocument .timeline.vertical .list .item {
+.my-framework .timeline.vertical .list .item {
   padding-right: 0;
   padding-bottom: 1em;
   min-height: 10em;
   min-width: inherit;
   float: none;
 }
-html#myDocument .timeline.vertical .list .item .dot {
+.my-framework .timeline.vertical .list .item .dot {
   top: 0;
   left: -0.3em;
 }
-html#myDocument .timeline.vertical .list .item img.dot {
+.my-framework .timeline.vertical .list .item img.dot {
   width: 4.7499em;
   height: 4.7499em;
   left: -1.75em;
   max-width: inherit;
 }
-html#myDocument .timeline.vertical .list .item .datetime, html#myDocument .timeline.vertical .list .item .title {
+.my-framework .timeline.vertical .list .item .datetime, .my-framework .timeline.vertical .list .item .title {
   top: 0;
   left: -16.5em;
   text-align: right;
   min-width: 180px;
 }
-html#myDocument .timeline.vertical .list .item .datetime {
+.my-framework .timeline.vertical .list .item .datetime {
   top: 1.5em;
 }
-html#myDocument .timeline.vertical .list .item .title {
+.my-framework .timeline.vertical .list .item .title {
   display: none;
   padding: 0.5em 0.75em;
   text-align: left;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument .timeline.vertical .list .item .content {
+.my-framework .timeline.vertical .list .item .content {
   position: relative;
   top: -4em;
   left: 4em;
   min-width: 480px;
   display: none;
 }
-html#myDocument .timeline.vertical .list .item:hover .content, html#myDocument .timeline.vertical .list .item:hover .title {
+.my-framework .timeline.vertical .list .item:hover .content, .my-framework .timeline.vertical .list .item:hover .title {
   display: inline-block;
 }
-html#myDocument .timeline.vertical .list .item:hover .datetime {
+.my-framework .timeline.vertical .list .item:hover .datetime {
   top: 0;
 }
-html#myDocument .timeline.static .list .item .content, html#myDocument .timeline.static .list .item .title {
+.my-framework .timeline.static .list .item .content, .my-framework .timeline.static .list .item .title {
   display: inline-block;
 }
-html#myDocument .timeline.static .list .item .content {
+.my-framework .timeline.static .list .item .content {
   position: relative;
 }
-html#myDocument .timeline.static .list .item .datetime {
+.my-framework .timeline.static .list .item .datetime {
   top: 0;
 }
 
 /* Flyer */
-html#myDocument .flyer {
+.my-framework .flyer {
   position: relative;
 }
-html#myDocument .flyer .content {
+.my-framework .flyer .content {
   display: block;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument .flyer .action {
+.my-framework .flyer .action {
   position: relative;
   bottom: 0;
   left: 0;
@@ -2829,180 +2750,182 @@ html#myDocument .flyer .action {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-html#myDocument html#myDocument .flyer .action:active {
+#myDocument .my-framework .flyer .action:active {
   top: 0;
   margin-bottom: 0;
 }
 
 /* Tags */
-html#myDocument .tags {
+.my-framework .tags {
   margin: 0;
 }
-html#myDocument .tags .item {
+.my-framework .tags .item {
   float: left;
   display: block;
   margin-right: 0.5em;
   margin-bottom: 0.5em;
 }
-html#myDocument .tags .item:last-child {
+.my-framework .tags .item:last-child {
   margin-right: 0;
 }
-html#myDocument .tags .item .tag {
+.my-framework .tags .item .tag {
   display: block;
   text-transform: uppercase;
   font-weight: 200;
   font-size: 85%;
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument .tags .item .tag:hover, html#myDocument .tags .item .tag:active {
+.my-framework .tags .item .tag:hover, .my-framework .tags .item .tag:active {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
 
 /* Elements Revealer */
-html#myDocument .reveal .visible-element, html#myDocument .reveal .hidden-element {
+.my-framework .reveal .visible-element, .my-framework .reveal .hidden-element {
   width: 50%;
   float: left;
 }
-html#myDocument .reveal .visible-element {
+.my-framework .reveal .visible-element {
   width: 100%;
 }
-html#myDocument .reveal .hidden-element {
+.my-framework .reveal .hidden-element {
   display: none;
 }
 
 /* Comments */
-html#myDocument body.my-framework .comments {
+#myDocument .my-framework .comments {
   position: relative;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-html#myDocument body.my-framework .comments > .list > .item {
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .comments > .list > .item {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .comments > .list > .item .comment {
+#myDocument .my-framework .comments > .list > .item .comment {
   position: relative;
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier {
+#myDocument .my-framework .comments > .list > .item.replied .reply .replier {
   margin-left: 4em;
   position: relative;
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier > .icon {
+#myDocument .my-framework .comments > .list > .item.replied .reply .replier > .icon {
   font-size: 150%;
   display: block;
   position: absolute;
   left: -1em;
-  color: hsla(240, 8%, 39%, 0.25);
+  color: hsla(215, 16%, 23%, 0.25);
   transform: rotate(180deg);
   -moz-transform: rotate(180deg);
   -webkit-transform: rotate(180deg);
   -ms-transform: rotate(180deg);
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier .comment-block .controls {
+#myDocument .my-framework .comments > .list > .item.replied .reply .replier .comment-block .controls {
   display: none;
+  z-index: 999;
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply .replier + .reply {
+#myDocument .my-framework .comments > .list > .item.replied .reply .replier + .reply {
   margin-left: 4em;
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply:hover > .comment .controls {
+#myDocument .my-framework .comments > .list > .item.replied .reply:hover > .comment .controls {
   display: block;
 }
-html#myDocument body.my-framework .comments > .list > .item.replied .reply > .comment:hover .controls {
+#myDocument .my-framework .comments > .list > .item.replied .reply > .comment:hover .controls {
   display: block;
 }
-html#myDocument body.my-framework .comments > .list > .item:nth-child(even) {
+#myDocument .my-framework .comments > .list > .item:nth-child(even) {
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .comments > .list > .item aside {
+#myDocument .my-framework .comments > .list > .item aside {
   margin: 0;
   padding: 1em;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.commenter {
+#myDocument .my-framework .comments > .list > .item aside.commenter {
   width: auto;
   max-width: 20%;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.commenter .name {
+#myDocument .my-framework .comments > .list > .item aside.commenter .name {
   display: block;
   padding: 0.25em 0.5em;
   text-align: center;
   font-weight: 700;
   text-transform: uppercase;
-  color: hsla(240, 8%, 39%, 1);
+  color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .comments > .list > .item aside.commenter img {
+#myDocument .my-framework .comments > .list > .item aside.commenter img {
   width: 100%;
   max-width: 120px;
   border: 0.25em solid hsla(0, 0%, 0%, 0.1);
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block {
+#myDocument .my-framework .comments > .list > .item aside.comment-block {
   width: 80%;
   padding-left: 0;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls {
+#myDocument .my-framework .comments > .list > .item aside.comment-block .controls {
   display: none;
   top: 1em;
+  z-index: 999;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls .item {
+#myDocument .my-framework .comments > .list > .item aside.comment-block .controls .item {
   display: block;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls .item .link {
+#myDocument .my-framework .comments > .list > .item aside.comment-block .controls .item .link {
   display: block;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls .item .icon {
+#myDocument .my-framework .comments > .list > .item aside.comment-block .controls .item .icon {
   background-color: hsla(0, 0%, 100%, 1);
-  color: hsla(170, 100%, 40%, 0.25);
+  color: hsla(172, 72%, 43%, 0.25);
   display: block;
   margin-top: 0;
   padding: 0.5em 0.75em;
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls .item .icon:hover, html#myDocument body.my-framework .comments > .list > .item aside.comment-block .controls .item .icon:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .comments > .list > .item aside.comment-block .controls .item .icon:hover, #myDocument .my-framework .comments > .list > .item aside.comment-block .controls .item .icon:active {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .comments > .list > .item aside.comment-block p {
+#myDocument .my-framework .comments > .list > .item aside.comment-block p {
   margin-top: 0;
 }
-html#myDocument body.my-framework .comments > .list > .item > .comment:hover .controls {
+#myDocument .my-framework .comments > .list > .item > .comment:hover .controls {
   display: block;
 }
-html#myDocument body.my-framework .comments .post-comment {
+#myDocument .my-framework .comments .post-comment {
   position: relative;
 }
-html#myDocument body.my-framework .comments .post-comment textarea {
+#myDocument .my-framework .comments .post-comment textarea {
   margin-top: 1em;
   width: 100%;
 }
-html#myDocument body.my-framework .comments .post-comment button {
+#myDocument .my-framework .comments .post-comment button {
   position: absolute;
   bottom: 0;
   top: auto;
   right: 0;
 }
-html#myDocument body.my-framework .comments .post-comment button:active {
+#myDocument .my-framework .comments .post-comment button:active {
   top: auto;
   margin-bottom: 0;
 }
 
 /* Feedback */
-html#myDocument body.my-framework .feedback .client, html#myDocument body.my-framework .feedback-right .client {
+.my-framework .feedback .client, .my-framework .feedback-right .client {
   display: block;
   float: left;
   max-width: 120px;
   margin-right: 1.5em;
 }
-html#myDocument body.my-framework .feedback .client .avatar, html#myDocument body.my-framework .feedback .client .name, html#myDocument body.my-framework .feedback-right .client .avatar, html#myDocument body.my-framework .feedback-right .client .name {
+.my-framework .feedback .client .avatar, .my-framework .feedback .client .name, .my-framework .feedback-right .client .avatar, .my-framework .feedback-right .client .name {
   display: block;
 }
-html#myDocument body.my-framework .feedback .client .avatar, html#myDocument body.my-framework .feedback-right .client .avatar {
+.my-framework .feedback .client .avatar, .my-framework .feedback-right .client .avatar {
   max-width: 100%;
   border: 0.25em solid hsla(0, 0%, 0%, 0.1);
 }
-html#myDocument body.my-framework .feedback .client .name, html#myDocument body.my-framework .feedback-right .client .name {
+.my-framework .feedback .client .name, .my-framework .feedback-right .client .name {
   text-align: center;
   font-weight: 700;
 }
-html#myDocument body.my-framework .feedback .quote, html#myDocument body.my-framework .feedback-right .quote {
+.my-framework .feedback .quote, .my-framework .feedback-right .quote {
   width: auto;
   min-width: 25%;
   max-width: 75%;
@@ -3013,351 +2936,351 @@ html#myDocument body.my-framework .feedback .quote, html#myDocument body.my-fram
   -webkit-box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -o-box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
 }
-html#myDocument body.my-framework .feedback .quote .icon.main, html#myDocument body.my-framework .feedback-right .quote .icon.main {
+.my-framework .feedback .quote .icon.main, .my-framework .feedback-right .quote .icon.main {
   font-size: 150%;
   position: absolute;
   left: -0.5em;
   margin-top: 0;
-  color: hsla(0, 0%, 95%, 1);
+  color: hsla(0, 0%, 100%, 1);
 }
-
-html#myDocument body.my-framework .feedback-right .client {
+.my-framework .feedback-right .client {
   margin-right: 0;
   margin-left: 1.5em;
   float: left;
 }
-html#myDocument body.my-framework .feedback-right .quote {
+.my-framework .feedback-right .quote {
   border-left: none;
   border-right: 0.4166em solid transparent;
 }
-html#myDocument body.my-framework .feedback-right .quote .icon.main {
+.my-framework .feedback-right .quote .icon.main {
   left: auto;
   right: -0.5em;
   margin-top: 0;
 }
 
 /* Social Icons */
-html#myDocument body.my-framework .social .item {
+.my-framework .social .item {
   float: left;
   display: block;
   text-align: center;
   margin: 0 0.25em 0.25em 0;
 }
-html#myDocument body.my-framework .social .item:last-child {
+.my-framework .social .item:last-child {
   margin-right: 0;
 }
-html#myDocument body.my-framework .social .item a {
+.my-framework .social .item a {
   padding: 0.25em 0.6666em;
-  min-width: 32px;
+  min-width: 2.25em;
   display: block;
   text-align: center;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .social .item.facebook a:hover, html#myDocument body.my-framework .social .item.facebook a:active {
+.my-framework .social .item.facebook a:hover, .my-framework .social .item.facebook a:active {
   color: #3C599B;
 }
-html#myDocument body.my-framework .social .item.twitter a:hover, html#myDocument body.my-framework .social .item.twitter a:active {
+.my-framework .social .item.twitter a:hover, .my-framework .social .item.twitter a:active {
   color: #32CCFE;
 }
-html#myDocument body.my-framework .social .item.linkedin a:hover, html#myDocument body.my-framework .social .item.linkedin a:active {
+.my-framework .social .item.linkedin a:hover, .my-framework .social .item.linkedin a:active {
   color: #017EB4;
 }
-html#myDocument body.my-framework .social .item.google-plus a:hover, html#myDocument body.my-framework .social .item.google-plus a:active {
+.my-framework .social .item.google-plus a:hover, .my-framework .social .item.google-plus a:active {
   color: #D95232;
 }
-html#myDocument body.my-framework .social .item.github a:hover, html#myDocument body.my-framework .social .item.github a:active {
+.my-framework .social .item.github a:hover, .my-framework .social .item.github a:active {
   color: #171516;
 }
-html#myDocument body.my-framework .social .item.flickr a:hover, html#myDocument body.my-framework .social .item.flickr a:active {
+.my-framework .social .item.flickr a:hover, .my-framework .social .item.flickr a:active {
   color: #FF0084;
 }
-html#myDocument body.my-framework .social .item.pinterest a:hover, html#myDocument body.my-framework .social .item.pinterest a:active {
+.my-framework .social .item.pinterest a:hover, .my-framework .social .item.pinterest a:active {
   color: #CC2127;
 }
-html#myDocument body.my-framework .social .item.foursquare a:hover, html#myDocument body.my-framework .social .item.foursquare a:active {
+.my-framework .social .item.foursquare a:hover, .my-framework .social .item.foursquare a:active {
   color: #156DB5;
 }
-html#myDocument body.my-framework .social .item.instagram a:hover, html#myDocument body.my-framework .social .item.instagram a:active {
+.my-framework .social .item.instagram a:hover, .my-framework .social .item.instagram a:active {
   color: #A16F55;
 }
-html#myDocument body.my-framework .social .item.vimeo a:hover, html#myDocument body.my-framework .social .item.vimeo a:active {
+.my-framework .social .item.vimeo a:hover, .my-framework .social .item.vimeo a:active {
   color: #1BB6EC;
 }
-html#myDocument body.my-framework .social .item.tumblr a:hover, html#myDocument body.my-framework .social .item.tumblr a:active {
+.my-framework .social .item.tumblr a:hover, .my-framework .social .item.tumblr a:active {
   color: #2C4762;
 }
-html#myDocument body.my-framework .social .item.youtube a:hover, html#myDocument body.my-framework .social .item.youtube a:active {
+.my-framework .social .item.youtube a:hover, .my-framework .social .item.youtube a:active {
   color: #D51D27;
 }
-html#myDocument body.my-framework .social .item.stack-overflow a:hover, html#myDocument body.my-framework .social .item.stack-overflow a:active {
+.my-framework .social .item.stack-overflow a:hover, .my-framework .social .item.stack-overflow a:active {
   color: #FE7413;
 }
-html#myDocument body.my-framework .social .item.dribbble a:hover, html#myDocument body.my-framework .social .item.dribbble a:active {
+.my-framework .social .item.dribbble a:hover, .my-framework .social .item.dribbble a:active {
   color: #E04C86;
 }
-html#myDocument body.my-framework .social .item.skype a:hover, html#myDocument body.my-framework .social .item.skype a:active {
+.my-framework .social .item.skype a:hover, .my-framework .social .item.skype a:active {
   color: #01AEF2;
 }
-html#myDocument body.my-framework .social .item.dropbox a:hover, html#myDocument body.my-framework .social .item.dropbox a:active {
+.my-framework .social .item.dropbox a:hover, .my-framework .social .item.dropbox a:active {
   color: #007EE5;
 }
-html#myDocument body.my-framework .social .item.bitbucket a:hover, html#myDocument body.my-framework .social .item.bitbucket a:active {
+.my-framework .social .item.bitbucket a:hover, .my-framework .social .item.bitbucket a:active {
   color: #205081;
 }
-html#myDocument body.my-framework .social.with-background {
+.my-framework .social.with-background {
   background-color: transparent !important;
   padding: 0;
 }
-html#myDocument body.my-framework .social.with-background .item a {
+.my-framework .social.with-background .item a {
+  min-height: 2.25em;
   color: hsla(240, 8%, 39%, 0.25);
   background-color: hsla(0, 0%, 0%, 0.1);
 }
-html#myDocument body.my-framework .social.with-background .item a:hover, html#myDocument body.my-framework .social.with-background .item a:active {
+.my-framework .social.with-background .item a:hover, .my-framework .social.with-background .item a:active {
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .social.with-background .item.facebook a:hover, html#myDocument body.my-framework .social.with-background .item.facebook a:active {
+.my-framework .social.with-background .item.facebook a:hover, .my-framework .social.with-background .item.facebook a:active {
   background-color: #3C599B;
 }
-html#myDocument body.my-framework .social.with-background .item.twitter a:hover, html#myDocument body.my-framework .social.with-background .item.twitter a:active {
+.my-framework .social.with-background .item.twitter a:hover, .my-framework .social.with-background .item.twitter a:active {
   background-color: #32CCFE;
 }
-html#myDocument body.my-framework .social.with-background .item.linkedin a:hover, html#myDocument body.my-framework .social.with-background .item.linkedin a:active {
+.my-framework .social.with-background .item.linkedin a:hover, .my-framework .social.with-background .item.linkedin a:active {
   background-color: #017EB4;
 }
-html#myDocument body.my-framework .social.with-background .item.google-plus a:hover, html#myDocument body.my-framework .social.with-background .item.google-plus a:active {
+.my-framework .social.with-background .item.google-plus a:hover, .my-framework .social.with-background .item.google-plus a:active {
   background-color: #D95232;
 }
-html#myDocument body.my-framework .social.with-background .item.github a:hover, html#myDocument body.my-framework .social.with-background .item.github a:active {
+.my-framework .social.with-background .item.github a:hover, .my-framework .social.with-background .item.github a:active {
   background-color: #171516;
 }
-html#myDocument body.my-framework .social.with-background .item.flickr a:hover, html#myDocument body.my-framework .social.with-background .item.flickr a:active {
+.my-framework .social.with-background .item.flickr a:hover, .my-framework .social.with-background .item.flickr a:active {
   background-color: #FF0084;
 }
-html#myDocument body.my-framework .social.with-background .item.pinterest a:hover, html#myDocument body.my-framework .social.with-background .item.pinterest a:active {
+.my-framework .social.with-background .item.pinterest a:hover, .my-framework .social.with-background .item.pinterest a:active {
   background-color: #CC2127;
 }
-html#myDocument body.my-framework .social.with-background .item.foursquare a:hover, html#myDocument body.my-framework .social.with-background .item.foursquare a:active {
+.my-framework .social.with-background .item.foursquare a:hover, .my-framework .social.with-background .item.foursquare a:active {
   background-color: #156DB5;
 }
-html#myDocument body.my-framework .social.with-background .item.instagram a:hover, html#myDocument body.my-framework .social.with-background .item.instagram a:active {
+.my-framework .social.with-background .item.instagram a:hover, .my-framework .social.with-background .item.instagram a:active {
   background-color: #A16F55;
 }
-html#myDocument body.my-framework .social.with-background .item.vimeo a:hover, html#myDocument body.my-framework .social.with-background .item.vimeo a:active {
+.my-framework .social.with-background .item.vimeo a:hover, .my-framework .social.with-background .item.vimeo a:active {
   background-color: #1BB6EC;
 }
-html#myDocument body.my-framework .social.with-background .item.tumblr a:hover, html#myDocument body.my-framework .social.with-background .item.tumblr a:active {
+.my-framework .social.with-background .item.tumblr a:hover, .my-framework .social.with-background .item.tumblr a:active {
   background-color: #2C4762;
 }
-html#myDocument body.my-framework .social.with-background .item.youtube a:hover, html#myDocument body.my-framework .social.with-background .item.youtube a:active {
+.my-framework .social.with-background .item.youtube a:hover, .my-framework .social.with-background .item.youtube a:active {
   background-color: #D51D27;
 }
-html#myDocument body.my-framework .social.with-background .item.stack-overflow a:hover, html#myDocument body.my-framework .social.with-background .item.stack-overflow a:active {
+.my-framework .social.with-background .item.stack-overflow a:hover, .my-framework .social.with-background .item.stack-overflow a:active {
   background-color: #FE7413;
 }
-html#myDocument body.my-framework .social.with-background .item.dribbble a:hover, html#myDocument body.my-framework .social.with-background .item.dribbble a:active {
+.my-framework .social.with-background .item.dribbble a:hover, .my-framework .social.with-background .item.dribbble a:active {
   background-color: #E04C86;
 }
-html#myDocument body.my-framework .social.with-background .item.skype a:hover, html#myDocument body.my-framework .social.with-background .item.skype a:active {
+.my-framework .social.with-background .item.skype a:hover, .my-framework .social.with-background .item.skype a:active {
   background-color: #01AEF2;
 }
-html#myDocument body.my-framework .social.with-background .item.dropbox a:hover, html#myDocument body.my-framework .social.with-background .item.dropbox a:active {
+.my-framework .social.with-background .item.dropbox a:hover, .my-framework .social.with-background .item.dropbox a:active {
   background-color: #007EE5;
 }
-html#myDocument body.my-framework .social.with-background .item.bitbucket a:hover, html#myDocument body.my-framework .social.with-background .item.bitbucket a:active {
+.my-framework .social.with-background .item.bitbucket a:hover, .my-framework .social.with-background .item.bitbucket a:active {
   background-color: #205081;
 }
 
 /* Pricing Tables */
-html#myDocument body.my-framework .pricing-table thead, html#myDocument body.my-framework .framework .pricing-table thead {
+.my-framework .pricing-table thead {
   font-size: 200%;
 }
-html#myDocument body.my-framework .pricing-table thead th, html#myDocument body.my-framework .framework .pricing-table thead th {
-  background-color: hsla(170, 100%, 40%, 1);
+.my-framework .pricing-table thead th {
+  background-color: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   border: none;
   padding: 0;
 }
-html#myDocument body.my-framework .pricing-table thead th .title, html#myDocument body.my-framework .framework .pricing-table thead th .title {
+.my-framework .pricing-table thead th .title {
   display: block;
   float: none;
   padding: 0.5em 1em;
   border-right: 0.0833em solid hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .pricing-table thead th:last-child .title, html#myDocument body.my-framework .framework .pricing-table thead th:last-child .title {
+.my-framework .pricing-table thead th:last-child .title {
   border-right: none;
 }
-html#myDocument body.my-framework .pricing-table thead th.features, html#myDocument body.my-framework .framework .pricing-table thead th.features {
+.my-framework .pricing-table thead th.features {
   background-color: transparent;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .pricing-table tbody td, html#myDocument body.my-framework .framework .pricing-table tbody td {
+.my-framework .pricing-table tbody td {
   text-align: center;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .pricing-table tbody td .icon, html#myDocument body.my-framework .framework .pricing-table tbody td .icon {
+.my-framework .pricing-table tbody td .icon {
   font-size: 150%;
   display: inline-block;
 }
-html#myDocument body.my-framework .pricing-table tfoot td, html#myDocument body.my-framework .framework .pricing-table tfoot td {
+.my-framework .pricing-table tfoot td {
   padding: 0;
   background-color: transparent;
   text-align: center;
   border: none;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .pricing-table tfoot td a, html#myDocument body.my-framework .framework .pricing-table tfoot td a {
+.my-framework .pricing-table tfoot td a {
   display: block;
   margin-right: 1px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   color: hsla(0, 0%, 100%, 0.75);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .pricing-table tfoot td a:hover, html#myDocument body.my-framework .framework .pricing-table tfoot td a:hover {
+.my-framework .pricing-table tfoot td a:hover {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .pricing-table tfoot td a:active, html#myDocument body.my-framework .framework .pricing-table tfoot td a:active {
+.my-framework .pricing-table tfoot td a:active {
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .pricing-table tfoot td:last-child a, html#myDocument body.my-framework .framework .pricing-table tfoot td:last-child a {
+.my-framework .pricing-table tfoot td:last-child a {
   margin-right: 0;
 }
-html#myDocument html#myDocument body.my-framework .pricing-table tfoot td.one, html#myDocument html#myDocument body.my-framework .pricing-table tfoot td.two, html#myDocument html#myDocument body.my-framework .pricing-table tfoot td.three, html#myDocument html#myDocument body.my-framework .framework .pricing-table tfoot td.one, html#myDocument html#myDocument body.my-framework .framework .pricing-table tfoot td.two, html#myDocument html#myDocument body.my-framework .framework .pricing-table tfoot td.three {
+#myDocument .my-framework .pricing-table tfoot td.one, #myDocument .my-framework .pricing-table tfoot td.two, #myDocument .my-framework .pricing-table tfoot td.three {
   background-color: transparent;
 }
-html#myDocument body.my-framework .pricing-table tfoot td .price, html#myDocument body.my-framework .framework .pricing-table tfoot td .price {
+.my-framework .pricing-table tfoot td .price {
   color: hsla(351, 66%, 48%, 1);
   font-size: 200%;
   display: block;
 }
-html#myDocument body.my-framework .pricing-table th, html#myDocument body.my-framework .pricing-table td, html#myDocument body.my-framework .framework .pricing-table th, html#myDocument body.my-framework .framework .pricing-table td {
+.my-framework .pricing-table th, .my-framework .pricing-table td {
   border: none;
 }
-html#myDocument body.my-framework .pricing-table th.featured, html#myDocument body.my-framework .pricing-table td.featured, html#myDocument body.my-framework .framework .pricing-table th.featured, html#myDocument body.my-framework .framework .pricing-table td.featured {
+.my-framework .pricing-table th.featured, .my-framework .pricing-table td.featured {
   background-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .pricing-table th.featured a, html#myDocument body.my-framework .pricing-table td.featured a, html#myDocument body.my-framework .framework .pricing-table th.featured a, html#myDocument body.my-framework .framework .pricing-table td.featured a {
+.my-framework .pricing-table th.featured a, .my-framework .pricing-table td.featured a {
   background-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .pricing-table th.featured a:hover, html#myDocument body.my-framework .pricing-table td.featured a:hover, html#myDocument body.my-framework .framework .pricing-table th.featured a:hover, html#myDocument body.my-framework .framework .pricing-table td.featured a:hover {
+.my-framework .pricing-table th.featured a:hover, .my-framework .pricing-table td.featured a:hover {
   background-color: hsla(351, 66%, 48%, 0.9);
 }
-html#myDocument body.my-framework .pricing-table th.featured a:active, html#myDocument body.my-framework .pricing-table td.featured a:active, html#myDocument body.my-framework .framework .pricing-table th.featured a:active, html#myDocument body.my-framework .framework .pricing-table td.featured a:active {
+.my-framework .pricing-table th.featured a:active, .my-framework .pricing-table td.featured a:active {
   background-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .pricing-table td.featured, html#myDocument body.my-framework .framework .pricing-table td.featured {
+.my-framework .pricing-table td.featured {
   color: hsla(351, 66%, 48%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
 
-html#myDocument body.my-framework .table.pricing .list .item {
+.my-framework .table.pricing .list .item {
   text-align: center;
   border: none;
 }
-html#myDocument body.my-framework .table.pricing .list .item.header, html#myDocument body.my-framework .table.pricing .list .item.footer {
+.my-framework .table.pricing .list .item.header, .my-framework .table.pricing .list .item.footer {
   padding: 0;
 }
-html#myDocument body.my-framework .table.pricing .list .item.header {
+.my-framework .table.pricing .list .item.header {
   background-color: transparent;
 }
-html#myDocument body.my-framework .table.pricing .list .item.header .title {
+.my-framework .table.pricing .list .item.header .title {
   font-size: 200%;
   text-transform: uppercase;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
   margin-right: 1px;
 }
-html#myDocument body.my-framework .table.pricing .list .item.footer {
+.my-framework .table.pricing .list .item.footer {
   background-color: transparent;
 }
-html#myDocument body.my-framework .table.pricing .list .item.footer a {
+.my-framework .table.pricing .list .item.footer a {
   color: hsla(0, 0%, 100%, 0.75);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
   display: block;
   margin-right: 0;
   font-weight: 200;
 }
-html#myDocument body.my-framework .table.pricing .list .item.footer a:hover {
+.my-framework .table.pricing .list .item.footer a:hover {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list .item.footer a:active {
+.my-framework .table.pricing .list .item.footer a:active {
   color: hsla(0, 0%, 100%, 0.5);
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list .item .title {
+.my-framework .table.pricing .list .item .title {
   display: block;
   float: none;
   padding: 0.5em 1em;
 }
-html#myDocument body.my-framework .table.pricing .list .item .title .icon {
+.my-framework .table.pricing .list .item .title .icon {
   font-size: 150%;
   display: inline-block;
 }
-html#myDocument body.my-framework .table.pricing .list .item .price {
+.my-framework .table.pricing .list .item .price {
   color: hsla(351, 66%, 48%, 1);
   font-size: 200%;
   display: block;
 }
-html#myDocument body.my-framework .table.pricing .list.features {
+.my-framework .table.pricing .list.features {
   display: table-cell;
 }
-html#myDocument body.my-framework .table.pricing .list.features .item {
+.my-framework .table.pricing .list.features .item {
   background-color: transparent;
 }
-html#myDocument body.my-framework .table.pricing .list.features .item .title {
+.my-framework .table.pricing .list.features .item .title {
   padding-top: 0.72em;
   padding-bottom: 0.73em;
   background-color: transparent;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list.features .item.header .title {
+.my-framework .table.pricing .list.features .item.header .title {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
 }
-html#myDocument body.my-framework .table.pricing .list.last .item.footer a, html#myDocument body.my-framework .table.pricing .list:last-child .item.footer a {
+.my-framework .table.pricing .list.last .item.footer a, .my-framework .table.pricing .list:last-child .item.footer a {
   margin-right: 0;
 }
-html#myDocument body.my-framework .table.pricing .list.last .item.header .title, html#myDocument body.my-framework .table.pricing .list:last-child .item.header .title {
+.my-framework .table.pricing .list.last .item.header .title, .my-framework .table.pricing .list:last-child .item.header .title {
   margin-right: 0;
 }
-html#myDocument body.my-framework .table.pricing .list:nth-child(even) .header .title {
-  background-color: hsla(240, 8%, 39%, 1) !important;
+.my-framework .table.pricing .list:nth-child(even) .header .title {
+  background-color: hsla(215, 16%, 23%, 1) !important;
 }
-html#myDocument body.my-framework .table.pricing .list:nth-child(even) .footer a {
-  background-color: hsla(240, 8%, 39%, 1);
+.my-framework .table.pricing .list:nth-child(even) .footer a {
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list:nth-child(even) .footer a:hover {
-  background-color: hsla(240, 8%, 39%, 0.9);
+.my-framework .table.pricing .list:nth-child(even) .footer a:hover {
+  background-color: hsla(215, 16%, 23%, 0.9);
 }
-html#myDocument html#myDocument body.my-framework .table.pricing .list:nth-child(even) .footer a:active {
-  background-color: hsla(240, 8%, 39%, 1);
+#myDocument .my-framework .table.pricing .list:nth-child(even) .footer a:active {
+  background-color: hsla(215, 16%, 23%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list.featured {
+.my-framework .table.pricing .list.featured {
   border: 0.25em solid hsla(0, 0%, 100%, 1);
   margin: -1em 0;
 }
-html#myDocument body.my-framework .table.pricing .list.featured .item .title {
+.my-framework .table.pricing .list.featured .item .title {
   color: hsla(351, 66%, 48%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list.featured .header .title {
+.my-framework .table.pricing .list.featured .header .title {
   color: hsla(0, 0%, 100%, 1);
   background-color: hsla(351, 66%, 48%, 1) !important;
 }
-html#myDocument body.my-framework .table.pricing .list.featured .footer a {
+.my-framework .table.pricing .list.featured .footer a {
   background-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .table.pricing .list.featured .footer a:hover {
+.my-framework .table.pricing .list.featured .footer a:hover {
   background-color: hsla(351, 66%, 48%, 0.9);
 }
-html#myDocument body.my-framework .table.pricing .list.featured .footer a:active {
+.my-framework .table.pricing .list.featured .footer a:active {
   background-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .table.pricing.featured-outside .list {
+.my-framework .table.pricing.featured-outside .list {
   opacity: 0.5;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -3365,7 +3288,7 @@ html#myDocument body.my-framework .table.pricing.featured-outside .list {
   -ms-filter: "alpha(opacity=50)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-html#myDocument body.my-framework .table.pricing.featured-outside .list:hover {
+.my-framework .table.pricing.featured-outside .list:hover {
   margin: 1em -1em -1em;
   position: relative;
   z-index: 995;
@@ -3379,7 +3302,7 @@ html#myDocument body.my-framework .table.pricing.featured-outside .list:hover {
   -ms-filter: "alpha(opacity=100)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-html#myDocument body.my-framework .table.pricing.featured-outside .list.features {
+.my-framework .table.pricing.featured-outside .list.features {
   margin: 0;
   padding: 0;
   font-size: 100%;
@@ -3394,17 +3317,17 @@ html#myDocument body.my-framework .table.pricing.featured-outside .list.features
   -ms-filter: "alpha(opacity=100)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-html#myDocument body.my-framework .table.pricing .packages {
+.my-framework .table.pricing .packages {
   display: table-cell;
   position: relative;
 }
 
 /* Spotlight */
-html#myDocument body.my-framework .spotlight {
+.my-framework .spotlight {
   margin: 0;
   padding: 1em 0;
   text-align: center;
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 1);
   color: hsla(0, 0%, 100%, 1);
   border-bottom: 0.5em solid hsla(0, 0%, 100%, 0.15);
   box-shadow: inset 0 -0.5em 1.5em hsla(0, 0%, 0%, 0.85);
@@ -3421,7 +3344,7 @@ html#myDocument body.my-framework .spotlight {
 */
 /* OTHERS */
 /* CSS3 Special Classes */
-html#myDocument {
+.my-framework {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -3431,27 +3354,23 @@ html#myDocument {
   -webkit-text-shadow: none;
   -o-text-shadow: none;
 }
-
-html#myDocument body.my-framework.no-border-radius, html#myDocument body.my-framework.no-border-radius * {
+.my-framework.no-border-radius, .my-framework.no-border-radius * {
   border-radius: 0;
   -moz-border-radius: 0;
   -webkit-border-radius: 0;
 }
-
-html#myDocument body.my-framework.no-box-shadow, html#myDocument body.my-framework.no-box-shadow * {
+.my-framework.no-box-shadow, .my-framework.no-box-shadow * {
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-
-html#myDocument body.my-framework.no-transition, html#myDocument body.my-framework.no-transition * {
+.my-framework.no-transition, .my-framework.no-transition * {
   transition: none;
   -moz-transition: none;
   -webkit-transition: none;
 }
-
-html#myDocument body.my-framework.no-text-shadow, html#myDocument body.my-framework.no-text-shadow * {
+.my-framework.no-text-shadow, .my-framework.no-text-shadow * {
   text-shadow: none;
   -moz-text-shadow: none;
   -webkit-text-shadow: none;
@@ -3460,29 +3379,29 @@ html#myDocument body.my-framework.no-text-shadow, html#myDocument body.my-framew
 
 /* Clearfixes */
 /* Apply CSS3 Properties from Config to Delegated Elements */
-.button:before, .button:after, button:before, button:after, .clearfix:before, .clearfix:after, p.description:before, p.description:after, .menu:before, .menu:after, .menu-list:before, .menu-list:after, .submenu:before, .submenu:after, .breadcrumb:before, .breadcrumb:after, .list:before, .list:after, .input-wrapper:before, .input-wrapper:after, .message:before, .message:after, .message-thin:before, .message-thin:after, .message-warning:before, .message-warning:after, .message-error:before, .message-error:after, .message-alert:before, .message-alert:after, .message-info:before, .message-info:after, .message-ok:before, .message-ok:after, .message-neutral:before, .message-neutral:after, .message-modal:before, .message-modal:after, .message-tooltip:before, .message-tooltip:after, .message-in-box:before, .message-in-box:after, .flyer:before, .flyer:after, .flyer > .content:before, .flyer > .content:after, .box > .content:before, .box > .content:after, .container:before, .container:after, table:before, table:after, .table:before, .table:after, .table .cols:before, .table .cols:after, .comment:before, .comment:after, .reveal:before, .reveal:after, .reveal aside:before, .reveal aside:after, .feedback:before, .feedback:after, .feedback-right:before, .feedback-right:after, .table.pricing .packages:before, .table.pricing .packages:after, .button-group:before, .button-group:after, .pagination:before, .pagination:after, aside.element:before, aside.element:after, .content > p:before, .content > p:after, .controls > .item:before, .controls > .item:after, .controls-horizontal > .item:before, .controls-horizontal > .item:after {
+.my-framework .button:before, .my-framework .button:after, .my-framework button:before, .my-framework button:after, .clearfix:before, .clearfix:after, p.description:before, p.description:after, .menu:before, .menu:after, .menu-list:before, .menu-list:after, .submenu:before, .submenu:after, .breadcrumb:before, .breadcrumb:after, .list:before, .list:after, .input-wrapper:before, .input-wrapper:after, .message:before, .message:after, .message-thin:before, .message-thin:after, .message-warning:before, .message-warning:after, .message-error:before, .message-error:after, .message-alert:before, .message-alert:after, .message-info:before, .message-info:after, .message-ok:before, .message-ok:after, .message-neutral:before, .message-neutral:after, .message-modal:before, .message-modal:after, .message-tooltip:before, .message-tooltip:after, .message-in-box:before, .message-in-box:after, .flyer:before, .flyer:after, .flyer > .content:before, .flyer > .content:after, .box > .content:before, .box > .content:after, .container:before, .container:after, table:before, table:after, .table:before, .table:after, .table .cols:before, .table .cols:after, .comment:before, .comment:after, .reveal:before, .reveal:after, .reveal aside:before, .reveal aside:after, .feedback:before, .feedback:after, .feedback-right:before, .feedback-right:after, .table.pricing .packages:before, .table.pricing .packages:after, .button-group:before, .button-group:after, .pagination:before, .pagination:after, aside.element:before, aside.element:after, .content > p:before, .content > p:after, .controls > .item:before, .controls > .item:after, .controls-horizontal > .item:before, .controls-horizontal > .item:after {
   content: " ";
   display: table;
 }
 
-.button:after, button:after, .clearfix:after, p.description:after, .menu:after, .menu-list:after, .submenu:after, .breadcrumb:after, .list:after, .input-wrapper:after, .message:after, .message-thin:after, .message-warning:after, .message-error:after, .message-alert:after, .message-info:after, .message-ok:after, .message-neutral:after, .message-modal:after, .message-tooltip:after, .message-in-box:after, .flyer:after, .flyer > .content:after, .box > .content:after, .container:after, table:after, .table:after, .table .cols:after, .comment:after, .reveal:after, .reveal aside:after, .feedback:after, .feedback-right:after, .table.pricing .packages:after, .button-group:after, .pagination:after, aside.element:after, .content > p:after, .controls > .item:after, .controls-horizontal > .item:after {
+.my-framework .button:after, .my-framework button:after, .clearfix:after, p.description:after, .menu:after, .menu-list:after, .submenu:after, .breadcrumb:after, .list:after, .input-wrapper:after, .message:after, .message-thin:after, .message-warning:after, .message-error:after, .message-alert:after, .message-info:after, .message-ok:after, .message-neutral:after, .message-modal:after, .message-tooltip:after, .message-in-box:after, .flyer:after, .flyer > .content:after, .box > .content:after, .container:after, table:after, .table:after, .table .cols:after, .comment:after, .reveal:after, .reveal aside:after, .feedback:after, .feedback-right:after, .table.pricing .packages:after, .button-group:after, .pagination:after, aside.element:after, .content > p:after, .controls > .item:after, .controls-horizontal > .item:after {
   clear: both;
 }
 
-.button, button, .clearfix, p.description, .menu, .menu-list, .submenu, .breadcrumb, .list, .input-wrapper, .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .flyer, .flyer > .content, .box > .content, .container, table, .table, .table .cols, .comment, .reveal, .reveal aside, .feedback, .feedback-right, .table.pricing .packages, .button-group, .pagination, aside.element, .content > p, .controls > .item, .controls-horizontal > .item {
+.my-framework .button, .my-framework button, .clearfix, p.description, .menu, .menu-list, .submenu, .breadcrumb, .list, .input-wrapper, .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .flyer, .flyer > .content, .box > .content, .container, table, .table, .table .cols, .comment, .reveal, .reveal aside, .feedback, .feedback-right, .table.pricing .packages, .button-group, .pagination, aside.element, .content > p, .controls > .item, .controls-horizontal > .item {
   *zoom: 1;
 }
 
 /* ELEMENTS WITH CSS3 PROPERTIES */
 /* Text Shadow */
-html#myDocument .text-shadow {
+#myDocument .text-shadow {
   text-shadow: 0 0.1em 0 hsla(0, 0%, 100%, 0.2);
   -moz-text-shadow: 0 0.1em 0 hsla(0, 0%, 100%, 0.2);
   -webkit-text-shadow: 0 0.1em 0 hsla(0, 0%, 100%, 0.2);
   -o-text-shadow: 0 0.1em 0 hsla(0, 0%, 100%, 0.2);
 }
 
-html#myDocument {
+#myDocument {
   text-shadow: 0 0.1em 0 hsla(0, 0%, 0%, 0.35);
   -moz-text-shadow: 0 0.1em 0 hsla(0, 0%, 0%, 0.35);
   -webkit-text-shadow: 0 0.1em 0 hsla(0, 0%, 0%, 0.35);
@@ -3490,49 +3409,49 @@ html#myDocument {
 }
 
 /* Box Shadow */
-html#myDocument .box-shadow, html#myDocument .box, html#myDocument .message, html#myDocument .message-error, html#myDocument .message-alert, html#myDocument .message-warning, html#myDocument .message-info, html#myDocument .message-ok, html#myDocument .message-neutral, html#myDocument .comments, html#myDocument .fixed, html#myDocument .timeline .item .content, html#myDocument .feedback .quote {
+#myDocument .box-shadow, #myDocument .box, #myDocument .message, #myDocument .message-error, #myDocument .message-alert, #myDocument .message-warning, #myDocument .message-info, #myDocument .message-ok, #myDocument .message-neutral, #myDocument .comments, #myDocument .fixed, #myDocument .timeline .item .content, #myDocument .feedback .quote {
   box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -moz-box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -webkit-box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -o-box-shadow: 0 0.1666em 0 hsla(0, 0%, 0%, 0.1);
 }
 
-html#myDocument .button, html#myDocument button {
+#myDocument .button, #myDocument button {
   box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5);
   -moz-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5);
   -webkit-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5);
   -o-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5);
 }
 
-html#myDocument uikit-dropdown .menu, html#myDocument .select .list, html#myDocument .uk-dropdown {
+#myDocument uikit-dropdown .menu, #myDocument .select .list, #myDocument .uk-dropdown {
   box-shadow: 0.0833em 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -moz-box-shadow: 0.0833em 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -webkit-box-shadow: 0.0833em 0.1666em 0 hsla(0, 0%, 0%, 0.1);
   -o-box-shadow: 0.0833em 0.1666em 0 hsla(0, 0%, 0%, 0.1);
 }
 
-html#myDocument {
+#myDocument {
   box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5), inset 0.075em 0 0 hsla(0, 0%, 0%, 0.25);
   -moz-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5), inset 0.075em 0 0 hsla(0, 0%, 0%, 0.25);
   -webkit-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5), inset 0.075em 0 0 hsla(0, 0%, 0%, 0.25);
   -o-box-shadow: inset 0 0 0.1em hsla(0, 0%, 100%, 0.5), inset 0.075em 0 0 hsla(0, 0%, 0%, 0.25);
 }
 
-html#myDocument .input.text, html#myDocument .input.editable:focus, html#myDocument input[type='text'], textarea {
+#myDocument .input.text, #myDocument .input.editable:focus, #myDocument input[type='text'], textarea {
   box-shadow: inset 0 0.1666em 0 hsla(0, 0%, 0%, 0.025);
   -moz-box-shadow: inset 0 0.1666em 0 hsla(0, 0%, 0%, 0.025);
   -webkit-box-shadow: inset 0 0.1666em 0 hsla(0, 0%, 0%, 0.025);
   -o-box-shadow: inset 0 0.1666em 0 hsla(0, 0%, 0%, 0.025);
 }
 
-html#myDocument {
+#myDocument {
   box-shadow: inset 0 0 0.5em hsla(0, 0%, 0%, 0.25);
   -moz-box-shadow: inset 0 0 0.5em hsla(0, 0%, 0%, 0.25);
   -webkit-box-shadow: inset 0 0 0.5em hsla(0, 0%, 0%, 0.25);
   -o-box-shadow: inset 0 0 0.5em hsla(0, 0%, 0%, 0.25);
 }
 
-html#myDocument .button, html#myDocument button {
+#myDocument .button, #myDocument button {
   box-shadow: inset 0 -0.0833em 0 hsla(0, 0%, 100%, 0.1);
   -moz-box-shadow: inset 0 -0.0833em 0 hsla(0, 0%, 100%, 0.1);
   -webkit-box-shadow: inset 0 -0.0833em 0 hsla(0, 0%, 100%, 0.1);
@@ -3540,56 +3459,56 @@ html#myDocument .button, html#myDocument button {
 }
 
 /* Border Radius */
-html#myDocument .border-radius, html#myDocument .border-radius .button, html#myDocument .border-radius button, html#myDocument .border-radius .quote, html#myDocument .border-radius blockquote, html#myDocument .border-radius .tag, html#myDocument .border-radius .input.checkbox.custom + label, html#myDocument .border-radius .input.text, html#myDocument .border-radius input[type='text'], .border-radius textarea, html#myDocument .border-radius .comments {
+#myDocument .border-radius, #myDocument .border-radius .button, #myDocument .border-radius button, #myDocument .border-radius .quote, #myDocument .border-radius blockquote, #myDocument .border-radius .tag, #myDocument .border-radius .input.checkbox.custom + label, #myDocument .border-radius .input.text, #myDocument .border-radius input[type='text'], .border-radius textarea, #myDocument .border-radius .comments {
   border-radius: 0.25em;
   -moz-border-radius: 0.25em;
   -webkit-border-radius: 0.25em;
 }
 
-html#myDocument .rounded {
+#myDocument .rounded {
   border-radius: 0.3333em;
   -moz-border-radius: 0.3333em;
   -webkit-border-radius: 0.3333em;
 }
 
-html#myDocument .timeline .list .item .dot, html#myDocument .round {
+#myDocument .timeline .list .item .dot, #myDocument .round {
   border-radius: 1em;
   -moz-border-radius: 1em;
   -webkit-border-radius: 1em;
 }
 
-html#myDocument .flyer.border-radius .action {
+#myDocument .flyer.border-radius .action {
   border-radius: 0 0 0.5em 0.5em;
   -moz-border-radius: 0 0 0.5em 0.5em;
   -webkit-border-radius: 0 0 0.5em 0.5em;
 }
 
 /* Transition */
-html#myDocument body, html#myDocument a, html#myDocument .transition, html#myDocument .featured-outside .list, html#myDocument .moving, html#myDocument .moving-left, html#myDocument .moving-right {
+#myDocument body, #myDocument a, #myDocument .transition, #myDocument .featured-outside .list, #myDocument .moving, #myDocument .moving-left, #myDocument .moving-right {
   transition: all 0.2s linear;
   -moz-transition: all 0.2s linear;
   -webkit-transition: all 0.2s linear;
 }
 
-html#myDocument .moving, html#myDocument .moving.right {
+#myDocument .moving, #myDocument .moving.right {
   transition: margin 0.1s linear;
   -moz-transition: margin 0.1s linear;
   -webkit-transition: margin 0.1s linear;
 }
 
-html#myDocument .input.expanding {
+#myDocument .input.expanding {
   transition: width 0.2s linear;
   -moz-transition: width 0.2s linear;
   -webkit-transition: width 0.2s linear;
 }
 
-html#myDocument .input.text, html#myDocument .input.editable:focus, html#myDocument input[type='text'], html#myDocument textarea {
+#myDocument .input.text, #myDocument .input.editable:focus, #myDocument input[type='text'], #myDocument textarea {
   transition: background-color 0.2s linear;
   -moz-transition: background-color 0.2s linear;
   -webkit-transition: background-color 0.2s linear;
 }
 
-html#myDocument .button, html#myDocument button {
+#myDocument .button, #myDocument button {
   transition: none;
   -moz-transition: none;
   -webkit-transition: none;
@@ -3614,7 +3533,7 @@ html#myDocument .button, html#myDocument button {
   height: 150%;
 }
 
-html#myDocument .hidden {
+.my-framework .hidden {
   display: none;
   visibility: hidden;
 }

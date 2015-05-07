@@ -6,38 +6,40 @@
 @import "../../../styles/config/config.scss";
 
 
-.uikit-dropdown, .uk-button-group {
-    position: relative;
-    margin-bottom: 0;
-    .button {
-        border: none;
+#{$frameworkClass} {
+    .uikit-dropdown, .uk-button-group {
+        position: relative;
         margin-bottom: 0;
-        top: 0;
-        padding-left: 0.75em;
-        padding-right: 0.75em;
-        html#{$documentID} &:active {
+        .button {
+            border: none;
             margin-bottom: 0;
             top: 0;
+            padding-left: 0.75em;
+            padding-right: 0.75em;
+            #{$documentID} &:active {
+                margin-bottom: 0;
+                top: 0;
+            }
+            .name {
+                margin-right: 0.5em;
+            }
         }
-        .name {
-            margin-right: 0.5em;
+        &.edge > .menu {
+            left: auto;
+            right: 0;
         }
     }
-    &.edge > .menu {
-        left: auto;
-        right: 0;
+
+    .visible-element .uikit-dropdown .menu {
+        width: 100%;
     }
 }
 
-.visible-element .uikit-dropdown .menu {
-    width: 100%;
-}
-
-html#{$documentID} body#{$frameworkClass} .uikit-dropdown .menu .item {
+#{$documentID} #{$frameworkClass} .uikit-dropdown .menu .item {
     float: none;
 }
 
-html#{$documentID} body#{$frameworkClass} .uikit-dropdown .menu .item .link {
+#{$documentID} #{$frameworkClass} .uikit-dropdown .menu .item .link {
     display: block;
     padding: 0.5em 0.75em;
     overflow: hidden;
@@ -51,11 +53,11 @@ html#{$documentID} body#{$frameworkClass} .uikit-dropdown .menu .item .link {
     }
 }
 
-.uikit-dropdown .menu .item:last-child .link {
+#{$documentID} #{$frameworkClass} .uikit-dropdown .menu .item:last-child .link {
     border-bottom: none;
 }
 
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
     .input-wrapper {
         > a.uk-form-password-toggle {
             font-size: 100%;
@@ -70,7 +72,7 @@ html#{$documentID} body#{$frameworkClass} {
 }
 
 // UIKit Plugin
-html#{$documentID} body#{$frameworkClass} .uikit-component {
+#{$documentID} #{$frameworkClass} .uikit-component {
     position: relative;
     ::-moz-selection {
         background: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
@@ -197,8 +199,15 @@ html#{$documentID} body#{$frameworkClass} .uikit-component {
     // Modal
     .uk-modal {
         .uk-modal-dialog {
+            padding: 1em;
             ul {
                 padding-left: 0;
+            }
+            .uk-close {
+                margin: -1em -1em 0 0;
+                font-size: 100%;
+                padding: 0.75em;
+                @include opacity(1);
             }
         }
     }
@@ -339,18 +348,6 @@ html#{$documentID} body#{$frameworkClass} .uikit-component {
         
     }
 
-    // Modal
-    .uk-modal {
-        .uk-modal-dialog {
-            .uk-close {
-                margin: -1em -1em 0 0;
-                font-size: 150%;
-                padding: 0.75em;
-                @include opacity(1);
-            }
-        }
-    }
-
     // Search
     .uk-search {
         .uk-search-field {
@@ -362,6 +359,7 @@ html#{$documentID} body#{$frameworkClass} .uikit-component {
         .uk-search-close {
             margin-top: 0;
             height: auto;
+            position: relative;
             top: 0.5833em;
             right: 0.4166em;
             font-size: 125%;
@@ -373,9 +371,11 @@ html#{$documentID} body#{$frameworkClass} .uikit-component {
             }
         }
         &:after {
+            display: inline-block;
+            position: relative;
+            left: -88.25%;
+            top: 0.1666em;
             font-size: 125%;
-            left: 0.6666em;
-            top: 0.5833em;
         }
     }
 
@@ -625,7 +625,7 @@ html#{$documentID} body#{$frameworkClass} .uikit-component {
     }
 }
 
-html#{$documentID} body#{$frameworkClass}.frontend #main-section .uikit-component {
+#{$documentID} #{$frameworkClass} #main-section .uikit-component {
     display: inline-block;
     width: 100%;
 }
@@ -637,12 +637,9 @@ html#{$documentID} body#{$frameworkClass}.frontend #main-section .uikit-componen
         line-height: $lineHeight;
         color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
         background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3), 0.9);
-        &:hover, &:active {
-            background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-        }
         a.uk-close {
             padding: 0.25em 0.5em;
-            margin-top: 0.0833em;
+            margin-top: 0;
             color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
             background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
             border-bottom-color: transparent !important;
@@ -654,13 +651,13 @@ html#{$documentID} body#{$frameworkClass}.frontend #main-section .uikit-componen
 }
 
 // Dropdown
-.uk-dropdown {
+#{$documentID} #{$frameworkClass} .uk-dropdown {
     color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
     background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
 }
 
 // Datepicker
-html#{$documentID} body#{$frameworkClass} .uk-datepicker {
+#{$documentID} #{$frameworkClass} .uk-datepicker {
     margin-top: 0;
     background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
     .uk-datepicker-nav {
@@ -705,7 +702,7 @@ html#{$documentID} body#{$frameworkClass} .uk-datepicker {
     }
 }
 
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
     #molecules-32-1 .uikit-component, #molecules-32-2 .uikit-component, #molecules-37 {
         .scrollspy-nav, .dotted-scrollspy-nav {
             display: none;
@@ -714,7 +711,7 @@ html#{$documentID} body#{$frameworkClass} {
 }
 
 // UIKit Dropdown
-html#{$documentID} body#{$frameworkClass} .framework #main-header .uikit-component {
+#{$documentID} #{$frameworkClass} .framework #main-header .uikit-component {
     .uikit-dropdown.uk-open {
         .uikit-trigger {
             margin-bottom: -0.1666em;
@@ -725,18 +722,18 @@ html#{$documentID} body#{$frameworkClass} .framework #main-header .uikit-compone
 }
 
 // UIKit Off-Canvas
-html#{$documentID} body#{$frameworkClass}.uk-offcanvas-page {
+#{$documentID} #{$frameworkClass}.uk-offcanvas-page {
     overflow: hidden;
 }
 
 // UIKit Off-Canvas Fix
-html#{$documentID} {
+#{$documentID} {
     margin-top: 0 !important;
 }
 
 
 // RTL STYLES
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
 	&.rtl {
 		.input-wrapper {
 		    &.with-icon.uk-form-password .input {

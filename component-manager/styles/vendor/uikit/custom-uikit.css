@@ -1,148 +1,147 @@
-.uikit-dropdown, .uk-button-group {
+.my-framework .uikit-dropdown, .my-framework .uk-button-group {
   position: relative;
   margin-bottom: 0;
 }
-.uikit-dropdown .button, .uk-button-group .button {
+.my-framework .uikit-dropdown .button, .my-framework .uk-button-group .button {
   border: none;
   margin-bottom: 0;
   top: 0;
   padding-left: 0.75em;
   padding-right: 0.75em;
 }
-html#myDocument .uikit-dropdown .button:active, html#myDocument .uk-button-group .button:active {
+#myDocument .my-framework .uikit-dropdown .button:active, #myDocument .my-framework .uk-button-group .button:active {
   margin-bottom: 0;
   top: 0;
 }
-.uikit-dropdown .button .name, .uk-button-group .button .name {
+.my-framework .uikit-dropdown .button .name, .my-framework .uk-button-group .button .name {
   margin-right: 0.5em;
 }
-.uikit-dropdown.edge > .menu, .uk-button-group.edge > .menu {
+.my-framework .uikit-dropdown.edge > .menu, .my-framework .uk-button-group.edge > .menu {
   left: auto;
   right: 0;
 }
-
-.visible-element .uikit-dropdown .menu {
+.my-framework .visible-element .uikit-dropdown .menu {
   width: 100%;
 }
 
-html#myDocument body.my-framework .uikit-dropdown .menu .item {
+#myDocument .my-framework .uikit-dropdown .menu .item {
   float: none;
 }
 
-html#myDocument body.my-framework .uikit-dropdown .menu .item .link {
+#myDocument .my-framework .uikit-dropdown .menu .item .link {
   display: block;
   padding: 0.5em 0.75em;
   overflow: hidden;
   text-overflow: ellipsis;
   color: hsla(0, 0%, 100%, 0.85);
   border-bottom: 0.0833em solid hsla(0, 0%, 0%, 0.025);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-dropdown .menu .item .link:hover, html#myDocument body.my-framework .uikit-dropdown .menu .item .link:active {
+#myDocument .my-framework .uikit-dropdown .menu .item .link:hover, #myDocument .my-framework .uikit-dropdown .menu .item .link:active {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(17, 98%, 49%, 1) !important;
+  background-color: hsla(0, 0%, 100%, 1) !important;
 }
 
-.uikit-dropdown .menu .item:last-child .link {
+#myDocument .my-framework .uikit-dropdown .menu .item:last-child .link {
   border-bottom: none;
 }
 
-html#myDocument body.my-framework .input-wrapper > a.uk-form-password-toggle {
+#myDocument .my-framework .input-wrapper > a.uk-form-password-toggle {
   font-size: 100%;
   top: 0.75em;
 }
-html#myDocument body.my-framework .input-wrapper.with-icon.uk-form-password .input {
+#myDocument .my-framework .input-wrapper.with-icon.uk-form-password .input {
   padding-right: 4em;
 }
 
-html#myDocument body.my-framework .uikit-component {
+#myDocument .my-framework .uikit-component {
   position: relative;
 }
-html#myDocument body.my-framework .uikit-component ::-moz-selection {
-  background: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component ::-moz-selection {
+  background: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   text-shadow: none;
   -moz-text-shadow: none;
   -webkit-text-shadow: none;
   -o-text-shadow: none;
 }
-html#myDocument body.my-framework .uikit-component ::selection {
-  background: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component ::selection {
+  background: hsla(172, 72%, 43%, 1);
   color: hsla(0, 0%, 100%, 1);
   text-shadow: none;
   -moz-text-shadow: none;
   -webkit-text-shadow: none;
   -o-text-shadow: none;
 }
-html#myDocument body.my-framework .uikit-component .uk-link, html#myDocument body.my-framework .uikit-component .uk-form-file {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-link, #myDocument .my-framework .uikit-component .uk-form-file {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-link:hover, html#myDocument body.my-framework .uikit-component .uk-link:active, html#myDocument body.my-framework .uikit-component .uk-form-file:hover, html#myDocument body.my-framework .uikit-component .uk-form-file:active {
+#myDocument .my-framework .uikit-component .uk-link:hover, #myDocument .my-framework .uikit-component .uk-link:active, #myDocument .my-framework .uikit-component .uk-form-file:hover, #myDocument .my-framework .uikit-component .uk-form-file:active {
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-placeholder {
+#myDocument .my-framework .uikit-component .uk-placeholder {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
-  border-color: hsla(0, 0%, 90%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
+  border-color: hsla(214, 20%, 93%, 1);
   margin-bottom: 1em;
   padding: 1.5em;
 }
-html#myDocument body.my-framework .uikit-component .uk-form-file {
+#myDocument .my-framework .uikit-component .uk-form-file {
   vertical-align: top;
 }
-html#myDocument body.my-framework .uikit-component .uk-progress {
-  background-color: hsla(170, 100%, 40%, 0.75);
+#myDocument .my-framework .uikit-component .uk-progress {
+  background-color: hsla(172, 72%, 43%, 0.75);
   position: relative;
   border: none;
   height: auto;
   min-height: 2.75em;
 }
-html#myDocument body.my-framework .uikit-component .uk-progress {
+#myDocument .my-framework .uikit-component .uk-progress {
   line-height: 2.75;
   margin-bottom: 1em;
 }
-html#myDocument body.my-framework .uikit-component * + .uk-progress {
+#myDocument .my-framework .uikit-component * + .uk-progress {
   margin-top: 0.25em;
 }
-html#myDocument body.my-framework .uikit-component .uk-progress .uk-progress-bar {
-  background-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-progress .uk-progress-bar {
+  background-color: hsla(172, 72%, 43%, 1);
   position: absolute;
   margin: 0;
-  border: 0.1em solid hsla(170, 100%, 40%, 1);
+  border: 0.1em solid hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress .uk-progress-bar {
+#myDocument .my-framework .uikit-component .uk-progress .uk-progress-bar {
   color: hsla(0, 0%, 100%, 0.85);
   font-size: 1em;
   font-weight: 700;
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-success {
-  background-color: hsla(170, 100%, 40%, 0.35);
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-success {
+  background-color: hsla(172, 72%, 43%, 0.35);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-success .uk-progress-bar {
-  background-color: hsla(170, 100%, 40%, 1);
-  border-color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-success .uk-progress-bar {
+  background-color: hsla(172, 72%, 43%, 1);
+  border-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-warning {
-  background-color: hsla(15, 86%, 53%, 0.35);
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-warning {
+  background-color: hsla(22, 85%, 57%, 0.35);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-warning .uk-progress-bar {
-  background-color: hsla(15, 86%, 53%, 1);
-  border-color: hsla(15, 86%, 53%, 1);
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-warning .uk-progress-bar {
+  background-color: hsla(22, 85%, 57%, 1);
+  border-color: hsla(22, 85%, 57%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-danger {
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-danger {
   background-color: hsla(351, 66%, 48%, 0.35);
 }
-html#myDocument body.my-framework .uikit-component .uk-progress.uk-progress-danger .uk-progress-bar {
+#myDocument .my-framework .uikit-component .uk-progress.uk-progress-danger .uk-progress-bar {
   background-color: hsla(351, 66%, 48%, 1);
   border-color: hsla(351, 66%, 48%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uikit-dropdown .uk-dropdown-up {
+#myDocument .my-framework .uikit-component .uikit-dropdown .uk-dropdown-up {
   margin-bottom: 0;
 }
-html#myDocument body.my-framework .uikit-component .uikit-dropdown .uikit-trigger .icon {
+#myDocument .my-framework .uikit-component .uikit-dropdown .uikit-trigger .icon {
   margin-top: 0.3333em;
 }
-html#myDocument body.my-framework .uikit-component .uk-dropdown {
+#myDocument .my-framework .uikit-component .uk-dropdown {
   margin-top: 0;
   padding: 0;
   width: 100%;
@@ -151,144 +150,37 @@ html#myDocument body.my-framework .uikit-component .uk-dropdown {
   color: hsla(240, 8%, 39%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-dropdown .uk-nav {
+#myDocument .my-framework .uikit-component .uk-dropdown .uk-nav {
   margin: 0;
 }
-html#myDocument body.my-framework .uikit-component > .button + .uikit-dropdown {
+#myDocument .my-framework .uikit-component > .button + .uikit-dropdown {
   float: none;
 }
-html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
+#myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
   margin-bottom: -0.4166em;
   padding-top: 0.5833em;
   padding-bottom: 0.6em;
   border-left: 0.0833em solid hsla(0, 0%, 100%, 0.25);
 }
-html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger .icon {
+#myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger .icon {
   margin: 0.1666em 0;
 }
-html#myDocument body.my-framework .uikit-component.uk-button-group .uikit-dropdown.uk-open .uikit-trigger {
+#myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown.uk-open .uikit-trigger {
   margin-bottom: -0.5em;
 }
-html#myDocument body.my-framework .uikit-component.uk-button-group > .button {
+#myDocument .my-framework .uikit-component.uk-button-group > .button {
   float: left;
   padding-right: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-modal .uk-modal-dialog ul {
+#myDocument .my-framework .uikit-component .uk-modal .uk-modal-dialog {
+  padding: 1em;
+}
+#myDocument .my-framework .uikit-component .uk-modal .uk-modal-dialog ul {
   padding-left: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-offcanvas .uk-offcanvas-bar {
-  color: inherit;
-  background-color: hsla(0, 0%, 95%, 1);
-  width: auto;
-  min-width: 25%;
-  max-width: 25%;
-  z-index: 996;
-}
-html#myDocument body.my-framework .uikit-component .uk-offcanvas .uk-offcanvas-bar > .content {
-  padding: 1em;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab {
-  border-bottom-color: hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .uikit-component .uk-tab > li a:hover, html#myDocument body.my-framework .uikit-component .uk-tab > li a:active {
-  color: hsla(170, 100%, 40%, 1);
-  background: transparent;
-  border-color: transparent;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab > li.uk-active a, html#myDocument body.my-framework .uikit-component .uk-tab > li.uk-active a:hover, html#myDocument body.my-framework .uikit-component .uk-tab > li.uk-active a:active {
-  background-color: hsla(0, 0%, 100%, 1);
-  color: hsla(240, 8%, 39%, 1);
-  border-color: hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .uikit-component .uk-tab > li:not(.uk-active) > a:hover, html#myDocument body.my-framework .uikit-component .uk-tab > li:not(.uk-active) > a:focus {
-  margin-bottom: 0;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-bottom {
-  border-top-color: hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-bottom > li:not(.uk-active) > a:hover, html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-bottom > li:not(.uk-active) > a:focus {
-  margin-top: 0;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-left {
-  border-right-color: hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-left > li:not(.uk-active) > a:hover, html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-left > li:not(.uk-active) > a:focus {
-  margin-right: 0;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-right {
-  border-left-color: hsla(0, 0%, 90%, 1);
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-right > li:not(.uk-active) > a:hover, html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-right > li:not(.uk-active) > a:focus {
-  margin-left: 0;
-}
-html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-left > li > a, html#myDocument body.my-framework .uikit-component .uk-tab.uk-tab-right > li > a {
-  padding-top: 1em;
-  padding-bottom: 1em;
-}
-html#myDocument body.my-framework .uikit-component .uk-switcher li > * {
-  padding: 1em;
-}
-html#myDocument body.my-framework .uikit-component .switcher-tabs, html#myDocument body.my-framework .uikit-component .switcher-content {
-  margin-bottom: 0;
-}
-html#myDocument body.my-framework .uikit-component .switcher-tabs, html#myDocument body.my-framework .uikit-component .switcher-content {
-  margin-right: 0;
-}
-html#myDocument body.my-framework .uikit-component .switcher-tabs.right + .switcher-content {
-  margin-left: 0;
-}
-html#myDocument body.my-framework .uikit-component .scrollspy-nav, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav {
-  display: block;
-  position: fixed;
-  right: 1em;
-  top: 1em;
-}
-html#myDocument body.my-framework .uikit-component .scrollspy-nav .item a, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a {
-  color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 0.9);
-}
-html#myDocument body.my-framework .uikit-component .scrollspy-nav .item a:hover, html#myDocument body.my-framework .uikit-component .scrollspy-nav .item a:active, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a:hover, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a:active {
-  color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
-}
-html#myDocument body.my-framework .uikit-component .scrollspy-nav .item.uk-active a, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item.uk-active a {
-  color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
-}
-html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item {
-  margin-bottom: 0.5em;
-}
-html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item:last-child {
-  margin-bottom: 0;
-}
-html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a {
-  color: transparent;
-  background-color: hsla(170, 100%, 40%, 0.5);
-  width: 1.25em;
-  height: 1.25em;
-  padding: 0;
-  border-radius: 1em;
-  -moz-border-radius: 1em;
-  -webkit-border-radius: 1em;
-}
-html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a:hover, html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item a:active {
-  color: transparent;
-  background-color: hsla(170, 100%, 40%, 1);
-  transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-}
-html#myDocument body.my-framework .uikit-component .dotted-scrollspy-nav .item.uk-active a {
-  background-color: hsla(170, 100%, 40%, 1);
-  transform: scale(1.25);
-  -moz-transform: scale(1.25);
-  -webkit-transform: scale(1.25);
-  -ms-transform: scale(1.25);
-}
-html#myDocument body.my-framework .uikit-component .uk-modal .uk-modal-dialog .uk-close {
+#myDocument .my-framework .uikit-component .uk-modal .uk-modal-dialog .uk-close {
   margin: -1em -1em 0 0;
-  font-size: 150%;
+  font-size: 100%;
   padding: 0.75em;
   opacity: 1;
   -moz-opacity: 1;
@@ -297,15 +189,126 @@ html#myDocument body.my-framework .uikit-component .uk-modal .uk-modal-dialog .u
   -ms-filter: "alpha(opacity=100)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
-html#myDocument body.my-framework .uikit-component .uk-search .uk-search-field {
+#myDocument .my-framework .uikit-component .uk-offcanvas .uk-offcanvas-bar {
+  color: inherit;
+  background-color: hsla(0, 0%, 100%, 1);
+  width: auto;
+  min-width: 25%;
+  max-width: 25%;
+  z-index: 996;
+}
+#myDocument .my-framework .uikit-component .uk-offcanvas .uk-offcanvas-bar > .content {
+  padding: 1em;
+}
+#myDocument .my-framework .uikit-component .uk-tab {
+  border-bottom-color: hsla(214, 20%, 93%, 1);
+}
+#myDocument .my-framework .uikit-component .uk-tab > li a:hover, #myDocument .my-framework .uikit-component .uk-tab > li a:active {
+  color: hsla(172, 72%, 43%, 1);
+  background: transparent;
+  border-color: transparent;
+}
+#myDocument .my-framework .uikit-component .uk-tab > li.uk-active a, #myDocument .my-framework .uikit-component .uk-tab > li.uk-active a:hover, #myDocument .my-framework .uikit-component .uk-tab > li.uk-active a:active {
+  background-color: hsla(0, 0%, 100%, 1);
+  color: hsla(240, 8%, 39%, 1);
+  border-color: hsla(214, 20%, 93%, 1);
+}
+#myDocument .my-framework .uikit-component .uk-tab > li:not(.uk-active) > a:hover, #myDocument .my-framework .uikit-component .uk-tab > li:not(.uk-active) > a:focus {
+  margin-bottom: 0;
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-bottom {
+  border-top-color: hsla(214, 20%, 93%, 1);
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-bottom > li:not(.uk-active) > a:hover, #myDocument .my-framework .uikit-component .uk-tab.uk-tab-bottom > li:not(.uk-active) > a:focus {
+  margin-top: 0;
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-left {
+  border-right-color: hsla(214, 20%, 93%, 1);
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-left > li:not(.uk-active) > a:hover, #myDocument .my-framework .uikit-component .uk-tab.uk-tab-left > li:not(.uk-active) > a:focus {
+  margin-right: 0;
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-right {
+  border-left-color: hsla(214, 20%, 93%, 1);
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-right > li:not(.uk-active) > a:hover, #myDocument .my-framework .uikit-component .uk-tab.uk-tab-right > li:not(.uk-active) > a:focus {
+  margin-left: 0;
+}
+#myDocument .my-framework .uikit-component .uk-tab.uk-tab-left > li > a, #myDocument .my-framework .uikit-component .uk-tab.uk-tab-right > li > a {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+#myDocument .my-framework .uikit-component .uk-switcher li > * {
+  padding: 1em;
+}
+#myDocument .my-framework .uikit-component .switcher-tabs, #myDocument .my-framework .uikit-component .switcher-content {
+  margin-bottom: 0;
+}
+#myDocument .my-framework .uikit-component .switcher-tabs, #myDocument .my-framework .uikit-component .switcher-content {
+  margin-right: 0;
+}
+#myDocument .my-framework .uikit-component .switcher-tabs.right + .switcher-content {
+  margin-left: 0;
+}
+#myDocument .my-framework .uikit-component .scrollspy-nav, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav {
+  display: block;
+  position: fixed;
+  right: 1em;
+  top: 1em;
+}
+#myDocument .my-framework .uikit-component .scrollspy-nav .item a, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a {
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(172, 72%, 43%, 0.9);
+}
+#myDocument .my-framework .uikit-component .scrollspy-nav .item a:hover, #myDocument .my-framework .uikit-component .scrollspy-nav .item a:active, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a:hover, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a:active {
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
+}
+#myDocument .my-framework .uikit-component .scrollspy-nav .item.uk-active a, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item.uk-active a {
+  color: hsla(0, 0%, 100%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
+}
+#myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item {
+  margin-bottom: 0.5em;
+}
+#myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item:last-child {
+  margin-bottom: 0;
+}
+#myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a {
+  color: transparent;
+  background-color: hsla(172, 72%, 43%, 0.5);
+  width: 1.25em;
+  height: 1.25em;
+  padding: 0;
+  border-radius: 1em;
+  -moz-border-radius: 1em;
+  -webkit-border-radius: 1em;
+}
+#myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a:hover, #myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item a:active {
+  color: transparent;
+  background-color: hsla(172, 72%, 43%, 1);
+  transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+}
+#myDocument .my-framework .uikit-component .dotted-scrollspy-nav .item.uk-active a {
+  background-color: hsla(172, 72%, 43%, 1);
+  transform: scale(1.25);
+  -moz-transform: scale(1.25);
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+}
+#myDocument .my-framework .uikit-component .uk-search .uk-search-field {
   height: auto;
   width: auto;
   padding-left: 3em;
   padding-right: 2em;
 }
-html#myDocument body.my-framework .uikit-component .uk-search .uk-search-close {
+#myDocument .my-framework .uikit-component .uk-search .uk-search-close {
   margin-top: 0;
   height: auto;
+  position: relative;
   top: 0.5833em;
   right: 0.4166em;
   font-size: 125%;
@@ -316,84 +319,86 @@ html#myDocument body.my-framework .uikit-component .uk-search .uk-search-close {
   -webkit-box-shadow: none;
   -o-box-shadow: none;
 }
-html#myDocument body.my-framework .uikit-component .uk-search .uk-search-close:hover, html#myDocument body.my-framework .uikit-component .uk-search .uk-search-close:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-search .uk-search-close:hover, #myDocument .my-framework .uikit-component .uk-search .uk-search-close:active {
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-search:after {
+#myDocument .my-framework .uikit-component .uk-search:after {
+  display: inline-block;
+  position: relative;
+  left: -88.25%;
+  top: 0.1666em;
   font-size: 125%;
-  left: 0.6666em;
-  top: 0.5833em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .item > .link, html#myDocument body.my-framework .uikit-component .uk-nav .item > a {
+#myDocument .my-framework .uikit-component .uk-nav .item > .link, #myDocument .my-framework .uikit-component .uk-nav .item > a {
   max-width: 100%;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .item > .link:hover, html#myDocument body.my-framework .uikit-component .uk-nav .item > .link:active, html#myDocument body.my-framework .uikit-component .uk-nav .item > a:hover, html#myDocument body.my-framework .uikit-component .uk-nav .item > a:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-nav .item > .link:hover, #myDocument .my-framework .uikit-component .uk-nav .item > .link:active, #myDocument .my-framework .uikit-component .uk-nav .item > a:hover, #myDocument .my-framework .uikit-component .uk-nav .item > a:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: transparent;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav > .item > .link, html#myDocument body.my-framework .uikit-component .uk-nav > .item > a {
+#myDocument .my-framework .uikit-component .uk-nav > .item > .link, #myDocument .my-framework .uikit-component .uk-nav > .item > a {
   text-transform: uppercase;
   font-weight: 700;
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav > .item > .link:hover, html#myDocument body.my-framework .uikit-component .uk-nav > .item > .link:active, html#myDocument body.my-framework .uikit-component .uk-nav > .item > a:hover, html#myDocument body.my-framework .uikit-component .uk-nav > .item > a:active {
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-nav > .item > .link:hover, #myDocument .my-framework .uikit-component .uk-nav > .item > .link:active, #myDocument .my-framework .uikit-component .uk-nav > .item > a:hover, #myDocument .my-framework .uikit-component .uk-nav > .item > a:active {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent.uk-open > a, html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent.uk-open > a:hover, html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent.uk-open > a:active {
+#myDocument .my-framework .uikit-component .uk-nav .uk-parent.uk-open > a, #myDocument .my-framework .uikit-component .uk-nav .uk-parent.uk-open > a:hover, #myDocument .my-framework .uikit-component .uk-nav .uk-parent.uk-open > a:active {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent.uk-open > div {
+#myDocument .my-framework .uikit-component .uk-nav .uk-parent.uk-open > div {
   height: 100% !important;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent > a .icon {
+#myDocument .my-framework .uikit-component .uk-nav .uk-parent > a .icon {
   margin-left: 5px;
   margin-top: 5px;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-parent > a .icon.main {
+#myDocument .my-framework .uikit-component .uk-nav .uk-parent > a .icon.main {
   margin-left: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-nav-sub {
+#myDocument .my-framework .uikit-component .uk-nav .uk-nav-sub {
   margin: 0;
   padding: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-nav-sub .item a {
+#myDocument .my-framework .uikit-component .uk-nav .uk-nav-sub .item a {
   padding-left: 2em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-nav-sub .uk-parent .uk-nav-sub a {
+#myDocument .my-framework .uikit-component .uk-nav .uk-nav-sub .uk-parent .uk-nav-sub a {
   padding-left: 3em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav > li > a {
+#myDocument .my-framework .uikit-component .uk-nav > li > a {
   padding: 0.75em 1em;
   margin-top: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-nav .uk-nav-header {
+#myDocument .my-framework .uikit-component .uk-nav .uk-nav-header {
   font-size: 1em;
   padding: 0.5em 1em;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-search > li > a {
+#myDocument .my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-search > li > a {
   color: hsla(240, 8%, 39%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a:hover, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a:active, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-search > li > a:hover, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-search > li > a:active {
+#myDocument .my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a:hover, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li > a:active, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-search > li > a:hover, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-search > li > a:active {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 96%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li.uk-active > a, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-search > li.uk-active > a {
+#myDocument .my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li.uk-active > a, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-search > li.uk-active > a {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 96%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li.uk-nav-divider, html#myDocument body.my-framework .uikit-component .uk-nav.uk-nav-search > li.uk-nav-divider {
-  border-top-color: hsla(0, 0%, 90%, 1);
+#myDocument .my-framework .uikit-component .uk-nav.uk-nav-autocomplete > li.uk-nav-divider, #myDocument .my-framework .uikit-component .uk-nav.uk-nav-search > li.uk-nav-divider {
+  border-top-color: hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar {
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav .uk-nav-divider {
-  border-top-color: hsla(0, 0%, 90%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav .uk-nav-divider {
+  border-top-color: hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a {
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a {
   height: auto;
   line-height: 1.5;
   font-family: "Nunito", sans-serif;
@@ -403,74 +408,74 @@ html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > l
   text-transform: uppercase;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a:hover, html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a:hover, #myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 0.75);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a[href="#"] {
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li > a[href="#"] {
   cursor: pointer;
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent > a[href="#"] {
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent > a[href="#"] {
   cursor: default;
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent > a[href="#"] .icon {
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent > a[href="#"] .icon {
   margin-top: 5px;
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a, html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a:hover, html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a, #myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a:hover, #myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-active > a:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 0.5);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent.uk-open > a {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent.uk-open > a {
+  color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 0.75);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown {
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown {
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a {
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
   text-transform: none;
   font-weight: 200;
 }
-html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a:hover, html#myDocument body.my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a:active {
-  color: hsla(170, 100%, 40%, 1);
+#myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a:hover, #myDocument .my-framework .uikit-component .uk-navbar .uk-navbar-nav > li.uk-parent .uk-dropdown li a:active {
+  color: hsla(172, 72%, 43%, 1);
   background-color: hsla(0, 0%, 100%, 0.75);
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item {
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item {
+  background-color: hsla(0, 0%, 100%, 1);
   padding: 0.5em;
   margin-bottom: 0.5em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle {
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle {
   margin-left: 0;
   font-size: 125%;
   padding: 0 0.5em;
   color: hsla(240, 8%, 39%, 0.5);
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle:hover, html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle:active {
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle:hover, #myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle:active {
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item .toggle-nestable {
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item .toggle-nestable {
   margin-left: 0;
   margin-right: 0.3333em;
   padding-left: 0.25em;
   padding-right: 0.25em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-item .content {
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-item .content {
   display: inline-block;
   padding-left: 0;
   padding-top: 0;
   padding-bottom: 0;
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-placeholder {
-  border: 0.1666em dashed hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-placeholder {
+  border: 0.1666em dashed hsla(0, 0%, 100%, 1);
   margin-bottom: 0.5em;
 }
-html#myDocument body.my-framework .uikit-component .uk-nestable .uk-nestable-list {
+#myDocument .my-framework .uikit-component .uk-nestable .uk-nestable-list {
   padding-left: 3em;
 }
-html#myDocument body.my-framework .uikit-component .uk-sortable .uk-sortable-placeholder {
+#myDocument .my-framework .uikit-component .uk-sortable .uk-sortable-placeholder {
   cursor: pointer;
   opacity: 0.85;
   -moz-opacity: 0.85;
@@ -479,7 +484,7 @@ html#myDocument body.my-framework .uikit-component .uk-sortable .uk-sortable-pla
   -ms-filter: "alpha(opacity=85)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=85)";
 }
-html#myDocument body.my-framework .uikit-component .uk-sortable .uk-sortable-over {
+#myDocument .my-framework .uikit-component .uk-sortable .uk-sortable-over {
   opacity: 0.5;
   -moz-opacity: 0.5;
   -webkit-opacity: 0.5;
@@ -487,52 +492,52 @@ html#myDocument body.my-framework .uikit-component .uk-sortable .uk-sortable-ove
   -ms-filter: "alpha(opacity=50)";
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
-html#myDocument body.my-framework .uikit-component .uk-sortable > * {
+#myDocument .my-framework .uikit-component .uk-sortable > * {
   cursor: pointer;
 }
-html#myDocument body.my-framework .uikit-component .uk-sticky, html#myDocument body.my-framework .uikit-component .uk-sticky-init {
+#myDocument .my-framework .uikit-component .uk-sticky, #myDocument .my-framework .uikit-component .uk-sticky-init {
   z-index: 999;
 }
-html#myDocument body.my-framework .uikit-component .uk-sticky.uk-active > *, html#myDocument body.my-framework .uikit-component .uk-sticky-init.uk-active > * {
+#myDocument .my-framework .uikit-component .uk-sticky.uk-active > *, #myDocument .my-framework .uikit-component .uk-sticky-init.uk-active > * {
   z-index: 999;
 }
-html#myDocument body.my-framework .uikit-component .uk-sticky-placeholder {
+#myDocument .my-framework .uikit-component .uk-sticky-placeholder {
   z-index: 998;
 }
-html#myDocument body.my-framework .uikit-component .uk-sticky-placeholder .uk-active {
+#myDocument .my-framework .uikit-component .uk-sticky-placeholder .uk-active {
   z-index: 999;
 }
-html#myDocument body.my-framework .uikit-component .uk-sticky-placeholder .uk-active > * {
+#myDocument .my-framework .uikit-component .uk-sticky-placeholder .uk-active > * {
   z-index: 999;
 }
-html#myDocument body.my-framework .uikit-component .timepicker + .uk-dropdown li a:hover, html#myDocument body.my-framework .uikit-component .timepicker + .uk-dropdown li a:active {
+#myDocument .my-framework .uikit-component .timepicker + .uk-dropdown li a:hover, #myDocument .my-framework .uikit-component .timepicker + .uk-dropdown li a:active {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .timepicker + .uk-dropdown li.uk-active a {
+#myDocument .my-framework .uikit-component .timepicker + .uk-dropdown li.uk-active a {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar {
-  background-color: hsla(0, 0%, 95%, 1);
-  border: 0.0833em solid hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar {
+  background-color: hsla(0, 0%, 100%, 1);
+  border: 0.0833em solid hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar .uk-htmleditor-navbar-nav > li:hover > a, html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar .uk-htmleditor-navbar-nav > li > a:focus {
+#myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar .uk-htmleditor-navbar-nav > li:hover > a, #myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar .uk-htmleditor-navbar-nav > li > a:focus {
   color: hsla(240, 8%, 39%, 1);
-  background-color: hsla(0, 0%, 96%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content {
-  border: 0.0833em solid hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content {
+  border: 0.0833em solid hsla(0, 0%, 100%, 1);
   border-top: none;
 }
-html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-code {
-  border-right: 0.0833em solid hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-code {
+  border-right: 0.0833em solid hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-preview {
+#myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-preview {
   padding: 1.5em;
 }
 
-html#myDocument body.my-framework.frontend #main-section .uikit-component {
+#myDocument .my-framework #main-section .uikit-component {
   display: inline-block;
   width: 100%;
 }
@@ -541,14 +546,11 @@ html#myDocument body.my-framework.frontend #main-section .uikit-component {
   font-size: 1em;
   line-height: 1.5;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(240, 8%, 39%, 0.9);
-}
-.uk-notify .uk-notify-message:hover, .uk-notify .uk-notify-message:active {
-  background-color: hsla(240, 8%, 39%, 1);
+  background-color: hsla(215, 16%, 23%, 0.9);
 }
 .uk-notify .uk-notify-message a.uk-close {
   padding: 0.25em 0.5em;
-  margin-top: 0.0833em;
+  margin-top: 0;
   color: hsla(0, 0%, 100%, 1) !important;
   background-color: hsla(0, 0%, 0%, 0.05);
   border-bottom-color: transparent !important;
@@ -557,50 +559,50 @@ html#myDocument body.my-framework.frontend #main-section .uikit-component {
   color: hsla(0, 0%, 100%, 1) !important;
 }
 
-.uk-dropdown {
+#myDocument .my-framework .uk-dropdown {
   color: hsla(240, 8%, 39%, 1);
   background-color: hsla(0, 0%, 100%, 1);
 }
 
-html#myDocument body.my-framework .uk-datepicker {
+#myDocument .my-framework .uk-datepicker {
   margin-top: 0;
   background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-nav {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-nav {
   margin-bottom: 1em;
   line-height: 1.5;
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-nav .uk-datepicker-heading {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-nav .uk-datepicker-heading {
   font-weight: 700;
   text-transform: uppercase;
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table td {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table th, #myDocument .my-framework .uk-datepicker .uk-datepicker-table td {
   padding: 0;
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th > a, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table td > a {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table th > a, #myDocument .my-framework .uk-datepicker .uk-datepicker-table td > a {
   display: block;
   width: 100%;
   padding: 0.5em 0.75em;
   color: hsla(240, 8%, 39%, 1);
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th > a:hover, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th > a:active, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table td > a:hover, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table td > a:active {
-  color: hsla(170, 100%, 40%, 1);
-  background-color: hsla(0, 0%, 95%, 1);
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table th > a:hover, #myDocument .my-framework .uk-datepicker .uk-datepicker-table th > a:active, #myDocument .my-framework .uk-datepicker .uk-datepicker-table td > a:hover, #myDocument .my-framework .uk-datepicker .uk-datepicker-table td > a:active {
+  color: hsla(172, 72%, 43%, 1);
+  background-color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th > a.uk-active, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table td > a.uk-active {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table th > a.uk-active, #myDocument .my-framework .uk-datepicker .uk-datepicker-table td > a.uk-active {
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table a {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table a {
   line-height: 1.5;
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table th {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table th {
   font-size: 1em;
   font-weight: 700;
   padding: 0.7em 0.3em;
-  background-color: hsla(0, 0%, 96%, 1);
+  background-color: hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted:hover, html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted:active {
+#myDocument .my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted, #myDocument .my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted:hover, #myDocument .my-framework .uk-datepicker .uk-datepicker-table .uk-datepicker-table-muted:active {
   color: hsla(240, 8%, 39%, 1);
   opacity: 0.5;
   -moz-opacity: 0.5;
@@ -610,161 +612,161 @@ html#myDocument body.my-framework .uk-datepicker .uk-datepicker-table .uk-datepi
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
 }
 
-html#myDocument body.my-framework #molecules-32-1 .uikit-component .scrollspy-nav, html#myDocument body.my-framework #molecules-32-1 .uikit-component .dotted-scrollspy-nav, html#myDocument body.my-framework #molecules-32-2 .uikit-component .scrollspy-nav, html#myDocument body.my-framework #molecules-32-2 .uikit-component .dotted-scrollspy-nav, html#myDocument body.my-framework #molecules-37 .scrollspy-nav, html#myDocument body.my-framework #molecules-37 .dotted-scrollspy-nav {
+#myDocument .my-framework #molecules-32-1 .uikit-component .scrollspy-nav, #myDocument .my-framework #molecules-32-1 .uikit-component .dotted-scrollspy-nav, #myDocument .my-framework #molecules-32-2 .uikit-component .scrollspy-nav, #myDocument .my-framework #molecules-32-2 .uikit-component .dotted-scrollspy-nav, #myDocument .my-framework #molecules-37 .scrollspy-nav, #myDocument .my-framework #molecules-37 .dotted-scrollspy-nav {
   display: none;
 }
 
-html#myDocument body.my-framework .framework #main-header .uikit-component .uikit-dropdown.uk-open .uikit-trigger {
+#myDocument .my-framework .framework #main-header .uikit-component .uikit-dropdown.uk-open .uikit-trigger {
   margin-bottom: -0.1666em;
   color: hsla(0, 0%, 100%, 1);
-  background-color: hsla(170, 100%, 40%, 1);
+  background-color: hsla(172, 72%, 43%, 1);
 }
 
-html#myDocument body.my-framework.uk-offcanvas-page {
+#myDocument .my-framework.uk-offcanvas-page {
   overflow: hidden;
 }
 
-html#myDocument {
+#myDocument {
   margin-top: 0 !important;
 }
 
-html#myDocument body.my-framework.rtl .input-wrapper.with-icon.uk-form-password .input {
+#myDocument .my-framework.rtl .input-wrapper.with-icon.uk-form-password .input {
   padding-right: 3em;
   padding-left: 4em;
 }
-html#myDocument body.my-framework.rtl .input-wrapper > a.uk-form-password-toggle {
+#myDocument .my-framework.rtl .input-wrapper > a.uk-form-password-toggle {
   right: auto;
   left: 0.62em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-search:after {
+#myDocument .my-framework.rtl .uikit-component .uk-search:after {
   left: auto;
   right: 0.4166em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-search-close {
+#myDocument .my-framework.rtl .uikit-component .uk-search-close {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-search-field {
+#myDocument .my-framework.rtl .uikit-component .uk-search-field {
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab > li {
+#myDocument .my-framework.rtl .uikit-component .uk-tab > li {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li, html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li, #myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li {
   float: none;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-left {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-left {
   border-right: none;
-  border-left: 0.0833em solid hsla(0, 0%, 90%, 1);
+  border-left: 0.0833em solid hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li {
   margin-right: 0;
   margin-left: -1px;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li > a {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li > a {
   border-left: none;
   border-right-width: 0.0833em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li.uk-active > a {
-  border-right: 0.0833em solid hsla(0, 0%, 90%, 1);
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-left > li.uk-active > a {
+  border-right: 0.0833em solid hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-right {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-right {
   border-left: none;
-  border-right: 0.0833em solid hsla(0, 0%, 90%, 1);
+  border-right: 0.0833em solid hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li {
   margin-left: 0;
   margin-right: -1px;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li > a {
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li > a {
   border-right: none;
   border-left-width: 0.0833em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li.uk-active > a {
-  border-left: 0.0833em solid hsla(0, 0%, 90%, 1);
+#myDocument .my-framework.rtl .uikit-component .uk-tab.uk-tab-right > li.uk-active > a {
+  border-left: 0.0833em solid hsla(214, 20%, 93%, 1);
 }
-html#myDocument body.my-framework.rtl .uikit-component .switcher-tabs.right {
+#myDocument .my-framework.rtl .uikit-component .switcher-tabs.right {
   margin-right: 1em;
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-progress-striped.uk-active .uk-progress-bar {
+#myDocument .my-framework.rtl .uikit-component .uk-progress-striped.uk-active .uk-progress-bar {
   animation: uk-progress-bar-stripes-inverted 2s linear infinite;
   -moz-animation: uk-progress-bar-stripes-inverted 2s linear infinite;
   -webkit-animation: uk-progress-bar-stripes-inverted 2s linear infinite;
 }
-html#myDocument body.my-framework.rtl .uikit-component.uk-button-group > .button {
+#myDocument .my-framework.rtl .uikit-component.uk-button-group > .button {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
+#myDocument .my-framework.rtl .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
   border-left: none;
   border-right: 0.0833em solid hsla(0, 0%, 100%, 0.25);
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nestable .uk-nestable-list {
+#myDocument .my-framework.rtl .uikit-component .uk-nestable .uk-nestable-list {
   padding-left: 0;
   padding-right: 3em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .content {
+#myDocument .my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .content {
   padding-left: 1em;
   padding-right: 0;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .toggle-nestable {
+#myDocument .my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .toggle-nestable {
   margin-left: 0.3333em;
   margin-right: 0.5em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle {
+#myDocument .my-framework.rtl .uikit-component .uk-nestable .uk-nestable-item .uk-nestable-handle {
   margin-left: 0;
   margin-right: 0.25em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nav .uk-nav-sub .item a {
+#myDocument .my-framework.rtl .uikit-component .uk-nav .uk-nav-sub .item a {
   padding-left: 1em;
   padding-right: 2em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-nav .uk-nav-sub .uk-parent .uk-nav-sub a {
+#myDocument .my-framework.rtl .uikit-component .uk-nav .uk-nav-sub .uk-parent .uk-nav-sub a {
   padding-left: 2em;
   padding-right: 3em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-navbar-nav {
+#myDocument .my-framework.rtl .uikit-component .uk-navbar-nav {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-navbar-nav > li {
+#myDocument .my-framework.rtl .uikit-component .uk-navbar-nav > li {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-navbar-nav > li.uk-parent .uk-dropdown {
+#myDocument .my-framework.rtl .uikit-component .uk-navbar-nav > li.uk-parent .uk-dropdown {
   left: auto;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-modal .uk-modal-dialog .uk-close {
+#myDocument .my-framework.rtl .uikit-component .uk-modal .uk-modal-dialog .uk-close {
   float: left;
   margin: -1em 0 0 -1em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .scrollspy-nav, html#myDocument body.my-framework.rtl .uikit-component .dotted-scrollspy-nav {
+#myDocument .my-framework.rtl .uikit-component .scrollspy-nav, #myDocument .my-framework.rtl .uikit-component .dotted-scrollspy-nav {
   right: auto;
   left: 1em;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-nav {
+#myDocument .my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-nav {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-nav > li {
+#myDocument .my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-nav > li {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-flip {
+#myDocument .my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-navbar-flip {
   float: left;
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-code {
+#myDocument .my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-code {
   float: right;
   border-right: none;
-  border-left: 0.0833em solid hsla(0, 0%, 95%, 1);
+  border-left: 0.0833em solid hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-preview {
+#myDocument .my-framework.rtl .uikit-component .uk-htmleditor .uk-htmleditor-content .uk-htmleditor-preview {
   float: left;
 }
-html#myDocument body.my-framework.rtl .uk-datepicker {
+#myDocument .my-framework.rtl .uk-datepicker {
   right: 0;
   left: auto !important;
 }
-html#myDocument body.my-framework.rtl .uk-pagination > li {
+#myDocument .my-framework.rtl .uk-pagination > li {
   float: right;
 }
-html#myDocument body.my-framework.rtl .uk-notify .uk-notify-message a.uk-close {
+#myDocument .my-framework.rtl .uk-notify .uk-notify-message a.uk-close {
   float: left;
 }
 

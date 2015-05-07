@@ -21,7 +21,7 @@
     }
 }
 
-html#{$documentID} body#{$frameworkClass} {
+#{$documentID} #{$frameworkClass} {
     .rtl, &.rtl p, &.rtl .title, &.rtl header { /* Right-to-Left support - element to be removed when it's used */
         direction: rtl;
         text-align: right !important;
@@ -65,7 +65,7 @@ html#{$documentID} body#{$frameworkClass} {
             right: auto;
             float: left;
         }
-        .list.enumerated .item, .list-enumerated .item, .enumerated .item {
+        .list-enumerated .item, .enumerated .item {
             margin-right: 0;
             margin-left: 0.5em;
         }
@@ -231,16 +231,6 @@ html#{$documentID} body#{$frameworkClass} {
         .pane .controls {
             right: auto;
             left: 0;
-        }
-        .moving {
-            &.right:hover {
-                margin-right: 1.5em;
-                margin-left: 0;
-            }
-            &.left:hover {
-                margin-right: -1.5em;
-                margin-left: 0;
-            }
         }
         .moving-right {
             &:hover {

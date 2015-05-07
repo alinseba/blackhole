@@ -18,24 +18,32 @@
 }
 
 /* Component Manager Styles */
-html#{$documentID} .framework {
-	background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+#{$documentID} .framework {
+	background-color: rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
 	#main-header {
+        padding: 0;
+        z-index: 999;
 		background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
-		z-index: 999;
 		#main-menu {
+            .menu.components {
+                margin: 0;
+            }
 			a {
 				color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
-				padding: 1.5em;
+                background-color: transparent;
+				padding: 1.1666em 1.5em 1.5em;
+                border-top: 0.3333em solid transparent;
 				&:hover, &:active {
-					color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+					color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+                    background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.05);
 				}
 			}
 			.item {
 				&.active {
 					a, a:hover, a:active {
-						color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
-						background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3), 0.9);
+						color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.85);
+						background-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.15);
+                        border-top-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
 					}
 				}
 			}
@@ -78,6 +86,7 @@ html#{$documentID} .framework {
                 }
                 &:last-child {
                     margin-bottom: 0;
+                    border-bottom: none;
                 }
                 > .ui-tabs > .ui-tabs-panel {
                     background-color: transparent;
@@ -99,6 +108,14 @@ html#{$documentID} .framework {
                 z-index: 99;
                 margin-left: 1em;
                 margin-bottom: 1em;
+                @include opacity(0.3);
+                @include transition($defaultTransition);
+                &:hover, &:active  {
+                    @include opacity(1);
+                }
+                .icon {
+                    margin-top: 0.25em;
+                }
             }
             > .list .item > aside.element > .trigger + *,  > .list .item > aside.element > .trigger + * + *, > .list .item .tab-content > aside.element > .trigger + *, > .list .item .tab-content > aside.element > .trigger + * + * {
                 max-width: 75%;
@@ -144,6 +161,7 @@ html#{$documentID} .framework {
             			a, a:hover, a:active {
             				color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
             				background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+                            @include border-radius($defaultBorderRadius);
             			}
             		}
             	}
@@ -243,13 +261,36 @@ html#{$documentID} .framework {
     		.item {
     			margin-bottom: 0;
     			a {
-    				min-width: 42px;
+    				min-width: 36px;
+                    min-height: 36px;
+                    @include border-radius(5em);
     			}
+                a .icon {
+                    margin-top: 0.4166em;
+                }
     		}
     		.item:last-child {
     			margin-right: 0;
     		}
     	}
+    }
+    .extra-space-small {
+        margin-bottom: 7.5em;
+    }
+    .extra-space-x-small {
+        margin-bottom: 10em;
+    }
+    .extra-space-medium {
+        margin-bottom: 15em;
+    }
+    .extra-space-x-medium {
+        margin-bottom: 20em;
+    }
+    .extra-space-big {
+        margin-bottom: 25em;
+    }
+    .extra-space-x-big {
+        margin-bottom: 31.25em;
     }
 }
 

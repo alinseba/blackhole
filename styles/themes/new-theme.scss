@@ -1,0 +1,841 @@
+// =========================================================================
+// Partials Import
+// =========================================================================
+
+@import "../utils/various/hsla-converter.scss";
+@import "../base/core.scss";
+@import "../config/config.scss";
+
+
+// =========================================================================
+// CONFIGURATION
+// =========================================================================
+
+// BASE
+
+$baseFontSize: 16px;
+
+
+// COLORS
+
+// Main Colors
+$linkColor: 31,187,166;
+$linkColorHEX: unquote("#1fbba6");
+$mainColor: 94,109,129;
+$mainColorHEX: unquote("#5e6d81");
+$negativeColor: 255,255,255;
+$negativeColorHEX: unquote("#fff");
+$blackColor: 0,0,0;
+$blackColorHEX: unquote("#000");
+$accentColor: 31,187,166;
+$accentColorHEX: unquote("#1fbba6");
+$buttonColor: 255,255,255;
+$buttonColorHEX: unquote("#fff");
+$mainBackground: 246,246,246;
+$mainBackgroundHEX: unquote("#f6f6f6");
+
+// Secondary Colors
+$elementsBackground: 255,255,255;
+$elementsBackgroundHEX: unquote("#fff");
+$elementsActionBackground: 249,250,252;
+$elementsActionBackgroundHEX: unquote("#f9fafc");
+$elementsBackground2: 234,237,241;
+$elementsBackground2HEX: unquote("#eaedf1");
+
+// Other Colors
+$tipColor: 31,187,166;
+$tipColorHEX: unquote("#1fbba6");
+$tipBack: 31,187,166;
+$tipBackHEX: unquote("#1fbba6");
+$pendingColor: 239,120,52;
+$pendingColorHEX: unquote("#ef7834");
+$pendingBack: 239,120,52;
+$pendingBackHEX: unquote("#ef7834");
+$successColor: 31,187,166;
+$successColorHEX: unquote("#1fbba6");
+$successBack: 31,187,166;
+$successBackHEX: unquote("#1fbba6");
+$errorColor: 204,42,65;
+$errorColorHEX: unquote("#CC2A41");
+$errorBack: 204,42,65;
+$errorBackHEX: unquote("#CC2A41");
+$infoColor: 20,184,212;
+$infoColorHEX: unquote("#14b8d4");
+$infoBack: 20,184,212;
+$infoBackHEX: unquote("#14b8d4");
+$neutralBack: 234,237,241;
+$neutralBackHEX: unquote("#eaedf1");
+$complementaryColor: 50,58,69;
+$complementaryColorHEX: unquote("#323a45");
+
+
+// CSS3 PROPERTIES - Storing Variables and Arrays for Your Elements
+
+// Default Variables - change any of values or elements to fit your needs
+// Box Shadow
+$defaultOutsetBoxShadow: 0 0.1666em 0.0833em rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.075);
+$customOutsetBoxShadow: 0 0.1666em 0.0833em rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.075);
+$defaultInsetBoxShadow: inset 0 0 0.1em rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+
+// Default Arrays - used as collection of elements for which to apply or not the specific CSS properties - can add or remove from each array, as you please to fit your needs
+// Box Shadow
+$defaultOutsetBoxShadowElements: ".box-shadow", ".box", ".message", ".message-error", ".message-alert", ".message-warning", ".message-info", ".message-ok", ".message-neutral", ".comments", ".fixed", ".timeline .item .content", ".feedback .quote";
+$customOutsetBoxShadowElements: "uikit-dropdown .menu", ".select .list", ".uk-dropdown";
+$defaultInsetBoxShadowElements: "";
+
+// Apply these theme-specific Box Shadows
+$defaultOutsetBoxShadowCollection: ();
+@each $defaultOutsetBoxShadowElement in $defaultOutsetBoxShadowElements {
+    $defaultOutsetBoxShadowCollection: append($defaultOutsetBoxShadowCollection, unquote('#{$documentID} #{$defaultOutsetBoxShadowElement}'), comma);
+}
+#{$defaultOutsetBoxShadowCollection} {
+    @include box-shadow($defaultOutsetBoxShadow);
+}
+$customOutsetBoxShadowCollection: ();
+@each $customOutsetBoxShadowElement in $customOutsetBoxShadowElements {
+    $customOutsetBoxShadowCollection: append($customOutsetBoxShadowCollection, unquote('#{$documentID} #{$customOutsetBoxShadowElement}'), comma);
+}
+#{$customOutsetBoxShadowCollection} {
+    @include box-shadow($customOutsetBoxShadow);
+}
+$defaultInsetBoxShadowCollection: ();
+@each $defaultInsetBoxShadowElement in $defaultInsetBoxShadowElements {
+    $defaultInsetBoxShadowCollection: append($defaultInsetBoxShadowCollection, unquote('#{$documentID} #{$defaultInsetBoxShadowElement}'), comma);
+}
+#{$defaultInsetBoxShadowCollection} {
+    @include box-shadow($defaultInsetBoxShadow);
+}
+
+
+
+/* Theme Overwrites */
+/* Default */
+body {
+	font-size: $baseFontSize;
+}
+.scrollup {
+	@include border-radius($defaultBorderRadius);
+}
+
+/* Various */
+#{$documentID} #{$frameworkClass} {
+	// Others
+	.label {
+		@include border-radius($defaultBorderRadius);
+	}
+	.border {
+		border-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.125);
+	}
+	img.border {
+		border-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+		border-width: 0.25em;
+	}
+	.close {
+		@include border-radius($defaultBorderRadius);
+	}
+	.quote, blockquote {
+		.icon.right {
+			color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.125);
+		}
+	}
+}
+
+/* Content Header */
+#{$frameworkClass} {
+	.content > header {
+		background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+	}
+}
+
+/* Buttons and Controls */
+#{$documentID} {
+	.button, button {
+		@include border-radius($defaultBorderRadius);
+		.title + .icon, .title + .icon-default {
+			margin-top: 0.25em;
+		}
+	}
+	.button-group {
+		.item {
+			.button, button {
+	            @include border-radius(0);
+	        }
+	        &:first-child {
+	            .button, button {
+	                @include border-radius($defaultBorderRadius 0 0 $defaultBorderRadius);
+	            }
+	        }
+	        &:last-child {
+	            .button, button {
+	                @include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+	            }
+	        }
+	    }
+	}
+}
+
+/* Inputs */
+#{$documentID} {
+	.input {
+		@include border-radius($defaultBorderRadius);
+		&.text, &.editable:focus {
+			min-width: 7.5em;
+			border-width: 0;
+			color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.5);
+			@include box-shadow(none);
+		}
+		&.text {
+			&:focus {
+				color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+			}
+			/* Chrome Placeholder Fix */
+	        &::-webkit-input-placeholder {
+	            color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.25);
+	        }
+	        &.error, &.ok {
+	        	color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+	        	&::-webkit-input-placeholder {
+		            color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.5);
+		        }
+	        }
+		}
+		&.editable {
+			border-width: 0.1666em;
+			&:focus {
+				border-width: 0.1666em;
+				border-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+			}
+			&:hover {
+				border-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.15);
+			}
+			&:focus:hover {
+				border-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+			}
+		}
+		&.blocknote {
+			border-bottom-width: 0.1666em;
+			border-bottom-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.15);
+			@include border-radius(0);
+			&:hover {
+				border-bottom-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.25);
+			}
+			&:focus {
+				background-color: transparent;
+				border-bottom-color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.35);
+			}
+		}
+		&.radio {
+			&.custom {
+				+ label {
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.35);
+				}
+				+ label:hover, + label:active {
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.75);
+				}
+				&:checked + label {
+					color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+				}
+			}
+			&.custom.alt {
+				+ label {
+					padding-top: 0.3333em;
+					padding-bottom: 0.3333em;
+					@include transition(unquote("background-color 0.2s linear, color 0.2s linear"));
+				}
+			}
+			&.custom.alt:checked {
+				+ label {
+					padding-top: 0.5em;
+					padding-bottom: 0.5em;
+				}
+			}
+		}
+		&.checkbox {
+			&.custom {
+				+ label {
+					padding: 0.25em 0.5833em;
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.35);
+				}
+				+ label:hover, + label:active {
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.75);
+				}
+				&:checked + label {
+					color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+				}
+			}
+		}
+	}
+	.input-wrapper {
+		&.with-icon .input {
+			padding-right: 3.25em;
+		}
+		&.multiple {
+			.button, button {
+				padding-top: 0.55em;
+				padding-bottom: 0.55em;
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+				.icon {
+					font-size: 150%;	
+					margin-top: 0.0833em;
+				}
+				&.only-icon {
+					padding-top: 0.4334em;
+					padding-bottom: 0.4334em;
+				}
+				&.only-icon .icon {
+					margin-top: 0.0833em;
+				}
+				&.file {
+					padding-top: 0.5em;
+					padding-bottom: 0.5em;
+					line-height: 1.5833;
+				}
+
+			}
+			.input {
+				@include border-radius($defaultBorderRadius 0 0 $defaultBorderRadius);
+			}
+
+		}
+	}
+}
+
+/* Boxes, Containers and Controls */
+#{$documentID} {
+	.thumbs {
+		.item .thumb {
+			border-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+		}
+	}
+	.caption {
+		background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3), 0.9);
+	}
+}
+
+/* Menus */
+#{$documentID} {
+	.menu, .menu-list {
+		> .item > a {
+			background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+		}
+	}
+}
+
+/* Pagination */
+#{$documentID} {
+	.pagination {
+		li {
+			a {
+				@include border-radius(0);
+			}
+			&:first-child a {
+				@include border-radius($defaultBorderRadius 0 0 $defaultBorderRadius);
+			}
+			&:last-child a {
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+			}
+			&.active a {
+				@include border-radius(0);
+			}
+			&.left a, &.right a {
+				@include border-radius($defaultBorderRadius);
+			}
+		}
+	}
+}
+
+/* Alerts and Warnings */
+#{$documentID} #{$frameworkClass} {
+    .message, .message-thin, .message-warning, .message-error, .message-alert, .message-info, .message-ok, .message-neutral, .message-modal, .message-tooltip, .message-in-box, .uk-notify-message {
+    	@include border-radius($defaultBorderRadius);
+    	.icon.tooltip {
+    		@include border-radius($defaultBorderRadius);
+    	}
+    }
+}
+
+/* Box */
+#{$documentID} {
+	.box {
+		> header {
+			background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+			> .trigger {
+				margin-top: 0.0416em;
+			}
+		}
+	}
+}
+
+/* Flyer */
+#{$documentID} {
+	.flyer {
+		@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+		.content + .button {
+			@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+		}
+	}
+}
+
+/* Tables */
+#{$frameworkClass} {
+    /* Classic Tables */
+    table {
+    	caption {
+    		background-color: rgbToHsla(nth($complementaryColor, 1), nth($complementaryColor, 2), nth($complementaryColor, 3));
+    	}
+    	td, th {
+    		background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    	}
+    	th, tfoot td {
+    		background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    	}
+    }
+    /* List Tables*/
+    .table {
+    	.list {
+    		.item {
+    			background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    		}
+    		.item.header, .item.footer {
+    			background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    		}
+    	}
+    }
+}
+
+/* COMPONENTS */
+
+/* Horizontal Rules */
+#{$documentID} {
+    .hr, .hr-dotted, .hr-dashed, .hr-thick, .hr-stripes {
+    	border-bottom-color: rgbToHsla(nth($blackColor, 1), nth($blackColor, 2), nth($blackColor, 3), 0.1);
+    }
+}
+
+/* Social Icons */
+#{$documentID} .social {
+    .item a {
+    	.icon {
+    		margin-top: 0;
+    	}
+    }
+    &.with-background {
+    	.item a {
+    		@include border-radius(5em);
+    		.icon {
+    			margin-top: 0.4166em;
+    		}
+    	}
+    }
+}
+
+/* Timeline */
+#{$documentID} .timeline {
+	.bar {
+		@include border-radius(5em);
+	}
+	.list .item {
+		.content {
+			@include border-radius($defaultBorderRadius);
+		}
+	}
+	&.vertical {
+		.list .item {
+			.title {
+				@include border-radius($defaultBorderRadius);
+			}
+		}
+	}
+}
+
+/* Feedback */
+#{$documentID} {
+    .feedback, .feedback-right {
+    	.quote {
+    		@include box-shadow($defaultOutsetBoxShadow);
+    		@include border-radius($defaultBorderRadius);
+    	}
+    	.client {
+    		margin-right: 1em;
+    	}
+    	.client .avatar {
+    		margin-top: 0;
+    		border-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    		@include border-radius(5em);
+    	}
+   	}
+   	.feedback-right {
+   		.client {
+    		margin-left: 0;
+    	}
+   	}
+}
+
+/* Pricing Tables */
+#{$documentID} {
+    .pricing-table {
+    	thead {
+    		th.features {
+    			background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    		}
+    	}
+    	tfoot {
+	    	td a {
+	    		@include border-radius(0);
+	    	}
+	    	tr {
+	    		background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+	    		&:nth-child(2) td:first-child {
+	    			background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+	    		}
+	    	}
+    	}
+    }
+    .table.pricing {
+    	.list.features {
+    		background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+    		.item.footer {
+    			.title {
+    				padding-top: 0.5416em;
+    				padding-bottom: 0.5416em;
+    			}
+    		}
+    	}
+    	.list .footer a {
+    		@include border-radius(0);
+    	}
+    	.list .item .price {
+    		background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    	}
+    }
+}
+
+/* Comments */
+#{$documentID} #{$frameworkClass} {
+	.comments {
+		.post-comment button {
+			@include border-radius($defaultBorderRadius 0 $defaultBorderRadius 0);
+		}
+		> .list > .item aside.commenter img {
+			border-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+    		@include border-radius(5em);		
+		}
+	}
+}
+
+/* UIKit */ // REMOVE THIS IF YOU DON'T USE AT ALL THE UIKIT LIBRARY
+#{$documentID} #{$frameworkClass} {
+	.uikit-component {
+		.uk-search {
+			&:after {
+				top: 0.285em;
+			}
+			.uk-search-close {
+				top: 0.285em;
+			}
+			.uk-search-field {
+				padding-right: 2.5em;
+			}
+		}
+		.uk-active.uk-search {
+			.uk-search-field {
+				@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+			}
+		}
+		.uk-placeholder {
+			border: 0.1666em dashed rgbToHsla(nth($elementsBackground2, 1), nth($elementsBackground2, 2), nth($elementsBackground2, 3));
+			@include border-radius($defaultBorderRadius);
+		}
+		.uk-nav.uk-nav-autocomplete > li > a {
+			color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.5);
+			&:hover, &:active {
+				color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+				background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+			}
+		}
+		.uk-nav {
+			.uk-nav-sub .item {
+				a {
+					background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+				}
+				a:hover, a:active {
+					background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+				}
+			}
+		}
+		.uk-autocomplete.uk-open {
+			.timepicker {
+				@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+			}
+		}
+		.uk-tab + .uk-switcher {
+			@include border-radius(0 $defaultBorderRadius $defaultBorderRadius $defaultBorderRadius);
+		}
+		.uk-switcher {
+			background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3));
+			margin: 0;
+			@include border-radius($defaultBorderRadius $defaultBorderRadius $defaultBorderRadius 0);
+			li > * {
+				margin-bottom: 0;
+			}
+		}
+		.uk-tab {
+			> li {
+				margin-bottom: -0.0833em;
+			}
+			li > a {
+				color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.5);
+				background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+				border: none;
+				&:hover, &:active {
+					color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+					background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+				}
+			}
+			li.uk-active {
+				> a, > a:hover, > a:active {
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+				}
+			}
+			li:nth-child(n+2) > a {
+				margin-left: 0;
+			}
+			li:first-child > a {
+				@include border-radius($defaultBorderRadius 0 0 0);
+			}
+			li[class~='item']:last-of-type > a {
+				@include border-radius(0 $defaultBorderRadius 0 0);
+			}
+			> li:not(.uk-active) {
+				> a:hover, > a:focus {
+					padding-bottom: 0.5em;
+				}
+			}
+		}
+		.uk-tab-bottom {
+			> li {
+				margin-top: -0.0833em;
+			}
+			> li:not(.uk-active) {
+				> a:hover, > a:focus {
+					padding-top: 0.5em;
+				}
+			}
+			li:first-child > a {
+				@include border-radius(0 0 0 $defaultBorderRadius);
+			}
+		}
+		.switcher-content.left {
+			.uk-switcher {
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+			}
+		}
+		.switcher-tabs.left, .switcher-tabs.right {
+			.uk-tab {
+				> li {
+					margin-bottom: 0;
+				}
+				li > a {
+					padding-top: 1.125em;
+					padding-bottom: 1.125em;
+				}
+			}
+		}
+		.switcher-tabs.right {
+			margin-left: 0;
+			.uk-tab {
+				li:first-child > a {
+					@include border-radius(0 $defaultBorderRadius 0 0);
+				}
+			}
+		}
+		.uk-tab-left > li:nth-child(n+2) > a, .uk-tab-right > li:nth-child(n+2) > a {
+			margin-top: 0;
+		}
+		.uk-tab-left, .uk-tab-right {
+			border: none;
+			> li:not(.uk-active) {
+				> a:hover, > a:focus {
+					margin-left: 0;
+					margin-right: 0;
+					padding-left: 0.75em;
+					padding-right: 0.75em;
+				}
+			}
+		}
+		.switcher-content.right {
+			.uk-switcher {
+				@include border-radius($defaultBorderRadius 0 0 $defaultBorderRadius);
+			}
+		}
+		.uk-progress {
+			@include border-radius($defaultBorderRadius);
+		}
+		&.uk-button-group {
+			> .button {
+				@include border-radius($defaultBorderRadius 0 0 $defaultBorderRadius);
+			}
+			.uikit-trigger {
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+			}
+		}
+		p:first-child {
+			margin-bottom: 0;
+		}
+	}
+	.uk-notify {
+		.uk-notify-message {
+			a.uk-close {
+				@include border-radius($defaultBorderRadius);
+			}
+		}
+	}
+	.input-wrapper {
+		> a.uk-form-password-toggle {
+			top: 0.62em;
+		}
+		> .icon {
+			font-size: 150%;
+			top: 0.4166em;
+		}
+	}
+	.uikit-dropdown {
+		&.uk-open {
+			.uikit-trigger {
+				color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+				background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+				@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+			}
+		}
+		.uk-dropdown {
+			background-color: transparent;
+			.menu {
+				margin: 0;
+			}
+			.menu .item:first-child a {
+				@include border-radius(0 $defaultBorderRadius 0 0);
+			}
+			.menu .item:last-child a {
+				@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+			}
+			.menu .item a {
+				color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+				background-color: rgbToHsla(nth($elementsActionBackground, 1), nth($elementsActionBackground, 2), nth($elementsActionBackground, 3));
+				border-bottom: none;
+				&:hover, &:active {
+					color: rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3));
+					background-color: rgbToHsla(nth($negativeColor, 1), nth($negativeColor, 2), nth($negativeColor, 3)) !important;
+				}
+			}
+		}
+		.menu .item .link {
+			&:hover, &:active {
+				background-color: rgbToHsla(nth($accentColor, 1), nth($accentColor, 2), nth($accentColor, 3));
+			}
+		}
+		&.dropdown-up {
+			&.uk-open {
+				.uikit-trigger {
+					@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+				}
+			}
+			.menu .item:first-child a {
+				@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+			}
+			.menu .item:last-child a {
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius 0);
+			}
+			.uk-dropdown-up {
+				@include box-shadow(0 -0.1666em 0.0833em rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.075));
+			}
+		}
+	}
+}
+
+/* Media Queries */ // REMOVE IF YOU DON'T WANT RESPONSIVENESS
+@include media-query(640, min, 800, max) {
+	#{$documentID} #{$frameworkClass} {
+		.uikit-component {
+			.switcher-tabs.right .uk-tab, .switcher-tabs.left .uk-tab {
+				li:first-child > a {
+					@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+				}
+			}
+			.switcher-content.right, .switcher-content.left {
+				.uk-switcher {
+					@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+				}
+			}
+			.uk-tab-right > li, .uk-tab-left > li {
+				margin-left: 0;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+@include media-query(767, max) {
+	#{$documentID} #{$frameworkClass} {
+		/* UIKit */ // REMOVE THIS IF YOU DON'T USE AT ALL THE UIKIT LIBRARY
+		.uikit-component {
+			.uk-tab li > a {
+				@include border-radius($defaultBorderRadius $defaultBorderRadius 0 0);
+			}
+			.uk-tab.uk-tab-bottom li > a {
+				@include border-radius(0 0 $defaultBorderRadius $defaultBorderRadius);
+			}
+			.uk-tab.uk-tab-bottom .uk-dropdown {
+				margin-bottom: 0;
+				@include box-shadow(0 -0.1666em 0.0833em rgbToHsla(nth($mainColor, 1), nth($mainColor, 2), nth($mainColor, 3), 0.075));
+			}
+			.switcher-tabs.right .uk-tab > li {
+				float: right;
+			}
+			.switcher-tabs.right .uk-tab li > a, .switcher-tabs.left .uk-tab li > a {
+				padding-top: 0.5em;
+				padding-bottom: 0.5em;
+			}
+			.switcher-content.left .uk-switcher {
+				@include border-radius(0 $defaultBorderRadius $defaultBorderRadius $defaultBorderRadius);
+			}
+			.switcher-content.right .uk-switcher {
+				@include border-radius($defaultBorderRadius 0 $defaultBorderRadius $defaultBorderRadius);
+			}
+		}
+
+	}
+}
+
+@include media-query(800, max) {
+	#{$documentID} #{$frameworkClass} {
+		table {
+			tbody tr {
+				margin-left: -0.3333em;
+			}
+		}
+		.pricing-table {
+			thead th:last-child {
+				border-bottom: none;
+				.title {
+					border-right: none;
+				}
+			}
+			thead th .title {
+				padding-top: 0.54em;
+				padding-bottom: 0.54em;
+				border-right: none;
+			}
+			&.with-description {
+				thead th .title {
+					padding-top: 0.5833em;
+					padding-bottom: 0.5833em;
+				}
+			}
+		}
+		.comments {
+			> .list > .item aside.comment-block .controls, > .list > .item.replied .reply .replier .comment-block .controls {
+				display: block;
+			}
+		}
+	}
+}

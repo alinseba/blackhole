@@ -1,0 +1,188 @@
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 800px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 1024px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 1024px) and (max-width: 1280px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 1024px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (min-width: 640px) and (max-width: 800px) {
+  /* Tables */
+  /* Classic Tables */
+  #myDocument .my-framework table.uk-datepicker-table {
+    display: table;
+  }
+  #myDocument .my-framework table.uk-datepicker-table thead {
+    float: none;
+    display: table-header-group;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tbody {
+    display: table-row-group;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tr {
+    display: table-row;
+    margin: 0;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tr td, #myDocument .my-framework table.uk-datepicker-table tr th {
+    display: table-cell;
+    min-width: inherit;
+    border-bottom: none;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 640px) {
+  #myDocument .my-framework .uikit-component .uk-sortable > * {
+    width: 49%;
+    float: left;
+    margin-right: 2%;
+  }
+  #myDocument .my-framework .uikit-component .uk-sortable > *:nth-child(2n) {
+    margin-right: 0;
+  }
+
+  /* Buttons and Controls */
+  #myDocument .my-framework .uikit-dropdown {
+    max-width: 100%;
+  }
+  #myDocument .my-framework .uikit-dropdown .button {
+    display: block;
+    width: 100%;
+  }
+
+  #myDocument .my-framework .uikit-component.uk-button-group > a, #myDocument .my-framework .uikit-component.uk-button-group > .button {
+    width: 75%;
+    float: left;
+  }
+  #myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown {
+    width: 25%;
+    float: left !important;
+  }
+  #myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger {
+    float: left;
+    width: 100%;
+    margin-bottom: 0;
+    padding-bottom: 0.5em;
+    padding-top: 0.5em;
+    text-align: center;
+  }
+  #myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown .uikit-trigger .icon {
+    float: none;
+    margin: 0;
+  }
+  #myDocument .my-framework .uikit-component.uk-button-group .uikit-dropdown .uk-dropdown {
+    min-width: 400%;
+  }
+
+  /* Tables */
+  /* Classic Tables */
+  #myDocument .my-framework table.uk-datepicker-table {
+    display: table;
+  }
+  #myDocument .my-framework table.uk-datepicker-table thead {
+    float: none;
+    display: table-header-group;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tbody {
+    display: table-row-group;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tr {
+    display: table-row;
+    margin: 0;
+  }
+  #myDocument .my-framework table.uk-datepicker-table tr td, #myDocument .my-framework table.uk-datepicker-table tr th {
+    display: table-cell;
+    min-width: inherit;
+    border-bottom: none;
+  }
+
+  #myDocument .my-framework .uk-autocomplete, #myDocument .my-framework .uk-search {
+    width: 100%;
+  }
+
+  #myDocument .my-framework .uikit-component .uk-search .uk-search-field {
+    width: 100% !important;
+  }
+
+  #myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-toolbar {
+    width: 100%;
+  }
+  #myDocument .my-framework .uikit-component .uk-htmleditor .uk-htmleditor-navbar-flip {
+    width: 100%;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 639px) {
+  /* General */
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+@media only screen and (max-width: 480px) {
+  /* General */
+  #myDocument .my-framework .uikit-component .uk-sortable > * {
+    width: 100%;
+    float: none;
+    margin-right: 0;
+  }
+  #myDocument .my-framework .uikit-component .uk-sortable > *:nth-child(2n) {
+    margin-right: 0;
+  }
+}
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+/*
+   =========================================================================
+*/
+
+/*# sourceMappingURL=responsive.css.map */

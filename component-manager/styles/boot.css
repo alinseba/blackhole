@@ -4,5 +4,8 @@
 @import url(vendor/uikit/uikit.css);
 @import url(vendor/uikit/addons/uikit-addons.css);
 @import url(vendor/uikit/custom-uikit.css);
+@import url(vendor/uikit/responsive.css);
+/* New Theme */
+@import url(../../styles/themes/new-theme.css);
 
 /*# sourceMappingURL=boot.css.map */

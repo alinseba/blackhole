@@ -14,36 +14,36 @@
 /* Color Scheme */
 /* Clearfixes */
 /* Default Styles */
-html#myDocument body.my-framework #main-header {
+#myDocument .my-framework #main-header {
   background-color: hsla(0, 0%, 100%, 1);
   padding: 0.75em 0;
 }
-html#myDocument body.my-framework #main-header .wrapper {
+#myDocument .my-framework #main-header .wrapper {
   margin: 0 auto;
   padding: 0 1.5em;
 }
-html#myDocument body.my-framework #main-header .logo {
+#myDocument .my-framework #main-header .logo {
   display: block;
   float: left;
   margin-top: 0;
   margin-right: 0;
   width: 100%;
 }
-html#myDocument body.my-framework #main-header .logo a, html#myDocument body.my-framework #main-header .logo a:hover, html#myDocument body.my-framework #main-header .logo a:active {
+#myDocument .my-framework #main-header .logo a, #myDocument .my-framework #main-header .logo a:hover, #myDocument .my-framework #main-header .logo a:active {
   display: block;
   font-size: 125%;
   text-transform: uppercase;
   font-weight: 700;
-  color: hsla(170, 100%, 40%, 1);
+  color: hsla(172, 72%, 43%, 1);
 }
-html#myDocument body.my-framework #main-header .logo .symbol {
+#myDocument .my-framework #main-header .logo .symbol {
   display: inline-block;
   margin: 0 0.3333em;
   line-height: 1;
   padding: 0.04166em;
   color: hsla(0, 0%, 100%, 1);
-  border: 0.0833em dashed hsla(240, 8%, 39%, 0.5);
-  background-color: hsla(240, 8%, 39%, 1);
+  border: 0.0833em dashed hsla(215, 16%, 23%, 0.5);
+  background-color: hsla(215, 16%, 23%, 1);
   transform: scale(1.5, 1);
   -moz-transform: scale(1.5, 1);
   -webkit-transform: scale(1.5, 1);
@@ -52,36 +52,36 @@ html#myDocument body.my-framework #main-header .logo .symbol {
   -moz-border-radius: 0.4166em;
   -webkit-border-radius: 0.4166em;
 }
-html#myDocument body.my-framework #main-content {
+#myDocument .my-framework #main-content {
   min-height: 800px;
 }
-html#myDocument body.my-framework #main-content h1 {
+#myDocument .my-framework #main-content h1 {
   margin-bottom: 1em;
 }
-html#myDocument body.my-framework #main-content .learn {
+#myDocument .my-framework #main-content .learn {
   display: block;
   margin-top: 1em;
 }
-html#myDocument body.my-framework #main-footer {
+#myDocument .my-framework #main-footer {
   padding: 1em 1.5em;
 }
-html#myDocument body.my-framework #main-footer a {
+#myDocument .my-framework #main-footer a {
   color: hsla(0, 0%, 100%, 1);
 }
-html#myDocument body.my-framework #main-footer .copyright {
+#myDocument .my-framework #main-footer .copyright {
   float: left;
 }
-html#myDocument body.my-framework #main-footer .version {
+#myDocument .my-framework #main-footer .version {
   float: right;
   margin-right: 1.5em;
 }
-html#myDocument body.my-framework #main-footer .social {
+#myDocument .my-framework #main-footer .social {
   float: right;
 }
-html#myDocument body.my-framework #main-footer .social .item {
+#myDocument .my-framework #main-footer .social .item {
   margin-bottom: 0;
 }
-html#myDocument body.my-framework #main-footer .copyright, html#myDocument body.my-framework #main-footer .version {
+#myDocument .my-framework #main-footer .copyright, #myDocument .my-framework #main-footer .version {
   margin-top: 0.25em;
 }
 

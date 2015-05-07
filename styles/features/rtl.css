@@ -15,312 +15,304 @@
    RTL (Right-To-Left) Styles
    ========================================================================== */
 /* Clearfixes */
-html#myDocument body.my-framework .rtl, html#myDocument body.my-framework.rtl p, html#myDocument body.my-framework.rtl .title, html#myDocument body.my-framework.rtl header {
+#myDocument .my-framework .rtl, #myDocument .my-framework.rtl p, #myDocument .my-framework.rtl .title, #myDocument .my-framework.rtl header {
   /* Right-to-Left support - element to be removed when it's used */
   direction: rtl;
   text-align: right !important;
 }
-html#myDocument body.my-framework.rtl > * {
+#myDocument .my-framework.rtl > * {
   direction: rtl;
   text-align: right;
 }
-html#myDocument body.my-framework.rtl .bootstrap-section {
+#myDocument .my-framework.rtl .bootstrap-section {
   direction: ltr;
   text-align: left;
 }
-html#myDocument body.my-framework.rtl .right {
+#myDocument .my-framework.rtl .right {
   float: left;
 }
-html#myDocument body.my-framework.rtl .left {
+#myDocument .my-framework.rtl .left {
   float: right;
 }
-html#myDocument body.my-framework.rtl p img.left {
+#myDocument .my-framework.rtl p img.left {
   margin: 0 0 0.75em 0.75em;
 }
-html#myDocument body.my-framework.rtl p img.right {
+#myDocument .my-framework.rtl p img.right {
   margin: 0 0.75em 0.75em 0;
 }
-html#myDocument body.my-framework.rtl .with-label.left {
+#myDocument .my-framework.rtl .with-label.left {
   margin-left: 1.5em;
   margin-right: 0;
 }
-html#myDocument body.my-framework.rtl .with-label.right {
+#myDocument .my-framework.rtl .with-label.right {
   margin-left: 0;
   margin-right: 1.5em;
 }
-html#myDocument body.my-framework.rtl p .remark {
+#myDocument .my-framework.rtl p .remark {
   left: auto;
   right: -2em;
   float: right;
 }
-html#myDocument body.my-framework.rtl p .remark.right {
+#myDocument .my-framework.rtl p .remark.right {
   left: -2em;
   right: auto;
   float: left;
 }
-html#myDocument body.my-framework.rtl .list.enumerated .item, html#myDocument body.my-framework.rtl .list-enumerated .item, html#myDocument body.my-framework.rtl .enumerated .item {
+#myDocument .my-framework.rtl .list-enumerated .item, #myDocument .my-framework.rtl .enumerated .item {
   margin-right: 0;
   margin-left: 0.5em;
 }
-html#myDocument body.my-framework.rtl header > .icon {
+#myDocument .my-framework.rtl header > .icon {
   float: left;
 }
-html#myDocument body.my-framework.rtl * .icon, html#myDocument body.my-framework.rtl * .message {
+#myDocument .my-framework.rtl * .icon, #myDocument .my-framework.rtl * .message {
   text-align: center !important;
 }
-html#myDocument body.my-framework.rtl * .icon.main {
+#myDocument .my-framework.rtl * .icon.main {
   text-align: center !important;
 }
-html#myDocument body.my-framework.rtl .icon.right {
+#myDocument .my-framework.rtl .icon.right {
   margin-left: 0;
   margin-right: 16px;
   float: left;
 }
-html#myDocument body.my-framework.rtl .icon.left {
+#myDocument .my-framework.rtl .icon.left {
   margin-left: 6px;
   margin-right: 0;
   float: right;
 }
-html#myDocument body.my-framework.rtl .icon.left.main {
+#myDocument .my-framework.rtl .icon.left.main {
   margin-top: 0.25em;
 }
-html#myDocument body.my-framework.rtl .input-wrapper > .icon {
+#myDocument .my-framework.rtl .input-wrapper > .icon {
   right: auto;
   left: 0.62em;
 }
-html#myDocument body.my-framework.rtl .flyer .content > .icon.right {
+#myDocument .my-framework.rtl .flyer .content > .icon.right {
   float: left;
 }
-html#myDocument body.my-framework.rtl .close {
+#myDocument .my-framework.rtl .close {
   float: left;
 }
-html#myDocument body.my-framework.rtl * > span.title {
+#myDocument .my-framework.rtl * > span.title {
   float: none;
 }
-html#myDocument body.my-framework.rtl.chrome .framework a > span.title, html#myDocument body.my-framework.rtl.webkit .framework a > span.title {
+#myDocument .my-framework.rtl.chrome .framework a > span.title, #myDocument .my-framework.rtl.webkit .framework a > span.title {
   float: right;
 }
-html#myDocument body.my-framework.rtl .breadcrumb .item {
+#myDocument .my-framework.rtl .breadcrumb .item {
   float: right;
 }
-html#myDocument body.my-framework.rtl .menu.breadcrumb > .item, html#myDocument body.my-framework.rtl .menu-list.breadcrumb > .item {
+#myDocument .my-framework.rtl .menu.breadcrumb > .item, #myDocument .my-framework.rtl .menu-list.breadcrumb > .item {
   margin: 0 0 0 1em;
   float: right;
 }
-html#myDocument body.my-framework.rtl .menu.breadcrumb > .item .icon, html#myDocument body.my-framework.rtl .menu-list.breadcrumb > .item .icon {
+#myDocument .my-framework.rtl .menu.breadcrumb > .item .icon, #myDocument .my-framework.rtl .menu-list.breadcrumb > .item .icon {
   margin-left: 0;
   margin-right: 1em;
 }
-html#myDocument body.my-framework.rtl .input-wrapper.with-icon .input {
+#myDocument .my-framework.rtl .input-wrapper.with-icon .input {
   padding-right: 1em;
   padding-left: 3em;
 }
-html#myDocument body.my-framework.rtl .button-group .item {
+#myDocument .my-framework.rtl .button-group .item {
   float: right;
 }
-html#myDocument body.my-framework.rtl .scrollup {
+#myDocument .my-framework.rtl .scrollup {
   right: auto;
   left: 0.75em;
 }
-html#myDocument body.my-framework.rtl label {
+#myDocument .my-framework.rtl label {
   padding-right: 0;
   padding-left: 0.5em;
 }
-html#myDocument body.my-framework.rtl form input[type="text"], html#myDocument body.my-framework.rtl form input[type="password"], html#myDocument body.my-framework.rtl form .input.text, html#myDocument body.my-framework.rtl form textarea, html#myDocument body.my-framework.rtl form select {
+#myDocument .my-framework.rtl form input[type="text"], #myDocument .my-framework.rtl form input[type="password"], #myDocument .my-framework.rtl form .input.text, #myDocument .my-framework.rtl form textarea, #myDocument .my-framework.rtl form select {
   margin-right: 0;
   margin-left: 1em;
 }
-html#myDocument body.my-framework.rtl .input-wrapper.multiple .input, html#myDocument body.my-framework.rtl .input-wrapper.multiple input[type="text"], html#myDocument body.my-framework.rtl .input-wrapper.multiple .input:focus, html#myDocument body.my-framework.rtl .input-wrapper.multiple input[type="text"]:focus {
+#myDocument .my-framework.rtl .input-wrapper.multiple .input, #myDocument .my-framework.rtl .input-wrapper.multiple input[type="text"], #myDocument .my-framework.rtl .input-wrapper.multiple .input:focus, #myDocument .my-framework.rtl .input-wrapper.multiple input[type="text"]:focus {
   margin-left: 0;
   float: right;
 }
-html#myDocument body.my-framework.rtl .input-wrapper input[type="text"], html#myDocument body.my-framework.rtl .input-wrapper input[type="password"], html#myDocument body.my-framework.rtl .input-wrapper .input.text {
+#myDocument .my-framework.rtl .input-wrapper input[type="text"], #myDocument .my-framework.rtl .input-wrapper input[type="password"], #myDocument .my-framework.rtl .input-wrapper .input.text {
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .overlay .icon {
+#myDocument .my-framework.rtl .overlay .icon {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .overlay {
+#myDocument .my-framework.rtl .overlay {
   left: auto;
   right: 0;
 }
-html#myDocument body.my-framework.rtl .drop-caps:first-letter, html#myDocument body.my-framework.rtl .drop-caps::first-letter {
+#myDocument .my-framework.rtl .drop-caps:first-letter, #myDocument .my-framework.rtl .drop-caps::first-letter {
   float: none;
   padding-right: 0;
   padding-left: 0.125em;
 }
-html#myDocument body.my-framework.rtl .with-tag .tag {
+#myDocument .my-framework.rtl .with-tag .tag {
   right: auto;
   left: -0.75em;
 }
-html#myDocument body.my-framework.rtl .input.radio, html#myDocument body.my-framework.rtl .input.checkbox {
+#myDocument .my-framework.rtl .input.radio, #myDocument .my-framework.rtl .input.checkbox {
   margin-right: 0;
   margin-left: 0.5em;
 }
-html#myDocument body.my-framework.rtl label + input.radio:last-child, html#myDocument body.my-framework.rtl label + input.checkbox:last-child {
+#myDocument .my-framework.rtl label + input.radio:last-child, #myDocument .my-framework.rtl label + input.checkbox:last-child {
   float: right;
 }
-html#myDocument body.my-framework.rtl .more-content {
+#myDocument .my-framework.rtl .more-content {
   text-align: center !important;
 }
-html#myDocument body.my-framework.rtl .controls-horizontal {
+#myDocument .my-framework.rtl .controls-horizontal {
   right: auto;
   left: 15em;
 }
-html#myDocument body.my-framework.rtl .controls.left {
+#myDocument .my-framework.rtl .controls.left {
   left: auto;
   right: 30em;
 }
-html#myDocument body.my-framework.rtl .controls {
+#myDocument .my-framework.rtl .controls {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .box.closable .controls-horizontal {
+#myDocument .my-framework.rtl .box.closable .controls-horizontal {
   right: auto;
   left: 0.5em;
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item aside.comment-block {
+#myDocument .my-framework.rtl .comments > .list > .item aside.comment-block {
   padding-left: 1em;
   padding-right: 0;
   float: left;
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item aside.commenter {
+#myDocument .my-framework.rtl .comments > .list > .item aside.commenter {
   float: right !important;
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item aside.comment-block .controls {
+#myDocument .my-framework.rtl .comments > .list > .item aside.comment-block .controls {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .menu-list {
+#myDocument .my-framework.rtl .menu-list {
   float: right;
 }
-html#myDocument body.my-framework.rtl .pagination {
+#myDocument .my-framework.rtl .pagination {
   float: right;
 }
-html#myDocument body.my-framework.rtl .pagination .item {
+#myDocument .my-framework.rtl .pagination .item {
   float: right;
 }
-html#myDocument body.my-framework.rtl .pagination .item:first-child, html#myDocument body.my-framework.rtl .pagination .item:last-child, html#myDocument body.my-framework.rtl .pagination .item:first-child a, html#myDocument body.my-framework.rtl .pagination .item:last-child a {
+#myDocument .my-framework.rtl .pagination .item:first-child, #myDocument .my-framework.rtl .pagination .item:last-child, #myDocument .my-framework.rtl .pagination .item:first-child a, #myDocument .my-framework.rtl .pagination .item:last-child a {
   direction: rtl;
 }
-html#myDocument body.my-framework.rtl .ribbon-left {
+#myDocument .my-framework.rtl .ribbon-left {
   left: 0;
 }
-html#myDocument body.my-framework.rtl .ribbon {
+#myDocument .my-framework.rtl .ribbon {
   margin-left: 0;
   margin-right: -10px;
 }
-html#myDocument body.my-framework.rtl .pane .controls {
+#myDocument .my-framework.rtl .pane .controls {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .moving.right:hover {
+#myDocument .my-framework.rtl .moving-right:hover {
   margin-right: 1.5em;
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .moving.left:hover {
+#myDocument .my-framework.rtl .moving-left:hover {
   margin-right: -1.5em;
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .moving-right:hover {
-  margin-right: 1.5em;
-  margin-left: 0;
-}
-html#myDocument body.my-framework.rtl .moving-left:hover {
-  margin-right: -1.5em;
-  margin-left: 0;
-}
-html#myDocument body.my-framework.rtl .social .item {
+#myDocument .my-framework.rtl .social .item {
   float: right;
   margin: 0 0 0.25em 0.25em;
 }
-html#myDocument body.my-framework.rtl .social .item:last-child {
+#myDocument .my-framework.rtl .social .item:last-child {
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .timeline .list .item {
+#myDocument .my-framework.rtl .timeline .list .item {
   float: right;
 }
-html#myDocument body.my-framework.rtl .timeline.vertical .list .item .content {
+#myDocument .my-framework.rtl .timeline.vertical .list .item .content {
   left: auto;
   right: 4em;
 }
-html#myDocument body.my-framework.rtl .timeline.vertical .list .item .dot {
+#myDocument .my-framework.rtl .timeline.vertical .list .item .dot {
   left: auto;
   right: -0.3em;
 }
-html#myDocument body.my-framework.rtl .timeline.vertical .list .item img.dot {
+#myDocument .my-framework.rtl .timeline.vertical .list .item img.dot {
   left: auto;
   right: -1.75em;
 }
-html#myDocument body.my-framework.rtl .timeline.vertical .list .item .datetime, html#myDocument body.my-framework.rtl .timeline.vertical .list .item .title {
+#myDocument .my-framework.rtl .timeline.vertical .list .item .datetime, #myDocument .my-framework.rtl .timeline.vertical .list .item .title {
   left: auto;
   right: -16.5em;
 }
-html#myDocument body.my-framework.rtl .timeline.vertical .list .item .title {
+#myDocument .my-framework.rtl .timeline.vertical .list .item .title {
   max-width: 180px;
 }
-html#myDocument body.my-framework.rtl .menu > .item, html#myDocument body.my-framework.rtl .menu-list > .item {
+#myDocument .my-framework.rtl .menu > .item, #myDocument .my-framework.rtl .menu-list > .item {
   float: right;
 }
-html#myDocument body.my-framework.rtl .menu.vertical > .item, html#myDocument body.my-framework.rtl .menu-list.vertical > .item {
+#myDocument .my-framework.rtl .menu.vertical > .item, #myDocument .my-framework.rtl .menu-list.vertical > .item {
   float: none;
 }
-html#myDocument body.my-framework.rtl .menu.vertical.docked > .item > .link .icon-default, html#myDocument body.my-framework.rtl .menu-list.vertical.docked > .item > .link .icon-default {
+#myDocument .my-framework.rtl .menu.vertical.docked > .item > .link .icon-default, #myDocument .my-framework.rtl .menu-list.vertical.docked > .item > .link .icon-default {
   margin-right: 0;
 }
-html#myDocument body.my-framework.rtl .caption {
+#myDocument .my-framework.rtl .caption {
   left: auto;
   right: 0;
 }
-html#myDocument body.my-framework.rtl .pricing-table thead th .title, html#myDocument body.my-framework.rtl .pricing-table tfoot td a {
+#myDocument .my-framework.rtl .pricing-table thead th .title, #myDocument .my-framework.rtl .pricing-table tfoot td a {
   text-align: center !important;
 }
-html#myDocument body.my-framework.rtl .table.pricing .list .item.header .title, html#myDocument body.my-framework.rtl .table.pricing .list .item .title {
+#myDocument .my-framework.rtl .table.pricing .list .item.header .title, #myDocument .my-framework.rtl .table.pricing .list .item .title {
   text-align: center !important;
 }
-html#myDocument body.my-framework.rtl .table .list {
+#myDocument .my-framework.rtl .table .list {
   float: right;
 }
-html#myDocument body.my-framework.rtl .table .col .item {
+#myDocument .my-framework.rtl .table .col .item {
   border-right: none;
-  border-left: 0.0833em solid hsla(0, 0%, 96%, 1);
+  border-left: 0.0833em solid hsla(220, 33%, 98%, 1);
 }
-html#myDocument body.my-framework.rtl .feedback, html#myDocument body.my-framework.rtl .feedback-right {
+#myDocument .my-framework.rtl .feedback, #myDocument .my-framework.rtl .feedback-right {
   float: right;
 }
-html#myDocument body.my-framework.rtl .feedback-roll .feedback {
+#myDocument .my-framework.rtl .feedback-roll .feedback {
   float: none;
 }
-html#myDocument body.my-framework.rtl .comments .post-comment button {
+#myDocument .my-framework.rtl .comments .post-comment button {
   right: auto;
   left: 0;
 }
-html#myDocument body.my-framework.rtl .horizontal-terms dt {
+#myDocument .my-framework.rtl .horizontal-terms dt {
   float: right;
 }
-html#myDocument body.my-framework.rtl .horizontal-terms dd {
+#myDocument .my-framework.rtl .horizontal-terms dd {
   margin-left: 0;
   margin-right: 3%;
 }
-html#myDocument body.my-framework.rtl .pagination {
+#myDocument .my-framework.rtl .pagination {
   float: none;
 }
-html#myDocument body.my-framework.rtl .pagination > .item.right, html#myDocument body.my-framework.rtl .pagination > li.right {
+#myDocument .my-framework.rtl .pagination > .item.right, #myDocument .my-framework.rtl .pagination > li.right {
   float: left;
 }
-html#myDocument body.my-framework.rtl .transforms > .item {
+#myDocument .my-framework.rtl .transforms > .item {
   left: auto;
   right: 15em;
 }
-html#myDocument body.my-framework.rtl .transforms > .item.title {
+#myDocument .my-framework.rtl .transforms > .item.title {
   right: 0;
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier {
+#myDocument .my-framework.rtl .comments > .list > .item.replied .reply .replier {
   margin-left: 0;
   margin-right: 4em;
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier > .icon {
+#myDocument .my-framework.rtl .comments > .list > .item.replied .reply .replier > .icon {
   left: auto !important;
   right: -1em;
   transform: scaleX(1);
@@ -330,27 +322,27 @@ html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .
   filter: FlipH;
   -ms-filter: "FlipH";
 }
-html#myDocument body.my-framework.rtl .comments > .list > .item.replied .reply .replier + .reply {
+#myDocument .my-framework.rtl .comments > .list > .item.replied .reply .replier + .reply {
   margin-left: 0;
   margin-right: 4em;
 }
-html#myDocument body.my-framework.rtl .thumbs .item {
+#myDocument .my-framework.rtl .thumbs .item {
   padding: 0 0 1em 0.5em;
   float: right;
 }
-html#myDocument body.my-framework.rtl .floating-nav.previous, html#myDocument body.my-framework.rtl .floating-nav.left {
+#myDocument .my-framework.rtl .floating-nav.previous, #myDocument .my-framework.rtl .floating-nav.left {
   left: auto;
   right: 0;
 }
-html#myDocument body.my-framework.rtl .floating-nav.next, html#myDocument body.my-framework.rtl .floating-nav.right {
+#myDocument .my-framework.rtl .floating-nav.next, #myDocument .my-framework.rtl .floating-nav.right {
   left: 0;
   right: auto;
 }
-html#myDocument body.my-framework.rtl .floating-nav .icon.right {
+#myDocument .my-framework.rtl .floating-nav .icon.right {
   margin-right: 0.5em;
   margin-left: 0;
 }
-html#myDocument body.my-framework.rtl .floating-nav .icon.left {
+#myDocument .my-framework.rtl .floating-nav .icon.left {
   margin-right: 0;
   margin-left: 0.5em;
 }
