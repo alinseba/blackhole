@@ -2,6 +2,7 @@
 > minimalistic but flexible and powerful SCSS / CSS framework
 
 ## Version 1.11 Released
+[Check out what's new](http://blackhole.html5depot.com/release-notes.html)
 
 Blackhole is a **minimalistic**, **semantic**, **modular**, but **powerful** and **flexible** SASS / CSS framework with the sole purpose of offering developers (you) a new approach on how they architect their websites / apps, aiming in making their work easy and pleasurable and giving the possibility of modifying and extending it the way they want.
 
